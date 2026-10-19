@@ -1,0 +1,7 @@
+schema_version: 1
+status: draft
+name: null
+ingredients: []
+mapping_file: null
+# Freeze an audited exact-alias CSV before real-data preprocessing.
+# Required CSV columns: raw_name,canonical_ingredient,mapping_basis,reviewed

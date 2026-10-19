@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "faersight"
+version = "0.1.0"
+description = "Reproducible FAERS reporting-association experiments with WEKA Apriori"
+requires-python = ">=3.11"
+dependencies = ["PyYAML>=6.0.2,<7", "duckdb>=1.1,<2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1"]
+
+[project.scripts]
+faersight = "faersight.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--basetemp=.tools/pytest-tmp"
+markers = ["weka: requires a Java runtime and WEKA_JAR"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [".tools", "artifacts/generated", "data"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
