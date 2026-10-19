@@ -1,0 +1,38 @@
+name: Frozen FDA ingestion (manual)
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: '0.10.2'
+      - run: uv sync --frozen
+      - run: uv run --frozen faersight validate-config config/experiment.yaml --require-frozen
+      - run: uv run --frozen faersight acquire
+      - run: uv run --frozen faersight ingest
+      - run: uv run --frozen faersight validate-mart data/processed/2025Q4-statins/analytical.duckdb
+      - run: uv run --frozen faersight spotcheck data/processed/2025Q4-statins/analytical.duckdb
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fda-ingestion-provenance
+          retention-days: 7
+          path: |
+            data/raw/**/*.manifest.json
+            data/processed/2025Q4-statins/*audit.json
+            data/processed/2025Q4-statins/*manifest.json
+            data/processed/2025Q4-statins/quality_gates.json
+            data/processed/2025Q4-statins/integration_failure.json
+            data/processed/2025Q4-statins/quarter_population.csv
+            data/processed/2025Q4-statins/source_spotcheck.json

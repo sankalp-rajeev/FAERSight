@@ -5,6 +5,7 @@ import json
 import platform
 import re
 import subprocess
+import time
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -478,6 +479,7 @@ def build_full_mart(
     if database.exists():
         raise ValueError(f"Unfinished build exists; use a new output directory: {database}")
     stage_audits = []
+    stage_timings = {}
     started = datetime.now(UTC).isoformat()
     try:
         with duckdb.connect(str(database)) as connection:
@@ -500,7 +502,12 @@ def build_full_mart(
                         encoding=encoding,
                     )
                     stage_audits.append(audit)
+                    loading_started = time.monotonic()
                     _load_staged(connection, table, audit, first=i == 0)
+                    stage_timings[f"load_{source['quarter']}_{table}"] = round(
+                        time.monotonic() - loading_started, 3
+                    )
+                    print(f"Loaded {table}: {audit['source_rows']:,} source rows", flush=True)
                     connection.execute(
                         "INSERT INTO source_files VALUES (?, ?, ?, ?, ?, ?)",
                         [
@@ -535,7 +542,18 @@ def build_full_mart(
                 "Integrating latest cases, complete source records and presence items...",
                 flush=True,
             )
-            connection.execute((Path(__file__).parent / "sql/analytical_mart.sql").read_text())
+            sql = (Path(__file__).parent / "sql/analytical_mart.sql").read_text()
+            for statement in connection.extract_statements(sql):
+                label = re.search(
+                    r"CREATE (?:TEMP )?(?:TABLE|VIEW|UNIQUE INDEX) (\w+)",
+                    statement.query,
+                    re.IGNORECASE,
+                )
+                name = label[1] if label else "SQL stage"
+                print(f"Building {name}...", flush=True)
+                stage_started = time.monotonic()
+                connection.execute(statement.query)
+                stage_timings[name] = round(time.monotonic() - stage_started, 3)
             quality = validate_connection(connection)
             for table in ("DEMO", "DRUG", "REAC"):
                 expected = sum(a["source_rows"] for a in stage_audits if a["table"] == table)
@@ -602,6 +620,7 @@ def build_full_mart(
                 "finished_utc": datetime.now(UTC).isoformat(),
                 "python_version": platform.python_version(),
                 "duckdb_version": duckdb.__version__,
+                "stage_timings_seconds": stage_timings,
                 "source_inputs": [
                     {key: value for key, value in s.items() if key != "paths"} for s in sources
                 ],
@@ -647,17 +666,34 @@ def ingest_experiment(config_path: Path, raw_dir: Path, output: Path) -> dict:
         threads=ingestion["threads"],
     )
     # Capture code/config provenance after all gates pass. Absence of Git is explicit.
-    git = subprocess.run(
-        ["git", "-c", f"safe.directory={Path.cwd().as_posix()}", "rev-parse", "HEAD"],
-        capture_output=True,
-        text=True,
-        check=False,
-    )
+    project_root = config_path.resolve().parent.parent
+    git_prefix = ["git", "-c", f"safe.directory={project_root.as_posix()}"]
+    try:
+        git = subprocess.run(
+            [*git_prefix, "rev-parse", "HEAD"],
+            cwd=project_root,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        dirty = subprocess.run(
+            [*git_prefix, "status", "--porcelain", "--untracked-files=no"],
+            cwd=project_root,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        git_commit = git.stdout.strip() if git.returncode == 0 else None
+        git_dirty = bool(dirty.stdout.strip()) if dirty.returncode == 0 else None
+    except OSError:
+        git_commit = git_dirty = None
     manifest_path = output / "integration_manifest.json"
     manifest = json.loads(manifest_path.read_text())
     manifest.update(
         {
-            "git_commit": git.stdout.strip() if git.returncode == 0 else None,
+            "git_commit": git_commit,
+            "git_worktree_dirty": git_dirty,
+            "dependency_lock_sha256": sha256(project_root / "uv.lock"),
             "experiment_config_sha256": sha256(config_path),
             "class_config_sha256": sha256(
                 config_path.resolve().parent.parent / config["therapeutic_class_file"]
@@ -674,4 +710,13 @@ def ingest_experiment(config_path: Path, raw_dir: Path, output: Path) -> dict:
 
 def validate_mart(path: Path) -> dict:
     with duckdb.connect(str(path), read_only=True) as connection:
-        return validate_connection(connection)
+        quality = validate_connection(connection)
+    manifest_path = path.parent / "integration_manifest.json"
+    if not manifest_path.is_file():
+        raise ValueError("Mart is missing its integration manifest")
+    manifest = json.loads(manifest_path.read_text())
+    quality["checks"]["database_sha256_matches_manifest"] = manifest["artifacts"].get(
+        path.name
+    ) == sha256(path)
+    quality["status"] = "passed" if all(quality["checks"].values()) else "failed"
+    return quality

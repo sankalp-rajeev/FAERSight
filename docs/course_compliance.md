@@ -4,12 +4,13 @@ This is an implementation checklist, not a graded submission.
 
 ## Course-mandatory work
 
-- [ ] Official real-world FDA DEMO, DRUG and REAC data with frozen provenance.
-- [ ] One therapeutic class and one or two quarters frozen.
+- [x] Official real-world FDA DEMO, DRUG and REAC data with frozen provenance.
+- [x] One therapeutic class and one quarter frozen: statins / 2025 Q4.
 - [x] WEKA Apriori executed on a synthetic fixture; raw logs and version retained locally.
 - [ ] WEKA Apriori executed on the actual frozen FDA experiment.
 - [x] Fixture tests for preprocessing, binary transactions and independent PRR/ROR calculations.
-- [ ] Real-data analytical integration, OLAP summaries and association evaluation.
+- [x] Real-data analytical integration and OLAP summaries; evidence in Milestone 2 records.
+- [ ] Real-data association evaluation.
 - [ ] Course milestone and final submission requirements verified in Canvas by student.
 - [ ] All graded prose authored by the student, with required references/disclosures.
 
@@ -28,7 +29,7 @@ This is an implementation checklist, not a graded submission.
 ## Portfolio targets
 
 - [x] Reproducible technical README and synthetic end-to-end command.
-- [x] Dependency lock and CI workflow defined; remote CI execution still pending.
+- [x] Dependency lock and CI workflow; pushed integration checkpoint passes remote CI.
 - [ ] Fresh-clone reproduction with frozen real inputs.
 - [ ] Measured real-data scale, rule count, agreement and benchmark evidence.
 - [ ] Resume claims traced to actual final artifacts.

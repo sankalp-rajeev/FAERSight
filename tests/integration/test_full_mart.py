@@ -7,6 +7,7 @@ import pytest
 from faersight.audit import sha256
 from faersight.integration import build_full_mart, validate_mart
 from faersight.parse import stage_relation
+from faersight.spotcheck import spotcheck_sources
 
 
 @pytest.fixture
@@ -223,3 +224,24 @@ def test_revalidation_detects_changed_denominators(real_format_sources, tmp_path
     quality = validate_mart(output / "analytical.duckdb")
     assert quality["status"] == "failed"
     assert not quality["checks"]["common_denominator_and_nonnegative_cells"]
+
+
+def test_independent_source_sample_check(real_format_sources, tmp_path):
+    sources, mapping = real_format_sources
+    output = tmp_path / "sample"
+    build(sources, mapping, output)
+    result = spotcheck_sources(output / "analytical.duckdb", sources, output)
+    assert result["status"] == "passed"
+    assert result["checked_cases"] == 6
+    assert result["strata"] == {"primary_target": 2, "other_role_target": 2, "other_background": 2}
+    assert result["student_manual_review"] == "pending"
+
+
+def test_independent_check_detects_lost_drug_record(real_format_sources, tmp_path):
+    sources, mapping = real_format_sources
+    output = tmp_path / "lost_record"
+    build(sources, mapping, output)
+    with duckdb.connect(str(output / "analytical.duckdb")) as c:
+        c.execute("DELETE FROM case_drugs WHERE case_id='1' AND route='Other'")
+    with pytest.raises(ValueError, match="spot-check failed"):
+        spotcheck_sources(output / "analytical.duckdb", sources, output)

@@ -9,6 +9,7 @@ from pathlib import Path
 from faersight.config import load_experiment
 from faersight.integration import ingest_experiment, prepare_sources, validate_mart
 from faersight.pipeline import build_fixture, reproduce_fixture
+from faersight.spotcheck import spotcheck_sources
 from faersight.weka import run_smoke
 
 
@@ -18,17 +19,19 @@ def main(argv: list[str] | None = None) -> int:
     config = commands.add_parser("validate-config")
     config.add_argument("path", type=Path)
     config.add_argument("--require-frozen", action="store_true")
-    for name in ("acquire", "ingest", "validate-mart"):
+    for name in ("acquire", "ingest", "validate-mart", "spotcheck"):
         command = commands.add_parser(name)
-        if name == "validate-mart":
+        if name in ("validate-mart", "spotcheck"):
             command.add_argument("path", type=Path)
-        else:
+        if name != "validate-mart":
             command.add_argument("--config", type=Path, default=Path("config/experiment.yaml"))
             command.add_argument("--raw-dir", type=Path, default=Path("data/raw"))
         if name == "ingest":
             command.add_argument(
                 "--output", type=Path, default=Path("data/processed/2025Q4-statins")
             )
+        if name == "spotcheck":
+            command.add_argument("--per-stratum", type=int, default=5)
     for name in ("build-fixture-arff", "reproduce-fixture", "weka-smoke"):
         command = commands.add_parser(name)
         command.add_argument("--output", type=Path, default=Path("artifacts/generated/fixture"))
@@ -56,6 +59,16 @@ def main(argv: list[str] | None = None) -> int:
         elif args.command == "ingest":
             quality = ingest_experiment(args.config, args.raw_dir, args.output)
             print(json.dumps(quality, indent=2))
+        elif args.command == "spotcheck":
+            sources = prepare_sources(args.config, args.raw_dir)
+            print(
+                json.dumps(
+                    spotcheck_sources(
+                        args.path, sources, args.path.parent, per_stratum=args.per_stratum
+                    ),
+                    indent=2,
+                )
+            )
         elif args.command == "validate-mart":
             quality = validate_mart(args.path)
             print(json.dumps(quality, indent=2))

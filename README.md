@@ -3,12 +3,16 @@
 Technical implementation of [PRD.md](PRD.md): case-level FDA reporting associations,
 WEKA Apriori, and independently calculated PRR/ROR.
 
-The first engineering milestone runs on **synthetic data only**. It parses
-dollar-delimited DEMO/DRUG/REAC fixtures, selects the latest case version, applies
-reviewed exact drug aliases and suspect-role filtering, exports sparse binary
-ARFF, builds a small DuckDB presence mart, and verifies a real WEKA Apriori rule
-against independent contingency counts. Outputs include audits, hashes, raw WEKA
-logs, statistics, and a comparison CSV.
+Milestone 2 freezes **statins / 2025 Q4** and adds checksum-pinned official FDA
+acquisition, streaming DEMO/DRUG/REAC ingestion, deleted-case handling,
+latest-case-version selection and a complete DuckDB analytical mart. All eligible
+reporting cases are retained for denominators, including reports without statin
+exposure. See the [source and scope decision](docs/milestone2.md).
+
+The synthetic end-to-end workflow also exports sparse binary ARFF and verifies
+an actual WEKA Apriori rule against independently calculated PRR/ROR.
+Real-data ingestion does not establish validated drug-safety findings. Real
+mining, benchmark recovery and sensitivity/evaluation remain later quality gates.
 
 Python performs preprocessing and count-based checks. **WEKA performs Apriori**.
 Reporting associations do not establish causality or clinical incidence.
@@ -23,6 +27,62 @@ uv sync --frozen --extra dev --cache-dir .tools/uv-cache
 .venv/Scripts/python -m faersight.cli build-fixture-arff
 .venv/Scripts/python -m pytest -q
 ```
+
+## Acquire and integrate the frozen FDA quarter
+
+```powershell
+.venv/Scripts/python -m faersight.cli validate-config config/experiment.yaml --require-frozen
+.venv/Scripts/python -m faersight.cli acquire --config config/experiment.yaml
+.venv/Scripts/python -m faersight.cli ingest --config config/experiment.yaml
+.venv/Scripts/python -m faersight.cli validate-mart data/processed/2025Q4-statins/analytical.duckdb
+.venv/Scripts/python -m faersight.cli spotcheck data/processed/2025Q4-statins/analytical.duckdb
+```
+
+These Python CLI commands also work on Linux through `uv run --frozen faersight`.
+`acquire` streams the official 67,144,585-byte ZIP, checks its frozen SHA-256,
+retains download provenance and extracts only required tables, documentation and
+the FDA deleted-case list. Existing downloads are checksum-verified on every reuse.
+`ingest` does not download implicitly. The frozen source was verified as ASCII;
+malformed rows, identity contradictions or encoding errors fail with diagnostics.
+
+Each source relation is validated and converted one row at a time to an audited
+UTF-8 staging CSV, then loaded by DuckDB's native streaming CSV reader. The
+configured DuckDB budget is 4 GB / four threads, with spill files inside the run
+directory. No complete source relation is loaded into a Python list or DataFrame.
+
+Output defaults to `data/processed/2025Q4-statins/`. Validated snapshots are never
+overwritten. For another reproduction run, choose a new directory with
+`--output data/processed/2025Q4-statins-rerun`. Failed runs retain
+`integration_failure.json` and a `.building.duckdb` diagnostic database; use a new
+output directory after resolving the failure. Raw archives, staging files, and
+databases stay out of Git.
+
+The full mart contains:
+
+- `raw_demo`, `raw_drug`, `raw_reac`: every ingested column, source row and quarter.
+- `source_files`, `deleted_cases`, `latest_cases`, `case_eligibility`: provenance and selection.
+- `cases`: one eligible retained report per case, independent of statin exposure.
+- `case_drugs`: complete retained drug records with ingredient, role and mapping metadata.
+- `case_reactions`: all nonblank normalized reaction presences per retained case.
+- `case_drug_presence`: distinct reviewed statin presence under the frozen PS role definition.
+- `candidate_reactions`, `case_items`: the prespecified vocabulary and separate mining items.
+- `signal_counts`: integer `a,b,c,d,N` for every selected drug/reaction pair.
+- `quarter_population`, `quarter_drug_role`, `quarter_reaction`: analytical summary views.
+
+The run directory also contains `preprocess_audit.json`, `quality_gates.json`,
+`integration_manifest.json`, aggregate summary CSVs, complete unmapped-name
+counts, target-relevant unmapped candidates and mapping-conflict diagnostics.
+`validate-mart` reruns population, join, role, source-row reconciliation and
+contingency marginal checks. Unresolved target-like spellings are flagged for
+review and never fuzzy-mapped. A passed integration gate still records
+`scientific_findings_validated: false`.
+
+`spotcheck` independently rescans the original relations for five primary-exposed,
+five other-role statin and five other-background reports, comparing latest IDs,
+full drug rows, reaction memberships, role-filtered exposures and mining items.
+Its detailed case diagnostics stay local. Student manual review remains pending.
+An optional `Frozen FDA ingestion (manual)` GitHub workflow repeats acquisition,
+integration and spot checks without running full downloads on every push.
 
 To include WEKA, run the checksum-verifying downloader and reproduce the fixture:
 
@@ -55,8 +115,8 @@ uv run --frozen ruff check .
 
 Java 21 must be available through `JAVA_HOME` or `PATH`. CI uses Python 3.11 and
 Temurin 21. Tests needing actual WEKA skip when `WEKA_JAR` is unset; setting it
-makes WEKA failures fail the suite. GitHub CI is configured but has not been run
-on a remote repository.
+makes WEKA failures fail the suite. GitHub Actions runs the tests and actual WEKA
+smoke on pushes; full FDA downloads are excluded from ordinary CI.
 
 ## Inspect the evidence
 
@@ -74,21 +134,19 @@ The synthetic pair has `a=3, b=1, c=1, d=5, N=10`; support `0.3`, confidence
 `0.75`, lift `1.875`, PRR `4.5`, and ROR `15`. WEKA rounds displayed lift to
 `1.88`; the smoke check allows only its displayed rounding precision.
 
-The fixture pipeline is intentionally small and in memory. It is **not ready to
-process full quarterly archives**. The current mart contains mining items rather
-than the complete retained drug/reaction records. FDA download/extraction,
-streaming full-quarter integration, source README/encoding verification,
-full analytical mart, threshold sweeps, known-signal evaluation, and ranking
-agreement remain later milestones. The smoke runner only accepts the known toy
-pair; it is not a general real-data experiment runner.
+The fixture pipeline intentionally stays small and in memory. Use `ingest` for
+full-quarter processing. The smoke runner only accepts the known toy pair; it
+is not a general real-data mining experiment runner. Threshold sweeps,
+known-signal evaluation and ranking agreement remain later milestones.
 
-## Freeze the real experiment next
+## Experiment configuration
 
 See [decisions](docs/decisions.md) and [course compliance](docs/course_compliance.md).
-The draft [experiment template](config/experiment.example.yaml) intentionally leaves
-the therapeutic class, quarter(s), reaction floor and threshold grid unresolved.
-`validate-config --require-frozen` rejects it until those values and `status: frozen`
-are supplied. The fixture's synthetic quarter is not a real-data selection.
+The frozen [experiment](config/experiment.yaml),
+[class definition](config/therapeutic_class.yaml) and
+[reviewed aliases](mappings/drug_mapping.csv) define the real-data run. The draft
+[example template](config/experiment.example.yaml) remains available for future
+experiments and is rejected by `--require-frozen` until completed.
 
 Technical artifacts here are engineering aids. Course report, literature-review,
 slides and narration must be written by the student under the PRD's course policy.
