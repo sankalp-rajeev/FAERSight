@@ -117,17 +117,25 @@ def load_ingestion_config(path: Path) -> tuple[dict, dict, Path]:
         raise ValueError("therapeutic_class_file must exist within the project")
     with class_path.open(encoding="utf-8") as stream:
         therapeutic_class = yaml.safe_load(stream)
-    if (not isinstance(therapeutic_class, dict) or therapeutic_class.get("status") != "frozen"
-            or therapeutic_class.get("name") != config["therapeutic_class"]):
+    if (
+        not isinstance(therapeutic_class, dict)
+        or therapeutic_class.get("status") != "frozen"
+        or therapeutic_class.get("name") != config["therapeutic_class"]
+    ):
         raise ValueError("Therapeutic class must be frozen and match experiment scope")
     ingredients = therapeutic_class.get("ingredients")
-    if (not isinstance(ingredients, list) or not ingredients
-            or any(not isinstance(x, str) or not x.strip() for x in ingredients)
-            or len(ingredients) != len(set(ingredients))):
+    if (
+        not isinstance(ingredients, list)
+        or not ingredients
+        or any(not isinstance(x, str) or not x.strip() for x in ingredients)
+        or len(ingredients) != len(set(ingredients))
+    ):
         raise ValueError("Expected unique canonical ingredients")
-    if (therapeutic_class.get("mapping_policy") !=
-            "exact_ingredient_tokens_in_prod_ai_then_reviewed_drugname_alias"
-            or therapeutic_class.get("active_ingredient_separator") != "\\"):
+    if (
+        therapeutic_class.get("mapping_policy")
+        != "exact_ingredient_tokens_in_prod_ai_then_reviewed_drugname_alias"
+        or therapeutic_class.get("active_ingredient_separator") != "\\"
+    ):
         raise ValueError("Unsupported ingredient mapping policy")
     mapping_path = (root / therapeutic_class.get("mapping_file", "")).resolve()
     if not mapping_path.is_relative_to(root):

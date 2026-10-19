@@ -28,6 +28,7 @@ jobs:
       - run: uv run --frozen ruff check .
       - run: uv run --frozen ruff format --check src tests
       - run: uv run --frozen faersight validate-config config/experiment.example.yaml
+      - run: uv run --frozen faersight validate-config config/experiment.yaml --require-frozen
       - run: bash scripts/setup_weka.sh
       - run: uv run --frozen python -m pytest -q --junitxml=artifacts/generated/tests.xml
       - run: uv run --frozen faersight reproduce-fixture --jar "$WEKA_JAR"

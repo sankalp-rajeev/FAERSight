@@ -10,3 +10,7 @@ data/raw/
 data/interim/
 data/processed/
 artifacts/generated/
+# Supplied course/reference documents stay local; technical decision records are tracked.
+/docs/*.pdf
+/docs/*.docx
+/docs/deep-research-report.md
