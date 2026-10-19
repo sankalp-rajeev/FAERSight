@@ -34,5 +34,6 @@ This is an implementation checklist, not a graded submission.
 - [ ] Resume claims traced to actual final artifacts.
 
 Local evidence is under `artifacts/generated/fixture/`; it is ignored by Git.
-The parent directory is not currently a Git repository, so no commit/remote/CI
-execution is claimed. Do not mark the PRD complete based on synthetic evidence.
+The project is now versioned at `github.com/sankalp-rajeev/FAERSight`, with the
+synthetic baseline pushed. See `docs/milestone2.md` for the real-data scope freeze.
+Do not mark the PRD complete based on synthetic evidence.

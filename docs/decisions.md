@@ -24,6 +24,11 @@ Private technical notes; not course-submission prose. Baseline: October 18, 2026
 
 ## Pending before real-data acquisition/preprocessing
 
+**Milestone 2 update:** statins and 2025 Q4 have now been verified and frozen.
+See [the acquisition/integration decision](milestone2.md) for the source checksum,
+mapping policy and eligibility contract. The list below records the original
+planning baseline; completed acquisition/integration items are superseded by that record.
+
 - Choose one therapeutic class and one official FDA quarter; add a second only
   after the first succeeds.
 - Record the official source page, archive URL, README, retrieval timestamp and

@@ -1,0 +1,31 @@
+schema_version: 1
+status: frozen
+frozen_on: '2026-10-18'
+analysis_status: acquisition_and_integration_only
+quarters: [2025Q4]
+therapeutic_class: statins
+therapeutic_class_file: config/therapeutic_class.yaml
+drug_roles: [PS]
+reaction_min_target_cases: 5
+# Prespecified for the later mining milestone, before inspecting reaction rankings.
+weka:
+  version: 3.8.6
+  metric: lift
+  treat_zero_as_missing: true
+  support_grid: [0.00001, 0.00005, 0.0001]
+  min_metric: 1.2
+  max_rules: 10000
+ingestion:
+  encoding: ascii
+  eligibility: latest_report_with_drug_and_nonblank_reaction
+  deleted_case_policy: exclude_union_of_selected_quarters
+  missing_primary_suspect_policy: preserve_without_imputation
+  memory_limit: 4GB
+  threads: 4
+sources:
+  - quarter: 2025Q4
+    url: https://fis.fda.gov/content/Exports/faers_ascii_2025Q4.zip
+    source_page: https://fis.fda.gov/extensions/FPD-QDE-FAERS/FPD-QDE-FAERS.html
+    archive_name: faers_ascii_2025Q4.zip
+    sha256: 1a31e6fdedd7442ffb0cd9d0dc8d2d27ee738e5ee2da34e629d82e47f8d418b6
+    bytes: 67144585

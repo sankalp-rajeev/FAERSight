@@ -1,0 +1,31 @@
+raw_name,canonical_ingredient,mapping_basis,reviewed,alias_type
+ATORVASTATIN,atorvastatin,FDA statin ingredient list,true,ingredient
+ATORVASTATIN CALCIUM,atorvastatin,FDA atorvastatin product active ingredient salt,true,ingredient
+ATORVASTATIN CALCIUM TRIHYDRATE,atorvastatin,FDA atorvastatin calcium hydrated salt,true,ingredient
+LIPITOR,atorvastatin,FDA cholesterol medicines brand list,true,brand
+CADUET,atorvastatin,FDA approved statin combination list,true,brand
+LIPTRUZET,atorvastatin,FDA Liptruzet label atorvastatin component,true,brand
+FLUVASTATIN,fluvastatin,FDA statin ingredient list,true,ingredient
+FLUVASTATIN SODIUM,fluvastatin,FDA fluvastatin product active ingredient salt,true,ingredient
+LESCOL,fluvastatin,FDA statin brand list,true,brand
+LESCOL XL,fluvastatin,FDA cholesterol medicines brand list,true,brand
+LOVASTATIN,lovastatin,FDA statin ingredient list,true,ingredient
+ALTOPREV,lovastatin,FDA cholesterol medicines brand list,true,brand
+MEVACOR,lovastatin,FDA historical approved lovastatin brand,true,brand
+PITAVASTATIN,pitavastatin,FDA statin ingredient list,true,ingredient
+PITAVASTATIN CALCIUM,pitavastatin,FDA pitavastatin product active ingredient salt,true,ingredient
+PITAVASTATIN MAGNESIUM,pitavastatin,FDA Zypitamag active ingredient salt,true,ingredient
+LIVALO,pitavastatin,FDA cholesterol medicines brand list,true,brand
+ZYPITAMAG,pitavastatin,FDA cholesterol medicines brand list,true,brand
+PRAVASTATIN,pravastatin,FDA statin ingredient list,true,ingredient
+PRAVASTATIN SODIUM,pravastatin,FDA pravastatin product active ingredient salt,true,ingredient
+PRAVACHOL,pravastatin,FDA cholesterol medicines brand list,true,brand
+ROSUVASTATIN,rosuvastatin,FDA statin ingredient list,true,ingredient
+ROSUVASTATIN CALCIUM,rosuvastatin,FDA rosuvastatin product active ingredient salt,true,ingredient
+CRESTOR,rosuvastatin,FDA cholesterol medicines brand list,true,brand
+ROSZET,rosuvastatin,FDA approved statin combination list,true,brand
+EZALLOR SPRINKLE,rosuvastatin,FDA cholesterol medicines brand list,true,brand
+SIMVASTATIN,simvastatin,FDA statin ingredient list,true,ingredient
+ZOCOR,simvastatin,FDA cholesterol medicines brand list,true,brand
+VYTORIN,simvastatin,FDA approved statin combination list,true,brand
+FLOLIPID,simvastatin,FDA cholesterol medicines brand list,true,brand
