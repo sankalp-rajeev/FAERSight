@@ -1,0 +1,2 @@
+weka_rank,drug,reaction,antecedent_count,joint_count,weka_confidence,weka_lift
+1,alpha,REACTION X,4,3,0.75,1.88

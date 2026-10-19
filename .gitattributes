@@ -11,3 +11,8 @@
 *.md text eol=lf
 *.toml text eol=lf
 *.json text eol=lf
+# Frozen evidence must retain the exact bytes referenced by its SHA-256 manifests.
+/artifacts/manifests/** -text
+# Raw tool logs contain CRLF and separator lines that are not source-code whitespace/conflicts.
+/artifacts/manifests/**/*.log -diff
+/artifacts/manifests/**/*.csv whitespace=cr-at-eol

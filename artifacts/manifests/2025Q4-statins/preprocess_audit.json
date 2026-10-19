@@ -1,0 +1,172 @@
+{
+  "case_versions_removed": 0,
+  "cases_without_primary_suspect": 10,
+  "deletions": {
+    "sources": [
+      {
+        "blank_lines": 1,
+        "path": "data/raw/2025Q4/extracted/Deleted/DELETE25Q4.txt",
+        "quarter": "2025Q4",
+        "rows": 4497,
+        "sha256": "c24e98bef43cc601600de55d1978f434dd0f74c8c681b3aeff0108fd01438599"
+      }
+    ],
+    "unique_deleted_case_ids": 4497
+  },
+  "duplicate_drug_sequence_groups_preserved": 62384,
+  "exclusions": {
+    "deleted_latest_cases": 0,
+    "nondeleted_latest_missing_drug": 0,
+    "nondeleted_latest_missing_reaction": 0
+  },
+  "identity_checks": {
+    "conflicting_report_identities": 0,
+    "drug_case_id_join_mismatches": 0,
+    "invalid_demo_identity": 0,
+    "invalid_drug_identity": 0,
+    "invalid_reac_identity": 0,
+    "reac_case_id_join_mismatches": 0
+  },
+  "mapping_methods": {
+    "both": 23704,
+    "drugname": 1,
+    "prod_ai": 432,
+    "unmapped": 1791212
+  },
+  "nonretained_drug_rows": 0,
+  "nonretained_reac_rows": 0,
+  "orphan_drug_rows": 0,
+  "orphan_reac_rows": 0,
+  "retained_drug_rows_by_role": {
+    "C": 679402,
+    "DN": 81,
+    "I": 11340,
+    "PS": 437206,
+    "SS": 687320
+  },
+  "sources": [
+    {
+      "blank_required_values": {
+        "caseid": 0,
+        "caseversion": 0,
+        "primaryid": 0
+      },
+      "encoding": "ascii",
+      "header": [
+        "primaryid",
+        "caseid",
+        "caseversion",
+        "i_f_code",
+        "event_dt",
+        "mfr_dt",
+        "init_fda_dt",
+        "fda_dt",
+        "rept_cod",
+        "auth_num",
+        "mfr_num",
+        "mfr_sndr",
+        "lit_ref",
+        "age",
+        "age_cod",
+        "age_grp",
+        "sex",
+        "e_sub",
+        "wt",
+        "wt_cod",
+        "rept_dt",
+        "to_mfr",
+        "occp_cod",
+        "reporter_country",
+        "occr_country"
+      ],
+      "malformed_rows": 0,
+      "quarter": "2025Q4",
+      "source_bytes": 58610237,
+      "source_path": "data/raw/2025Q4/extracted/ASCII/DEMO25Q4.txt",
+      "source_rows": 385288,
+      "source_sha256": "7f575aefc901aa380122bb5f35de98f2fc2f33dcaf050cf30426e10f3daa1ae2",
+      "staged_path": "data/processed/2025Q4-statins/staging/2025Q4_DEMO.csv",
+      "staged_sha256": "e9ed5316584dc8d5c2dd540a6ddd05df0b2a7210e492407a56ff594c94642690",
+      "table": "DEMO"
+    },
+    {
+      "blank_required_values": {
+        "caseid": 0,
+        "drug_seq": 0,
+        "drugname": 0,
+        "primaryid": 0,
+        "prod_ai": 33826,
+        "role_cod": 0
+      },
+      "encoding": "ascii",
+      "header": [
+        "primaryid",
+        "caseid",
+        "drug_seq",
+        "role_cod",
+        "drugname",
+        "prod_ai",
+        "val_vbm",
+        "route",
+        "dose_vbm",
+        "cum_dose_chr",
+        "cum_dose_unit",
+        "dechal",
+        "rechal",
+        "lot_num",
+        "exp_dt",
+        "nda_num",
+        "dose_amt",
+        "dose_unit",
+        "dose_form",
+        "dose_freq"
+      ],
+      "malformed_rows": 0,
+      "quarter": "2025Q4",
+      "source_bytes": 181992344,
+      "source_path": "data/raw/2025Q4/extracted/ASCII/DRUG25Q4.txt",
+      "source_rows": 1815349,
+      "source_sha256": "886ef135263a63ee950be16bf4da1db04f856518b6072111822f1bc7e1112a0f",
+      "staged_path": "data/processed/2025Q4-statins/staging/2025Q4_DRUG.csv",
+      "staged_sha256": "0009c6dfb3cbd9aad4735ab13c3d534faf91e9d12deea1308d34914a984d1f85",
+      "table": "DRUG"
+    },
+    {
+      "blank_required_values": {
+        "caseid": 0,
+        "primaryid": 0,
+        "pt": 0
+      },
+      "encoding": "ascii",
+      "header": [
+        "primaryid",
+        "caseid",
+        "pt",
+        "drug_rec_act"
+      ],
+      "malformed_rows": 0,
+      "quarter": "2025Q4",
+      "source_bytes": 51214752,
+      "source_path": "data/raw/2025Q4/extracted/ASCII/REAC25Q4.txt",
+      "source_rows": 1349105,
+      "source_sha256": "1d98d0aa6b187edffb9f6dcffbd1569c16367740a7a126d306483e1888ef9de8",
+      "staged_path": "data/processed/2025Q4-statins/staging/2025Q4_REAC.csv",
+      "staged_sha256": "199e2bf550acdde9034e65640e8bb0152f8f9299121fd2ce0444c1eded843457",
+      "table": "REAC"
+    }
+  ],
+  "table_counts": {
+    "candidate_reactions": 359,
+    "case_drug_presence": 2298,
+    "case_drugs": 1815349,
+    "case_items": 686618,
+    "case_reactions": 1332786,
+    "cases": 385288,
+    "latest_cases": 385288,
+    "raw_demo": 385288,
+    "raw_drug": 1815349,
+    "raw_reac": 1349105
+  },
+  "unique_case_ids_before_dedup": 385288,
+  "unmapped_target_candidate_drug_rows": 274
+}

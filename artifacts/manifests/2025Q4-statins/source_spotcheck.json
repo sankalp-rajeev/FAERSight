@@ -1,0 +1,17 @@
+{
+  "checked_cases": 15,
+  "checks_per_case": 5,
+  "scientific_findings_validated": false,
+  "source_hashes": {
+    "2025Q4_DEMO": "7f575aefc901aa380122bb5f35de98f2fc2f33dcaf050cf30426e10f3daa1ae2",
+    "2025Q4_DRUG": "886ef135263a63ee950be16bf4da1db04f856518b6072111822f1bc7e1112a0f",
+    "2025Q4_REAC": "1d98d0aa6b187edffb9f6dcffbd1569c16367740a7a126d306483e1888ef9de8"
+  },
+  "status": "passed",
+  "strata": {
+    "other_background": 5,
+    "other_role_target": 5,
+    "primary_target": 5
+  },
+  "student_manual_review": "pending"
+}

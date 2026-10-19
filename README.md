@@ -17,6 +17,10 @@ mining, benchmark recovery and sensitivity/evaluation remain later quality gates
 Python performs preprocessing and count-based checks. **WEKA performs Apriori**.
 Reporting associations do not establish causality or clinical incidence.
 
+Executed Milestone 2 counts, checks, remaining quality gates and reproduction
+hashes are recorded in [the engineering record](docs/milestone2.md#executed-integration-evidence)
+and [tracked aggregate evidence](artifacts/manifests/2025Q4-statins/).
+
 ## Run on Windows (PowerShell)
 
 From the project root, using Python 3.11+ and uv:

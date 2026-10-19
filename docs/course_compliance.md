@@ -21,6 +21,7 @@ This is an implementation checklist, not a graded submission.
 - [x] Presence-only WEKA rule confirmed; absence rules trigger failures.
 - [x] Raw counts accompany scores; zero-cell scores explicitly flagged.
 - [x] Deterministic ARFF, audit, case index and statistics regression checks.
+- [x] Independent automated source checks on 15 retained real-data reports.
 - [ ] Real-quarter source spot checks on 10–15 retained cases.
 - [ ] Prespecified threshold sweep and PS versus PS+SS sensitivity experiment.
 - [ ] Known-signal benchmark frozen before final ranking and evaluated.
@@ -35,6 +36,8 @@ This is an implementation checklist, not a graded submission.
 - [ ] Resume claims traced to actual final artifacts.
 
 Local evidence is under `artifacts/generated/fixture/`; it is ignored by Git.
+Real-data aggregate evidence is tracked under `artifacts/manifests/2025Q4-statins/`;
+the full mart and detailed sample case records stay local in `data/processed/`.
 The project is now versioned at `github.com/sankalp-rajeev/FAERSight`, with the
 synthetic baseline pushed. See `docs/milestone2.md` for the real-data scope freeze.
 Do not mark the PRD complete based on synthetic evidence.

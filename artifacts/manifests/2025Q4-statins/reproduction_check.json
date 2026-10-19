@@ -1,0 +1,35 @@
+{
+  "artifacts": {
+    "mapping_conflicts.csv": {
+      "current_sha256": "096825aca11eb69990bdfea2a03f10b5c9238d02108702a22610b17eadc68b70",
+      "previous_sha256": "096825aca11eb69990bdfea2a03f10b5c9238d02108702a22610b17eadc68b70"
+    },
+    "quarter_drug_role.csv": {
+      "current_sha256": "e94e0f87aa13972a6482dbae639626a59c53df265953750fd56e077bb2b2a836",
+      "previous_sha256": "e94e0f87aa13972a6482dbae639626a59c53df265953750fd56e077bb2b2a836"
+    },
+    "quarter_population.csv": {
+      "current_sha256": "95812a55b4854f8764eaf99a69898d56fc5838e33ece11d4162019381b5021bd",
+      "previous_sha256": "95812a55b4854f8764eaf99a69898d56fc5838e33ece11d4162019381b5021bd"
+    },
+    "quarter_reaction.csv": {
+      "current_sha256": "10f32a7e45f826fecfe82f283b054e4087fffe2cfe4cce55204e44b749a06c95",
+      "previous_sha256": "10f32a7e45f826fecfe82f283b054e4087fffe2cfe4cce55204e44b749a06c95"
+    },
+    "signal_counts.csv": {
+      "current_sha256": "faa658295f37adbea98581076bcd885117ca602a3fe0bc6af14cba8c20fee826",
+      "previous_sha256": "faa658295f37adbea98581076bcd885117ca602a3fe0bc6af14cba8c20fee826"
+    },
+    "unmapped_drugs.csv": {
+      "current_sha256": "5bb5a632808f6581077a570bc989fbeb5d4357eff89bb1bbd256ba73175bb190",
+      "previous_sha256": "5bb5a632808f6581077a570bc989fbeb5d4357eff89bb1bbd256ba73175bb190"
+    },
+    "unmapped_target_candidates.csv": {
+      "current_sha256": "f6d59ad3fd67e90ebe5fcaf8a768933e95dc2e7a6a823c6435986868cfb82b7b",
+      "previous_sha256": "f6d59ad3fd67e90ebe5fcaf8a768933e95dc2e7a6a823c6435986868cfb82b7b"
+    }
+  },
+  "comparison": "sorted logical CSV artifacts; binary DuckDB file layout is not compared",
+  "scientific_findings_validated": false,
+  "status": "passed"
+}

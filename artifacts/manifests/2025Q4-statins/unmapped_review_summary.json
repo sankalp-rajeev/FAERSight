@@ -1,0 +1,10 @@
+{
+  "by_role": {
+    "C": 272,
+    "SS": 2
+  },
+  "mapping_policy": "exact reviewed aliases; no inferred or fuzzy assignments",
+  "scientific_findings_validated": false,
+  "source_drug_rows": 274,
+  "status": "review_required"
+}

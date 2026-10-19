@@ -1,0 +1,42 @@
+{
+  "background_n": 382990,
+  "candidate_reactions": 359,
+  "checks": {
+    "all_eligible_drug_records_preserved": true,
+    "background_reports_preserved": true,
+    "common_denominator_and_nonnegative_cells": true,
+    "complete_candidate_pair_grid": true,
+    "complete_eligible_population": true,
+    "contingency_marginals": true,
+    "demo_source_row_reconciliation": true,
+    "drug_source_row_reconciliation": true,
+    "latest_versions_not_resurrected": true,
+    "no_deleted_cases": true,
+    "no_mapping_conflicts": true,
+    "nonempty_candidate_vocabulary": true,
+    "nonempty_reporting_population": true,
+    "reac_source_row_reconciliation": true,
+    "role_filter_integrity": true,
+    "target_exposure_present": true,
+    "unique_cases": true,
+    "unique_presence_items": true,
+    "valid_drug_joins": true,
+    "valid_item_joins": true,
+    "valid_reaction_joins": true
+  },
+  "counted_pairs": 2513,
+  "eligible_n": 385288,
+  "remaining_scientific_gates": [
+    "real WEKA experiment",
+    "manual source review",
+    "benchmark freeze/recovery",
+    "sensitivity/evaluation"
+  ],
+  "scientific_findings_validated": false,
+  "status": "passed",
+  "target_exposed_n": 2298,
+  "unmapped_target_candidate_drug_rows": 274,
+  "warnings": [
+    "Target-relevant unmapped names require review; no fuzzy mapping applied"
+  ]
+}

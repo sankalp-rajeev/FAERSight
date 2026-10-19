@@ -1,0 +1,8 @@
+{
+  "errors": 0,
+  "failures": 0,
+  "junit_xml_sha256": "b1fd1280ba9b67204574eb65f97026f628291119e7c74f30e5ed9fb4e379a322",
+  "skipped": 0,
+  "tests": 67,
+  "weka_integration_included": true
+}

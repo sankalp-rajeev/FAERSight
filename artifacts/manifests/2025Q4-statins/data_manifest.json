@@ -1,0 +1,227 @@
+{
+  "download": {
+    "dataset": "FDA FAERS/AEMS quarterly ASCII",
+    "final_url": "https://fis.fda.gov/content/Exports/faers_ascii_2025Q4.zip",
+    "headers": {
+      "Content-Length": null,
+      "Content-Type": "application/zip",
+      "ETag": "639051474930780800",
+      "Last-Modified": "Tue, 27 Jan 2026 21:51:33 GMT"
+    },
+    "http_status": 200,
+    "inventory": {
+      "archive_bytes": 67144585,
+      "documents": [
+        "ASCII/ASC_NTS.pdf",
+        "ASCII/DEMO25Q4.pdf",
+        "ASCII/DRUG25Q4.pdf",
+        "ASCII/INDI25Q4.pdf",
+        "ASCII/OUTC25Q4.pdf",
+        "ASCII/REAC25Q4.pdf",
+        "ASCII/RPSR25Q4.pdf",
+        "ASCII/THER25Q4.pdf",
+        "FAQs.pdf",
+        "Readme.pdf"
+      ],
+      "members": [
+        {
+          "bytes": 131553,
+          "compressed_bytes": 105541,
+          "crc32": "611e50b1",
+          "name": "Readme.pdf"
+        },
+        {
+          "bytes": 16657037,
+          "compressed_bytes": 3111560,
+          "crc32": "363dd26b",
+          "name": "ASCII/THER25Q4.txt"
+        },
+        {
+          "bytes": 51214752,
+          "compressed_bytes": 9800685,
+          "crc32": "d2a989a1",
+          "name": "ASCII/REAC25Q4.txt"
+        },
+        {
+          "bytes": 95282,
+          "compressed_bytes": 75170,
+          "crc32": "9372be10",
+          "name": "ASCII/REAC25Q4.pdf"
+        },
+        {
+          "bytes": 341968,
+          "compressed_bytes": 268036,
+          "crc32": "1b4e71a3",
+          "name": "ASCII/ASC_NTS.pdf"
+        },
+        {
+          "bytes": 55992546,
+          "compressed_bytes": 7425202,
+          "crc32": "a9b29fa1",
+          "name": "ASCII/INDI25Q4.txt"
+        },
+        {
+          "bytes": 242471,
+          "compressed_bytes": 50793,
+          "crc32": "dc23cf02",
+          "name": "ASCII/RPSR25Q4.txt"
+        },
+        {
+          "bytes": 6381632,
+          "compressed_bytes": 1369931,
+          "crc32": "8b54c05a",
+          "name": "ASCII/OUTC25Q4.txt"
+        },
+        {
+          "bytes": 104207,
+          "compressed_bytes": 82738,
+          "crc32": "5675cb79",
+          "name": "ASCII/INDI25Q4.pdf"
+        },
+        {
+          "bytes": 105796,
+          "compressed_bytes": 78361,
+          "crc32": "020801ed",
+          "name": "ASCII/OUTC25Q4.pdf"
+        },
+        {
+          "bytes": 162929,
+          "compressed_bytes": 115411,
+          "crc32": "cca2b293",
+          "name": "ASCII/DEMO25Q4.pdf"
+        },
+        {
+          "bytes": 109591,
+          "compressed_bytes": 79755,
+          "crc32": "a9cafd4f",
+          "name": "ASCII/RPSR25Q4.pdf"
+        },
+        {
+          "bytes": 102632,
+          "compressed_bytes": 76955,
+          "crc32": "ad5533b6",
+          "name": "ASCII/THER25Q4.pdf"
+        },
+        {
+          "bytes": 58610237,
+          "compressed_bytes": 13222387,
+          "crc32": "adced27a",
+          "name": "ASCII/DEMO25Q4.txt"
+        },
+        {
+          "bytes": 181992344,
+          "compressed_bytes": 30833425,
+          "crc32": "2ecc62b4",
+          "name": "ASCII/DRUG25Q4.txt"
+        },
+        {
+          "bytes": 438997,
+          "compressed_bytes": 181441,
+          "crc32": "de1cb872",
+          "name": "ASCII/DRUG25Q4.pdf"
+        },
+        {
+          "bytes": 40472,
+          "compressed_bytes": 14896,
+          "crc32": "d065317d",
+          "name": "Deleted/DELETE25Q4.txt"
+        },
+        {
+          "bytes": 270721,
+          "compressed_bytes": 248702,
+          "crc32": "6ed9e8e6",
+          "name": "FAQs.pdf"
+        }
+      ],
+      "quarter": "2025Q4",
+      "tables": {
+        "DEMO": "ASCII/DEMO25Q4.txt",
+        "DRUG": "ASCII/DRUG25Q4.txt",
+        "REAC": "ASCII/REAC25Q4.txt"
+      },
+      "uncompressed_bytes": 372995167
+    },
+    "quarter": "2025Q4",
+    "retrieved_utc": "2026-10-19T02:46:16.893089+00:00",
+    "schema_version": 1,
+    "sha256": "1a31e6fdedd7442ffb0cd9d0dc8d2d27ee738e5ee2da34e629d82e47f8d418b6",
+    "source_page": "https://fis.fda.gov/extensions/FPD-QDE-FAERS/FPD-QDE-FAERS.html",
+    "url": "https://fis.fda.gov/content/Exports/faers_ascii_2025Q4.zip"
+  },
+  "extraction": {
+    "archive_sha256": "1a31e6fdedd7442ffb0cd9d0dc8d2d27ee738e5ee2da34e629d82e47f8d418b6",
+    "files": {
+      "ASCII/ASC_NTS.pdf": {
+        "bytes": 341968,
+        "path": "data\\raw\\2025Q4\\extracted\\ASCII\\ASC_NTS.pdf",
+        "sha256": "f21c5776bf8cf32f035a27706a40ae066c500e0a9fe00aa687e43d43bdd70d59"
+      },
+      "ASCII/DEMO25Q4.pdf": {
+        "bytes": 162929,
+        "path": "data\\raw\\2025Q4\\extracted\\ASCII\\DEMO25Q4.pdf",
+        "sha256": "c7a0b72c31ebb240fe2750f87079ff249554c3d48f2eead05c190074cccb4df3"
+      },
+      "ASCII/DEMO25Q4.txt": {
+        "bytes": 58610237,
+        "path": "data\\raw\\2025Q4\\extracted\\ASCII\\DEMO25Q4.txt",
+        "sha256": "7f575aefc901aa380122bb5f35de98f2fc2f33dcaf050cf30426e10f3daa1ae2"
+      },
+      "ASCII/DRUG25Q4.pdf": {
+        "bytes": 438997,
+        "path": "data\\raw\\2025Q4\\extracted\\ASCII\\DRUG25Q4.pdf",
+        "sha256": "838d51247c2a956d6ae7220c8d8464b540ee21facea3d85c438f7a14a4deac21"
+      },
+      "ASCII/DRUG25Q4.txt": {
+        "bytes": 181992344,
+        "path": "data\\raw\\2025Q4\\extracted\\ASCII\\DRUG25Q4.txt",
+        "sha256": "886ef135263a63ee950be16bf4da1db04f856518b6072111822f1bc7e1112a0f"
+      },
+      "ASCII/INDI25Q4.pdf": {
+        "bytes": 104207,
+        "path": "data\\raw\\2025Q4\\extracted\\ASCII\\INDI25Q4.pdf",
+        "sha256": "c2adab146d784a752cc25cd7c989c1aae6e18725511a76985ad699be19ba2eac"
+      },
+      "ASCII/OUTC25Q4.pdf": {
+        "bytes": 105796,
+        "path": "data\\raw\\2025Q4\\extracted\\ASCII\\OUTC25Q4.pdf",
+        "sha256": "355d4f109db263db2b53cedaa8f26c08ddf15ee8ad2308a639a13909a2013b47"
+      },
+      "ASCII/REAC25Q4.pdf": {
+        "bytes": 95282,
+        "path": "data\\raw\\2025Q4\\extracted\\ASCII\\REAC25Q4.pdf",
+        "sha256": "53fcb5097327b03828f4aebc1ab2059f94ddb4070ab3aa445adf0d9f83ed3533"
+      },
+      "ASCII/REAC25Q4.txt": {
+        "bytes": 51214752,
+        "path": "data\\raw\\2025Q4\\extracted\\ASCII\\REAC25Q4.txt",
+        "sha256": "1d98d0aa6b187edffb9f6dcffbd1569c16367740a7a126d306483e1888ef9de8"
+      },
+      "ASCII/RPSR25Q4.pdf": {
+        "bytes": 109591,
+        "path": "data\\raw\\2025Q4\\extracted\\ASCII\\RPSR25Q4.pdf",
+        "sha256": "187fffe46aad593e6896d80b72fc6fa9ebd23ef33c290c35907a99052b7d380c"
+      },
+      "ASCII/THER25Q4.pdf": {
+        "bytes": 102632,
+        "path": "data\\raw\\2025Q4\\extracted\\ASCII\\THER25Q4.pdf",
+        "sha256": "a3aada39779fcba7f0e5411aebcb9adc154b45a5240ace87c5d24a051f1de918"
+      },
+      "Deleted/DELETE25Q4.txt": {
+        "bytes": 40472,
+        "path": "data\\raw\\2025Q4\\extracted\\Deleted\\DELETE25Q4.txt",
+        "sha256": "c24e98bef43cc601600de55d1978f434dd0f74c8c681b3aeff0108fd01438599"
+      },
+      "FAQs.pdf": {
+        "bytes": 270721,
+        "path": "data\\raw\\2025Q4\\extracted\\FAQs.pdf",
+        "sha256": "33535351228fc4382af63c1e0a6697d5fe938e5eecbed3866afe088b4f779ad1"
+      },
+      "Readme.pdf": {
+        "bytes": 131553,
+        "path": "data\\raw\\2025Q4\\extracted\\Readme.pdf",
+        "sha256": "9b4a9df630828d6771b88467a6306d7da9416e9afa24426e82ccb480a316547d"
+      }
+    },
+    "quarter": "2025Q4"
+  }
+}

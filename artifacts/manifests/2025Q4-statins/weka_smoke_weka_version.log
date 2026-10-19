@@ -1,0 +1,30 @@
+3.8.6
+
+-1? -1
+ 0? 0
++1? 1
+
+comparing with 5.0.1
+isOlder? true
+equals ? false
+isNewer? false
+
+comparing with 3.8.6
+isOlder? false
+equals ? true
+isNewer? false
+
+comparing with 3.4.0
+isOlder? false
+equals ? false
+isNewer? true
+
+comparing with 3.4
+isOlder? false
+equals ? false
+isNewer? true
+
+comparing with 5
+isOlder? true
+equals ? false
+isNewer? false

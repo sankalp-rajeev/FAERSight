@@ -22,23 +22,28 @@ Private technical notes; not course-submission prose. Baseline: October 18, 2026
 - The initial parser fails on malformed rows instead of silently dropping them;
   real-quarter source README must establish the actual encoding and schema.
 
-## Pending before real-data acquisition/preprocessing
+## Frozen real-data integration
 
-**Milestone 2 update:** statins and 2025 Q4 have now been verified and frozen.
-See [the acquisition/integration decision](milestone2.md) for the source checksum,
-mapping policy and eligibility contract. The list below records the original
-planning baseline; completed acquisition/integration items are superseded by that record.
+Statins and 2025 Q4 are verified and frozen in `config/experiment.yaml` and
+`config/therapeutic_class.yaml`. The official source has been downloaded,
+checksum-pinned and integrated into the full DuckDB mart with its complete
+eligible report population. Source documentation and the FDA deleted-case list
+are retained. Real-data role policy, reaction floor and later mining grid are
+frozen. See [the Milestone 2 decision and evidence](milestone2.md) for exact
+policies, counts, hashes, reproduction and outstanding quality gates.
 
-- Choose one therapeutic class and one official FDA quarter; add a second only
-  after the first succeeds.
-- Record the official source page, archive URL, README, retrieval timestamp and
-  SHA-256. No real archive has been downloaded.
-- Create and review the real-class ingredient/alias mapping.
-- Freeze role definition and reaction floor in the real experiment config.
-- Freeze a small support/metric sensitivity grid before examining final rankings.
+## Pending before real-data mining and interpretation
+
+- Student manually audits the retained source sample; automated independent
+  membership checks are complete.
+- Review unmapped target-like C/SS names before a role sensitivity experiment.
+  Unknown spellings remain unmapped; the frozen alias map is not changed silently.
 - Freeze 5–10 externally supported positive benchmark pairs before final mining.
-- Add streaming/columnar preprocessing and full case_drugs/case_reactions tables
-  before attempting quarterly-scale processing.
+- Export and validate the real sparse ARFF over the same full case universe.
+- Run actual WEKA Apriori with the prespecified grid and record any resource-driven
+  change as a new decision before interpreting results.
+- Complete benchmark recovery, ranking agreement, role/threshold sensitivity and
+  student interpretation before treating reporting signals as validated findings.
 
 ## Course items owned by the student
 

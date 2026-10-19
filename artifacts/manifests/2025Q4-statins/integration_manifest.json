@@ -1,0 +1,438 @@
+{
+  "artifacts": {
+    "analytical.duckdb": "2255f30a4b903d9b4ab09c258491e9f1ecc67e2edacf40fee8c1d51f7489a2ce",
+    "mapping_conflicts.csv": "096825aca11eb69990bdfea2a03f10b5c9238d02108702a22610b17eadc68b70",
+    "preprocess_audit.json": "bf729c4b453c36b50df6d06f9de8bcdc82ded70b0d07c70b904807ce4d8bac84",
+    "quality_gates.json": "4c01df7a0d61d1e4274e1b76a7cea13d2ce2a03a196f526af86b5cdb74dd08d8",
+    "quarter_drug_role.csv": "e94e0f87aa13972a6482dbae639626a59c53df265953750fd56e077bb2b2a836",
+    "quarter_population.csv": "95812a55b4854f8764eaf99a69898d56fc5838e33ece11d4162019381b5021bd",
+    "quarter_reaction.csv": "10f32a7e45f826fecfe82f283b054e4087fffe2cfe4cce55204e44b749a06c95",
+    "signal_counts.csv": "faa658295f37adbea98581076bcd885117ca602a3fe0bc6af14cba8c20fee826",
+    "unmapped_drugs.csv": "5bb5a632808f6581077a570bc989fbeb5d4357eff89bb1bbd256ba73175bb190",
+    "unmapped_target_candidates.csv": "f6d59ad3fd67e90ebe5fcaf8a768933e95dc2e7a6a823c6435986868cfb82b7b"
+  },
+  "class_config_sha256": "7c1928d9858d4708bace3dd4fe985f3b9071cc4b9a39d56b6ad4da90fb684022",
+  "dependency_lock_sha256": "35bf7a88e268b848b909e314441b5f2225e751689ba3ecc9f2e28e20a0e53dce",
+  "drug_roles": [
+    "PS"
+  ],
+  "duckdb_version": "1.5.6",
+  "experiment_config_sha256": "e38ac83ea88da7dcdf4cb567ca550b65103e122e9d2bc6f0d657e80938bd274a",
+  "finished_utc": "2026-10-19T03:09:45.510951+00:00",
+  "git_commit": "1de7eb39c893a83fc31c837bcc8d4426d8fc4378",
+  "git_worktree_dirty": false,
+  "mapping_sha256": "9c26e3bf61608bba873b8475924b694ac7928d951012253b87af623d1f87e1c5",
+  "mart_sql_sha256": "cf00b9a21981b70046c0e0f52e1eea11fe23cbd02cff70525bf3188f94c72083",
+  "python_version": "3.14.3",
+  "reaction_min_target_cases": 5,
+  "scientific_findings_validated": false,
+  "source_code_hashes": {
+    "__init__.py": "73073bbc786705f3c6e806edec3e387ba6bf37f9498435d078dbe3275dd475f5",
+    "acquire.py": "01901f40b8953425d6f004e271b20a5e8c72f90978308eb7a4926dac572794af",
+    "arff.py": "4a6947710bdf9cb208065dc145c01828288193fc7401f10bffacdc3e29f34928",
+    "audit.py": "1ac7624e2af053a19f35f92de9620b845f5a931cde005b04abda025c3f0d68bd",
+    "cli.py": "36049907028b9c31f45338006f4e0ddb3e218c527f100b4cc555b8a0dc1df87b",
+    "config.py": "3d37775e32c0735d784232411ffb9952db046d01beab8bb621b37942a81983ac",
+    "deduplicate.py": "5400f29927ad630ee91d7c830c73797411abd96abe4a64827f3073e728111ff9",
+    "disproportionality.py": "cf8e6b48f247809d12c52a8eee8620b048452f49373362ed63786140470e7179",
+    "integration.py": "4a1587f7ed18b74b992350769ebadcf36c94ad484e8b88e622ce9d68aff60160",
+    "mart.py": "68bd31777d789b0110781c9ceb43288a60888a4b92549fc12ca23c187799fbb9",
+    "normalize.py": "2d4a1b275fc0331aca28e4281dee4cd21380baa383906cf5a00f0de56ab78f20",
+    "parse.py": "6ebe0ef4e2e31ef4e715e6b6a01a188aac51b5f81f273dba12a4129fa6f05d1e",
+    "pipeline.py": "78fff32e5d4f0aca2dc74377b37a212a156be78fec3c929ee93f4e3c08f7a393",
+    "spotcheck.py": "c6c8b792e4dac69ae7970cee40cfb7c9db4cb9cf5fac3535a3578538042c6668",
+    "transactions.py": "5579fa03987abe0cfea4428b727d0370ff7f5d31cf9f383b49f78bae8c52faf6",
+    "weka.py": "be4c87f76287ed644ae611903c62211bacd85d554f7f18f2724eae38dec1a2ba"
+  },
+  "source_inputs": [
+    {
+      "archive_path": "data/raw/2025Q4/faers_ascii_2025Q4.zip",
+      "download": {
+        "dataset": "FDA FAERS/AEMS quarterly ASCII",
+        "final_url": "https://fis.fda.gov/content/Exports/faers_ascii_2025Q4.zip",
+        "headers": {
+          "Content-Length": null,
+          "Content-Type": "application/zip",
+          "ETag": "639051474930780800",
+          "Last-Modified": "Tue, 27 Jan 2026 21:51:33 GMT"
+        },
+        "http_status": 200,
+        "inventory": {
+          "archive_bytes": 67144585,
+          "documents": [
+            "ASCII/ASC_NTS.pdf",
+            "ASCII/DEMO25Q4.pdf",
+            "ASCII/DRUG25Q4.pdf",
+            "ASCII/INDI25Q4.pdf",
+            "ASCII/OUTC25Q4.pdf",
+            "ASCII/REAC25Q4.pdf",
+            "ASCII/RPSR25Q4.pdf",
+            "ASCII/THER25Q4.pdf",
+            "FAQs.pdf",
+            "Readme.pdf"
+          ],
+          "members": [
+            {
+              "bytes": 131553,
+              "compressed_bytes": 105541,
+              "crc32": "611e50b1",
+              "name": "Readme.pdf"
+            },
+            {
+              "bytes": 16657037,
+              "compressed_bytes": 3111560,
+              "crc32": "363dd26b",
+              "name": "ASCII/THER25Q4.txt"
+            },
+            {
+              "bytes": 51214752,
+              "compressed_bytes": 9800685,
+              "crc32": "d2a989a1",
+              "name": "ASCII/REAC25Q4.txt"
+            },
+            {
+              "bytes": 95282,
+              "compressed_bytes": 75170,
+              "crc32": "9372be10",
+              "name": "ASCII/REAC25Q4.pdf"
+            },
+            {
+              "bytes": 341968,
+              "compressed_bytes": 268036,
+              "crc32": "1b4e71a3",
+              "name": "ASCII/ASC_NTS.pdf"
+            },
+            {
+              "bytes": 55992546,
+              "compressed_bytes": 7425202,
+              "crc32": "a9b29fa1",
+              "name": "ASCII/INDI25Q4.txt"
+            },
+            {
+              "bytes": 242471,
+              "compressed_bytes": 50793,
+              "crc32": "dc23cf02",
+              "name": "ASCII/RPSR25Q4.txt"
+            },
+            {
+              "bytes": 6381632,
+              "compressed_bytes": 1369931,
+              "crc32": "8b54c05a",
+              "name": "ASCII/OUTC25Q4.txt"
+            },
+            {
+              "bytes": 104207,
+              "compressed_bytes": 82738,
+              "crc32": "5675cb79",
+              "name": "ASCII/INDI25Q4.pdf"
+            },
+            {
+              "bytes": 105796,
+              "compressed_bytes": 78361,
+              "crc32": "020801ed",
+              "name": "ASCII/OUTC25Q4.pdf"
+            },
+            {
+              "bytes": 162929,
+              "compressed_bytes": 115411,
+              "crc32": "cca2b293",
+              "name": "ASCII/DEMO25Q4.pdf"
+            },
+            {
+              "bytes": 109591,
+              "compressed_bytes": 79755,
+              "crc32": "a9cafd4f",
+              "name": "ASCII/RPSR25Q4.pdf"
+            },
+            {
+              "bytes": 102632,
+              "compressed_bytes": 76955,
+              "crc32": "ad5533b6",
+              "name": "ASCII/THER25Q4.pdf"
+            },
+            {
+              "bytes": 58610237,
+              "compressed_bytes": 13222387,
+              "crc32": "adced27a",
+              "name": "ASCII/DEMO25Q4.txt"
+            },
+            {
+              "bytes": 181992344,
+              "compressed_bytes": 30833425,
+              "crc32": "2ecc62b4",
+              "name": "ASCII/DRUG25Q4.txt"
+            },
+            {
+              "bytes": 438997,
+              "compressed_bytes": 181441,
+              "crc32": "de1cb872",
+              "name": "ASCII/DRUG25Q4.pdf"
+            },
+            {
+              "bytes": 40472,
+              "compressed_bytes": 14896,
+              "crc32": "d065317d",
+              "name": "Deleted/DELETE25Q4.txt"
+            },
+            {
+              "bytes": 270721,
+              "compressed_bytes": 248702,
+              "crc32": "6ed9e8e6",
+              "name": "FAQs.pdf"
+            }
+          ],
+          "quarter": "2025Q4",
+          "tables": {
+            "DEMO": "ASCII/DEMO25Q4.txt",
+            "DRUG": "ASCII/DRUG25Q4.txt",
+            "REAC": "ASCII/REAC25Q4.txt"
+          },
+          "uncompressed_bytes": 372995167
+        },
+        "quarter": "2025Q4",
+        "retrieved_utc": "2026-10-19T02:46:16.893089+00:00",
+        "schema_version": 1,
+        "sha256": "1a31e6fdedd7442ffb0cd9d0dc8d2d27ee738e5ee2da34e629d82e47f8d418b6",
+        "source_page": "https://fis.fda.gov/extensions/FPD-QDE-FAERS/FPD-QDE-FAERS.html",
+        "url": "https://fis.fda.gov/content/Exports/faers_ascii_2025Q4.zip"
+      },
+      "extraction": {
+        "archive_sha256": "1a31e6fdedd7442ffb0cd9d0dc8d2d27ee738e5ee2da34e629d82e47f8d418b6",
+        "files": {
+          "ASCII/ASC_NTS.pdf": {
+            "bytes": 341968,
+            "path": "data\\raw\\2025Q4\\extracted\\ASCII\\ASC_NTS.pdf",
+            "sha256": "f21c5776bf8cf32f035a27706a40ae066c500e0a9fe00aa687e43d43bdd70d59"
+          },
+          "ASCII/DEMO25Q4.pdf": {
+            "bytes": 162929,
+            "path": "data\\raw\\2025Q4\\extracted\\ASCII\\DEMO25Q4.pdf",
+            "sha256": "c7a0b72c31ebb240fe2750f87079ff249554c3d48f2eead05c190074cccb4df3"
+          },
+          "ASCII/DEMO25Q4.txt": {
+            "bytes": 58610237,
+            "path": "data\\raw\\2025Q4\\extracted\\ASCII\\DEMO25Q4.txt",
+            "sha256": "7f575aefc901aa380122bb5f35de98f2fc2f33dcaf050cf30426e10f3daa1ae2"
+          },
+          "ASCII/DRUG25Q4.pdf": {
+            "bytes": 438997,
+            "path": "data\\raw\\2025Q4\\extracted\\ASCII\\DRUG25Q4.pdf",
+            "sha256": "838d51247c2a956d6ae7220c8d8464b540ee21facea3d85c438f7a14a4deac21"
+          },
+          "ASCII/DRUG25Q4.txt": {
+            "bytes": 181992344,
+            "path": "data\\raw\\2025Q4\\extracted\\ASCII\\DRUG25Q4.txt",
+            "sha256": "886ef135263a63ee950be16bf4da1db04f856518b6072111822f1bc7e1112a0f"
+          },
+          "ASCII/INDI25Q4.pdf": {
+            "bytes": 104207,
+            "path": "data\\raw\\2025Q4\\extracted\\ASCII\\INDI25Q4.pdf",
+            "sha256": "c2adab146d784a752cc25cd7c989c1aae6e18725511a76985ad699be19ba2eac"
+          },
+          "ASCII/OUTC25Q4.pdf": {
+            "bytes": 105796,
+            "path": "data\\raw\\2025Q4\\extracted\\ASCII\\OUTC25Q4.pdf",
+            "sha256": "355d4f109db263db2b53cedaa8f26c08ddf15ee8ad2308a639a13909a2013b47"
+          },
+          "ASCII/REAC25Q4.pdf": {
+            "bytes": 95282,
+            "path": "data\\raw\\2025Q4\\extracted\\ASCII\\REAC25Q4.pdf",
+            "sha256": "53fcb5097327b03828f4aebc1ab2059f94ddb4070ab3aa445adf0d9f83ed3533"
+          },
+          "ASCII/REAC25Q4.txt": {
+            "bytes": 51214752,
+            "path": "data\\raw\\2025Q4\\extracted\\ASCII\\REAC25Q4.txt",
+            "sha256": "1d98d0aa6b187edffb9f6dcffbd1569c16367740a7a126d306483e1888ef9de8"
+          },
+          "ASCII/RPSR25Q4.pdf": {
+            "bytes": 109591,
+            "path": "data\\raw\\2025Q4\\extracted\\ASCII\\RPSR25Q4.pdf",
+            "sha256": "187fffe46aad593e6896d80b72fc6fa9ebd23ef33c290c35907a99052b7d380c"
+          },
+          "ASCII/THER25Q4.pdf": {
+            "bytes": 102632,
+            "path": "data\\raw\\2025Q4\\extracted\\ASCII\\THER25Q4.pdf",
+            "sha256": "a3aada39779fcba7f0e5411aebcb9adc154b45a5240ace87c5d24a051f1de918"
+          },
+          "Deleted/DELETE25Q4.txt": {
+            "bytes": 40472,
+            "path": "data\\raw\\2025Q4\\extracted\\Deleted\\DELETE25Q4.txt",
+            "sha256": "c24e98bef43cc601600de55d1978f434dd0f74c8c681b3aeff0108fd01438599"
+          },
+          "FAQs.pdf": {
+            "bytes": 270721,
+            "path": "data\\raw\\2025Q4\\extracted\\FAQs.pdf",
+            "sha256": "33535351228fc4382af63c1e0a6697d5fe938e5eecbed3866afe088b4f779ad1"
+          },
+          "Readme.pdf": {
+            "bytes": 131553,
+            "path": "data\\raw\\2025Q4\\extracted\\Readme.pdf",
+            "sha256": "9b4a9df630828d6771b88467a6306d7da9416e9afa24426e82ccb480a316547d"
+          }
+        },
+        "quarter": "2025Q4"
+      },
+      "inventory": {
+        "archive_bytes": 67144585,
+        "deletions": [
+          "Deleted/DELETE25Q4.txt"
+        ],
+        "documents": [
+          "ASCII/ASC_NTS.pdf",
+          "ASCII/DEMO25Q4.pdf",
+          "ASCII/DRUG25Q4.pdf",
+          "ASCII/INDI25Q4.pdf",
+          "ASCII/OUTC25Q4.pdf",
+          "ASCII/REAC25Q4.pdf",
+          "ASCII/RPSR25Q4.pdf",
+          "ASCII/THER25Q4.pdf",
+          "FAQs.pdf",
+          "Readme.pdf"
+        ],
+        "members": [
+          {
+            "bytes": 131553,
+            "compressed_bytes": 105541,
+            "crc32": "611e50b1",
+            "name": "Readme.pdf"
+          },
+          {
+            "bytes": 16657037,
+            "compressed_bytes": 3111560,
+            "crc32": "363dd26b",
+            "name": "ASCII/THER25Q4.txt"
+          },
+          {
+            "bytes": 51214752,
+            "compressed_bytes": 9800685,
+            "crc32": "d2a989a1",
+            "name": "ASCII/REAC25Q4.txt"
+          },
+          {
+            "bytes": 95282,
+            "compressed_bytes": 75170,
+            "crc32": "9372be10",
+            "name": "ASCII/REAC25Q4.pdf"
+          },
+          {
+            "bytes": 341968,
+            "compressed_bytes": 268036,
+            "crc32": "1b4e71a3",
+            "name": "ASCII/ASC_NTS.pdf"
+          },
+          {
+            "bytes": 55992546,
+            "compressed_bytes": 7425202,
+            "crc32": "a9b29fa1",
+            "name": "ASCII/INDI25Q4.txt"
+          },
+          {
+            "bytes": 242471,
+            "compressed_bytes": 50793,
+            "crc32": "dc23cf02",
+            "name": "ASCII/RPSR25Q4.txt"
+          },
+          {
+            "bytes": 6381632,
+            "compressed_bytes": 1369931,
+            "crc32": "8b54c05a",
+            "name": "ASCII/OUTC25Q4.txt"
+          },
+          {
+            "bytes": 104207,
+            "compressed_bytes": 82738,
+            "crc32": "5675cb79",
+            "name": "ASCII/INDI25Q4.pdf"
+          },
+          {
+            "bytes": 105796,
+            "compressed_bytes": 78361,
+            "crc32": "020801ed",
+            "name": "ASCII/OUTC25Q4.pdf"
+          },
+          {
+            "bytes": 162929,
+            "compressed_bytes": 115411,
+            "crc32": "cca2b293",
+            "name": "ASCII/DEMO25Q4.pdf"
+          },
+          {
+            "bytes": 109591,
+            "compressed_bytes": 79755,
+            "crc32": "a9cafd4f",
+            "name": "ASCII/RPSR25Q4.pdf"
+          },
+          {
+            "bytes": 102632,
+            "compressed_bytes": 76955,
+            "crc32": "ad5533b6",
+            "name": "ASCII/THER25Q4.pdf"
+          },
+          {
+            "bytes": 58610237,
+            "compressed_bytes": 13222387,
+            "crc32": "adced27a",
+            "name": "ASCII/DEMO25Q4.txt"
+          },
+          {
+            "bytes": 181992344,
+            "compressed_bytes": 30833425,
+            "crc32": "2ecc62b4",
+            "name": "ASCII/DRUG25Q4.txt"
+          },
+          {
+            "bytes": 438997,
+            "compressed_bytes": 181441,
+            "crc32": "de1cb872",
+            "name": "ASCII/DRUG25Q4.pdf"
+          },
+          {
+            "bytes": 40472,
+            "compressed_bytes": 14896,
+            "crc32": "d065317d",
+            "name": "Deleted/DELETE25Q4.txt"
+          },
+          {
+            "bytes": 270721,
+            "compressed_bytes": 248702,
+            "crc32": "6ed9e8e6",
+            "name": "FAQs.pdf"
+          }
+        ],
+        "quarter": "2025Q4",
+        "tables": {
+          "DEMO": "ASCII/DEMO25Q4.txt",
+          "DRUG": "ASCII/DRUG25Q4.txt",
+          "REAC": "ASCII/REAC25Q4.txt"
+        },
+        "uncompressed_bytes": 372995167
+      },
+      "quarter": "2025Q4"
+    }
+  ],
+  "stage_timings_seconds": {
+    "candidate_reactions": 0.112,
+    "case_drug_presence": 0.008,
+    "case_drug_source": 0.412,
+    "case_drugs": 29.371,
+    "case_eligibility": 0.535,
+    "case_items": 0.15,
+    "case_reactions": 0.891,
+    "cases": 0.974,
+    "cases_identity": 0.563,
+    "drug_presence": 0.005,
+    "ingredient_matches": 0.051,
+    "latest_cases": 2.272,
+    "load_2025Q4_DEMO": 1.344,
+    "load_2025Q4_DRUG": 4.597,
+    "load_2025Q4_REAC": 1.1,
+    "quarter_drug_role": 0.002,
+    "quarter_population": 0.002,
+    "quarter_reaction": 0.001,
+    "reaction_presence": 2.107,
+    "retained_drug_keys": 0.564,
+    "signal_counts": 0.023
+  },
+  "started_utc": "2026-10-19T03:08:36.937314+00:00",
+  "status": "passed"
+}

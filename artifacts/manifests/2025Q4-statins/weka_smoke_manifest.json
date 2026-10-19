@@ -1,0 +1,34 @@
+{
+  "accepted_rules": 1,
+  "apriori_log_sha256": "5cfea40d029ce10ca3241c0aee63c499aa0d009b607d05a10ae5d3320f24ea4d",
+  "arff_sha256": "14d54608028bcf5af3d8414e885f7cad1c8be18c1570e0049da600a4fdd5d2bc",
+  "dataset": "synthetic_only",
+  "eligible_n": 10,
+  "finished_utc": "2026-10-19T03:12:02.132212+00:00",
+  "java_executable": "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\java.exe",
+  "options": [
+    "-t",
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\tests\\fixtures\\toy_presence.arff",
+    "-N",
+    "100",
+    "-T",
+    "1",
+    "-C",
+    "1.0",
+    "-D",
+    "0.05",
+    "-U",
+    "1.0",
+    "-M",
+    "0.1",
+    "-Z"
+  ],
+  "rules_sha256": "c7060e5d8443a25177eba291d7379235f1ec3fecaa0f8534c5d5460fc3debdcf",
+  "runtime_jars": {
+    "bounce-0.18.jar": "bffff1505335c02256b7ab2ccffbe4aa4d3ac9fe14c17557809b7c9d99d666ca",
+    "weka-stable-3.8.6.jar": "932ea2f342b58fe45736389e9c426d5b5955e610d1f5f6485117f532068915e9"
+  },
+  "started_utc": "2026-10-19T03:12:01.708400+00:00",
+  "weka_jar_sha256": "932ea2f342b58fe45736389e9c426d5b5955e610d1f5f6485117f532068915e9",
+  "weka_version": "3.8.6"
+}

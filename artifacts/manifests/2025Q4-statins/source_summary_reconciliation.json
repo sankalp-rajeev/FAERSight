@@ -1,0 +1,61 @@
+{
+  "checks": {
+    "DEMO": {
+      "field": "AGE",
+      "ingested_missing": 147796,
+      "ingested_rows": 385288,
+      "passed": true,
+      "published_missing": 147796,
+      "published_rows": 385288
+    },
+    "DRUG": {
+      "field": "DRUGNAME",
+      "ingested_missing": 0,
+      "ingested_rows": 1815349,
+      "passed": true,
+      "published_missing": 0,
+      "published_rows": 1815349
+    },
+    "REAC": {
+      "field": "PT",
+      "ingested_missing": 0,
+      "ingested_rows": 1349105,
+      "passed": true,
+      "published_missing": 0,
+      "published_rows": 1349105
+    },
+    "drug_roles": {
+      "ingested": {
+        "C": 679402,
+        "DN": 81,
+        "I": 11340,
+        "PS": 437206,
+        "SS": 687320
+      },
+      "passed": true,
+      "published": {
+        "C": 679402,
+        "DN": 81,
+        "I": 11340,
+        "PS": 437206,
+        "SS": 687320
+      }
+    }
+  },
+  "documents": {
+    "DEMO": {
+      "path": "data\\raw\\2025Q4\\extracted\\ASCII\\DEMO25Q4.pdf",
+      "sha256": "c7a0b72c31ebb240fe2750f87079ff249554c3d48f2eead05c190074cccb4df3"
+    },
+    "DRUG": {
+      "path": "data\\raw\\2025Q4\\extracted\\ASCII\\DRUG25Q4.pdf",
+      "sha256": "838d51247c2a956d6ae7220c8d8464b540ee21facea3d85c438f7a14a4deac21"
+    },
+    "REAC": {
+      "path": "data\\raw\\2025Q4\\extracted\\ASCII\\REAC25Q4.pdf",
+      "sha256": "53fcb5097327b03828f4aebc1ab2059f94ddb4070ab3aa445adf0d9f83ed3533"
+    }
+  },
+  "scientific_findings_validated": false,
+  "status": "passed"
+}

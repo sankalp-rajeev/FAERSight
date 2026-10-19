@@ -1,0 +1,24 @@
+WARNING: core mtj jar files are not available as resources to this classloader (jdk.internal.loader.ClassLoaders$AppClassLoader@3d82c5f3)
+
+Apriori
+=======
+
+Minimum support: 0.1 (1 instances)
+Minimum metric <lift>: 1
+Number of cycles performed: 18
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 2
+
+Size of set of large itemsets L(2): 1
+
+Best rules found:
+
+  1. DRUG_alpha=1 4 ==> REAC_REACTION X=1 3    conf:(0.75) < lift:(1.88)> lev:(0.14) [1] conv:(1.2)
+  2. REAC_REACTION X=1 4 ==> DRUG_alpha=1 3    conf:(0.75) < lift:(1.88)> lev:(0.14) [1] conv:(1.2)
+
+=== Evaluation ===
+
+Elapsed time: 0.03s
+
