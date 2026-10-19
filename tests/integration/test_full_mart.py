@@ -1,11 +1,16 @@
 import csv
 import json
+import os
+from pathlib import Path
 
 import duckdb
 import pytest
 
+from faersight.arff import export_mart_arff
 from faersight.audit import sha256
+from faersight.evaluation import evaluate_experiment
 from faersight.integration import build_full_mart, validate_mart
+from faersight.mining import read_csv, run_apriori
 from faersight.parse import stage_relation
 from faersight.spotcheck import spotcheck_sources
 
@@ -245,3 +250,71 @@ def test_independent_check_detects_lost_drug_record(real_format_sources, tmp_pat
         c.execute("DELETE FROM case_drugs WHERE case_id='1' AND route='Other'")
     with pytest.raises(ValueError, match="spot-check failed"):
         spotcheck_sources(output / "analytical.duckdb", sources, output)
+
+
+def test_real_arff_export_keeps_empty_background_and_unexposed_drug(real_format_sources, tmp_path):
+    sources, mapping = real_format_sources
+    output = tmp_path / "mart"
+    build(sources, mapping, output)
+    database = output / "analytical.duckdb"
+    before = sha256(database)
+    exported = tmp_path / "export"
+    result = export_mart_arff(database, exported)
+    assert result["eligible_n"] == 6
+    assert result["empty_transactions"] == 1
+    assert result["attributes"] == [
+        "DRUG_atorvastatin",
+        "DRUG_rosuvastatin",
+        "REAC_REACTION X",
+        "REAC_REACTION Y",
+    ]
+    assert sha256(database) == before
+    rows = (exported / "transactions.arff").read_text().split("@data\n")[1].splitlines()
+    assert len(rows) == 6 and rows[-1] == "{}"
+    with (exported / "case_index.csv").open(newline="") as stream:
+        index = list(csv.DictReader(stream))
+    assert index[-1]["case_id"] == "6" and index[0]["primary_id"] == "11"
+    with pytest.raises(ValueError, match="new output directory"):
+        export_mart_arff(database, exported)
+
+
+@pytest.mark.weka
+def test_tiny_mart_through_actual_weka_and_evaluation(real_format_sources, tmp_path):
+    jar = os.environ.get("WEKA_JAR")
+    if not jar:
+        pytest.skip("Set WEKA_JAR")
+    sources, mapping = real_format_sources
+    build(sources, mapping, tmp_path / "mart")
+    database = tmp_path / "mart/analytical.duckdb"
+    output = tmp_path / "experiment"
+    export_mart_arff(database, output / "input")
+    run_apriori(
+        output / "input/transactions.arff",
+        output / "weka",
+        jar=Path(jar),
+        supports=[0.1, 0.4],
+        min_lift=1.2,
+        max_rules=10000,
+        expected_n=6,
+    )
+    result = evaluate_experiment(
+        database,
+        output,
+        {"top_k": [1, 10]},
+        {"weka": {"support_grid": [0.1, 0.4], "min_metric": 1.2}},
+        {
+            "pairs": [
+                {"drug": "atorvastatin", "reaction": "REACTION Y"},
+                {"drug": "atorvastatin", "reaction": "REACTION Z"},
+            ]
+        },
+    )
+    assert result["status"] == "computational_gates_passed"
+    assert [r["accepted_pairs"] for r in result["support_runs"]] == [1, 0]
+    assert all(result["checks"].values())
+    positives = read_csv(output / "evaluation/benchmark_recovery.csv")
+    assert len(positives) == 4
+    assert positives[0]["status"] == "recovered"
+    assert positives[1]["status"] == "below_support_count"
+    assert positives[2]["status"] == "not_in_candidate_vocabulary"
+    assert int(positives[2]["c"]) == 1  # Filtered term retains its actual background count.

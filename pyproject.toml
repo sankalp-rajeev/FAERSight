@@ -19,7 +19,7 @@ faersight = "faersight.cli:main"
 where = ["src"]
 
 [tool.setuptools.package-data]
-faersight = ["sql/*.sql"]
+faersight = ["sql/*.sql", "java/*.java"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -37,9 +37,9 @@ The 10,000-rule cap exceeds the maximum number of possible presence-only rules
 on eight items: `3^8 - 2*2^8 + 1 = 6050`. Actual output caps are still checked.
 This avoids silently losing drug rules behind a global reaction-rule output cap.
 
-For each prespecified support value (`0.00001`, `0.00005`, `0.0001`), set both
-WEKA upper and lower support to that value. WEKA's adaptive support descent must
-not stop at a different threshold because enough rules were found. Retain its
+For each prespecified support value (`0.00001`, `0.00005`, `0.0001`), set WEKA
+lower support to that value, upper support to 1, and delta to 1. This forces one
+cycle at the lower bound without pruning high-support rules. Retain its
 reported integer support count rather than assume a rounding convention.
 Lift threshold remains 1.2. Raw per-projection output, exact options, full API
 metrics and version/resource logs are retained. Reuse the existing Java 21 JDK
@@ -61,3 +61,21 @@ and WEKA 3.8.6 jars with a 4 GB heap and a 30-minute run timeout.
 Student manual source review, benchmark review, role sensitivity and final
 scientific interpretation remain pending. Unmapped C/SS spellings remain unchanged.
 All primary experiment outputs must retain `scientific_findings_validated: false`.
+
+## Pre-run correction from the mandatory toy gate
+
+The initial execution contract incorrectly set upper support equal to lower
+support. The actual WEKA toy run returned zero rules despite a known qualifying
+pair. Inspection of the pinned 3.8.6 bytecode and the
+[upstream implementation](https://github.com/Waikato/weka-3.8/blob/master/weka/src/main/java/weka/associations/Apriori.java)
+showed that the upper bound also prunes rules whose joint count exceeds it.
+The corrected `-U 1 -M <grid value> -D 1` starts at the lower bound and performs
+one cycle. Tests require exact toy metrics and projected/full search agreement.
+This correction precedes the real experiment; the support grid, lift threshold,
+benchmark and population are unchanged. Failed toy logs remain local test evidence.
+
+WEKA 3.8.6 rounds the integer minimum as `int(max(support, 1/N)*N + 0.5)`.
+The runner verifies this against raw WEKA output and records the count source.
+If no large pair itemsets exist, WEKA omits the support line; the runner records
+the pinned rounding rule with that explicit absence flag. Every search must
+report exactly one cycle, including searches with zero accepted rules.

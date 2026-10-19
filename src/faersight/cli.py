@@ -8,6 +8,7 @@ from pathlib import Path
 
 from faersight.config import load_experiment
 from faersight.integration import ingest_experiment, prepare_sources, validate_mart
+from faersight.mining import run_experiment
 from faersight.pipeline import build_fixture, reproduce_fixture
 from faersight.spotcheck import spotcheck_sources
 from faersight.weka import run_smoke
@@ -19,6 +20,12 @@ def main(argv: list[str] | None = None) -> int:
     config = commands.add_parser("validate-config")
     config.add_argument("path", type=Path)
     config.add_argument("--require-frozen", action="store_true")
+    mining = commands.add_parser("mine")
+    mining.add_argument("database", type=Path)
+    mining.add_argument("--output", type=Path, required=True)
+    mining.add_argument("--config", type=Path, default=Path("config/mining.yaml"))
+    mining.add_argument("--jar", type=Path, default=os.environ.get("WEKA_JAR"))
+    mining.add_argument("--java")
     for name in ("acquire", "ingest", "validate-mart", "spotcheck"):
         command = commands.add_parser(name)
         if name in ("validate-mart", "spotcheck"):
@@ -51,6 +58,22 @@ def main(argv: list[str] | None = None) -> int:
             print(
                 "Configuration valid. "
                 + ("Pending: " + ", ".join(pending) if pending else "No pending scope values.")
+            )
+        elif args.command == "mine":
+            if args.jar is None:
+                raise ValueError("Set WEKA_JAR or supply --jar PATH to WEKA 3.8.6")
+            result = run_experiment(
+                args.database, args.output, config_path=args.config, jar=args.jar, java=args.java
+            )
+            print(
+                json.dumps(
+                    {
+                        k: v
+                        for k, v in result.items()
+                        if k not in {"artifacts", "source_code_hashes"}
+                    },
+                    indent=2,
+                )
             )
         elif args.command == "acquire":
             sources = prepare_sources(args.config, args.raw_dir, download=True)

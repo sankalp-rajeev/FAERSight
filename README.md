@@ -140,8 +140,23 @@ The synthetic pair has `a=3, b=1, c=1, d=5, N=10`; support `0.3`, confidence
 
 The fixture pipeline intentionally stays small and in memory. Use `ingest` for
 full-quarter processing. The smoke runner only accepts the known toy pair; it
-is not a general real-data mining experiment runner. Threshold sweeps,
-known-signal evaluation and ranking agreement remain later milestones.
+is not a general real-data mining experiment runner. Use the frozen experiment
+runner for actual real-data threshold sweeps and ranking checks:
+
+```powershell
+.venv/Scripts/python -m faersight.cli mine data/processed/2025Q4-statins/analytical.duckdb --jar $env:WEKA_JAR --output artifacts/generated/2025Q4-statins-mining
+```
+
+The command validates the mart, exports all eligible reports including empty
+baskets, compiles the bundled Java bridge with the existing JDK, and executes
+actual WEKA Apriori per reaction at each frozen support value. It checks exact
+API counts/metrics and exhaustive pair coverage, then writes PRR/ROR, matched
+ranking comparisons, threshold stability and positive-benchmark recovery.
+Raw logs, runtime hashes, input hashes and a completion manifest are retained.
+Existing snapshots cannot be overwritten; choose a new output path for reruns.
+See the [execution contract](docs/milestone3.md), including the toy-discovered
+WEKA upper-support correction. Outputs remain provisional until the recorded
+manual review and scientific gates are complete.
 
 ## Experiment configuration
 
