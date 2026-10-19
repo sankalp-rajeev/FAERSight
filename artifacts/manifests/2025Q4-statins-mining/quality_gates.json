@@ -1,0 +1,48 @@
+{
+  "candidate_pairs": 2513,
+  "checks": {
+    "all_integer_counts_match": true,
+    "benchmark_denominator_preserved": true,
+    "complete_projection_schedule": true,
+    "complete_reporting_population": true,
+    "exact_confidence_lift_match": true,
+    "exhaustive_threshold_coverage": true,
+    "fixed_support_options": true,
+    "nested_support_sets": true,
+    "no_output_cap": true,
+    "shared_finite_ranking_universes": true,
+    "unique_accepted_pairs": true
+  },
+  "eligible_n": 385288,
+  "pending_scientific_gates": [
+    "student_manual_source_review",
+    "benchmark_review",
+    "suspect_role_sensitivity",
+    "student_interpretation"
+  ],
+  "scientific_findings_validated": false,
+  "status": "computational_gates_passed",
+  "support_runs": [
+    {
+      "accepted_pairs": 383,
+      "benchmark_recovered": 5,
+      "benchmark_total": 8,
+      "min_support_count": 4,
+      "support_requested": 1e-05
+    },
+    {
+      "accepted_pairs": 61,
+      "benchmark_recovered": 4,
+      "benchmark_total": 8,
+      "min_support_count": 19,
+      "support_requested": 5e-05
+    },
+    {
+      "accepted_pairs": 20,
+      "benchmark_recovered": 2,
+      "benchmark_total": 8,
+      "min_support_count": 39,
+      "support_requested": 0.0001
+    }
+  ]
+}

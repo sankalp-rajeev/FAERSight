@@ -1,0 +1,16 @@
+[
+  {
+    "higher_pairs": 61,
+    "higher_support": 5e-05,
+    "jaccard": 0.15926892950391644,
+    "lower_pairs": 383,
+    "lower_support": 1e-05
+  },
+  {
+    "higher_pairs": 20,
+    "higher_support": 0.0001,
+    "jaccard": 0.32786885245901637,
+    "lower_pairs": 61,
+    "lower_support": 5e-05
+  }
+]

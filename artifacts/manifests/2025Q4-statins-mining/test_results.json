@@ -1,0 +1,13 @@
+{
+  "actual_weka_tests_enabled": true,
+  "errors": 0,
+  "failures": 0,
+  "junit_sha256": "23f72f51de529ceacfec1057b099efd9dadbf5391bf43a73b088d256c7c46bfb",
+  "passed": 87,
+  "remote_ci_conclusion": "success",
+  "remote_ci_url": "https://github.com/sankalp-rajeev/FAERSight/actions/runs/39200542596",
+  "scientific_findings_validated": false,
+  "skipped": 0,
+  "source_git_commit": "818a6d88d8ef78f728d10c0af58b586ff10a9f8d",
+  "tests": 87
+}

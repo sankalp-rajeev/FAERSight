@@ -79,3 +79,54 @@ The runner verifies this against raw WEKA output and records the count source.
 If no large pair itemsets exist, WEKA omits the support line; the runner records
 the pinned rounding rule with that explicit absence flag. Every search must
 report exactly one cycle, including searches with zero accepted rules.
+
+## Execution evidence: October 19, 2026
+
+Implementation commit `818a6d88d8ef78f728d10c0af58b586ff10a9f8d` passed all
+87 local tests with actual WEKA enabled and
+[GitHub CI](https://github.com/sankalp-rajeev/FAERSight/actions/runs/39200542596).
+The positive benchmark was committed earlier at `1256b62`, before real mining.
+Both complete experiment invocations started from a clean worktree at the same
+implementation commit, using the existing Android Studio Java/Javac 21.0.10,
+WEKA 3.8.6 and Bounce 0.18. No additional JDK was installed.
+
+The complete ARFF contains 385,288 reports and 366 attributes, including 117,325
+empty transactions. Each run completed 359 reactions times three support values
+(1,077 actual WEKA searches) with one cycle per search. The first JVM run took
+about 73 seconds. Integer minimum counts were 4, 19 and 39; corresponding accepted
+drug-to-reaction pair counts were 383, 61 and 20. These are computational output
+counts, not validated safety findings. The accepted sets are nested as support
+increases. All 2,513 candidate count rows remain available, including pairs that
+WEKA does not emit. Full-population PRR/ROR denominators remain unchanged.
+
+Every emitted rule's integer joint, drug and reaction counts and N match the
+mart. Exact API confidence and lift match independent calculations within
+`1e-12`; displayed rounded scores are not used for this check. Eligible pair
+coverage, direction, presence values and rule caps all pass. PRR/ROR retain
+undefined/infinite flags. Correlation and top-K comparisons use the same finite
+pair set for both methods, with average rank ties and recorded boundary ties.
+Reference recovery includes all eight frozen positives at every threshold;
+missing/filtered references are retained with explicit reasons.
+
+An independent second Java invocation reproduced eleven key artifacts and all
+1,077 raw logs byte for byte. All 1,077 projection records also match after
+excluding elapsed seconds. This is a same-environment rerun; a fresh-clone
+reproduction is still pending. The second manifest and comparison hashes are
+included in the evidence snapshot.
+
+Tracked evidence is in
+[`artifacts/manifests/2025Q4-statins-mining/`](../artifacts/manifests/2025Q4-statins-mining/).
+`evidence_index.json` hashes the aggregate counts, scored accepted rules,
+positive-reference recovery, ranking comparisons, support stability, QA records,
+runtime/version logs, both experiment manifests and a ZIP containing all original
+raw WEKA logs. ARFF rows, case indexes, source records and the mart stay local.
+The aggregate evidence can be exported reproducibly after a successful run:
+
+```powershell
+.venv/Scripts/python scripts/export_mining_evidence.py artifacts/generated/2025Q4-statins-mining artifacts/manifests/new-mining-snapshot
+```
+
+No environment or data-access blocker remains. Outstanding scientific work is
+student manual review of source samples and benchmark choices, reviewed treatment
+of the unresolved C/SS aliases before PS+SS sensitivity, and student-authored
+interpretation. All delivered manifests retain `scientific_findings_validated: false`.

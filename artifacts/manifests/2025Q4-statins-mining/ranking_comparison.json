@@ -1,0 +1,218 @@
+[
+  {
+    "comparison": "weka_lift_vs_prr",
+    "excluded_nonfinite_pairs": 1,
+    "rank_ties": "average_ranks",
+    "shared_finite_pairs": 382,
+    "spearman": 0.9999672243284836,
+    "support_requested": 1e-05,
+    "top_k": [
+      {
+        "comparison_boundary_tie": false,
+        "effective_k": 10,
+        "lift_boundary_tie": false,
+        "overlap_count": 9,
+        "overlap_fraction": 0.9,
+        "requested_k": 10
+      },
+      {
+        "comparison_boundary_tie": true,
+        "effective_k": 25,
+        "lift_boundary_tie": false,
+        "overlap_count": 24,
+        "overlap_fraction": 0.96,
+        "requested_k": 25
+      },
+      {
+        "comparison_boundary_tie": false,
+        "effective_k": 50,
+        "lift_boundary_tie": false,
+        "overlap_count": 50,
+        "overlap_fraction": 1.0,
+        "requested_k": 50
+      }
+    ],
+    "top_k_ties": "drug_then_reaction_lexical",
+    "undefined_correlation_policy": "null_for_less_than_two_or_constant_scores"
+  },
+  {
+    "comparison": "weka_lift_vs_ror",
+    "excluded_nonfinite_pairs": 1,
+    "rank_ties": "average_ranks",
+    "shared_finite_pairs": 382,
+    "spearman": 0.9998933848960802,
+    "support_requested": 1e-05,
+    "top_k": [
+      {
+        "comparison_boundary_tie": false,
+        "effective_k": 10,
+        "lift_boundary_tie": false,
+        "overlap_count": 9,
+        "overlap_fraction": 0.9,
+        "requested_k": 10
+      },
+      {
+        "comparison_boundary_tie": false,
+        "effective_k": 25,
+        "lift_boundary_tie": false,
+        "overlap_count": 24,
+        "overlap_fraction": 0.96,
+        "requested_k": 25
+      },
+      {
+        "comparison_boundary_tie": false,
+        "effective_k": 50,
+        "lift_boundary_tie": false,
+        "overlap_count": 50,
+        "overlap_fraction": 1.0,
+        "requested_k": 50
+      }
+    ],
+    "top_k_ties": "drug_then_reaction_lexical",
+    "undefined_correlation_policy": "null_for_less_than_two_or_constant_scores"
+  },
+  {
+    "comparison": "weka_lift_vs_prr",
+    "excluded_nonfinite_pairs": 0,
+    "rank_ties": "average_ranks",
+    "shared_finite_pairs": 61,
+    "spearman": 0.9999471179270227,
+    "support_requested": 5e-05,
+    "top_k": [
+      {
+        "comparison_boundary_tie": false,
+        "effective_k": 10,
+        "lift_boundary_tie": false,
+        "overlap_count": 10,
+        "overlap_fraction": 1.0,
+        "requested_k": 10
+      },
+      {
+        "comparison_boundary_tie": false,
+        "effective_k": 25,
+        "lift_boundary_tie": false,
+        "overlap_count": 25,
+        "overlap_fraction": 1.0,
+        "requested_k": 25
+      },
+      {
+        "comparison_boundary_tie": false,
+        "effective_k": 50,
+        "lift_boundary_tie": false,
+        "overlap_count": 50,
+        "overlap_fraction": 1.0,
+        "requested_k": 50
+      }
+    ],
+    "top_k_ties": "drug_then_reaction_lexical",
+    "undefined_correlation_policy": "null_for_less_than_two_or_constant_scores"
+  },
+  {
+    "comparison": "weka_lift_vs_ror",
+    "excluded_nonfinite_pairs": 0,
+    "rank_ties": "average_ranks",
+    "shared_finite_pairs": 61,
+    "spearman": 0.9992596509783184,
+    "support_requested": 5e-05,
+    "top_k": [
+      {
+        "comparison_boundary_tie": false,
+        "effective_k": 10,
+        "lift_boundary_tie": false,
+        "overlap_count": 9,
+        "overlap_fraction": 0.9,
+        "requested_k": 10
+      },
+      {
+        "comparison_boundary_tie": false,
+        "effective_k": 25,
+        "lift_boundary_tie": false,
+        "overlap_count": 24,
+        "overlap_fraction": 0.96,
+        "requested_k": 25
+      },
+      {
+        "comparison_boundary_tie": false,
+        "effective_k": 50,
+        "lift_boundary_tie": false,
+        "overlap_count": 50,
+        "overlap_fraction": 1.0,
+        "requested_k": 50
+      }
+    ],
+    "top_k_ties": "drug_then_reaction_lexical",
+    "undefined_correlation_policy": "null_for_less_than_two_or_constant_scores"
+  },
+  {
+    "comparison": "weka_lift_vs_prr",
+    "excluded_nonfinite_pairs": 0,
+    "rank_ties": "average_ranks",
+    "shared_finite_pairs": 20,
+    "spearman": 1.0,
+    "support_requested": 0.0001,
+    "top_k": [
+      {
+        "comparison_boundary_tie": false,
+        "effective_k": 10,
+        "lift_boundary_tie": false,
+        "overlap_count": 10,
+        "overlap_fraction": 1.0,
+        "requested_k": 10
+      },
+      {
+        "comparison_boundary_tie": false,
+        "effective_k": 20,
+        "lift_boundary_tie": false,
+        "overlap_count": 20,
+        "overlap_fraction": 1.0,
+        "requested_k": 25
+      },
+      {
+        "comparison_boundary_tie": false,
+        "effective_k": 20,
+        "lift_boundary_tie": false,
+        "overlap_count": 20,
+        "overlap_fraction": 1.0,
+        "requested_k": 50
+      }
+    ],
+    "top_k_ties": "drug_then_reaction_lexical",
+    "undefined_correlation_policy": "null_for_less_than_two_or_constant_scores"
+  },
+  {
+    "comparison": "weka_lift_vs_ror",
+    "excluded_nonfinite_pairs": 0,
+    "rank_ties": "average_ranks",
+    "shared_finite_pairs": 20,
+    "spearman": 1.0,
+    "support_requested": 0.0001,
+    "top_k": [
+      {
+        "comparison_boundary_tie": false,
+        "effective_k": 10,
+        "lift_boundary_tie": false,
+        "overlap_count": 10,
+        "overlap_fraction": 1.0,
+        "requested_k": 10
+      },
+      {
+        "comparison_boundary_tie": false,
+        "effective_k": 20,
+        "lift_boundary_tie": false,
+        "overlap_count": 20,
+        "overlap_fraction": 1.0,
+        "requested_k": 25
+      },
+      {
+        "comparison_boundary_tie": false,
+        "effective_k": 20,
+        "lift_boundary_tie": false,
+        "overlap_count": 20,
+        "overlap_fraction": 1.0,
+        "requested_k": 50
+      }
+    ],
+    "top_k_ties": "drug_then_reaction_lexical",
+    "undefined_correlation_policy": "null_for_less_than_two_or_constant_scores"
+  }
+]

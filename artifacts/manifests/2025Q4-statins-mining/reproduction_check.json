@@ -1,0 +1,66 @@
+{
+  "both_started_with_clean_worktree": true,
+  "byte_identical_artifacts": {
+    "evaluation/accepted_rules_scored.csv": {
+      "matches": true,
+      "sha256": "5284ce15ddc2bc3fe0e2c865e38c52be1ea5621d3de6afe3c6788ab9105f3bde"
+    },
+    "evaluation/all_candidate_counts.csv": {
+      "matches": true,
+      "sha256": "daa430e73eaecd70ee1b6219b86640e62c1d06f2e4bde52f9cb69f8073f284ea"
+    },
+    "evaluation/benchmark_recovery.csv": {
+      "matches": true,
+      "sha256": "96c1ed1378b0c3df341c473cbd63238cba192098046717d0502f0f8808e7694b"
+    },
+    "evaluation/quality_gates.json": {
+      "matches": true,
+      "sha256": "5ab46516aba31675e1189544b39e5df43eb551ecd14fe7c91c595ca0e2060d52"
+    },
+    "evaluation/ranking_comparison.json": {
+      "matches": true,
+      "sha256": "35b0c96f592ddce86aa6b1b57171de8a0513b40cfc2d8d3b6cd5019d1315db59"
+    },
+    "evaluation/support_stability.json": {
+      "matches": true,
+      "sha256": "c604084318d3f6b2556808ac4746aeaebf22611263d2d2c5617628eea047a140"
+    },
+    "input/case_index.csv": {
+      "matches": true,
+      "sha256": "dbb8c53dd8e7991e301e410f3c28248ad04b89491753f403beeea74b8d152512"
+    },
+    "input/manifest.json": {
+      "matches": true,
+      "sha256": "f3fe468b8949ec528b3c8f0249e17b497f26e8468b0652bc42b0c004dbf7cc5b"
+    },
+    "input/transactions.arff": {
+      "matches": true,
+      "sha256": "de0f94f545ebae18033195524984fc842d3359154b864cb52bef2372a877dcf1"
+    },
+    "weka/complete.txt": {
+      "matches": true,
+      "sha256": "f9b68d89815d60cb7d328270635b08452edf767076e9d90bfd9f73bfe31c1d1e"
+    },
+    "weka/weka_rules.csv": {
+      "matches": true,
+      "sha256": "0f4018bf1d3ee778aa25c1122c1be80dca743a4691011447c0f95239e74435f3"
+    }
+  },
+  "byte_identical_raw_weka_logs": 1077,
+  "excluded_nondeterministic_fields": [
+    "timestamps",
+    "elapsed_seconds",
+    "output_paths"
+  ],
+  "first_experiment_manifest_sha256": "07410a749374f0bdd6ba1a25eb841a71bfb1a89119dba11dc89b9db40195a472",
+  "fresh_clone_reproduction": "pending",
+  "frozen_input_hashes_identical": true,
+  "git_commit": "818a6d88d8ef78f728d10c0af58b586ff10a9f8d",
+  "independent_java_invocations": 2,
+  "same_source_mart": true,
+  "scientific_findings_validated": false,
+  "second_experiment_manifest_sha256": "436a54feffeaa5c55ae87e1de3f0f8128d81a0e8ca2c761d91e8020897fb9216",
+  "semantic_projection_records_identical": 1077,
+  "source_code_hashes_identical": true,
+  "status": "passed"
+}
