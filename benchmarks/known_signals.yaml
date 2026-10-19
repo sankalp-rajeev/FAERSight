@@ -1,0 +1,41 @@
+schema_version: 1
+status: frozen
+frozen_on: '2026-10-19'
+purpose: positive_only_reporting_signal_recovery
+selection_basis: >-
+  Four FDA statin labels explicitly document myopathy and rhabdomyolysis.
+  Include both exact terms for each of these four drugs, before running the
+  2025 Q4 mining experiment or examining its rankings. Other class drugs and
+  unlabeled pairs are not negative controls. This is a small positive reference
+  set, not an estimate of sensitivity, specificity or clinical risk.
+coding_policy: exact_uppercase_reaction_term_no_synonym_expansion
+sources:
+  lipitor_2024:
+    drug: atorvastatin
+    label_year: 2024
+    section: '5.1 Myopathy and Rhabdomyolysis'
+    url: https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/020702s081lbl.pdf
+  crestor_2024:
+    drug: rosuvastatin
+    label_year: 2024
+    section: '5.1 Myopathy and Rhabdomyolysis'
+    url: https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/021366s046lbl.pdf
+  zocor_2023:
+    drug: simvastatin
+    label_year: 2023
+    section: '5.1 Myopathy and Rhabdomyolysis'
+    url: https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/019766s103lbl.pdf
+  pravachol_2022:
+    drug: pravastatin
+    label_year: 2022
+    section: '5.1 Myopathy and Rhabdomyolysis'
+    url: https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/019898s070lbl.pdf
+pairs:
+  - {drug: atorvastatin, reaction: MYOPATHY, source: lipitor_2024}
+  - {drug: atorvastatin, reaction: RHABDOMYOLYSIS, source: lipitor_2024}
+  - {drug: rosuvastatin, reaction: MYOPATHY, source: crestor_2024}
+  - {drug: rosuvastatin, reaction: RHABDOMYOLYSIS, source: crestor_2024}
+  - {drug: simvastatin, reaction: MYOPATHY, source: zocor_2023}
+  - {drug: simvastatin, reaction: RHABDOMYOLYSIS, source: zocor_2023}
+  - {drug: pravastatin, reaction: MYOPATHY, source: pravachol_2022}
+  - {drug: pravastatin, reaction: RHABDOMYOLYSIS, source: pravachol_2022}
