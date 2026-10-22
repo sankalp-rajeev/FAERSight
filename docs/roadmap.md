@@ -284,6 +284,10 @@ overlap or a runtime ratio from Apriori's timeout. Any completion comparison is
 specific to this dataset/configuration/resource envelope, without a causal claim
 about why either algorithm completed or failed.
 
+Pre-run prerequisites are locked and validated in the separate
+[FPGrowth checkpoint](weka_showcase_fpgrowth.md): Mode 1 (-S), complete internal/API
+count audit, explicit N limitation, and 386 versus 385 minimum-count difference.
+
 If FPGrowth also fails to return an interpretable complete result, the original
 unrestricted full-data feasibility study ends. Preserve its evidence and stop.
 No improvised configuration follows. The bounded tool-study below then becomes
