@@ -1,0 +1,1448 @@
+Compiled from "AprioriItemSet.java"
+public class weka.associations.AprioriItemSet extends weka.associations.ItemSet implements java.io.Serializable,weka.core.RevisionHandler {
+  static final long serialVersionUID;
+
+  public weka.associations.AprioriItemSet(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokespecial #1                  // Method weka/associations/ItemSet."<init>":(I)V
+       5: return
+
+  public static double confidenceForRule(weka.associations.AprioriItemSet, weka.associations.AprioriItemSet);
+    Code:
+       0: aload_1
+       1: getfield      #7                  // Field m_counter:I
+       4: i2d
+       5: aload_0
+       6: getfield      #7                  // Field m_counter:I
+       9: i2d
+      10: ddiv
+      11: dreturn
+
+  public double liftForRule(weka.associations.AprioriItemSet, weka.associations.AprioriItemSet, int);
+    Code:
+       0: aload_1
+       1: aload_2
+       2: invokestatic  #13                 // Method confidenceForRule:(Lweka/associations/AprioriItemSet;Lweka/associations/AprioriItemSet;)D
+       5: dstore        4
+       7: dload         4
+       9: iload_3
+      10: i2d
+      11: aload_0
+      12: getfield      #17                 // Field m_totalTransactions:I
+      15: i2d
+      16: ddiv
+      17: ddiv
+      18: dreturn
+
+  public double leverageForRule(weka.associations.AprioriItemSet, weka.associations.AprioriItemSet, int, int);
+    Code:
+       0: aload_2
+       1: getfield      #7                  // Field m_counter:I
+       4: i2d
+       5: aload_0
+       6: getfield      #17                 // Field m_totalTransactions:I
+       9: i2d
+      10: ddiv
+      11: dstore        5
+      13: iload_3
+      14: i2d
+      15: aload_0
+      16: getfield      #17                 // Field m_totalTransactions:I
+      19: i2d
+      20: ddiv
+      21: iload         4
+      23: i2d
+      24: aload_0
+      25: getfield      #17                 // Field m_totalTransactions:I
+      28: i2d
+      29: ddiv
+      30: dmul
+      31: dstore        7
+      33: dload         5
+      35: dload         7
+      37: dsub
+      38: dstore        9
+      40: dload         9
+      42: dreturn
+
+  public double convictionForRule(weka.associations.AprioriItemSet, weka.associations.AprioriItemSet, int, int);
+    Code:
+       0: iload_3
+       1: i2d
+       2: aload_0
+       3: getfield      #17                 // Field m_totalTransactions:I
+       6: iload         4
+       8: isub
+       9: i2d
+      10: dmul
+      11: aload_0
+      12: getfield      #17                 // Field m_totalTransactions:I
+      15: i2d
+      16: ddiv
+      17: dstore        5
+      19: iload_3
+      20: aload_2
+      21: getfield      #7                  // Field m_counter:I
+      24: isub
+      25: iconst_1
+      26: iadd
+      27: i2d
+      28: dstore        7
+      30: dload         5
+      32: dconst_0
+      33: dcmpg
+      34: iflt          44
+      37: dload         7
+      39: dconst_0
+      40: dcmpg
+      41: ifge          127
+      44: getstatic     #20                 // Field java/lang/System.err:Ljava/io/PrintStream;
+      47: new           #26                 // class java/lang/StringBuilder
+      50: dup
+      51: invokespecial #28                 // Method java/lang/StringBuilder."<init>":()V
+      54: ldc           #31                 // String ***
+      56: invokevirtual #33                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      59: dload         5
+      61: invokevirtual #37                 // Method java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+      64: ldc           #40                 // String
+      66: invokevirtual #33                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      69: dload         7
+      71: invokevirtual #37                 // Method java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+      74: invokevirtual #42                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      77: invokevirtual #46                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      80: getstatic     #20                 // Field java/lang/System.err:Ljava/io/PrintStream;
+      83: new           #26                 // class java/lang/StringBuilder
+      86: dup
+      87: invokespecial #28                 // Method java/lang/StringBuilder."<init>":()V
+      90: ldc           #52                 // String premis count:
+      92: invokevirtual #33                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      95: iload_3
+      96: invokevirtual #54                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      99: ldc           #57                 // String  consequence count
+     101: invokevirtual #33                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     104: iload         4
+     106: invokevirtual #54                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+     109: ldc           #59                 // String  total trans
+     111: invokevirtual #33                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     114: aload_0
+     115: getfield      #17                 // Field m_totalTransactions:I
+     118: invokevirtual #54                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+     121: invokevirtual #42                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     124: invokevirtual #46                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     127: dload         5
+     129: dload         7
+     131: ddiv
+     132: dreturn
+
+  public java.util.ArrayList<java.lang.Object>[] generateRules(double, java.util.ArrayList<java.util.Hashtable<weka.associations.ItemSet, java.lang.Integer>>, int);
+    Code:
+       0: new           #61                 // class java/util/ArrayList
+       3: dup
+       4: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+       7: astore        5
+       9: new           #61                 // class java/util/ArrayList
+      12: dup
+      13: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+      16: astore        6
+      18: new           #61                 // class java/util/ArrayList
+      21: dup
+      22: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+      25: astore        7
+      27: new           #61                 // class java/util/ArrayList
+      30: dup
+      31: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+      34: astore        8
+      36: new           #61                 // class java/util/ArrayList
+      39: dup
+      40: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+      43: astore        9
+      45: new           #61                 // class java/util/ArrayList
+      48: dup
+      49: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+      52: astore        10
+      54: bipush        6
+      56: anewarray     #61                 // class java/util/ArrayList
+      59: astore        11
+      61: aload_3
+      62: iload         4
+      64: iconst_2
+      65: isub
+      66: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+      69: checkcast     #68                 // class java/util/Hashtable
+      72: astore        15
+      74: iconst_0
+      75: istore        16
+      77: iload         16
+      79: aload_0
+      80: getfield      #70                 // Field m_items:[I
+      83: arraylength
+      84: if_icmpge     411
+      87: aload_0
+      88: getfield      #70                 // Field m_items:[I
+      91: iload         16
+      93: iaload
+      94: iconst_m1
+      95: if_icmpeq     405
+      98: new           #8                  // class weka/associations/AprioriItemSet
+     101: dup
+     102: aload_0
+     103: getfield      #17                 // Field m_totalTransactions:I
+     106: invokespecial #74                 // Method "<init>":(I)V
+     109: astore        13
+     111: new           #8                  // class weka/associations/AprioriItemSet
+     114: dup
+     115: aload_0
+     116: getfield      #17                 // Field m_totalTransactions:I
+     119: invokespecial #74                 // Method "<init>":(I)V
+     122: astore        14
+     124: aload         13
+     126: aload_0
+     127: getfield      #70                 // Field m_items:[I
+     130: arraylength
+     131: newarray       int
+     133: putfield      #70                 // Field m_items:[I
+     136: aload         14
+     138: aload_0
+     139: getfield      #70                 // Field m_items:[I
+     142: arraylength
+     143: newarray       int
+     145: putfield      #70                 // Field m_items:[I
+     148: aload         14
+     150: aload_0
+     151: getfield      #7                  // Field m_counter:I
+     154: putfield      #7                  // Field m_counter:I
+     157: iconst_0
+     158: istore        17
+     160: iload         17
+     162: aload_0
+     163: getfield      #70                 // Field m_items:[I
+     166: arraylength
+     167: if_icmpge     185
+     170: aload         14
+     172: getfield      #70                 // Field m_items:[I
+     175: iload         17
+     177: iconst_m1
+     178: iastore
+     179: iinc          17, 1
+     182: goto          160
+     185: aload_0
+     186: getfield      #70                 // Field m_items:[I
+     189: iconst_0
+     190: aload         13
+     192: getfield      #70                 // Field m_items:[I
+     195: iconst_0
+     196: aload_0
+     197: getfield      #70                 // Field m_items:[I
+     200: arraylength
+     201: invokestatic  #75                 // Method java/lang/System.arraycopy:(Ljava/lang/Object;ILjava/lang/Object;II)V
+     204: aload         13
+     206: getfield      #70                 // Field m_items:[I
+     209: iload         16
+     211: iconst_m1
+     212: iastore
+     213: aload         14
+     215: getfield      #70                 // Field m_items:[I
+     218: iload         16
+     220: aload_0
+     221: getfield      #70                 // Field m_items:[I
+     224: iload         16
+     226: iaload
+     227: iastore
+     228: aload         13
+     230: aload         15
+     232: aload         13
+     234: invokevirtual #79                 // Method java/util/Hashtable.get:(Ljava/lang/Object;)Ljava/lang/Object;
+     237: checkcast     #82                 // class java/lang/Integer
+     240: invokevirtual #84                 // Method java/lang/Integer.intValue:()I
+     243: putfield      #7                  // Field m_counter:I
+     246: aload_3
+     247: iconst_0
+     248: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     251: checkcast     #68                 // class java/util/Hashtable
+     254: astore        17
+     256: aload         17
+     258: aload         14
+     260: invokevirtual #79                 // Method java/util/Hashtable.get:(Ljava/lang/Object;)Ljava/lang/Object;
+     263: checkcast     #82                 // class java/lang/Integer
+     266: invokevirtual #84                 // Method java/lang/Integer.intValue:()I
+     269: istore        18
+     271: aload         14
+     273: iload         18
+     275: putfield      #88                 // Field m_secondaryCounter:I
+     278: aload         5
+     280: aload         13
+     282: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     285: pop
+     286: aload         6
+     288: aload         14
+     290: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     293: pop
+     294: aload         7
+     296: new           #95                 // class java/lang/Double
+     299: dup
+     300: aload         13
+     302: aload         14
+     304: invokestatic  #13                 // Method confidenceForRule:(Lweka/associations/AprioriItemSet;Lweka/associations/AprioriItemSet;)D
+     307: invokespecial #97                 // Method java/lang/Double."<init>":(D)V
+     310: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     313: pop
+     314: aload_0
+     315: aload         13
+     317: aload         14
+     319: iload         18
+     321: invokevirtual #100                // Method liftForRule:(Lweka/associations/AprioriItemSet;Lweka/associations/AprioriItemSet;I)D
+     324: dstore        19
+     326: aload_0
+     327: aload         13
+     329: aload         14
+     331: aload         13
+     333: getfield      #7                  // Field m_counter:I
+     336: iload         18
+     338: invokevirtual #104                // Method leverageForRule:(Lweka/associations/AprioriItemSet;Lweka/associations/AprioriItemSet;II)D
+     341: dstore        21
+     343: aload_0
+     344: aload         13
+     346: aload         14
+     348: aload         13
+     350: getfield      #7                  // Field m_counter:I
+     353: iload         18
+     355: invokevirtual #108                // Method convictionForRule:(Lweka/associations/AprioriItemSet;Lweka/associations/AprioriItemSet;II)D
+     358: dstore        23
+     360: aload         8
+     362: new           #95                 // class java/lang/Double
+     365: dup
+     366: dload         19
+     368: invokespecial #97                 // Method java/lang/Double."<init>":(D)V
+     371: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     374: pop
+     375: aload         9
+     377: new           #95                 // class java/lang/Double
+     380: dup
+     381: dload         21
+     383: invokespecial #97                 // Method java/lang/Double."<init>":(D)V
+     386: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     389: pop
+     390: aload         10
+     392: new           #95                 // class java/lang/Double
+     395: dup
+     396: dload         23
+     398: invokespecial #97                 // Method java/lang/Double."<init>":(D)V
+     401: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     404: pop
+     405: iinc          16, 1
+     408: goto          77
+     411: aload         11
+     413: iconst_0
+     414: aload         5
+     416: aastore
+     417: aload         11
+     419: iconst_1
+     420: aload         6
+     422: aastore
+     423: aload         11
+     425: iconst_2
+     426: aload         7
+     428: aastore
+     429: aload         11
+     431: iconst_3
+     432: aload         8
+     434: aastore
+     435: aload         11
+     437: iconst_4
+     438: aload         9
+     440: aastore
+     441: aload         11
+     443: iconst_5
+     444: aload         10
+     446: aastore
+     447: aload         11
+     449: dload_1
+     450: invokestatic  #111                // Method pruneRules:([Ljava/util/ArrayList;D)V
+     453: aload_0
+     454: aload         11
+     456: iload         4
+     458: iconst_1
+     459: dload_1
+     460: aload_3
+     461: invokespecial #115                // Method moreComplexRules:([Ljava/util/ArrayList;IIDLjava/util/ArrayList;)[Ljava/util/ArrayList;
+     464: astore        12
+     466: aload         12
+     468: ifnull        594
+     471: iconst_0
+     472: istore        16
+     474: iload         16
+     476: aload         12
+     478: iconst_0
+     479: aaload
+     480: invokevirtual #119                // Method java/util/ArrayList.size:()I
+     483: if_icmpge     594
+     486: aload         11
+     488: iconst_0
+     489: aaload
+     490: aload         12
+     492: iconst_0
+     493: aaload
+     494: iload         16
+     496: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     499: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     502: pop
+     503: aload         11
+     505: iconst_1
+     506: aaload
+     507: aload         12
+     509: iconst_1
+     510: aaload
+     511: iload         16
+     513: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     516: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     519: pop
+     520: aload         11
+     522: iconst_2
+     523: aaload
+     524: aload         12
+     526: iconst_2
+     527: aaload
+     528: iload         16
+     530: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     533: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     536: pop
+     537: aload         11
+     539: iconst_3
+     540: aaload
+     541: aload         12
+     543: iconst_3
+     544: aaload
+     545: iload         16
+     547: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     550: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     553: pop
+     554: aload         11
+     556: iconst_4
+     557: aaload
+     558: aload         12
+     560: iconst_4
+     561: aaload
+     562: iload         16
+     564: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     567: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     570: pop
+     571: aload         11
+     573: iconst_5
+     574: aaload
+     575: aload         12
+     577: iconst_5
+     578: aaload
+     579: iload         16
+     581: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     584: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     587: pop
+     588: iinc          16, 1
+     591: goto          474
+     594: aload         11
+     596: areturn
+
+  public final java.util.ArrayList<java.lang.Object>[] generateRulesBruteForce(double, int, java.util.ArrayList<java.util.Hashtable<weka.associations.ItemSet, java.lang.Integer>>, int, int, double) throws java.lang.Exception;
+    Code:
+       0: new           #61                 // class java/util/ArrayList
+       3: dup
+       4: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+       7: astore        9
+       9: new           #61                 // class java/util/ArrayList
+      12: dup
+      13: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+      16: astore        10
+      18: new           #61                 // class java/util/ArrayList
+      21: dup
+      22: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+      25: astore        11
+      27: new           #61                 // class java/util/ArrayList
+      30: dup
+      31: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+      34: astore        12
+      36: new           #61                 // class java/util/ArrayList
+      39: dup
+      40: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+      43: astore        13
+      45: new           #61                 // class java/util/ArrayList
+      48: dup
+      49: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+      52: astore        14
+      54: bipush        6
+      56: anewarray     #61                 // class java/util/ArrayList
+      59: astore        15
+      61: iconst_2
+      62: iconst_2
+      63: multianewarray #122,  2           // class "[[D"
+      67: astore        24
+      69: dconst_0
+      70: dstore        27
+      72: ldc2_w        #124                // double 2.0d
+      75: iload         5
+      77: i2d
+      78: invokestatic  #126                // Method java/lang/Math.pow:(DD)D
+      81: d2i
+      82: istore        22
+      84: iconst_1
+      85: istore        29
+      87: iload         29
+      89: iload         22
+      91: if_icmpge     837
+      94: iconst_0
+      95: istore        20
+      97: iload         29
+      99: istore        21
+     101: iload         21
+     103: ifle          126
+     106: iload         21
+     108: iconst_2
+     109: irem
+     110: iconst_1
+     111: if_icmpne     117
+     114: iinc          20, 1
+     117: iload         21
+     119: iconst_2
+     120: idiv
+     121: istore        21
+     123: goto          101
+     126: iload         20
+     128: iload         5
+     130: if_icmpge     831
+     133: aload         4
+     135: iload         20
+     137: iconst_1
+     138: isub
+     139: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     142: checkcast     #68                 // class java/util/Hashtable
+     145: astore        18
+     147: aload         4
+     149: iload         5
+     151: iload         20
+     153: isub
+     154: iconst_1
+     155: isub
+     156: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     159: checkcast     #68                 // class java/util/Hashtable
+     162: astore        19
+     164: new           #8                  // class weka/associations/AprioriItemSet
+     167: dup
+     168: aload_0
+     169: getfield      #17                 // Field m_totalTransactions:I
+     172: invokespecial #74                 // Method "<init>":(I)V
+     175: astore        16
+     177: new           #8                  // class weka/associations/AprioriItemSet
+     180: dup
+     181: aload_0
+     182: getfield      #17                 // Field m_totalTransactions:I
+     185: invokespecial #74                 // Method "<init>":(I)V
+     188: astore        17
+     190: aload         16
+     192: aload_0
+     193: getfield      #70                 // Field m_items:[I
+     196: arraylength
+     197: newarray       int
+     199: putfield      #70                 // Field m_items:[I
+     202: aload         17
+     204: aload_0
+     205: getfield      #70                 // Field m_items:[I
+     208: arraylength
+     209: newarray       int
+     211: putfield      #70                 // Field m_items:[I
+     214: aload         17
+     216: aload_0
+     217: getfield      #7                  // Field m_counter:I
+     220: putfield      #7                  // Field m_counter:I
+     223: iload         29
+     225: istore        21
+     227: iconst_0
+     228: istore        30
+     230: iload         30
+     232: aload_0
+     233: getfield      #70                 // Field m_items:[I
+     236: arraylength
+     237: if_icmpge     343
+     240: aload_0
+     241: getfield      #70                 // Field m_items:[I
+     244: iload         30
+     246: iaload
+     247: iconst_m1
+     248: if_icmpeq     319
+     251: iload         21
+     253: iconst_2
+     254: irem
+     255: iconst_1
+     256: if_icmpne     286
+     259: aload         16
+     261: getfield      #70                 // Field m_items:[I
+     264: iload         30
+     266: aload_0
+     267: getfield      #70                 // Field m_items:[I
+     270: iload         30
+     272: iaload
+     273: iastore
+     274: aload         17
+     276: getfield      #70                 // Field m_items:[I
+     279: iload         30
+     281: iconst_m1
+     282: iastore
+     283: goto          310
+     286: aload         16
+     288: getfield      #70                 // Field m_items:[I
+     291: iload         30
+     293: iconst_m1
+     294: iastore
+     295: aload         17
+     297: getfield      #70                 // Field m_items:[I
+     300: iload         30
+     302: aload_0
+     303: getfield      #70                 // Field m_items:[I
+     306: iload         30
+     308: iaload
+     309: iastore
+     310: iload         21
+     312: iconst_2
+     313: idiv
+     314: istore        21
+     316: goto          337
+     319: aload         16
+     321: getfield      #70                 // Field m_items:[I
+     324: iload         30
+     326: iconst_m1
+     327: iastore
+     328: aload         17
+     330: getfield      #70                 // Field m_items:[I
+     333: iload         30
+     335: iconst_m1
+     336: iastore
+     337: iinc          30, 1
+     340: goto          230
+     343: aload         16
+     345: aload         18
+     347: aload         16
+     349: invokevirtual #79                 // Method java/util/Hashtable.get:(Ljava/lang/Object;)Ljava/lang/Object;
+     352: checkcast     #82                 // class java/lang/Integer
+     355: invokevirtual #84                 // Method java/lang/Integer.intValue:()I
+     358: putfield      #7                  // Field m_counter:I
+     361: aload         19
+     363: aload         17
+     365: invokevirtual #79                 // Method java/util/Hashtable.get:(Ljava/lang/Object;)Ljava/lang/Object;
+     368: checkcast     #82                 // class java/lang/Integer
+     371: invokevirtual #84                 // Method java/lang/Integer.intValue:()I
+     374: istore        23
+     376: aload         17
+     378: iload         23
+     380: putfield      #88                 // Field m_secondaryCounter:I
+     383: dload         7
+     385: ldc2_w        #132                // double -1.0d
+     388: dcmpl
+     389: ifeq          469
+     392: aload         24
+     394: iconst_0
+     395: aaload
+     396: iconst_0
+     397: aload         17
+     399: getfield      #7                  // Field m_counter:I
+     402: i2d
+     403: dastore
+     404: aload         24
+     406: iconst_0
+     407: aaload
+     408: iconst_1
+     409: aload         16
+     411: getfield      #7                  // Field m_counter:I
+     414: aload         17
+     416: getfield      #7                  // Field m_counter:I
+     419: isub
+     420: i2d
+     421: dastore
+     422: aload         24
+     424: iconst_1
+     425: aaload
+     426: iconst_0
+     427: iload         23
+     429: aload         17
+     431: getfield      #7                  // Field m_counter:I
+     434: isub
+     435: i2d
+     436: dastore
+     437: aload         24
+     439: iconst_1
+     440: aaload
+     441: iconst_1
+     442: iload         6
+     444: aload         16
+     446: getfield      #7                  // Field m_counter:I
+     449: isub
+     450: iload         23
+     452: isub
+     453: aload         17
+     455: getfield      #7                  // Field m_counter:I
+     458: iadd
+     459: i2d
+     460: dastore
+     461: aload         24
+     463: iconst_0
+     464: invokestatic  #134                // Method weka/core/ContingencyTables.chiSquared:([[DZ)D
+     467: dstore        27
+     469: iload_3
+     470: ifne          619
+     473: aload         16
+     475: aload         17
+     477: invokestatic  #13                 // Method confidenceForRule:(Lweka/associations/AprioriItemSet;Lweka/associations/AprioriItemSet;)D
+     480: dstore        25
+     482: dload         25
+     484: dload_1
+     485: dcmpg
+     486: iflt          831
+     489: dload         7
+     491: ldc2_w        #132                // double -1.0d
+     494: dcmpl
+     495: ifeq          506
+     498: dload         27
+     500: dload         7
+     502: dcmpl
+     503: ifgt          831
+     506: aload         9
+     508: aload         16
+     510: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     513: pop
+     514: aload         10
+     516: aload         17
+     518: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     521: pop
+     522: aload         11
+     524: new           #95                 // class java/lang/Double
+     527: dup
+     528: dload         25
+     530: invokespecial #97                 // Method java/lang/Double."<init>":(D)V
+     533: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     536: pop
+     537: aload         12
+     539: new           #95                 // class java/lang/Double
+     542: dup
+     543: aload_0
+     544: aload         16
+     546: aload         17
+     548: iload         23
+     550: invokevirtual #100                // Method liftForRule:(Lweka/associations/AprioriItemSet;Lweka/associations/AprioriItemSet;I)D
+     553: invokespecial #97                 // Method java/lang/Double."<init>":(D)V
+     556: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     559: pop
+     560: aload         13
+     562: new           #95                 // class java/lang/Double
+     565: dup
+     566: aload_0
+     567: aload         16
+     569: aload         17
+     571: aload         16
+     573: getfield      #7                  // Field m_counter:I
+     576: iload         23
+     578: invokevirtual #104                // Method leverageForRule:(Lweka/associations/AprioriItemSet;Lweka/associations/AprioriItemSet;II)D
+     581: invokespecial #97                 // Method java/lang/Double."<init>":(D)V
+     584: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     587: pop
+     588: aload         14
+     590: new           #95                 // class java/lang/Double
+     593: dup
+     594: aload_0
+     595: aload         16
+     597: aload         17
+     599: aload         16
+     601: getfield      #7                  // Field m_counter:I
+     604: iload         23
+     606: invokevirtual #108                // Method convictionForRule:(Lweka/associations/AprioriItemSet;Lweka/associations/AprioriItemSet;II)D
+     609: invokespecial #97                 // Method java/lang/Double."<init>":(D)V
+     612: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     615: pop
+     616: goto          831
+     619: aload         16
+     621: aload         17
+     623: invokestatic  #13                 // Method confidenceForRule:(Lweka/associations/AprioriItemSet;Lweka/associations/AprioriItemSet;)D
+     626: dstore        30
+     628: aload_0
+     629: aload         16
+     631: aload         17
+     633: iload         23
+     635: invokevirtual #100                // Method liftForRule:(Lweka/associations/AprioriItemSet;Lweka/associations/AprioriItemSet;I)D
+     638: dstore        32
+     640: aload_0
+     641: aload         16
+     643: aload         17
+     645: aload         16
+     647: getfield      #7                  // Field m_counter:I
+     650: iload         23
+     652: invokevirtual #104                // Method leverageForRule:(Lweka/associations/AprioriItemSet;Lweka/associations/AprioriItemSet;II)D
+     655: dstore        34
+     657: aload_0
+     658: aload         16
+     660: aload         17
+     662: aload         16
+     664: getfield      #7                  // Field m_counter:I
+     667: iload         23
+     669: invokevirtual #108                // Method convictionForRule:(Lweka/associations/AprioriItemSet;Lweka/associations/AprioriItemSet;II)D
+     672: dstore        36
+     674: iload_3
+     675: tableswitch   { // 1 to 3
+                     1: 700
+                     2: 707
+                     3: 714
+               default: 721
+          }
+     700: dload         32
+     702: dstore        25
+     704: goto          731
+     707: dload         34
+     709: dstore        25
+     711: goto          731
+     714: dload         36
+     716: dstore        25
+     718: goto          731
+     721: new           #140                // class java/lang/Exception
+     724: dup
+     725: ldc           #142                // String ItemSet: Unknown metric type!
+     727: invokespecial #144                // Method java/lang/Exception."<init>":(Ljava/lang/String;)V
+     730: athrow
+     731: dload         25
+     733: dload_1
+     734: dcmpg
+     735: iflt          831
+     738: dload         7
+     740: ldc2_w        #132                // double -1.0d
+     743: dcmpl
+     744: ifeq          755
+     747: dload         27
+     749: dload         7
+     751: dcmpl
+     752: ifgt          831
+     755: aload         9
+     757: aload         16
+     759: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     762: pop
+     763: aload         10
+     765: aload         17
+     767: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     770: pop
+     771: aload         11
+     773: new           #95                 // class java/lang/Double
+     776: dup
+     777: dload         30
+     779: invokespecial #97                 // Method java/lang/Double."<init>":(D)V
+     782: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     785: pop
+     786: aload         12
+     788: new           #95                 // class java/lang/Double
+     791: dup
+     792: dload         32
+     794: invokespecial #97                 // Method java/lang/Double."<init>":(D)V
+     797: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     800: pop
+     801: aload         13
+     803: new           #95                 // class java/lang/Double
+     806: dup
+     807: dload         34
+     809: invokespecial #97                 // Method java/lang/Double."<init>":(D)V
+     812: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     815: pop
+     816: aload         14
+     818: new           #95                 // class java/lang/Double
+     821: dup
+     822: dload         36
+     824: invokespecial #97                 // Method java/lang/Double."<init>":(D)V
+     827: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     830: pop
+     831: iinc          29, 1
+     834: goto          87
+     837: aload         15
+     839: iconst_0
+     840: aload         9
+     842: aastore
+     843: aload         15
+     845: iconst_1
+     846: aload         10
+     848: aastore
+     849: aload         15
+     851: iconst_2
+     852: aload         11
+     854: aastore
+     855: aload         15
+     857: iconst_3
+     858: aload         12
+     860: aastore
+     861: aload         15
+     863: iconst_4
+     864: aload         13
+     866: aastore
+     867: aload         15
+     869: iconst_5
+     870: aload         14
+     872: aastore
+     873: aload         15
+     875: areturn
+
+  public final weka.associations.AprioriItemSet subtract(weka.associations.AprioriItemSet);
+    Code:
+       0: new           #8                  // class weka/associations/AprioriItemSet
+       3: dup
+       4: aload_0
+       5: getfield      #17                 // Field m_totalTransactions:I
+       8: invokespecial #74                 // Method "<init>":(I)V
+      11: astore_2
+      12: aload_2
+      13: aload_0
+      14: getfield      #70                 // Field m_items:[I
+      17: arraylength
+      18: newarray       int
+      20: putfield      #70                 // Field m_items:[I
+      23: iconst_0
+      24: istore_3
+      25: iload_3
+      26: aload_0
+      27: getfield      #70                 // Field m_items:[I
+      30: arraylength
+      31: if_icmpge     72
+      34: aload_1
+      35: getfield      #70                 // Field m_items:[I
+      38: iload_3
+      39: iaload
+      40: iconst_m1
+      41: if_icmpne     59
+      44: aload_2
+      45: getfield      #70                 // Field m_items:[I
+      48: iload_3
+      49: aload_0
+      50: getfield      #70                 // Field m_items:[I
+      53: iload_3
+      54: iaload
+      55: iastore
+      56: goto          66
+      59: aload_2
+      60: getfield      #70                 // Field m_items:[I
+      63: iload_3
+      64: iconst_m1
+      65: iastore
+      66: iinc          3, 1
+      69: goto          25
+      72: aload_2
+      73: iconst_0
+      74: putfield      #7                  // Field m_counter:I
+      77: aload_2
+      78: areturn
+
+  private final java.util.ArrayList<java.lang.Object>[] moreComplexRules(java.util.ArrayList<java.lang.Object>[], int, int, double, java.util.ArrayList<java.util.Hashtable<weka.associations.ItemSet, java.lang.Integer>>);
+    Code:
+       0: new           #61                 // class java/util/ArrayList
+       3: dup
+       4: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+       7: astore        11
+       9: new           #61                 // class java/util/ArrayList
+      12: dup
+      13: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+      16: astore        12
+      18: aconst_null
+      19: astore        14
+      21: aconst_null
+      22: astore        15
+      24: aconst_null
+      25: astore        16
+      27: new           #61                 // class java/util/ArrayList
+      30: dup
+      31: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+      34: astore        14
+      36: new           #61                 // class java/util/ArrayList
+      39: dup
+      40: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+      43: astore        15
+      45: new           #61                 // class java/util/ArrayList
+      48: dup
+      49: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+      52: astore        16
+      54: iload_2
+      55: iload_3
+      56: iconst_1
+      57: iadd
+      58: if_icmple     560
+      61: aload         6
+      63: iload_2
+      64: iload_3
+      65: isub
+      66: iconst_2
+      67: isub
+      68: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+      71: checkcast     #68                 // class java/util/Hashtable
+      74: astore        13
+      76: aload_1
+      77: iconst_1
+      78: aaload
+      79: iload_3
+      80: iconst_1
+      81: isub
+      82: aload_0
+      83: getfield      #17                 // Field m_totalTransactions:I
+      86: invokestatic  #146                // Method mergeAllItemSets:(Ljava/util/ArrayList;II)Ljava/util/ArrayList;
+      89: astore        10
+      91: iload_3
+      92: iconst_1
+      93: iadd
+      94: istore        17
+      96: aload         6
+      98: iload         17
+     100: iconst_1
+     101: isub
+     102: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     105: checkcast     #68                 // class java/util/Hashtable
+     108: astore        18
+     110: new           #150                // class weka/core/WekaEnumeration
+     113: dup
+     114: aload         10
+     116: invokespecial #152                // Method weka/core/WekaEnumeration."<init>":(Ljava/util/List;)V
+     119: astore        19
+     121: aload         19
+     123: invokeinterface #155,  1          // InterfaceMethod java/util/Enumeration.hasMoreElements:()Z
+     128: ifeq          363
+     131: aload         19
+     133: invokeinterface #161,  1          // InterfaceMethod java/util/Enumeration.nextElement:()Ljava/lang/Object;
+     138: checkcast     #8                  // class weka/associations/AprioriItemSet
+     141: astore        20
+     143: aload         20
+     145: getfield      #70                 // Field m_items:[I
+     148: astore        21
+     150: aload         21
+     152: arraylength
+     153: istore        22
+     155: iconst_0
+     156: istore        23
+     158: iload         23
+     160: iload         22
+     162: if_icmpge     184
+     165: aload         21
+     167: iload         23
+     169: iaload
+     170: istore        24
+     172: iload         24
+     174: iconst_m1
+     175: if_icmpeq     178
+     178: iinc          23, 1
+     181: goto          158
+     184: aload         20
+     186: aload_0
+     187: getfield      #7                  // Field m_counter:I
+     190: putfield      #7                  // Field m_counter:I
+     193: aload_0
+     194: aload         20
+     196: invokevirtual #165                // Method subtract:(Lweka/associations/AprioriItemSet;)Lweka/associations/AprioriItemSet;
+     199: astore        7
+     201: aload         7
+     203: aload         13
+     205: aload         7
+     207: invokevirtual #79                 // Method java/util/Hashtable.get:(Ljava/lang/Object;)Ljava/lang/Object;
+     210: checkcast     #82                 // class java/lang/Integer
+     213: invokevirtual #84                 // Method java/lang/Integer.intValue:()I
+     216: putfield      #7                  // Field m_counter:I
+     219: aload         11
+     221: aload         7
+     223: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     226: pop
+     227: aload         12
+     229: new           #95                 // class java/lang/Double
+     232: dup
+     233: aload         7
+     235: aload         20
+     237: invokestatic  #13                 // Method confidenceForRule:(Lweka/associations/AprioriItemSet;Lweka/associations/AprioriItemSet;)D
+     240: invokespecial #97                 // Method java/lang/Double."<init>":(D)V
+     243: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     246: pop
+     247: aload         18
+     249: aload         20
+     251: invokevirtual #79                 // Method java/util/Hashtable.get:(Ljava/lang/Object;)Ljava/lang/Object;
+     254: checkcast     #82                 // class java/lang/Integer
+     257: invokevirtual #84                 // Method java/lang/Integer.intValue:()I
+     260: istore        21
+     262: aload         20
+     264: iload         21
+     266: putfield      #88                 // Field m_secondaryCounter:I
+     269: aload_0
+     270: aload         7
+     272: aload         20
+     274: iload         21
+     276: invokevirtual #100                // Method liftForRule:(Lweka/associations/AprioriItemSet;Lweka/associations/AprioriItemSet;I)D
+     279: dstore        22
+     281: aload_0
+     282: aload         7
+     284: aload         20
+     286: aload         7
+     288: getfield      #7                  // Field m_counter:I
+     291: iload         21
+     293: invokevirtual #104                // Method leverageForRule:(Lweka/associations/AprioriItemSet;Lweka/associations/AprioriItemSet;II)D
+     296: dstore        24
+     298: aload_0
+     299: aload         7
+     301: aload         20
+     303: aload         7
+     305: getfield      #7                  // Field m_counter:I
+     308: iload         21
+     310: invokevirtual #108                // Method convictionForRule:(Lweka/associations/AprioriItemSet;Lweka/associations/AprioriItemSet;II)D
+     313: dstore        26
+     315: aload         14
+     317: new           #95                 // class java/lang/Double
+     320: dup
+     321: dload         22
+     323: invokespecial #97                 // Method java/lang/Double."<init>":(D)V
+     326: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     329: pop
+     330: aload         15
+     332: new           #95                 // class java/lang/Double
+     335: dup
+     336: dload         24
+     338: invokespecial #97                 // Method java/lang/Double."<init>":(D)V
+     341: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     344: pop
+     345: aload         16
+     347: new           #95                 // class java/lang/Double
+     350: dup
+     351: dload         26
+     353: invokespecial #97                 // Method java/lang/Double."<init>":(D)V
+     356: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     359: pop
+     360: goto          121
+     363: aload_1
+     364: arraylength
+     365: anewarray     #61                 // class java/util/ArrayList
+     368: astore        8
+     370: aload         8
+     372: iconst_0
+     373: aload         11
+     375: aastore
+     376: aload         8
+     378: iconst_1
+     379: aload         10
+     381: aastore
+     382: aload         8
+     384: iconst_2
+     385: aload         12
+     387: aastore
+     388: aload         8
+     390: iconst_3
+     391: aload         14
+     393: aastore
+     394: aload         8
+     396: iconst_4
+     397: aload         15
+     399: aastore
+     400: aload         8
+     402: iconst_5
+     403: aload         16
+     405: aastore
+     406: aload         8
+     408: dload         4
+     410: invokestatic  #111                // Method pruneRules:([Ljava/util/ArrayList;D)V
+     413: aload_0
+     414: aload         8
+     416: iload_2
+     417: iload_3
+     418: iconst_1
+     419: iadd
+     420: dload         4
+     422: aload         6
+     424: invokespecial #115                // Method moreComplexRules:([Ljava/util/ArrayList;IIDLjava/util/ArrayList;)[Ljava/util/ArrayList;
+     427: astore        9
+     429: aload         9
+     431: ifnull        557
+     434: iconst_0
+     435: istore        20
+     437: iload         20
+     439: aload         9
+     441: iconst_0
+     442: aaload
+     443: invokevirtual #119                // Method java/util/ArrayList.size:()I
+     446: if_icmpge     557
+     449: aload         8
+     451: iconst_0
+     452: aaload
+     453: aload         9
+     455: iconst_0
+     456: aaload
+     457: iload         20
+     459: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     462: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     465: pop
+     466: aload         8
+     468: iconst_1
+     469: aaload
+     470: aload         9
+     472: iconst_1
+     473: aaload
+     474: iload         20
+     476: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     479: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     482: pop
+     483: aload         8
+     485: iconst_2
+     486: aaload
+     487: aload         9
+     489: iconst_2
+     490: aaload
+     491: iload         20
+     493: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     496: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     499: pop
+     500: aload         8
+     502: iconst_3
+     503: aaload
+     504: aload         9
+     506: iconst_3
+     507: aaload
+     508: iload         20
+     510: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     513: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     516: pop
+     517: aload         8
+     519: iconst_4
+     520: aaload
+     521: aload         9
+     523: iconst_4
+     524: aaload
+     525: iload         20
+     527: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     530: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     533: pop
+     534: aload         8
+     536: iconst_5
+     537: aaload
+     538: aload         9
+     540: iconst_5
+     541: aaload
+     542: iload         20
+     544: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+     547: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     550: pop
+     551: iinc          20, 1
+     554: goto          437
+     557: aload         8
+     559: areturn
+     560: aconst_null
+     561: areturn
+
+  public final java.lang.String toString(weka.core.Instances);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #169                // Method weka/associations/ItemSet.toString:(Lweka/core/Instances;)Ljava/lang/String;
+       5: areturn
+
+  public static java.util.ArrayList<java.lang.Object> singletons(weka.core.Instances, boolean) throws java.lang.Exception;
+    Code:
+       0: new           #61                 // class java/util/ArrayList
+       3: dup
+       4: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+       7: astore_2
+       8: iconst_0
+       9: istore        4
+      11: iload         4
+      13: aload_0
+      14: invokevirtual #172                // Method weka/core/Instances.numAttributes:()I
+      17: if_icmpge     142
+      20: aload_0
+      21: iload         4
+      23: invokevirtual #177                // Method weka/core/Instances.attribute:(I)Lweka/core/Attribute;
+      26: invokevirtual #181                // Method weka/core/Attribute.isNumeric:()Z
+      29: ifeq          42
+      32: new           #140                // class java/lang/Exception
+      35: dup
+      36: ldc           #186                // String Can\'t handle numeric attributes!
+      38: invokespecial #144                // Method java/lang/Exception."<init>":(Ljava/lang/String;)V
+      41: athrow
+      42: iload_1
+      43: ifeq          50
+      46: iconst_1
+      47: goto          51
+      50: iconst_0
+      51: istore        5
+      53: iload         5
+      55: aload_0
+      56: iload         4
+      58: invokevirtual #177                // Method weka/core/Instances.attribute:(I)Lweka/core/Attribute;
+      61: invokevirtual #188                // Method weka/core/Attribute.numValues:()I
+      64: if_icmpge     136
+      67: new           #8                  // class weka/associations/AprioriItemSet
+      70: dup
+      71: aload_0
+      72: invokevirtual #191                // Method weka/core/Instances.numInstances:()I
+      75: invokespecial #74                 // Method "<init>":(I)V
+      78: astore_3
+      79: aload_3
+      80: aload_0
+      81: invokevirtual #172                // Method weka/core/Instances.numAttributes:()I
+      84: newarray       int
+      86: putfield      #70                 // Field m_items:[I
+      89: iconst_0
+      90: istore        6
+      92: iload         6
+      94: aload_0
+      95: invokevirtual #172                // Method weka/core/Instances.numAttributes:()I
+      98: if_icmpge     115
+     101: aload_3
+     102: getfield      #70                 // Field m_items:[I
+     105: iload         6
+     107: iconst_m1
+     108: iastore
+     109: iinc          6, 1
+     112: goto          92
+     115: aload_3
+     116: getfield      #70                 // Field m_items:[I
+     119: iload         4
+     121: iload         5
+     123: iastore
+     124: aload_2
+     125: aload_3
+     126: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     129: pop
+     130: iinc          5, 1
+     133: goto          53
+     136: iinc          4, 1
+     139: goto          11
+     142: aload_2
+     143: areturn
+
+  public static java.util.ArrayList<java.lang.Object> mergeAllItemSets(java.util.ArrayList<java.lang.Object>, int, int);
+    Code:
+       0: new           #61                 // class java/util/ArrayList
+       3: dup
+       4: invokespecial #63                 // Method java/util/ArrayList."<init>":()V
+       7: astore_3
+       8: iconst_0
+       9: istore        7
+      11: iload         7
+      13: aload_0
+      14: invokevirtual #119                // Method java/util/ArrayList.size:()I
+      17: if_icmpge     275
+      20: aload_0
+      21: iload         7
+      23: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+      26: checkcast     #2                  // class weka/associations/ItemSet
+      29: astore        8
+      31: iload         7
+      33: iconst_1
+      34: iadd
+      35: istore        9
+      37: iload         9
+      39: aload_0
+      40: invokevirtual #119                // Method java/util/ArrayList.size:()I
+      43: if_icmpge     269
+      46: aload_0
+      47: iload         9
+      49: invokevirtual #64                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+      52: checkcast     #2                  // class weka/associations/ItemSet
+      55: astore        10
+      57: new           #8                  // class weka/associations/AprioriItemSet
+      60: dup
+      61: iload_2
+      62: invokespecial #74                 // Method "<init>":(I)V
+      65: astore        4
+      67: aload         4
+      69: aload         8
+      71: getfield      #194                // Field weka/associations/ItemSet.m_items:[I
+      74: arraylength
+      75: newarray       int
+      77: putfield      #70                 // Field m_items:[I
+      80: iconst_0
+      81: istore        5
+      83: iconst_0
+      84: istore        6
+      86: iload         5
+      88: iload_1
+      89: if_icmpge     148
+      92: aload         8
+      94: getfield      #194                // Field weka/associations/ItemSet.m_items:[I
+      97: iload         6
+      99: iaload
+     100: aload         10
+     102: getfield      #194                // Field weka/associations/ItemSet.m_items:[I
+     105: iload         6
+     107: iaload
+     108: if_icmpne     269
+     111: aload         8
+     113: getfield      #194                // Field weka/associations/ItemSet.m_items:[I
+     116: iload         6
+     118: iaload
+     119: iconst_m1
+     120: if_icmpeq     126
+     123: iinc          5, 1
+     126: aload         4
+     128: getfield      #70                 // Field m_items:[I
+     131: iload         6
+     133: aload         8
+     135: getfield      #194                // Field weka/associations/ItemSet.m_items:[I
+     138: iload         6
+     140: iaload
+     141: iastore
+     142: iinc          6, 1
+     145: goto          86
+     148: iload         6
+     150: aload         8
+     152: getfield      #194                // Field weka/associations/ItemSet.m_items:[I
+     155: arraylength
+     156: if_icmpge     239
+     159: aload         8
+     161: getfield      #194                // Field weka/associations/ItemSet.m_items:[I
+     164: iload         6
+     166: iaload
+     167: iconst_m1
+     168: if_icmpeq     186
+     171: aload         10
+     173: getfield      #194                // Field weka/associations/ItemSet.m_items:[I
+     176: iload         6
+     178: iaload
+     179: iconst_m1
+     180: if_icmpeq     186
+     183: goto          239
+     186: aload         8
+     188: getfield      #194                // Field weka/associations/ItemSet.m_items:[I
+     191: iload         6
+     193: iaload
+     194: iconst_m1
+     195: if_icmpeq     217
+     198: aload         4
+     200: getfield      #70                 // Field m_items:[I
+     203: iload         6
+     205: aload         8
+     207: getfield      #194                // Field weka/associations/ItemSet.m_items:[I
+     210: iload         6
+     212: iaload
+     213: iastore
+     214: goto          233
+     217: aload         4
+     219: getfield      #70                 // Field m_items:[I
+     222: iload         6
+     224: aload         10
+     226: getfield      #194                // Field weka/associations/ItemSet.m_items:[I
+     229: iload         6
+     231: iaload
+     232: iastore
+     233: iinc          6, 1
+     236: goto          148
+     239: iload         6
+     241: aload         8
+     243: getfield      #194                // Field weka/associations/ItemSet.m_items:[I
+     246: arraylength
+     247: if_icmpne     263
+     250: aload         4
+     252: iconst_0
+     253: putfield      #7                  // Field m_counter:I
+     256: aload_3
+     257: aload         4
+     259: invokevirtual #91                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     262: pop
+     263: iinc          9, 1
+     266: goto          37
+     269: iinc          7, 1
+     272: goto          11
+     275: aload_3
+     276: areturn
+
+  public java.lang.String getRevision();
+    Code:
+       0: ldc           #195                // String $Revision: 12014 $
+       2: invokestatic  #197                // Method weka/core/RevisionUtils.extract:(Ljava/lang/String;)Ljava/lang/String;
+       5: areturn
+}

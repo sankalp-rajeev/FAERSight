@@ -1,0 +1,371 @@
+Compiled from "DefaultAssociationRule.java"
+public class weka.associations.DefaultAssociationRule extends weka.associations.AssociationRule implements java.io.Serializable {
+  private static final long serialVersionUID;
+
+  public static final weka.core.Tag[] TAGS_SELECTION;
+
+  protected weka.associations.DefaultAssociationRule$METRIC_TYPE m_metricType;
+
+  protected java.util.Collection<weka.associations.Item> m_premise;
+
+  protected java.util.Collection<weka.associations.Item> m_consequence;
+
+  protected int m_premiseSupport;
+
+  protected int m_consequenceSupport;
+
+  protected int m_totalSupport;
+
+  protected int m_totalTransactions;
+
+  public weka.associations.DefaultAssociationRule(java.util.Collection<weka.associations.Item>, java.util.Collection<weka.associations.Item>, weka.associations.DefaultAssociationRule$METRIC_TYPE, int, int, int, int);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method weka/associations/AssociationRule."<init>":()V
+       4: aload_0
+       5: getstatic     #7                  // Field weka/associations/DefaultAssociationRule$METRIC_TYPE.CONFIDENCE:Lweka/associations/DefaultAssociationRule$METRIC_TYPE;
+       8: putfield      #13                 // Field m_metricType:Lweka/associations/DefaultAssociationRule$METRIC_TYPE;
+      11: aload_0
+      12: aload_1
+      13: putfield      #18                 // Field m_premise:Ljava/util/Collection;
+      16: aload_0
+      17: aload_2
+      18: putfield      #22                 // Field m_consequence:Ljava/util/Collection;
+      21: aload_0
+      22: aload_3
+      23: putfield      #13                 // Field m_metricType:Lweka/associations/DefaultAssociationRule$METRIC_TYPE;
+      26: aload_0
+      27: iload         4
+      29: putfield      #25                 // Field m_premiseSupport:I
+      32: aload_0
+      33: iload         5
+      35: putfield      #29                 // Field m_consequenceSupport:I
+      38: aload_0
+      39: iload         6
+      41: putfield      #32                 // Field m_totalSupport:I
+      44: aload_0
+      45: iload         7
+      47: putfield      #35                 // Field m_totalTransactions:I
+      50: return
+
+  public java.util.Collection<weka.associations.Item> getPremise();
+    Code:
+       0: aload_0
+       1: getfield      #18                 // Field m_premise:Ljava/util/Collection;
+       4: areturn
+
+  public java.util.Collection<weka.associations.Item> getConsequence();
+    Code:
+       0: aload_0
+       1: getfield      #22                 // Field m_consequence:Ljava/util/Collection;
+       4: areturn
+
+  public java.lang.String getPrimaryMetricName();
+    Code:
+       0: getstatic     #38                 // Field TAGS_SELECTION:[Lweka/core/Tag;
+       3: aload_0
+       4: getfield      #13                 // Field m_metricType:Lweka/associations/DefaultAssociationRule$METRIC_TYPE;
+       7: invokevirtual #42                 // Method weka/associations/DefaultAssociationRule$METRIC_TYPE.ordinal:()I
+      10: aaload
+      11: invokevirtual #46                 // Method weka/core/Tag.getReadable:()Ljava/lang/String;
+      14: areturn
+
+  public double getPrimaryMetricValue();
+    Code:
+       0: aload_0
+       1: getfield      #13                 // Field m_metricType:Lweka/associations/DefaultAssociationRule$METRIC_TYPE;
+       4: aload_0
+       5: getfield      #25                 // Field m_premiseSupport:I
+       8: aload_0
+       9: getfield      #29                 // Field m_consequenceSupport:I
+      12: aload_0
+      13: getfield      #32                 // Field m_totalSupport:I
+      16: aload_0
+      17: getfield      #35                 // Field m_totalTransactions:I
+      20: invokevirtual #52                 // Method weka/associations/DefaultAssociationRule$METRIC_TYPE.compute:(IIII)D
+      23: dreturn
+
+  public double getNamedMetricValue(java.lang.String) throws java.lang.Exception;
+    Code:
+       0: aconst_null
+       1: astore_2
+       2: invokestatic  #56                 // Method weka/associations/DefaultAssociationRule$METRIC_TYPE.values:()[Lweka/associations/DefaultAssociationRule$METRIC_TYPE;
+       5: astore_3
+       6: aload_3
+       7: arraylength
+       8: istore        4
+      10: iconst_0
+      11: istore        5
+      13: iload         5
+      15: iload         4
+      17: if_icmpge     54
+      20: aload_3
+      21: iload         5
+      23: aaload
+      24: astore        6
+      26: getstatic     #38                 // Field TAGS_SELECTION:[Lweka/core/Tag;
+      29: aload         6
+      31: invokevirtual #42                 // Method weka/associations/DefaultAssociationRule$METRIC_TYPE.ordinal:()I
+      34: aaload
+      35: invokevirtual #46                 // Method weka/core/Tag.getReadable:()Ljava/lang/String;
+      38: aload_1
+      39: invokevirtual #60                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      42: ifeq          48
+      45: aload         6
+      47: astore_2
+      48: iinc          5, 1
+      51: goto          13
+      54: aload_2
+      55: ifnonnull     85
+      58: new           #66                 // class java/lang/Exception
+      61: dup
+      62: new           #68                 // class java/lang/StringBuilder
+      65: dup
+      66: invokespecial #70                 // Method java/lang/StringBuilder."<init>":()V
+      69: ldc           #71                 // String [AssociationRule] Unknown metric:
+      71: invokevirtual #73                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      74: aload_1
+      75: invokevirtual #73                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      78: invokevirtual #77                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      81: invokespecial #80                 // Method java/lang/Exception."<init>":(Ljava/lang/String;)V
+      84: athrow
+      85: aload_2
+      86: aload_0
+      87: getfield      #25                 // Field m_premiseSupport:I
+      90: aload_0
+      91: getfield      #29                 // Field m_consequenceSupport:I
+      94: aload_0
+      95: getfield      #32                 // Field m_totalSupport:I
+      98: aload_0
+      99: getfield      #35                 // Field m_totalTransactions:I
+     102: invokevirtual #52                 // Method weka/associations/DefaultAssociationRule$METRIC_TYPE.compute:(IIII)D
+     105: dreturn
+
+  public int getNumberOfMetricsForRule();
+    Code:
+       0: invokestatic  #56                 // Method weka/associations/DefaultAssociationRule$METRIC_TYPE.values:()[Lweka/associations/DefaultAssociationRule$METRIC_TYPE;
+       3: arraylength
+       4: ireturn
+
+  public java.lang.String[] getMetricNamesForRule();
+    Code:
+       0: getstatic     #38                 // Field TAGS_SELECTION:[Lweka/core/Tag;
+       3: arraylength
+       4: anewarray     #61                 // class java/lang/String
+       7: astore_1
+       8: iconst_0
+       9: istore_2
+      10: iload_2
+      11: getstatic     #38                 // Field TAGS_SELECTION:[Lweka/core/Tag;
+      14: arraylength
+      15: if_icmpge     35
+      18: aload_1
+      19: iload_2
+      20: getstatic     #38                 // Field TAGS_SELECTION:[Lweka/core/Tag;
+      23: iload_2
+      24: aaload
+      25: invokevirtual #46                 // Method weka/core/Tag.getReadable:()Ljava/lang/String;
+      28: aastore
+      29: iinc          2, 1
+      32: goto          10
+      35: aload_1
+      36: areturn
+
+  public double[] getMetricValuesForRule() throws java.lang.Exception;
+    Code:
+       0: getstatic     #38                 // Field TAGS_SELECTION:[Lweka/core/Tag;
+       3: arraylength
+       4: newarray       double
+       6: astore_1
+       7: iconst_0
+       8: istore_2
+       9: iload_2
+      10: getstatic     #38                 // Field TAGS_SELECTION:[Lweka/core/Tag;
+      13: arraylength
+      14: if_icmpge     38
+      17: aload_1
+      18: iload_2
+      19: aload_0
+      20: getstatic     #38                 // Field TAGS_SELECTION:[Lweka/core/Tag;
+      23: iload_2
+      24: aaload
+      25: invokevirtual #46                 // Method weka/core/Tag.getReadable:()Ljava/lang/String;
+      28: invokevirtual #83                 // Method getNamedMetricValue:(Ljava/lang/String;)D
+      31: dastore
+      32: iinc          2, 1
+      35: goto          9
+      38: aload_1
+      39: areturn
+
+  public int getPremiseSupport();
+    Code:
+       0: aload_0
+       1: getfield      #25                 // Field m_premiseSupport:I
+       4: ireturn
+
+  public int getConsequenceSupport();
+    Code:
+       0: aload_0
+       1: getfield      #29                 // Field m_consequenceSupport:I
+       4: ireturn
+
+  public int getTotalSupport();
+    Code:
+       0: aload_0
+       1: getfield      #32                 // Field m_totalSupport:I
+       4: ireturn
+
+  public int getTotalTransactions();
+    Code:
+       0: aload_0
+       1: getfield      #35                 // Field m_totalTransactions:I
+       4: ireturn
+
+  public java.lang.String toString();
+    Code:
+       0: new           #87                 // class java/lang/StringBuffer
+       3: dup
+       4: invokespecial #89                 // Method java/lang/StringBuffer."<init>":()V
+       7: astore_1
+       8: aload_1
+       9: new           #68                 // class java/lang/StringBuilder
+      12: dup
+      13: invokespecial #70                 // Method java/lang/StringBuilder."<init>":()V
+      16: aload_0
+      17: getfield      #18                 // Field m_premise:Ljava/util/Collection;
+      20: invokevirtual #90                 // Method java/lang/Object.toString:()Ljava/lang/String;
+      23: invokevirtual #73                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      26: ldc           #93                 // String :
+      28: invokevirtual #73                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      31: aload_0
+      32: getfield      #25                 // Field m_premiseSupport:I
+      35: invokevirtual #95                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      38: ldc           #98                 // String  ==>
+      40: invokevirtual #73                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      43: aload_0
+      44: getfield      #22                 // Field m_consequence:Ljava/util/Collection;
+      47: invokevirtual #90                 // Method java/lang/Object.toString:()Ljava/lang/String;
+      50: invokevirtual #73                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      53: ldc           #93                 // String :
+      55: invokevirtual #73                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      58: aload_0
+      59: getfield      #32                 // Field m_totalSupport:I
+      62: invokevirtual #95                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      65: ldc           #100                // String
+      67: invokevirtual #73                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      70: invokevirtual #77                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      73: invokevirtual #102                // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+      76: pop
+      77: invokestatic  #56                 // Method weka/associations/DefaultAssociationRule$METRIC_TYPE.values:()[Lweka/associations/DefaultAssociationRule$METRIC_TYPE;
+      80: astore_2
+      81: aload_2
+      82: arraylength
+      83: istore_3
+      84: iconst_0
+      85: istore        4
+      87: iload         4
+      89: iload_3
+      90: if_icmpge     218
+      93: aload_2
+      94: iload         4
+      96: aaload
+      97: astore        5
+      99: aload         5
+     101: aload_0
+     102: getfield      #13                 // Field m_metricType:Lweka/associations/DefaultAssociationRule$METRIC_TYPE;
+     105: invokevirtual #105                // Method weka/associations/DefaultAssociationRule$METRIC_TYPE.equals:(Ljava/lang/Object;)Z
+     108: ifeq          163
+     111: aload_1
+     112: new           #68                 // class java/lang/StringBuilder
+     115: dup
+     116: invokespecial #70                 // Method java/lang/StringBuilder."<init>":()V
+     119: ldc           #106                // String <
+     121: invokevirtual #73                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     124: aload         5
+     126: aload_0
+     127: getfield      #25                 // Field m_premiseSupport:I
+     130: aload_0
+     131: getfield      #29                 // Field m_consequenceSupport:I
+     134: aload_0
+     135: getfield      #32                 // Field m_totalSupport:I
+     138: aload_0
+     139: getfield      #35                 // Field m_totalTransactions:I
+     142: invokevirtual #108                // Method weka/associations/DefaultAssociationRule$METRIC_TYPE.toStringMetric:(IIII)Ljava/lang/String;
+     145: invokevirtual #73                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     148: ldc           #112                // String >
+     150: invokevirtual #73                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     153: invokevirtual #77                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     156: invokevirtual #102                // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+     159: pop
+     160: goto          212
+     163: aload_1
+     164: new           #68                 // class java/lang/StringBuilder
+     167: dup
+     168: invokespecial #70                 // Method java/lang/StringBuilder."<init>":()V
+     171: ldc           #114                // String
+     173: invokevirtual #73                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     176: aload         5
+     178: aload_0
+     179: getfield      #25                 // Field m_premiseSupport:I
+     182: aload_0
+     183: getfield      #29                 // Field m_consequenceSupport:I
+     186: aload_0
+     187: getfield      #32                 // Field m_totalSupport:I
+     190: aload_0
+     191: getfield      #35                 // Field m_totalTransactions:I
+     194: invokevirtual #108                // Method weka/associations/DefaultAssociationRule$METRIC_TYPE.toStringMetric:(IIII)Ljava/lang/String;
+     197: invokevirtual #73                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     200: ldc           #116                // String
+     202: invokevirtual #73                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     205: invokevirtual #77                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     208: invokevirtual #102                // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+     211: pop
+     212: iinc          4, 1
+     215: goto          87
+     218: aload_1
+     219: invokevirtual #118                // Method java/lang/StringBuffer.toString:()Ljava/lang/String;
+     222: areturn
+
+  static {};
+    Code:
+       0: iconst_4
+       1: anewarray     #47                 // class weka/core/Tag
+       4: dup
+       5: iconst_0
+       6: new           #47                 // class weka/core/Tag
+       9: dup
+      10: getstatic     #7                  // Field weka/associations/DefaultAssociationRule$METRIC_TYPE.CONFIDENCE:Lweka/associations/DefaultAssociationRule$METRIC_TYPE;
+      13: invokevirtual #42                 // Method weka/associations/DefaultAssociationRule$METRIC_TYPE.ordinal:()I
+      16: ldc           #119                // String Confidence
+      18: invokespecial #121                // Method weka/core/Tag."<init>":(ILjava/lang/String;)V
+      21: aastore
+      22: dup
+      23: iconst_1
+      24: new           #47                 // class weka/core/Tag
+      27: dup
+      28: getstatic     #124                // Field weka/associations/DefaultAssociationRule$METRIC_TYPE.LIFT:Lweka/associations/DefaultAssociationRule$METRIC_TYPE;
+      31: invokevirtual #42                 // Method weka/associations/DefaultAssociationRule$METRIC_TYPE.ordinal:()I
+      34: ldc           #127                // String Lift
+      36: invokespecial #121                // Method weka/core/Tag."<init>":(ILjava/lang/String;)V
+      39: aastore
+      40: dup
+      41: iconst_2
+      42: new           #47                 // class weka/core/Tag
+      45: dup
+      46: getstatic     #129                // Field weka/associations/DefaultAssociationRule$METRIC_TYPE.LEVERAGE:Lweka/associations/DefaultAssociationRule$METRIC_TYPE;
+      49: invokevirtual #42                 // Method weka/associations/DefaultAssociationRule$METRIC_TYPE.ordinal:()I
+      52: ldc           #132                // String Leverage
+      54: invokespecial #121                // Method weka/core/Tag."<init>":(ILjava/lang/String;)V
+      57: aastore
+      58: dup
+      59: iconst_3
+      60: new           #47                 // class weka/core/Tag
+      63: dup
+      64: getstatic     #134                // Field weka/associations/DefaultAssociationRule$METRIC_TYPE.CONVICTION:Lweka/associations/DefaultAssociationRule$METRIC_TYPE;
+      67: invokevirtual #42                 // Method weka/associations/DefaultAssociationRule$METRIC_TYPE.ordinal:()I
+      70: ldc           #137                // String Conviction
+      72: invokespecial #121                // Method weka/core/Tag."<init>":(ILjava/lang/String;)V
+      75: aastore
+      76: putstatic     #38                 // Field TAGS_SELECTION:[Lweka/core/Tag;
+      79: return
+}

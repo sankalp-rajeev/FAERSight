@@ -1,0 +1,2 @@
+# Preserve raw JVM/help/bytecode evidence; CRLF and trailing display separators are not code.
+**/*.txt -diff

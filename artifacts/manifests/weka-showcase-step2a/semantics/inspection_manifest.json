@@ -1,0 +1,171 @@
+{
+  "artifacts": {
+    "AprioriItemSet_bytecode.txt": "732afe7c821fcdaf259cab04bcae6eee9f4f4c4020163ccb522020c5d89e69d3",
+    "Apriori_bytecode.txt": "1a40630211fc508f745ff5318446ac79ee176c1f956cf64e1fd219a89a2322d1",
+    "DefaultAssociationRule_METRIC_TYPE_1_bytecode.txt": "cf8c026eeb07ce34f1ce227b7d352434c41a6b3809131a509e85139c84a1c5b2",
+    "DefaultAssociationRule_METRIC_TYPE_2_bytecode.txt": "9d3722c4422da4a6bfae402db44387021f3ee3a630e041e366f94918d25a678c",
+    "DefaultAssociationRule_METRIC_TYPE_3_bytecode.txt": "cbf1aea165c459ab72bdc7d44c06946f842f4bb88bc3914bfa83905fdddfba73",
+    "DefaultAssociationRule_METRIC_TYPE_4_bytecode.txt": "64d128b842cdb96ec5fb16d08b7e0f2db20909021bf287418556dba3ae5139c3",
+    "DefaultAssociationRule_bytecode.txt": "9aba94a460815237f3fac17f35c3a23f8cfd94bb0f0cb063887a03bd83ec8020",
+    "ItemSet_bytecode.txt": "0c4ea1bf77549480b5bd9b4f155d960557df07251b8ebe85eafb9d230dcf5413",
+    "apriori_help.txt": "4dbaa8ae21a715d41e167bc8f708711d0b99609c59d8f96a1aedfde406fda118",
+    "java_version.txt": "907fb83a3ce1d5eef9298371d8ecc7c0625a8d697504fab682215d015d363d9c",
+    "javac_version.txt": "e3502b01ab6c5e9d017090c3da055226f39ca5dd6705047fdab9fdfdcd2b3335",
+    "jvm_flags.txt": "892b1e227b2b59554fba0a5f56eaa255a8c44e35ade1a3ebd097106e0c235fe4"
+  },
+  "commands": [
+    {
+      "command": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\java.exe",
+        "-version"
+      ],
+      "exit_code": 0,
+      "file": "java_version.txt"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javac.exe",
+        "-version"
+      ],
+      "exit_code": 0,
+      "file": "javac_version.txt"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\java.exe",
+        "-Xmx4g",
+        "-XX:ActiveProcessorCount=2",
+        "-XX:+PrintFlagsFinal",
+        "-version"
+      ],
+      "exit_code": 0,
+      "file": "jvm_flags.txt"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\java.exe",
+        "-cp",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+        "weka.associations.Apriori",
+        "-h"
+      ],
+      "exit_code": 0,
+      "file": "apriori_help.txt"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javap.exe",
+        "-classpath",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+        "-c",
+        "-p",
+        "weka.associations.Apriori"
+      ],
+      "exit_code": 0,
+      "file": "Apriori_bytecode.txt"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javap.exe",
+        "-classpath",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+        "-c",
+        "-p",
+        "weka.associations.AprioriItemSet"
+      ],
+      "exit_code": 0,
+      "file": "AprioriItemSet_bytecode.txt"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javap.exe",
+        "-classpath",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+        "-c",
+        "-p",
+        "weka.associations.ItemSet"
+      ],
+      "exit_code": 0,
+      "file": "ItemSet_bytecode.txt"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javap.exe",
+        "-classpath",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+        "-c",
+        "-p",
+        "weka.associations.DefaultAssociationRule"
+      ],
+      "exit_code": 0,
+      "file": "DefaultAssociationRule_bytecode.txt"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javap.exe",
+        "-classpath",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+        "-c",
+        "-p",
+        "weka.associations.DefaultAssociationRule$METRIC_TYPE$1"
+      ],
+      "exit_code": 0,
+      "file": "DefaultAssociationRule_METRIC_TYPE_1_bytecode.txt"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javap.exe",
+        "-classpath",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+        "-c",
+        "-p",
+        "weka.associations.DefaultAssociationRule$METRIC_TYPE$2"
+      ],
+      "exit_code": 0,
+      "file": "DefaultAssociationRule_METRIC_TYPE_2_bytecode.txt"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javap.exe",
+        "-classpath",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+        "-c",
+        "-p",
+        "weka.associations.DefaultAssociationRule$METRIC_TYPE$3"
+      ],
+      "exit_code": 0,
+      "file": "DefaultAssociationRule_METRIC_TYPE_3_bytecode.txt"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javap.exe",
+        "-classpath",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+        "-c",
+        "-p",
+        "weka.associations.DefaultAssociationRule$METRIC_TYPE$4"
+      ],
+      "exit_code": 0,
+      "file": "DefaultAssociationRule_METRIC_TYPE_4_bytecode.txt"
+    }
+  ],
+  "full_data_mining_started": false,
+  "javap_sha256": "e5f63874d839de51dcc442cf489c39546b1565c64b5dbc1edf3a7c75322b5d1d",
+  "runtime": {
+    "apriori_parallelism": "not_applicable_no_thread_setting_single_threaded_search",
+    "apriori_processor_option": null,
+    "bounce": ".tools/weka/bounce-0.18.jar",
+    "bounce_sha256": "bffff1505335c02256b7ab2ccffbe4aa4d3ac9fe14c17557809b7c9d99d666ca",
+    "concurrent_jvms": 1,
+    "heap": "4g",
+    "jar": ".tools/weka/weka-stable-3.8.6.jar",
+    "jar_sha256": "932ea2f342b58fe45736389e9c426d5b5955e610d1f5f6485117f532068915e9",
+    "java": "C:/Program Files/Android/Android Studio/jbr/bin/java.exe",
+    "java_sha256": "7f7bc646f8697255fc98a950412c741a453360586e1208ce683212f638444d85",
+    "jvm_active_processor_count": 2,
+    "timeout_seconds": 1800,
+    "weka_version": "3.8.6"
+  },
+  "scientific_findings_validated": false,
+  "status": "inspection_only_no_data_loaded"
+}

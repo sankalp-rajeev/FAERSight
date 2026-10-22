@@ -1,0 +1,37 @@
+Compiled from "DefaultAssociationRule.java"
+final class weka.associations.DefaultAssociationRule$METRIC_TYPE$4 extends weka.associations.DefaultAssociationRule$METRIC_TYPE {
+  weka.associations.DefaultAssociationRule$METRIC_TYPE$4(java.lang.String, int, java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: aload_3
+       4: aconst_null
+       5: invokespecial #1                  // Method weka/associations/DefaultAssociationRule$METRIC_TYPE."<init>":(Ljava/lang/String;ILjava/lang/String;Lweka/associations/DefaultAssociationRule$1;)V
+       8: return
+
+  double compute(int, int, int, int);
+    Code:
+       0: iload_1
+       1: i2d
+       2: iload         4
+       4: iload_2
+       5: isub
+       6: i2d
+       7: dmul
+       8: iload         4
+      10: i2d
+      11: ddiv
+      12: dstore        5
+      14: iload_1
+      15: iload_3
+      16: isub
+      17: iconst_1
+      18: iadd
+      19: i2d
+      20: dstore        7
+      22: dload         5
+      24: dload         7
+      26: ddiv
+      27: dreturn
+}

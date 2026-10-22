@@ -1,0 +1,65 @@
+schema_version: 1
+status: locked_for_step2a_fixture_checkpoint
+plan_commit: 69d27d7
+full_data_authorized: false
+input:
+  path: artifacts/generated/2025Q4-statins-mining/input/transactions.arff
+  sha256: de0f94f545ebae18033195524984fc842d3359154b864cb52bef2372a877dcf1
+  rows: 385288
+  attributes: 366
+  nominal_values: ['0', '1']
+  quarters: [2025Q4]
+  roles: [PS]
+runtime:
+  java: C:/Program Files/Android/Android Studio/jbr/bin/java.exe
+  java_sha256: 7f7bc646f8697255fc98a950412c741a453360586e1208ce683212f638444d85
+  jar: .tools/weka/weka-stable-3.8.6.jar
+  jar_sha256: 932ea2f342b58fe45736389e9c426d5b5955e610d1f5f6485117f532068915e9
+  bounce: .tools/weka/bounce-0.18.jar
+  bounce_sha256: bffff1505335c02256b7ab2ccffbe4aa4d3ac9fe14c17557809b7c9d99d666ca
+  weka_version: 3.8.6
+  heap: 4g
+  jvm_active_processor_count: 2
+  apriori_processor_option: null
+  apriori_parallelism: not_applicable_no_thread_setting_single_threaded_search
+  timeout_seconds: 1800
+  concurrent_jvms: 1
+apriori:
+  support_ladder:
+    - {fraction: '0.001', minimum_count: 385}
+    - {fraction: '0.0005', minimum_count: 193}
+    - {fraction: '0.0002', minimum_count: 77}
+    - {fraction: '0.0001', minimum_count: 39}
+  upper_support: '1.0'
+  delta: '1.0'
+  expected_cycles: 1
+  metric: lift
+  metric_id: 1
+  minimum_metric: '1.2'
+  rule_cap: 100000
+  significance_level: '-1.0'
+  treat_zero_as_missing: true
+  class_rules: false
+  remove_all_missing_columns: false
+  print_itemsets: false
+  verbose: false
+  class_index_option: '-1'
+  rule_restriction: none_nonempty_disjoint_itemsets_any_direction
+  maximum_itemset_length: null
+  minimum_count_formula: 'int(max(fraction, 1/N) * N + 0.5)'
+  metric_threshold_direction: greater_than_or_equal
+  brute_force_integer_partition_limit: 30
+export:
+  schema_version: 1
+  canonical_itemsets: sorted_JSON_arrays_of_attribute_name_equals_1
+  row_order: canonical_antecedent_then_consequent
+  weka_order: retained_as_weka_rank
+  float_tolerance: 1.0e-12
+  conviction_formula: '(antecedent_count * (N - consequent_count) / N) / (antecedent_count - joint_count + 1)'
+failure_policy:
+  stop_after_first_resource_failure_or_timeout: true
+  stop_on_cap_reached_or_truncation_ambiguity: true
+  stop_on_semantic_failure: true
+  preserve_failed_logs: true
+  forbid_result_driven_tuning: true
+  forbid_overwriting_snapshots: true
