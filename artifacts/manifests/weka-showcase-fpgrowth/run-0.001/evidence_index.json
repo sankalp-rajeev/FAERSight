@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "capture_command_record.json": "15d5a9dd8754717b11b0f71a505233393306e0425b36edfc4e6f5911edb33940",
+    "capture_java_version.txt": "907fb83a3ce1d5eef9298371d8ecc7c0625a8d697504fab682215d015d363d9c",
+    "capture_javac_version.txt": "e3502b01ab6c5e9d017090c3da055226f39ca5dd6705047fdab9fdfdcd2b3335",
+    "capture_runner_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "capture_runner_stdout.txt": "e4fd89a62826753926965ccdabf0c64191acff54b418431353bcfb20b71a1bc3",
+    "compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "invocation.json": "674cff3f33d70fe340c45c1b24dd07edb6c83a5ed86b32660de6c3a27ae809f8",
+    "mechanical_summary.json": "921b94d07b1a941b2e50756d70a548fb4d368d38a5daf54e189da73515ad011d",
+    "outcome.json": "4706ef6c743e6259c47cd3467fe02397295c8e09f496a6cafd7ba3678ce76df7",
+    "raw_output.zip": "1bd9def2d1d77c5e82fdc444d59dc3146060a4fd54ec990602d47d0778dd10ab",
+    "resolved_options.json": "41e3ebb035e10576a6ac09b23672874cea188859bd2384a5995bbfa0a566b722",
+    "run.json": "2d8fc0761e1bd74e395a47176ad636137e8807d1849440ca73fcd9c69d5040e9",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "a6597552ff74d839005dc43b76efa2e8958ceed7bd7d7421dc22315d2dbce69e",
+    "test_results.xml": "a46fdd74f311fe5501c43639512f86c91d360b26323816db4cdcdb13222a3729",
+    "validation.json": "1a27d1bb88cf1fc92a6f28144e43e924de0410c37679d35d8957cc7092d5d881",
+    "validation.txt": "12ed1157b705ce8a6f2feeaba06da48e7b27396172292342299275d792ef817a"
+  },
+  "core": {
+    "all_match_committed_bytes": true,
+    "plan_commit": "69d27d7",
+    "tracked_frozen_files_verified": 108
+  },
+  "raw_output_hashes": {
+    "classes/faersight/showcasefp/ShowcaseFPGrowth$Audit.class": "7321facd5d6c30800238a26ba7a78d3a5a4e68990ad6d6d57526be4963569040",
+    "classes/faersight/showcasefp/ShowcaseFPGrowth$CountedInstances.class": "7b2f941f36f93c95f632afb39501fabc2bbe038aa1185f83f2e4a309eb9c4dc9",
+    "classes/faersight/showcasefp/ShowcaseFPGrowth.class": "ec97176b537ceda70216295cdc4fdc7d1058f3052f4c9dddf678250318489a69",
+    "compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "complete.txt": "7aba1ecfde9bc5c411fbddf1d2e2df5608ea0cfb685678cb80c1c0d170b7a9ae",
+    "fpgrowth_raw.txt": "18acd02b7ed4d3f598e6d125ad71ea358d683242b444b145457b5207f87e9ad4",
+    "invocation.json": "674cff3f33d70fe340c45c1b24dd07edb6c83a5ed86b32660de6c3a27ae809f8",
+    "resolved_options.json": "41e3ebb035e10576a6ac09b23672874cea188859bd2384a5995bbfa0a566b722",
+    "rules.csv": "746b3972949863831ca268f34ba66ff75db190e234b1a009532a6e24f0b3a5a8",
+    "run.json": "2d8fc0761e1bd74e395a47176ad636137e8807d1849440ca73fcd9c69d5040e9",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "a6597552ff74d839005dc43b76efa2e8958ceed7bd7d7421dc22315d2dbce69e"
+  },
+  "scientific_findings_validated": false,
+  "status": "passed"
+}

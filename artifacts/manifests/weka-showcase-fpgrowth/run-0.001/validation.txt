@@ -1,0 +1,5 @@
+All checks passed!
+51 files already formatted
+Evidence index, source snapshot, reproduction overlay, frozen primary inputs and mart verified
+Primary deterministic artifacts: 10
+Sensitivity deterministic artifacts: 17

@@ -19,6 +19,14 @@ one FPGrowth 0.001 feasibility attempt after semantic/fixture/configuration gate
 The original Apriori ladder remains stopped. Historical checkpoint statements
 below describe their respective authorizations; they are preserved as history.
 
+**Current post-amendment checkpoint: the single FPGrowth 0.001 attempt completed;
+stop pending new authorization.** [Recorded outcome](weka_showcase_fpgrowth.md):
+4,884 complete rules, all reaction-only; 5.85 s total CLI wall, 0.600 s build.
+API/internal counts agree and remain below the 100,000 post-completion threshold
+(-S ignores N clipping). The 386/385 cutoff difference remains disclosed.
+Fallback A is eligible after success; Fallback B's both-failed condition is unmet.
+No fallback runs, lower supports, metric comparison or Explorer are authorized now.
+
 Purpose: stronger course alignment and demonstration of WEKA's association
 analysis tools, separately from the scientific pair-comparison question.
 

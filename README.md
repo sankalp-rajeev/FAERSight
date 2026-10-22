@@ -184,6 +184,11 @@ Tool-Study Extension**: full-ARFF Apriori feasibility, multi-item rules, metric
 comparisons, FPGrowth and an Explorer demonstration. Step 2A prerequisites remain
 locked. The [first full-data 0.001 attempt](docs/weka_showcase_step2b.md) timed out
 at its registered 30-minute limit; the stop rule blocks further ladder descent.
+Under the separate preregistered amendment, the
+[single FPGrowth 0.001 checkpoint](docs/weka_showcase_fpgrowth.md) completed with
+4,884 complete reaction-only rules. Its cutoff is 386 versus Apriori's 385.
+The corrected higher-support paired comparison is eligible but awaits separate
+authorization; no fallback, lower support, metric comparison or GUI ran.
 
 ## Experiment configuration
 

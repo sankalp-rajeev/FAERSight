@@ -197,3 +197,28 @@ rule partitions including multi-item consequents. See
 [verified implementation/fixture semantics](../showcase_fpgrowth/SEMANTICS.md).
 Exactly one locked full-data attempt follows; fallback eligibility is distinct
 from authorization to execute either fallback.
+
+### Completed single FPGrowth 0.001 checkpoint
+
+Execution lock committed/pushed at `f87b53f`, implementation `d425714`, before the
+single invocation. CLI/JVM exited 0; total CLI wall 5.8495633 s, JVM wall
+1.1863082 s, association-build 0.6003145 s. Normal return and complete export
+contain 4,884 internal/API rules, one observed tree-build pass, 1,736 frequent
+itemsets, no non-presence items and no policy-limit hit. Cutoff remains 386
+versus Apriori 385. All rules are reaction-only; multi-item consequents number
+1,475. Maximum side sizes 3/3 and maximum total 4. Eight deterministic examples
+reconcile independently against the unchanged primary mart. No clinical meaning
+or internal cause of Apriori's failure is inferred.
+
+See the [complete factual record](weka_showcase_fpgrowth.md) and aggregate/raw
+snapshot under `artifacts/manifests/weka-showcase-fpgrowth/run-0.001/` for counts,
+options, versions, logs, timing boundaries, hashes and the comparison limitation.
+Apriori returned no model, so overlap and a completed-runtime ratio are undefined.
+
+Post-run: all 127 tests pass (14 new, 113 existing), no skips; lint/format pass.
+All 108 scientific-core files and all 151 prior showcase/manifest files retain
+their committed bytes. Existing Milestone 4 source/input/mart/overlay hash checks
+pass. Scientific validation fields remain false. **Fallback A is eligible but
+not authorized to run; Fallback B is not eligible. Stop after commit/push.**
+No retry, lower support, higher-support pair, scaling, metric comparison or
+Explorer was executed. The 0.004 -> 0.003 -> 0.002 ladder stays preregistered.

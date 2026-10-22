@@ -1,0 +1,1 @@
+{"options":["-P","2","-I","-1","-N","100000","-T","1","-C","1.2","-D","1.0","-U","1.0","-M","0.001","-S"],"find_all":true,"requested_rules":100000,"positive_index":2,"maximum_items":-1,"upper":1.0,"lower":0.001,"delta":1.0,"minimum_metric":1.2,"metric_id":1,"transactions_filter":"","rules_filter":"","available_processors":2,"max_heap_bytes":4294967296}
