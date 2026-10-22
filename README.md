@@ -181,8 +181,9 @@ required before the final scientific freeze or optional WEKA showcase extension.
 
 The [roadmap](docs/roadmap.md) separately plans a post-core **WEKA Showcase /
 Tool-Study Extension**: full-ARFF Apriori feasibility, multi-item rules, metric
-comparisons, FPGrowth and an Explorer demonstration. Only the documentation
-step is currently authorized; execution awaits explicit user continuation.
+comparisons, FPGrowth and an Explorer demonstration. Step 2A semantics, fixture
+and configuration prerequisites are locked and validated; full-data showcase
+mining still awaits explicit user continuation.
 
 ## Experiment configuration
 

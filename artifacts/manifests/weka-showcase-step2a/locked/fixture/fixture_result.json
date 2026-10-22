@@ -1,0 +1,275 @@
+{
+  "artifacts": {
+    "cap_probe/apriori_raw.txt": "c391297158abf29cc6da7f19ded56a602a941cbf4cc4a0dfacad0372ff628327",
+    "cap_probe/classes/faersight/showcase/ShowcaseApriori$Audit.class": "12b52fe0f238703b8e42121f76570ad94aff4ccbaedf6fe8e91396a6235a6da7",
+    "cap_probe/classes/faersight/showcase/ShowcaseApriori.class": "c064b8add9969f19a6f71e943e2e9aa23345117b0d98a269b678e359750a5922",
+    "cap_probe/compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cap_probe/complete.txt": "7aba1ecfde9bc5c411fbddf1d2e2df5608ea0cfb685678cb80c1c0d170b7a9ae",
+    "cap_probe/invocation.json": "185bd29ec187d5df8eb253d11364973b1ede98bf562ff90e92607450f7135fe4",
+    "cap_probe/process.txt": "a6597552ff74d839005dc43b76efa2e8958ceed7bd7d7421dc22315d2dbce69e",
+    "cap_probe/resolved_options.json": "a771a234d908cee8c5173eb959c2ce46970a4027de55bf1e37f28c625c68f90f",
+    "cap_probe/rules.csv": "5ed69d240812590a0160fb9a40e3c189bb1673e30b1078d37dcd8d0c6e59de5d",
+    "cap_probe/run.json": "d391a75d30dc5048d862040a28c11834117d97b2c3a7d7e6e500d2da559372d3",
+    "first/apriori_raw.txt": "c2bd47e82818f1c7419d6c54e22ebacdd6592831e29ce03f269d3eed1da1d866",
+    "first/classes/faersight/showcase/ShowcaseApriori$Audit.class": "12b52fe0f238703b8e42121f76570ad94aff4ccbaedf6fe8e91396a6235a6da7",
+    "first/classes/faersight/showcase/ShowcaseApriori.class": "c064b8add9969f19a6f71e943e2e9aa23345117b0d98a269b678e359750a5922",
+    "first/compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "first/complete.txt": "7aba1ecfde9bc5c411fbddf1d2e2df5608ea0cfb685678cb80c1c0d170b7a9ae",
+    "first/invocation.json": "4b7efcc431670c03dd8e1c7b1353926aaa7a9513859e762f008c1fd1f0b97602",
+    "first/process.txt": "a6597552ff74d839005dc43b76efa2e8958ceed7bd7d7421dc22315d2dbce69e",
+    "first/resolved_options.json": "77a0684b32b99565d48a5cb6e8fe650bf176ed724627dc5c5d1ed3fd0cfa992c",
+    "first/rules.csv": "11b86e8d7a29aa647b331ba1199a08cf210dd396d94e1df440430d88516def52",
+    "first/run.json": "a750ac237c9ec29ae2dc31b7fba7426b0fe3de629b7232678103cfe162fd0aa1",
+    "options_audit/classes/faersight/showcase/ShowcaseApriori$Audit.class": "12b52fe0f238703b8e42121f76570ad94aff4ccbaedf6fe8e91396a6235a6da7",
+    "options_audit/classes/faersight/showcase/ShowcaseApriori.class": "c064b8add9969f19a6f71e943e2e9aa23345117b0d98a269b678e359750a5922",
+    "options_audit/compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "options_audit/invocation.json": "0997e3a892de53d255d8827e826048cc9543290a38a59ab6b840310aa562a079",
+    "options_audit/process.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "options_audit/runtime_and_options.json": "642076fe195c70fc5cc9c703c6ae96c25e2e7860e20a1724417c552cde09510d",
+    "rounding_probe/apriori_raw.txt": "62fee87abc4ecb60e4f1b8653679e75e3d6f3797c199d2b7fd2ba5a227b1e4c0",
+    "rounding_probe/classes/faersight/showcase/ShowcaseApriori$Audit.class": "12b52fe0f238703b8e42121f76570ad94aff4ccbaedf6fe8e91396a6235a6da7",
+    "rounding_probe/classes/faersight/showcase/ShowcaseApriori.class": "c064b8add9969f19a6f71e943e2e9aa23345117b0d98a269b678e359750a5922",
+    "rounding_probe/compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rounding_probe/complete.txt": "7aba1ecfde9bc5c411fbddf1d2e2df5608ea0cfb685678cb80c1c0d170b7a9ae",
+    "rounding_probe/invocation.json": "75aaa7d892ea2a093df716ae9801173ba0e590706bd3a471b90da68702637955",
+    "rounding_probe/process.txt": "a6597552ff74d839005dc43b76efa2e8958ceed7bd7d7421dc22315d2dbce69e",
+    "rounding_probe/resolved_options.json": "fc9976d5f3cf487838222052aba73606ce8a0b7498e2c0d9be8dc68ec3f63ed6",
+    "rounding_probe/rules.csv": "e7659e7c715a72f4de9d289e4bec74980761f4925c27f8e4e8af25ef7096d44d",
+    "rounding_probe/run.json": "7f59a2f3328764683113b9962a13ef3c8fe2ec7313b02d529b558215a6b343cd",
+    "second/apriori_raw.txt": "c2bd47e82818f1c7419d6c54e22ebacdd6592831e29ce03f269d3eed1da1d866",
+    "second/classes/faersight/showcase/ShowcaseApriori$Audit.class": "12b52fe0f238703b8e42121f76570ad94aff4ccbaedf6fe8e91396a6235a6da7",
+    "second/classes/faersight/showcase/ShowcaseApriori.class": "c064b8add9969f19a6f71e943e2e9aa23345117b0d98a269b678e359750a5922",
+    "second/compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "second/complete.txt": "7aba1ecfde9bc5c411fbddf1d2e2df5608ea0cfb685678cb80c1c0d170b7a9ae",
+    "second/invocation.json": "7ee90179ae149ff8c2efe4a858ae2115999a87e9be9f42e52146a2741217c5ff",
+    "second/process.txt": "a6597552ff74d839005dc43b76efa2e8958ceed7bd7d7421dc22315d2dbce69e",
+    "second/resolved_options.json": "77a0684b32b99565d48a5cb6e8fe650bf176ed724627dc5c5d1ed3fd0cfa992c",
+    "second/rules.csv": "11b86e8d7a29aa647b331ba1199a08cf210dd396d94e1df440430d88516def52",
+    "second/run.json": "62059f8d174fb8f156b45831ffbd758a77dd6cc14deade28403d68425f44f463",
+    "semantic_probes/classes/faersight/showcase/ShowcaseApriori$Audit.class": "12b52fe0f238703b8e42121f76570ad94aff4ccbaedf6fe8e91396a6235a6da7",
+    "semantic_probes/classes/faersight/showcase/ShowcaseApriori.class": "c064b8add9969f19a6f71e943e2e9aa23345117b0d98a269b678e359750a5922",
+    "semantic_probes/compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "semantic_probes/invocation.json": "121ce90226f132a1d087337020426cf56cf985973803b60f6e522f6b847c6f34",
+    "semantic_probes/process.txt": "a6597552ff74d839005dc43b76efa2e8958ceed7bd7d7421dc22315d2dbce69e",
+    "semantic_probes/semantic_probes.json": "f3338ae5015eb5882ec9c1ad50348239f019c4fe0b7d99c223c50fcdbd0e3de1"
+  },
+  "canonical_export_sha256": "11b86e8d7a29aa647b331ba1199a08cf210dd396d94e1df440430d88516def52",
+  "cap_probe_returned": 1,
+  "cap_probe_status": "stop_cap_ambiguity",
+  "fixture": {
+    "all_counts_and_four_metrics_match": true,
+    "empty_transactions": 8,
+    "exhaustive_rule_family_matches": true,
+    "independent_qualifying_rules": 50,
+    "multi_item_consequents": 22,
+    "presence_only": true,
+    "required_structures_recovered": [
+      [
+        [
+          "DRUG_A=1"
+        ],
+        [
+          "REAC_X=1"
+        ]
+      ],
+      [
+        [
+          "DRUG_A=1",
+          "DRUG_B=1"
+        ],
+        [
+          "REAC_X=1"
+        ]
+      ],
+      [
+        [
+          "DRUG_A=1",
+          "REAC_X=1"
+        ],
+        [
+          "REAC_Y=1"
+        ]
+      ],
+      [
+        [
+          "REAC_X=1"
+        ],
+        [
+          "REAC_Y=1"
+        ]
+      ],
+      [
+        [
+          "DRUG_A=1"
+        ],
+        [
+          "REAC_X=1",
+          "REAC_Y=1"
+        ]
+      ]
+    ],
+    "returned_rules": 50,
+    "rows": 20,
+    "tolerance": 1e-12
+  },
+  "fixture_sha256": "618076547b9980684210fc1a130f5b1784e91e0bb6063f9692ef4e176a5be165",
+  "full_data_mining_started": false,
+  "rounding_probe_count": 2,
+  "runtime_options_audit": "passed",
+  "scientific_findings_validated": false,
+  "semantic_probes": {
+    "default_delta": {
+      "class_index_option": -1,
+      "class_rules": false,
+      "cycles": 18,
+      "delta": 0.05,
+      "has_zero_items": false,
+      "lower_support": 0.1,
+      "metric_id": 1,
+      "minimum_metric": 1.2,
+      "options": [
+        "-N",
+        "100000",
+        "-T",
+        "1",
+        "-C",
+        "1.2",
+        "-D",
+        "0.05",
+        "-U",
+        "1.0",
+        "-M",
+        "0.1",
+        "-S",
+        "-1.0",
+        "-Z",
+        "-c",
+        "-1"
+      ],
+      "print_itemsets": false,
+      "probe": "default_delta",
+      "remove_all_missing_columns": false,
+      "requested_rules": 100000,
+      "returned_rules": 50,
+      "significance_level": -1.0,
+      "treat_zero_as_missing": true,
+      "upper_support": 1.0,
+      "verbose": false
+    },
+    "fixed": {
+      "class_index_option": -1,
+      "class_rules": false,
+      "cycles": 1,
+      "delta": 1.0,
+      "has_zero_items": false,
+      "lower_support": 0.1,
+      "metric_id": 1,
+      "minimum_metric": 1.2,
+      "options": [
+        "-N",
+        "100000",
+        "-T",
+        "1",
+        "-C",
+        "1.2",
+        "-D",
+        "1.0",
+        "-U",
+        "1.0",
+        "-M",
+        "0.1",
+        "-S",
+        "-1.0",
+        "-Z",
+        "-c",
+        "-1"
+      ],
+      "print_itemsets": false,
+      "probe": "fixed",
+      "remove_all_missing_columns": false,
+      "requested_rules": 100000,
+      "returned_rules": 50,
+      "significance_level": -1.0,
+      "treat_zero_as_missing": true,
+      "upper_support": 1.0,
+      "verbose": false
+    },
+    "upper_equals_lower": {
+      "class_index_option": -1,
+      "class_rules": false,
+      "cycles": 1,
+      "delta": 1.0,
+      "has_zero_items": false,
+      "lower_support": 0.1,
+      "metric_id": 1,
+      "minimum_metric": 1.2,
+      "options": [
+        "-N",
+        "100000",
+        "-T",
+        "1",
+        "-C",
+        "1.2",
+        "-D",
+        "1.0",
+        "-U",
+        "0.1",
+        "-M",
+        "0.1",
+        "-S",
+        "-1.0",
+        "-Z",
+        "-c",
+        "-1"
+      ],
+      "print_itemsets": false,
+      "probe": "upper_equals_lower",
+      "remove_all_missing_columns": false,
+      "requested_rules": 100000,
+      "returned_rules": 0,
+      "significance_level": -1.0,
+      "treat_zero_as_missing": true,
+      "upper_support": 0.1,
+      "verbose": false
+    },
+    "without_Z": {
+      "class_index_option": -1,
+      "class_rules": false,
+      "cycles": 1,
+      "delta": 1.0,
+      "has_zero_items": true,
+      "lower_support": 0.1,
+      "metric_id": 1,
+      "minimum_metric": 1.2,
+      "options": [
+        "-N",
+        "100000",
+        "-T",
+        "1",
+        "-C",
+        "1.2",
+        "-D",
+        "1.0",
+        "-U",
+        "1.0",
+        "-M",
+        "0.1",
+        "-S",
+        "-1.0",
+        "-c",
+        "-1"
+      ],
+      "print_itemsets": false,
+      "probe": "without_Z",
+      "remove_all_missing_columns": false,
+      "requested_rules": 100000,
+      "returned_rules": 120,
+      "significance_level": -1.0,
+      "treat_zero_as_missing": false,
+      "upper_support": 1.0,
+      "verbose": false
+    }
+  },
+  "status": "passed",
+  "two_independent_jvms_identical": true
+}

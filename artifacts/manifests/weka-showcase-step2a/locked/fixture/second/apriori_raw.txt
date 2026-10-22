@@ -1,0 +1,70 @@
+
+Apriori
+=======
+
+Minimum support: 0.1 (2 instances)
+Minimum metric <lift>: 1.2
+Number of cycles performed: 1
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 4
+
+Size of set of large itemsets L(2): 6
+
+Size of set of large itemsets L(3): 4
+
+Size of set of large itemsets L(4): 1
+
+Best rules found:
+
+     1. DRUG_B=1 6 ==> DRUG_A=1 REAC_Y=1 6    conf:(1) < lift:(2.5)> lev:(0.18) [3] conv:(3.6)
+     2. DRUG_A=1 REAC_Y=1 8 ==> DRUG_B=1 6    conf:(0.75) < lift:(2.5)> lev:(0.18) [3] conv:(1.87)
+     3. DRUG_B=1 6 ==> DRUG_A=1 REAC_X=1 REAC_Y=1 6    conf:(1) < lift:(2.5)> lev:(0.18) [3] conv:(3.6)
+     4. DRUG_B=1 REAC_X=1 6 ==> DRUG_A=1 REAC_Y=1 6    conf:(1) < lift:(2.5)> lev:(0.18) [3] conv:(3.6)
+     5. DRUG_A=1 REAC_Y=1 8 ==> DRUG_B=1 REAC_X=1 6    conf:(0.75) < lift:(2.5)> lev:(0.18) [3] conv:(1.87)
+     6. DRUG_A=1 REAC_X=1 REAC_Y=1 8 ==> DRUG_B=1 6    conf:(0.75) < lift:(2.5)> lev:(0.18) [3] conv:(1.87)
+     7. DRUG_B=1 6 ==> DRUG_A=1 REAC_X=1 6    conf:(1) < lift:(2.22)> lev:(0.16) [3] conv:(3.3)
+     8. DRUG_A=1 REAC_X=1 9 ==> DRUG_B=1 6    conf:(0.67) < lift:(2.22)> lev:(0.16) [3] conv:(1.57)
+     9. DRUG_B=1 6 ==> REAC_X=1 REAC_Y=1 6    conf:(1) < lift:(2.22)> lev:(0.16) [3] conv:(3.3)
+    10. REAC_X=1 REAC_Y=1 9 ==> DRUG_B=1 6    conf:(0.67) < lift:(2.22)> lev:(0.16) [3] conv:(1.57)
+    11. DRUG_A=1 DRUG_B=1 6 ==> REAC_X=1 REAC_Y=1 6    conf:(1) < lift:(2.22)> lev:(0.16) [3] conv:(3.3)
+    12. DRUG_A=1 REAC_X=1 9 ==> DRUG_B=1 REAC_Y=1 6    conf:(0.67) < lift:(2.22)> lev:(0.16) [3] conv:(1.57)
+    13. DRUG_B=1 REAC_Y=1 6 ==> DRUG_A=1 REAC_X=1 6    conf:(1) < lift:(2.22)> lev:(0.16) [3] conv:(3.3)
+    14. REAC_X=1 REAC_Y=1 9 ==> DRUG_A=1 DRUG_B=1 6    conf:(0.67) < lift:(2.22)> lev:(0.16) [3] conv:(1.57)
+    15. REAC_X=1 10 ==> DRUG_A=1 REAC_Y=1 8    conf:(0.8) < lift:(2)> lev:(0.2) [4] conv:(2)
+    16. DRUG_A=1 REAC_Y=1 8 ==> REAC_X=1 8    conf:(1) < lift:(2)> lev:(0.2) [4] conv:(4)
+    17. DRUG_A=1 10 ==> DRUG_B=1 6    conf:(0.6) < lift:(2)> lev:(0.15) [3] conv:(1.4)
+    18. DRUG_B=1 6 ==> DRUG_A=1 6    conf:(1) < lift:(2)> lev:(0.15) [3] conv:(3)
+    19. DRUG_B=1 6 ==> REAC_X=1 6    conf:(1) < lift:(2)> lev:(0.15) [3] conv:(3)
+    20. REAC_X=1 10 ==> DRUG_B=1 6    conf:(0.6) < lift:(2)> lev:(0.15) [3] conv:(1.4)
+    21. DRUG_B=1 6 ==> REAC_Y=1 6    conf:(1) < lift:(2)> lev:(0.15) [3] conv:(3)
+    22. REAC_Y=1 10 ==> DRUG_B=1 6    conf:(0.6) < lift:(2)> lev:(0.15) [3] conv:(1.4)
+    23. DRUG_A=1 10 ==> DRUG_B=1 REAC_X=1 6    conf:(0.6) < lift:(2)> lev:(0.15) [3] conv:(1.4)
+    24. DRUG_A=1 DRUG_B=1 6 ==> REAC_X=1 6    conf:(1) < lift:(2)> lev:(0.15) [3] conv:(3)
+    25. REAC_X=1 10 ==> DRUG_A=1 DRUG_B=1 6    conf:(0.6) < lift:(2)> lev:(0.15) [3] conv:(1.4)
+    26. DRUG_B=1 REAC_X=1 6 ==> DRUG_A=1 6    conf:(1) < lift:(2)> lev:(0.15) [3] conv:(3)
+    27. DRUG_A=1 10 ==> DRUG_B=1 REAC_Y=1 6    conf:(0.6) < lift:(2)> lev:(0.15) [3] conv:(1.4)
+    28. DRUG_A=1 DRUG_B=1 6 ==> REAC_Y=1 6    conf:(1) < lift:(2)> lev:(0.15) [3] conv:(3)
+    29. REAC_Y=1 10 ==> DRUG_A=1 DRUG_B=1 6    conf:(0.6) < lift:(2)> lev:(0.15) [3] conv:(1.4)
+    30. DRUG_B=1 REAC_Y=1 6 ==> DRUG_A=1 6    conf:(1) < lift:(2)> lev:(0.15) [3] conv:(3)
+    31. REAC_X=1 10 ==> DRUG_B=1 REAC_Y=1 6    conf:(0.6) < lift:(2)> lev:(0.15) [3] conv:(1.4)
+    32. DRUG_B=1 REAC_X=1 6 ==> REAC_Y=1 6    conf:(1) < lift:(2)> lev:(0.15) [3] conv:(3)
+    33. REAC_Y=1 10 ==> DRUG_B=1 REAC_X=1 6    conf:(0.6) < lift:(2)> lev:(0.15) [3] conv:(1.4)
+    34. DRUG_B=1 REAC_Y=1 6 ==> REAC_X=1 6    conf:(1) < lift:(2)> lev:(0.15) [3] conv:(3)
+    35. DRUG_A=1 10 ==> DRUG_B=1 REAC_X=1 REAC_Y=1 6    conf:(0.6) < lift:(2)> lev:(0.15) [3] conv:(1.4)
+    36. REAC_X=1 10 ==> DRUG_A=1 DRUG_B=1 REAC_Y=1 6    conf:(0.6) < lift:(2)> lev:(0.15) [3] conv:(1.4)
+    37. DRUG_A=1 DRUG_B=1 REAC_X=1 6 ==> REAC_Y=1 6    conf:(1) < lift:(2)> lev:(0.15) [3] conv:(3)
+    38. REAC_Y=1 10 ==> DRUG_A=1 DRUG_B=1 REAC_X=1 6    conf:(0.6) < lift:(2)> lev:(0.15) [3] conv:(1.4)
+    39. DRUG_A=1 DRUG_B=1 REAC_Y=1 6 ==> REAC_X=1 6    conf:(1) < lift:(2)> lev:(0.15) [3] conv:(3)
+    40. DRUG_B=1 REAC_X=1 REAC_Y=1 6 ==> DRUG_A=1 6    conf:(1) < lift:(2)> lev:(0.15) [3] conv:(3)
+    41. DRUG_A=1 10 ==> REAC_X=1 9    conf:(0.9) < lift:(1.8)> lev:(0.2) [4] conv:(2.5)
+    42. REAC_X=1 10 ==> DRUG_A=1 9    conf:(0.9) < lift:(1.8)> lev:(0.2) [4] conv:(2.5)
+    43. REAC_X=1 10 ==> REAC_Y=1 9    conf:(0.9) < lift:(1.8)> lev:(0.2) [4] conv:(2.5)
+    44. REAC_Y=1 10 ==> REAC_X=1 9    conf:(0.9) < lift:(1.8)> lev:(0.2) [4] conv:(2.5)
+    45. DRUG_A=1 10 ==> REAC_X=1 REAC_Y=1 8    conf:(0.8) < lift:(1.78)> lev:(0.18) [3] conv:(1.83)
+    46. REAC_Y=1 10 ==> DRUG_A=1 REAC_X=1 8    conf:(0.8) < lift:(1.78)> lev:(0.18) [3] conv:(1.83)
+    47. DRUG_A=1 REAC_X=1 9 ==> REAC_Y=1 8    conf:(0.89) < lift:(1.78)> lev:(0.18) [3] conv:(2.25)
+    48. REAC_X=1 REAC_Y=1 9 ==> DRUG_A=1 8    conf:(0.89) < lift:(1.78)> lev:(0.18) [3] conv:(2.25)
+    49. DRUG_A=1 10 ==> REAC_Y=1 8    conf:(0.8) < lift:(1.6)> lev:(0.15) [3] conv:(1.67)
+    50. REAC_Y=1 10 ==> DRUG_A=1 8    conf:(0.8) < lift:(1.6)> lev:(0.15) [3] conv:(1.67)

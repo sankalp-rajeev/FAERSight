@@ -1,0 +1,38 @@
+{
+  "artifacts": {
+    "classes/faersight/showcase/ShowcaseApriori$Audit.class": "12b52fe0f238703b8e42121f76570ad94aff4ccbaedf6fe8e91396a6235a6da7",
+    "classes/faersight/showcase/ShowcaseApriori.class": "c064b8add9969f19a6f71e943e2e9aa23345117b0d98a269b678e359750a5922",
+    "compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "process.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime_and_options.json": "642076fe195c70fc5cc9c703c6ae96c25e2e7860e20a1724417c552cde09510d"
+  },
+  "command": [
+    "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\java.exe",
+    "-Xmx4g",
+    "-XX:ActiveProcessorCount=2",
+    "-cp",
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-showcase\\step2a-fixture-locked\\options_audit\\classes;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+    "faersight.showcase.ShowcaseApriori",
+    "inspect",
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-showcase\\step2a-fixture-locked\\options_audit"
+  ],
+  "compile_command": [
+    "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javac.exe",
+    "-encoding",
+    "UTF-8",
+    "-cp",
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+    "-d",
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-showcase\\step2a-fixture-locked\\options_audit\\classes",
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\showcase\\java\\ShowcaseApriori.java"
+  ],
+  "config_sha256": "01d151cafae45dd408b9b9cec2ee6b3a42287195cab1d613d2f5f05986218096",
+  "finished_utc": "2026-10-22T21:36:09.018763+00:00",
+  "java_source_sha256": "473f56c2a242c863863129d3ae08100403e35ff58b239d3b96d2620558473d24",
+  "mode": "inspection",
+  "process_seconds": 0.1413122999947518,
+  "scientific_findings_validated": false,
+  "started_utc": "2026-10-22T21:36:08.249825+00:00",
+  "status": "passed",
+  "total_seconds_including_compile": 0.7679088999866508
+}

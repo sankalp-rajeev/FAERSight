@@ -1,0 +1,21 @@
+
+Apriori
+=======
+
+Minimum support: 0.1 (2 instances)
+Minimum metric <lift>: 1.2
+Number of cycles performed: 1
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 4
+
+Size of set of large itemsets L(2): 6
+
+Size of set of large itemsets L(3): 4
+
+Size of set of large itemsets L(4): 1
+
+Best rules found:
+
+1. DRUG_B=1 6 ==> DRUG_A=1 REAC_Y=1 6    conf:(1) < lift:(2.5)> lev:(0.18) [3] conv:(3.6)

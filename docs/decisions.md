@@ -102,3 +102,27 @@ hashes, manifests and `scientific_findings_validated: false` boundaries.
 this plan; do not begin Step 2 until the user explicitly says to continue.**
 All applicable settings must be pre-registered in a separate extension record
 before any new mining run. No extension run or GUI attempt has been performed.
+
+## October 22 Step 2A prerequisite checkpoint
+
+The user subsequently authorized **Step 2A only**: inspect the exact pinned
+WEKA 3.8.6/JDK semantics, validate a separate unrestricted exporter with a small
+fixture, and lock the execution configuration. Implementation commit `11d81fa`
+contains that code, configuration, fixture/tests and raw inspection evidence.
+The [locked execution manifest](../artifacts/manifests/weka-showcase-step2a/locked/execution_manifest.json)
+references that exact code commit. [Verified semantics](../showcase/SEMANTICS.md)
+document fixed support, cap ambiguity, JVM-versus-Apriori processor applicability,
+the conviction convention and the long-itemset implementation caveat.
+
+Step 2 prerequisites are **locked and validated**: all 113 local tests pass
+with actual WEKA enabled, including all 100 existing tests. The committed-code
+fixture recovers every planned rule form and its complete 50-rule qualifying
+pool, with independent counts/four-metric checks and identical repeated exports.
+All 108 tracked frozen core files match roadmap commit `69d27d7` byte for byte.
+
+The existing full primary ARFF has been hash-verified only. **No full-data
+showcase mining has begun**, no Step 3-7 work or GUI attempt has run, and no
+primary/sensitivity artifact, configuration, manifest or validation flag changes.
+Stop after this checkpoint's commit/push. The first full-data support 0.001
+invocation requires a new explicit user authorization; the registered ladder,
+lift threshold, resource limits and non-causal boundaries remain unchanged.

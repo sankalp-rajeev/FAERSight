@@ -1,0 +1,1 @@
+{"options":["-N","1","-T","1","-C","1.2","-D","1.0","-U","1.0","-M","0.1","-S","-1.0","-Z","-c","-1"],"metric_id":1,"minimum_metric":1.2,"requested_rules":1,"upper_support":1.0,"lower_support":0.1,"delta":1.0,"significance_level":-1.0,"treat_zero_as_missing":true,"class_rules":false,"class_index_option":-1,"remove_all_missing_columns":false,"print_itemsets":false,"verbose":false}

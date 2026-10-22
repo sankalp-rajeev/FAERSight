@@ -1,0 +1,2 @@
+"antecedent","consequent","antecedent_items","consequent_items","joint_count","antecedent_count","consequent_count","n","support","confidence","lift","leverage","conviction","ranking_metric","ranking_value","weka_rank","requested_support","minimum_metric","rule_cap","resolved_options"
+"[""DRUG_B=1""]","[""DRUG_A=1"",""REAC_Y=1""]","1","2","6","6","8","20","0.3","1.0","2.5","0.18","3.6","Lift","2.5","1","0.1","1.2","1","-N 1 -T 1 -C 1.2 -D 1.0 -U 1.0 -M 0.1 -S -1.0 -Z -c -1"
