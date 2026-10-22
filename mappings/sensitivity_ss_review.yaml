@@ -1,0 +1,25 @@
+schema_version: 1
+review_type: automated_evidence_review_pending_student_signoff
+scope: sensitivity_only_SS_ingredient_token
+reviewed_on: '2026-10-22'
+primary_mapping_changed: false
+decisions:
+  - normalized_name: 'EZETIMIBE\ROSUVASTATIN ZINC'
+    normalized_prod_ai: 'EZETIMIBE\ROSUVASTATIN ZINC'
+    role_code: SS
+    expected_source_rows: 2
+    decision: map_exact_ingredient_token
+    token: ROSUVASTATIN ZINC
+    canonical_ingredient: rosuvastatin
+    rationale: >-
+      Regulatory product information identifies rosuvastatin zinc as the salt
+      supplying rosuvastatin in an ezetimibe combination. Map the exact active
+      ingredient token only; retain the complete product and ezetimibe record.
+      No fuzzy spelling inference, new PS mapping, or C-role exposure is used.
+    sources:
+      - https://www.hpra.ie/find-a-medicine/for-human-use/authorised-medicines/details/28356
+      - https://mhraproducts4853.blob.core.windows.net/docs/704ac196122f3954aaf0295a67fdd22f011126d4
+excluded_scope: >-
+  The 272 target-like unmapped C source rows cannot contribute to PS+SS exposure.
+  They remain unmapped and are not silently corrected in either experiment.
+student_signoff: pending

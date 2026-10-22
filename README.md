@@ -158,6 +158,27 @@ See the [execution contract](docs/milestone3.md), including the toy-discovered
 WEKA upper-support correction. Outputs remain provisional until the recorded
 manual review and scientific gates are complete.
 
+## Role sensitivity and scientific checks
+
+Milestone 4 adds an isolated **2025 Q4 PS versus PS+SS sensitivity** without
+changing the frozen primary experiment. It reviews the exact unmapped SS
+rosuvastatin-zinc combination in a separate mapping overlay, retains the primary
+reaction vocabulary and full reporting population, and reruns actual WEKA:
+
+```powershell
+.venv/Scripts/python -m faersight.cli sensitivity data/processed/2025Q4-statins/analytical.duckdb --primary-run artifacts/generated/2025Q4-statins-mining --output artifacts/generated/2025Q4-statins-sensitivity --jar $env:WEKA_JAR
+```
+
+New outputs contain benchmark ranks/percentiles for lift, PRR and ROR, raw-cell
+ROR 95% intervals, an explicitly conventional PRR screening flag, matched role
+comparisons and a small unsigned student-review packet. See
+[Milestone 4](docs/milestone4.md) for exact denominators, sparse-cell policies,
+executed differences and fresh-clone reproduction evidence. Detailed sample
+cases remain local under the new output's `manual_review/` directory.
+
+The core stays within 2025 Q4. Student inspection and interpretation remain
+required before the final scientific freeze or optional WEKA showcase extension.
+
 ## Experiment configuration
 
 See [decisions](docs/decisions.md) and [course compliance](docs/course_compliance.md).

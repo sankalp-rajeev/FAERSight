@@ -23,7 +23,7 @@ This is an implementation checklist, not a graded submission.
 - [x] Deterministic ARFF, audit, case index and statistics regression checks.
 - [x] Independent automated source checks on 15 retained real-data reports.
 - [ ] Student manual source spot checks on 10–15 retained cases (automated checks pass).
-- [ ] Prespecified threshold sweep and PS versus PS+SS sensitivity experiment.
+- [x] Prespecified threshold sweep and PS versus PS+SS sensitivity experiment (2025 Q4 only).
 - [x] Eight positive reference pairs frozen before mining and evaluated without dropping misses.
 - [x] Matched finite-pair rank correlation, top-K overlap and supporting counts exported.
 
@@ -31,7 +31,7 @@ This is an implementation checklist, not a graded submission.
 
 - [x] Reproducible technical README and synthetic end-to-end command.
 - [x] Dependency lock and CI workflow; pushed integration checkpoint passes remote CI.
-- [ ] Fresh-clone reproduction with frozen real inputs.
+- [x] Fresh-clone reproduction with frozen real inputs (same host; pinned cached inputs).
 - [x] Measured real-data scale, rule count, computational agreement and benchmark evidence.
 - [ ] Resume claims traced to actual final artifacts.
 
@@ -42,5 +42,8 @@ The project is now versioned at `github.com/sankalp-rajeev/FAERSight`, with the
 synthetic baseline pushed. See `docs/milestone2.md` for the real-data scope freeze.
 Do not mark the PRD complete based on synthetic evidence.
 Primary real-data WEKA evidence is under `artifacts/manifests/2025Q4-statins-mining/`.
-Manual review, PS versus PS+SS sensitivity, final interpretation and fresh-clone
-reproduction remain open; generated outputs are not validated drug-safety findings.
+PS versus PS+SS sensitivity, benchmark rank/percentile reporting, ROR intervals,
+conventional PRR screening and an unsigned student-review packet are recorded in
+`docs/milestone4.md`. The primary experiment and its evidence remain unchanged.
+Manual inspection, final interpretation and course-submission requirements remain
+student-owned; generated outputs are not validated drug-safety findings.

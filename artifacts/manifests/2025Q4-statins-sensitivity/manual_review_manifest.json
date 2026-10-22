@@ -1,0 +1,21 @@
+{
+  "automated_source_checks": "passed",
+  "benchmark_pairs": 8,
+  "cases": 15,
+  "files": {
+    "README.md": "b85298abb51885aa413125f482ce8addb2473cae82b4cd5fe8ccc1353f2ff493",
+    "benchmark_checklist.csv": "106549d38bd31eab5d48cc39b9bcb6f10e301ac513c6c0f75ad4b4b987e64e18",
+    "case_checklist.csv": "9c5a16ceb73e99adcb795899d0b84f6a9dc04a16e537dd630ad8a5600ca17758",
+    "cases.json": "f0a220b363acc21d75077c3967a783a2be214dc59be1b86ff87eaa9678a919a9",
+    "rules.csv": "79408ac94245b807f7f623e9e9304f6651c9edf2865040fc822742b042cf73cf"
+  },
+  "report_level_details_in_git": false,
+  "rule_pairs": 17,
+  "source_hashes": {
+    "DEMO": "7f575aefc901aa380122bb5f35de98f2fc2f33dcaf050cf30426e10f3daa1ae2",
+    "DRUG": "886ef135263a63ee950be16bf4da1db04f856518b6072111822f1bc7e1112a0f",
+    "REAC": "1d98d0aa6b187edffb9f6dcffbd1569c16367740a7a126d306483e1888ef9de8"
+  },
+  "status": "ready_for_student_review",
+  "student_review_completed": false
+}

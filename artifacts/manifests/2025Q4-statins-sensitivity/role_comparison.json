@@ -1,0 +1,300 @@
+{
+  "prr_screen": {
+    "gained": 367,
+    "lost": 22,
+    "ps": 320,
+    "ps_ss": 665
+  },
+  "role_rank_comparison": [
+    {
+      "largest_rank_changes": [
+        {
+          "drug": "fluvastatin",
+          "ps_rank": 1561.0,
+          "ps_ss_rank": 1.0,
+          "reaction": "NECROTISING MYOSITIS"
+        },
+        {
+          "drug": "pravastatin",
+          "ps_rank": 1561.0,
+          "ps_ss_rank": 2.0,
+          "reaction": "NECROTISING MYOSITIS"
+        },
+        {
+          "drug": "pitavastatin",
+          "ps_rank": 1561.0,
+          "ps_ss_rank": 5.0,
+          "reaction": "GENERALISED OEDEMA"
+        },
+        {
+          "drug": "pitavastatin",
+          "ps_rank": 1561.0,
+          "ps_ss_rank": 9.0,
+          "reaction": "CARDIO-RESPIRATORY ARREST"
+        },
+        {
+          "drug": "pitavastatin",
+          "ps_rank": 1561.0,
+          "ps_ss_rank": 15.0,
+          "reaction": "HAEMATURIA"
+        },
+        {
+          "drug": "pitavastatin",
+          "ps_rank": 1561.0,
+          "ps_ss_rank": 17.0,
+          "reaction": "PRESYNCOPE"
+        },
+        {
+          "drug": "fluvastatin",
+          "ps_rank": 1561.0,
+          "ps_ss_rank": 18.0,
+          "reaction": "BLOOD CREATINE PHOSPHOKINASE INCREASED"
+        },
+        {
+          "drug": "fluvastatin",
+          "ps_rank": 1561.0,
+          "ps_ss_rank": 24.0,
+          "reaction": "BLOOD UREA INCREASED"
+        },
+        {
+          "drug": "fluvastatin",
+          "ps_rank": 1561.0,
+          "ps_ss_rank": 27.0,
+          "reaction": "MUSCLE RUPTURE"
+        },
+        {
+          "drug": "fluvastatin",
+          "ps_rank": 1561.0,
+          "ps_ss_rank": 31.0,
+          "reaction": "MYOPATHY"
+        }
+      ],
+      "metric": "lift_python_check",
+      "shared_finite_pairs": 2154,
+      "spearman": 0.7931182277930724,
+      "top_k": [
+        {
+          "common": 4,
+          "effective_k": 10,
+          "requested_k": 10,
+          "tie_break": "drug_then_reaction_lexical"
+        },
+        {
+          "common": 12,
+          "effective_k": 25,
+          "requested_k": 25,
+          "tie_break": "drug_then_reaction_lexical"
+        },
+        {
+          "common": 26,
+          "effective_k": 50,
+          "requested_k": 50,
+          "tie_break": "drug_then_reaction_lexical"
+        }
+      ]
+    },
+    {
+      "largest_rank_changes": [
+        {
+          "drug": "fluvastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 1.0,
+          "reaction": "NECROTISING MYOSITIS"
+        },
+        {
+          "drug": "pravastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 6.0,
+          "reaction": "NECROTISING MYOSITIS"
+        },
+        {
+          "drug": "pitavastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 11.0,
+          "reaction": "GENERALISED OEDEMA"
+        },
+        {
+          "drug": "pitavastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 17.0,
+          "reaction": "CARDIO-RESPIRATORY ARREST"
+        },
+        {
+          "drug": "pitavastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 22.0,
+          "reaction": "HAEMATURIA"
+        },
+        {
+          "drug": "pitavastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 23.0,
+          "reaction": "PRESYNCOPE"
+        },
+        {
+          "drug": "fluvastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 24.0,
+          "reaction": "BLOOD CREATINE PHOSPHOKINASE INCREASED"
+        },
+        {
+          "drug": "fluvastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 28.0,
+          "reaction": "BLOOD UREA INCREASED"
+        },
+        {
+          "drug": "fluvastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 31.0,
+          "reaction": "MUSCLE RUPTURE"
+        },
+        {
+          "drug": "pravastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 33.0,
+          "reaction": "GENERALISED OEDEMA"
+        }
+      ],
+      "metric": "prr",
+      "shared_finite_pairs": 2153,
+      "spearman": 0.7937415703336209,
+      "top_k": [
+        {
+          "common": 6,
+          "effective_k": 10,
+          "requested_k": 10,
+          "tie_break": "drug_then_reaction_lexical"
+        },
+        {
+          "common": 12,
+          "effective_k": 25,
+          "requested_k": 25,
+          "tie_break": "drug_then_reaction_lexical"
+        },
+        {
+          "common": 25,
+          "effective_k": 50,
+          "requested_k": 50,
+          "tie_break": "drug_then_reaction_lexical"
+        }
+      ]
+    },
+    {
+      "largest_rank_changes": [
+        {
+          "drug": "fluvastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 1.0,
+          "reaction": "NECROTISING MYOSITIS"
+        },
+        {
+          "drug": "pravastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 6.0,
+          "reaction": "NECROTISING MYOSITIS"
+        },
+        {
+          "drug": "pitavastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 9.0,
+          "reaction": "GENERALISED OEDEMA"
+        },
+        {
+          "drug": "pitavastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 14.0,
+          "reaction": "CARDIO-RESPIRATORY ARREST"
+        },
+        {
+          "drug": "pitavastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 20.0,
+          "reaction": "HAEMATURIA"
+        },
+        {
+          "drug": "pitavastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 22.0,
+          "reaction": "PRESYNCOPE"
+        },
+        {
+          "drug": "fluvastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 24.0,
+          "reaction": "BLOOD CREATINE PHOSPHOKINASE INCREASED"
+        },
+        {
+          "drug": "fluvastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 27.0,
+          "reaction": "BLOOD UREA INCREASED"
+        },
+        {
+          "drug": "pitavastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 31.0,
+          "reaction": "TINNITUS"
+        },
+        {
+          "drug": "fluvastatin",
+          "ps_rank": 1560.0,
+          "ps_ss_rank": 33.0,
+          "reaction": "MUSCLE RUPTURE"
+        }
+      ],
+      "metric": "ror",
+      "shared_finite_pairs": 2153,
+      "spearman": 0.7926173369272081,
+      "top_k": [
+        {
+          "common": 5,
+          "effective_k": 10,
+          "requested_k": 10,
+          "tie_break": "drug_then_reaction_lexical"
+        },
+        {
+          "common": 12,
+          "effective_k": 25,
+          "requested_k": 25,
+          "tie_break": "drug_then_reaction_lexical"
+        },
+        {
+          "common": 23,
+          "effective_k": 50,
+          "requested_k": 50,
+          "tie_break": "drug_then_reaction_lexical"
+        }
+      ]
+    }
+  ],
+  "support_comparison": [
+    {
+      "common": 371,
+      "gained": 392,
+      "jaccard": 0.47870967741935483,
+      "lost": 12,
+      "ps_rules": 383,
+      "ps_ss_rules": 763,
+      "support": 1e-05
+    },
+    {
+      "common": 60,
+      "gained": 241,
+      "jaccard": 0.1986754966887417,
+      "lost": 1,
+      "ps_rules": 61,
+      "ps_ss_rules": 301,
+      "support": 5e-05
+    },
+    {
+      "common": 20,
+      "gained": 92,
+      "jaccard": 0.17857142857142858,
+      "lost": 0,
+      "ps_rules": 20,
+      "ps_ss_rules": 112,
+      "support": 0.0001
+    }
+  ]
+}

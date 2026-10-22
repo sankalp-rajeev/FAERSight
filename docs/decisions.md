@@ -53,3 +53,19 @@ policies, counts, hashes, reproduction and outstanding quality gates.
 - Author all submitted literature/progress/final reports, slide prose and narration.
 
 No PRD course-complete or real-data acceptance boxes are checked by this milestone.
+
+## October 22 role-sensitivity decision
+
+The historical pending items above are superseded by Milestone 3 mining evidence
+and the separate [Milestone 4 record](milestone4.md). The new run stays within
+2025 Q4 and preserves the frozen primary population, vocabulary, support grid,
+lift floor, alias map and benchmark. One independently supported exact SS
+ingredient-token overlay resolves both rosuvastatin-zinc candidate rows, without
+changing PS or C mappings. The broader SS reaction vocabulary is listed but not
+searched. Benchmark ranks use declared finite pools and average ties. Screening
+uses uncorrected raw cells for log-Wald ROR intervals and an explicitly
+Yates-corrected PRR convention; none constitutes clinical validation.
+
+Student source/alias/label review and interpretation remain pending in the
+unsigned packet. Stop before the optional WEKA showcase extension; no new
+quarter, discovery vocabulary, reference pairs or ranking thresholds are added.

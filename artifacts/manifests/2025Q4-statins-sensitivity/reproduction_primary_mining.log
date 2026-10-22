@@ -1,0 +1,59 @@
+{
+  "status": "computational_gates_passed",
+  "eligible_n": 385288,
+  "candidate_pairs": 2513,
+  "support_runs": [
+    {
+      "support_requested": 1e-05,
+      "min_support_count": 4,
+      "accepted_pairs": 383,
+      "benchmark_total": 8,
+      "benchmark_recovered": 5
+    },
+    {
+      "support_requested": 5e-05,
+      "min_support_count": 19,
+      "accepted_pairs": 61,
+      "benchmark_total": 8,
+      "benchmark_recovered": 4
+    },
+    {
+      "support_requested": 0.0001,
+      "min_support_count": 39,
+      "accepted_pairs": 20,
+      "benchmark_total": 8,
+      "benchmark_recovered": 2
+    }
+  ],
+  "checks": {
+    "complete_projection_schedule": true,
+    "fixed_support_options": true,
+    "no_output_cap": true,
+    "complete_reporting_population": true,
+    "unique_accepted_pairs": true,
+    "all_integer_counts_match": true,
+    "exact_confidence_lift_match": true,
+    "exhaustive_threshold_coverage": true,
+    "nested_support_sets": true,
+    "benchmark_denominator_preserved": true,
+    "shared_finite_ranking_universes": true
+  },
+  "scientific_findings_validated": false,
+  "pending_scientific_gates": [
+    "student_manual_source_review",
+    "benchmark_review",
+    "suspect_role_sensitivity",
+    "student_interpretation"
+  ],
+  "input_hashes": {
+    "config\\mining.yaml": "9f76271974be1431328acce19b749ab3629e64e77ae7681c0f7b2fbf5cbaa8ee",
+    "config\\experiment.yaml": "e38ac83ea88da7dcdf4cb567ca550b65103e122e9d2bc6f0d657e80938bd274a",
+    "benchmarks\\known_signals.yaml": "142b8da5e3f613643403c42f618d9a3bf0da12fbd324a1062795104375f882a1",
+    "config\\therapeutic_class.yaml": "7c1928d9858d4708bace3dd4fe985f3b9071cc4b9a39d56b6ad4da90fb684022",
+    "mappings\\drug_mapping.csv": "9c26e3bf61608bba873b8475924b694ac7928d951012253b87af623d1f87e1c5",
+    "uv.lock": "35bf7a88e268b848b909e314441b5f2225e751689ba3ecc9f2e28e20a0e53dce"
+  },
+  "source_mart_sha256": "bb397ba6163f3fcc061013e4ec082c0850d9257575beca15a7a0be9214ad18c8",
+  "git_commit": "262dfc0bea7c39e0430747927931b98fbbeca96f",
+  "git_worktree_dirty": false
+}

@@ -1,0 +1,17 @@
+schema_version: 1
+scope: 2025Q4_statins_only
+primary_mining_config: config/mining.yaml
+roles: [PS, SS]
+vocabulary: fixed_primary_reactions
+mapping_overlay: mappings/sensitivity_ss_aliases.csv
+mapping_review: mappings/sensitivity_ss_review.yaml
+screening:
+  prr_min_reports: 3
+  prr_min: 2
+  chi_square_min: 4
+  chi_square: yates_corrected
+  ror_ci: log_wald_95_no_zero_cell_correction
+ranking:
+  ties: average_descending
+  percentile: '100 * (pool_size - rank) / (pool_size - 1); singleton=100'
+  population: shared_finite_lift_prr_ror

@@ -1,0 +1,64 @@
+{
+  "archive_sha256": "1a31e6fdedd7442ffb0cd9d0dc8d2d27ee738e5ee2da34e629d82e47f8d418b6",
+  "cached_inputs_reused": [
+    "checksum_pinned_FDA_archive",
+    "WEKA_and_Bounce_jars",
+    "uv_package_cache"
+  ],
+  "clone": "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022",
+  "commands": [
+    {
+      "args": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--extra",
+        "dev",
+        "--offline",
+        "--cache-dir",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\uv-cache"
+      ],
+      "exit_code": 0,
+      "name": "environment"
+    },
+    {
+      "args": [
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022\\.venv\\Scripts\\python.exe",
+        "-m",
+        "faersight.cli",
+        "acquire"
+      ],
+      "exit_code": 0,
+      "name": "acquire_verify_and_extract"
+    },
+    {
+      "args": [
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=artifacts/generated/primary_tests.xml"
+      ],
+      "exit_code": 1,
+      "name": "primary_tests"
+    }
+  ],
+  "error": "Reproduction command failed: primary_tests",
+  "finished_utc": "2026-10-22T20:47:21.930356+00:00",
+  "fresh_clone_method": "local_git_bundle",
+  "log_hashes": {
+    "acquire_verify_and_extract.log": "0d114117c52e19f996740a56bcb994b582567557e0b1d5f331ebb568ab824308",
+    "environment.log": "f9a500de76ff206ab1630b091a4241a3e7f7c15c991d6d58e4f80c4e4da38351",
+    "primary_tests.log": "c2d68d50c94b6d2746d3d983395c6c98f4064974abc63a9d35e4c134e2ad12bd"
+  },
+  "primary_git_commit": "262dfc0bea7c39e0430747927931b98fbbeca96f",
+  "primary_initial_worktree_clean": true,
+  "processed_data_or_results_copied": false,
+  "runtime_jar_hashes": {
+    "bounce-0.18.jar": "bffff1505335c02256b7ab2ccffbe4aa4d3ac9fe14c17557809b7c9d99d666ca",
+    "weka-stable-3.8.6.jar": "932ea2f342b58fe45736389e9c426d5b5955e610d1f5f6485117f532068915e9"
+  },
+  "scientific_findings_validated": false,
+  "started_utc": "2026-10-22T20:47:16.093384+00:00",
+  "status": "failed"
+}

@@ -26,6 +26,13 @@ def main(argv: list[str] | None = None) -> int:
     mining.add_argument("--config", type=Path, default=Path("config/mining.yaml"))
     mining.add_argument("--jar", type=Path, default=os.environ.get("WEKA_JAR"))
     mining.add_argument("--java")
+    sensitivity = commands.add_parser("sensitivity")
+    sensitivity.add_argument("database", type=Path)
+    sensitivity.add_argument("--primary-run", type=Path, required=True)
+    sensitivity.add_argument("--output", type=Path, required=True)
+    sensitivity.add_argument("--config", type=Path, default=Path("config/sensitivity.yaml"))
+    sensitivity.add_argument("--jar", type=Path, default=os.environ.get("WEKA_JAR"))
+    sensitivity.add_argument("--java")
     for name in ("acquire", "ingest", "validate-mart", "spotcheck"):
         command = commands.add_parser(name)
         if name in ("validate-mart", "spotcheck"):
@@ -58,6 +65,29 @@ def main(argv: list[str] | None = None) -> int:
             print(
                 "Configuration valid. "
                 + ("Pending: " + ", ".join(pending) if pending else "No pending scope values.")
+            )
+        elif args.command == "sensitivity":
+            from faersight.sensitivity import run_sensitivity
+
+            if args.jar is None:
+                raise ValueError("Set WEKA_JAR or supply --jar PATH to WEKA 3.8.6")
+            result = run_sensitivity(
+                args.database,
+                args.primary_run,
+                args.output,
+                config_path=args.config,
+                jar=args.jar,
+                java=args.java,
+            )
+            print(
+                json.dumps(
+                    {
+                        k: v
+                        for k, v in result.items()
+                        if k not in {"artifacts", "source_code_hashes"}
+                    },
+                    indent=2,
+                )
             )
         elif args.command == "mine":
             if args.jar is None:

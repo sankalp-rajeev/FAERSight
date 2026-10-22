@@ -1,0 +1,9 @@
+drug,reaction,source,source_url,label_section_verified,exact_term_appropriate,reviewer,reviewed_on,notes
+atorvastatin,MYOPATHY,lipitor_2024,https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/020702s081lbl.pdf,,,,,
+atorvastatin,RHABDOMYOLYSIS,lipitor_2024,https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/020702s081lbl.pdf,,,,,
+rosuvastatin,MYOPATHY,crestor_2024,https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/021366s046lbl.pdf,,,,,
+rosuvastatin,RHABDOMYOLYSIS,crestor_2024,https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/021366s046lbl.pdf,,,,,
+simvastatin,MYOPATHY,zocor_2023,https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/019766s103lbl.pdf,,,,,
+simvastatin,RHABDOMYOLYSIS,zocor_2023,https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/019766s103lbl.pdf,,,,,
+pravastatin,MYOPATHY,pravachol_2022,https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/019898s070lbl.pdf,,,,,
+pravastatin,RHABDOMYOLYSIS,pravachol_2022,https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/019898s070lbl.pdf,,,,,

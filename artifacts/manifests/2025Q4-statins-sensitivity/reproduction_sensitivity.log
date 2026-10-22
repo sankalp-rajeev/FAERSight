@@ -1,0 +1,497 @@
+{
+  "status": "computational_gates_passed",
+  "quarters": [
+    "2025Q4"
+  ],
+  "primary_experiment_unchanged": true,
+  "scientific_findings_validated": false,
+  "source_mart_sha256": "bb397ba6163f3fcc061013e4ec082c0850d9257575beca15a7a0be9214ad18c8",
+  "primary_run_manifest_sha256": "79f5f7be64a64b96262e37442ae94fc5dd75b26e658f2b5c24f013dbf83f55fe",
+  "input_hashes": {
+    "config/mining.yaml": "9f76271974be1431328acce19b749ab3629e64e77ae7681c0f7b2fbf5cbaa8ee",
+    "config/experiment.yaml": "e38ac83ea88da7dcdf4cb567ca550b65103e122e9d2bc6f0d657e80938bd274a",
+    "benchmarks/known_signals.yaml": "142b8da5e3f613643403c42f618d9a3bf0da12fbd324a1062795104375f882a1",
+    "config/therapeutic_class.yaml": "7c1928d9858d4708bace3dd4fe985f3b9071cc4b9a39d56b6ad4da90fb684022",
+    "mappings/drug_mapping.csv": "9c26e3bf61608bba873b8475924b694ac7928d951012253b87af623d1f87e1c5",
+    "uv.lock": "35bf7a88e268b848b909e314441b5f2225e751689ba3ecc9f2e28e20a0e53dce",
+    "config/sensitivity.yaml": "602f5165300a6880009f52b8630a2833a6d88f09524c32fa38a0abd2ca1036bb",
+    "mappings/sensitivity_ss_aliases.csv": "23fb8e380d5c171e0007349258e15c0d7f68f031bd102e26176a41a712798292",
+    "mappings/sensitivity_ss_review.yaml": "54f4bd028568a77cd288f78e6fcf61b4f7eaa59eb6cd23928a94b0a2fffa066c"
+  },
+  "mart": {
+    "status": "passed",
+    "checks": {
+      "nonempty_reporting_population": true,
+      "target_exposure_present": true,
+      "nonempty_candidate_vocabulary": true,
+      "unique_cases": true,
+      "complete_eligible_population": true,
+      "no_deleted_cases": true,
+      "no_mapping_conflicts": true,
+      "all_eligible_drug_records_preserved": true,
+      "valid_drug_joins": true,
+      "valid_reaction_joins": true,
+      "valid_item_joins": true,
+      "unique_presence_items": true,
+      "role_filter_integrity": true,
+      "common_denominator_and_nonnegative_cells": true,
+      "contingency_marginals": true,
+      "complete_candidate_pair_grid": true,
+      "background_reports_preserved": true,
+      "latest_versions_not_resurrected": true,
+      "demo_source_row_reconciliation": true,
+      "drug_source_row_reconciliation": true,
+      "reac_source_row_reconciliation": true,
+      "all_ps_ss_candidates_resolved": true,
+      "only_2025q4": true,
+      "unchanged_cases": true,
+      "unchanged_case_reactions": true,
+      "unchanged_raw_drug": true,
+      "unchanged_raw_demo": true,
+      "unchanged_raw_reac": true,
+      "fixed_primary_vocabulary": true,
+      "ps_presence_subset": true
+    },
+    "eligible_n": 385288,
+    "target_exposed_n": 3703,
+    "background_n": 381585,
+    "candidate_reactions": 359,
+    "counted_pairs": 2513,
+    "unmapped_target_candidate_drug_rows": 272,
+    "warnings": [
+      "Target-relevant unmapped names require review; no fuzzy mapping applied"
+    ],
+    "scientific_findings_validated": false,
+    "remaining_scientific_gates": [
+      "real WEKA experiment",
+      "manual source review",
+      "benchmark freeze/recovery",
+      "sensitivity/evaluation"
+    ],
+    "drug_roles": [
+      "PS",
+      "SS"
+    ],
+    "source_mart_sha256": "bb397ba6163f3fcc061013e4ec082c0850d9257575beca15a7a0be9214ad18c8",
+    "mapping_overlay_sha256": "23fb8e380d5c171e0007349258e15c0d7f68f031bd102e26176a41a712798292",
+    "mapping_review_sha256": "54f4bd028568a77cd288f78e6fcf61b4f7eaa59eb6cd23928a94b0a2fffa066c",
+    "mapping_source_rows_resolved": 2,
+    "unreviewed_ps_ss_candidates": 0,
+    "without_overlay_exposed_n": 3702,
+    "deferred_new_reactions": 404,
+    "vocabulary_policy": "fixed_primary_reactions_no_new_search",
+    "exposure_by_drug": [
+      {
+        "drug": "atorvastatin",
+        "ps": 1157,
+        "ps_ss": 1755,
+        "added": 598
+      },
+      {
+        "drug": "fluvastatin",
+        "ps": 6,
+        "ps_ss": 40,
+        "added": 34
+      },
+      {
+        "drug": "lovastatin",
+        "ps": 0,
+        "ps_ss": 9,
+        "added": 9
+      },
+      {
+        "drug": "pitavastatin",
+        "ps": 16,
+        "ps_ss": 42,
+        "added": 26
+      },
+      {
+        "drug": "pravastatin",
+        "ps": 67,
+        "ps_ss": 135,
+        "added": 68
+      },
+      {
+        "drug": "rosuvastatin",
+        "ps": 864,
+        "ps_ss": 1508,
+        "added": 644
+      },
+      {
+        "drug": "simvastatin",
+        "ps": 188,
+        "ps_ss": 464,
+        "added": 276
+      }
+    ],
+    "artifacts": {
+      "analytical.duckdb": "aa0b9a4ca1336313e955069d413ca0ec972da89034c37a2afe3794ffc4e0a4b6"
+    }
+  },
+  "comparison": {
+    "support_comparison": [
+      {
+        "support": 1e-05,
+        "ps_rules": 383,
+        "ps_ss_rules": 763,
+        "common": 371,
+        "gained": 392,
+        "lost": 12,
+        "jaccard": 0.47870967741935483
+      },
+      {
+        "support": 5e-05,
+        "ps_rules": 61,
+        "ps_ss_rules": 301,
+        "common": 60,
+        "gained": 241,
+        "lost": 1,
+        "jaccard": 0.1986754966887417
+      },
+      {
+        "support": 0.0001,
+        "ps_rules": 20,
+        "ps_ss_rules": 112,
+        "common": 20,
+        "gained": 92,
+        "lost": 0,
+        "jaccard": 0.17857142857142858
+      }
+    ],
+    "role_rank_comparison": [
+      {
+        "metric": "lift_python_check",
+        "shared_finite_pairs": 2154,
+        "spearman": 0.7931182277930724,
+        "top_k": [
+          {
+            "requested_k": 10,
+            "effective_k": 10,
+            "common": 4,
+            "tie_break": "drug_then_reaction_lexical"
+          },
+          {
+            "requested_k": 25,
+            "effective_k": 25,
+            "common": 12,
+            "tie_break": "drug_then_reaction_lexical"
+          },
+          {
+            "requested_k": 50,
+            "effective_k": 50,
+            "common": 26,
+            "tie_break": "drug_then_reaction_lexical"
+          }
+        ],
+        "largest_rank_changes": [
+          {
+            "drug": "fluvastatin",
+            "reaction": "NECROTISING MYOSITIS",
+            "ps_rank": 1561.0,
+            "ps_ss_rank": 1.0
+          },
+          {
+            "drug": "pravastatin",
+            "reaction": "NECROTISING MYOSITIS",
+            "ps_rank": 1561.0,
+            "ps_ss_rank": 2.0
+          },
+          {
+            "drug": "pitavastatin",
+            "reaction": "GENERALISED OEDEMA",
+            "ps_rank": 1561.0,
+            "ps_ss_rank": 5.0
+          },
+          {
+            "drug": "pitavastatin",
+            "reaction": "CARDIO-RESPIRATORY ARREST",
+            "ps_rank": 1561.0,
+            "ps_ss_rank": 9.0
+          },
+          {
+            "drug": "pitavastatin",
+            "reaction": "HAEMATURIA",
+            "ps_rank": 1561.0,
+            "ps_ss_rank": 15.0
+          },
+          {
+            "drug": "pitavastatin",
+            "reaction": "PRESYNCOPE",
+            "ps_rank": 1561.0,
+            "ps_ss_rank": 17.0
+          },
+          {
+            "drug": "fluvastatin",
+            "reaction": "BLOOD CREATINE PHOSPHOKINASE INCREASED",
+            "ps_rank": 1561.0,
+            "ps_ss_rank": 18.0
+          },
+          {
+            "drug": "fluvastatin",
+            "reaction": "BLOOD UREA INCREASED",
+            "ps_rank": 1561.0,
+            "ps_ss_rank": 24.0
+          },
+          {
+            "drug": "fluvastatin",
+            "reaction": "MUSCLE RUPTURE",
+            "ps_rank": 1561.0,
+            "ps_ss_rank": 27.0
+          },
+          {
+            "drug": "fluvastatin",
+            "reaction": "MYOPATHY",
+            "ps_rank": 1561.0,
+            "ps_ss_rank": 31.0
+          }
+        ]
+      },
+      {
+        "metric": "prr",
+        "shared_finite_pairs": 2153,
+        "spearman": 0.7937415703336209,
+        "top_k": [
+          {
+            "requested_k": 10,
+            "effective_k": 10,
+            "common": 6,
+            "tie_break": "drug_then_reaction_lexical"
+          },
+          {
+            "requested_k": 25,
+            "effective_k": 25,
+            "common": 12,
+            "tie_break": "drug_then_reaction_lexical"
+          },
+          {
+            "requested_k": 50,
+            "effective_k": 50,
+            "common": 25,
+            "tie_break": "drug_then_reaction_lexical"
+          }
+        ],
+        "largest_rank_changes": [
+          {
+            "drug": "fluvastatin",
+            "reaction": "NECROTISING MYOSITIS",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 1.0
+          },
+          {
+            "drug": "pravastatin",
+            "reaction": "NECROTISING MYOSITIS",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 6.0
+          },
+          {
+            "drug": "pitavastatin",
+            "reaction": "GENERALISED OEDEMA",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 11.0
+          },
+          {
+            "drug": "pitavastatin",
+            "reaction": "CARDIO-RESPIRATORY ARREST",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 17.0
+          },
+          {
+            "drug": "pitavastatin",
+            "reaction": "HAEMATURIA",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 22.0
+          },
+          {
+            "drug": "pitavastatin",
+            "reaction": "PRESYNCOPE",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 23.0
+          },
+          {
+            "drug": "fluvastatin",
+            "reaction": "BLOOD CREATINE PHOSPHOKINASE INCREASED",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 24.0
+          },
+          {
+            "drug": "fluvastatin",
+            "reaction": "BLOOD UREA INCREASED",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 28.0
+          },
+          {
+            "drug": "fluvastatin",
+            "reaction": "MUSCLE RUPTURE",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 31.0
+          },
+          {
+            "drug": "pravastatin",
+            "reaction": "GENERALISED OEDEMA",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 33.0
+          }
+        ]
+      },
+      {
+        "metric": "ror",
+        "shared_finite_pairs": 2153,
+        "spearman": 0.7926173369272081,
+        "top_k": [
+          {
+            "requested_k": 10,
+            "effective_k": 10,
+            "common": 5,
+            "tie_break": "drug_then_reaction_lexical"
+          },
+          {
+            "requested_k": 25,
+            "effective_k": 25,
+            "common": 12,
+            "tie_break": "drug_then_reaction_lexical"
+          },
+          {
+            "requested_k": 50,
+            "effective_k": 50,
+            "common": 23,
+            "tie_break": "drug_then_reaction_lexical"
+          }
+        ],
+        "largest_rank_changes": [
+          {
+            "drug": "fluvastatin",
+            "reaction": "NECROTISING MYOSITIS",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 1.0
+          },
+          {
+            "drug": "pravastatin",
+            "reaction": "NECROTISING MYOSITIS",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 6.0
+          },
+          {
+            "drug": "pitavastatin",
+            "reaction": "GENERALISED OEDEMA",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 9.0
+          },
+          {
+            "drug": "pitavastatin",
+            "reaction": "CARDIO-RESPIRATORY ARREST",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 14.0
+          },
+          {
+            "drug": "pitavastatin",
+            "reaction": "HAEMATURIA",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 20.0
+          },
+          {
+            "drug": "pitavastatin",
+            "reaction": "PRESYNCOPE",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 22.0
+          },
+          {
+            "drug": "fluvastatin",
+            "reaction": "BLOOD CREATINE PHOSPHOKINASE INCREASED",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 24.0
+          },
+          {
+            "drug": "fluvastatin",
+            "reaction": "BLOOD UREA INCREASED",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 27.0
+          },
+          {
+            "drug": "pitavastatin",
+            "reaction": "TINNITUS",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 31.0
+          },
+          {
+            "drug": "fluvastatin",
+            "reaction": "MUSCLE RUPTURE",
+            "ps_rank": 1560.0,
+            "ps_ss_rank": 33.0
+          }
+        ]
+      }
+    ],
+    "prr_screen": {
+      "ps": 320,
+      "ps_ss": 665,
+      "gained": 367,
+      "lost": 22
+    }
+  },
+  "manual_review": {
+    "status": "ready_for_student_review",
+    "student_review_completed": false,
+    "cases": 15,
+    "rule_pairs": 17,
+    "benchmark_pairs": 8,
+    "automated_source_checks": "passed",
+    "report_level_details_in_git": false,
+    "source_hashes": {
+      "DEMO": "7f575aefc901aa380122bb5f35de98f2fc2f33dcaf050cf30426e10f3daa1ae2",
+      "DRUG": "886ef135263a63ee950be16bf4da1db04f856518b6072111822f1bc7e1112a0f",
+      "REAC": "1d98d0aa6b187edffb9f6dcffbd1569c16367740a7a126d306483e1888ef9de8"
+    },
+    "files": {
+      "benchmark_checklist.csv": "106549d38bd31eab5d48cc39b9bcb6f10e301ac513c6c0f75ad4b4b987e64e18",
+      "case_checklist.csv": "9c5a16ceb73e99adcb795899d0b84f6a9dc04a16e537dd630ad8a5600ca17758",
+      "cases.json": "f0a220b363acc21d75077c3967a783a2be214dc59be1b86ff87eaa9678a919a9",
+      "README.md": "b85298abb51885aa413125f482ce8addb2473cae82b4cd5fe8ccc1353f2ff493",
+      "rules.csv": "79408ac94245b807f7f623e9e9304f6651c9edf2865040fc822742b042cf73cf"
+    }
+  },
+  "benchmark_recovery": [
+    {
+      "role": "PS",
+      "support": 1e-05,
+      "recovered": 5,
+      "total": 8
+    },
+    {
+      "role": "PS",
+      "support": 5e-05,
+      "recovered": 4,
+      "total": 8
+    },
+    {
+      "role": "PS",
+      "support": 0.0001,
+      "recovered": 2,
+      "total": 8
+    },
+    {
+      "role": "PS+SS",
+      "support": 1e-05,
+      "recovered": 5,
+      "total": 8
+    },
+    {
+      "role": "PS+SS",
+      "support": 5e-05,
+      "recovered": 4,
+      "total": 8
+    },
+    {
+      "role": "PS+SS",
+      "support": 0.0001,
+      "recovered": 2,
+      "total": 8
+    }
+  ],
+  "pending_student_judgment": [
+    "source_case_review",
+    "exact_alias_signoff",
+    "benchmark_label_review",
+    "rule_interpretation",
+    "course_submission"
+  ]
+}

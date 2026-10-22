@@ -1,0 +1,359 @@
+{
+  "archive_sha256": "1a31e6fdedd7442ffb0cd9d0dc8d2d27ee738e5ee2da34e629d82e47f8d418b6",
+  "cached_inputs_reused": [
+    "checksum_pinned_FDA_archive",
+    "WEKA_and_Bounce_jars",
+    "uv_package_cache"
+  ],
+  "clone": "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022",
+  "commands": [
+    {
+      "args": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--extra",
+        "dev",
+        "--offline",
+        "--cache-dir",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\uv-cache"
+      ],
+      "exit_code": 0,
+      "name": "environment"
+    },
+    {
+      "args": [
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022\\.venv\\Scripts\\python.exe",
+        "-m",
+        "faersight.cli",
+        "acquire"
+      ],
+      "exit_code": 0,
+      "name": "acquire_verify_and_extract"
+    },
+    {
+      "args": [
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=artifacts/generated/primary_tests.xml"
+      ],
+      "exit_code": 0,
+      "name": "primary_tests"
+    },
+    {
+      "args": [
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022\\.venv\\Scripts\\python.exe",
+        "-m",
+        "faersight.cli",
+        "ingest"
+      ],
+      "exit_code": 0,
+      "name": "primary_ingest"
+    },
+    {
+      "args": [
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022\\.venv\\Scripts\\python.exe",
+        "-m",
+        "faersight.cli",
+        "mine",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022\\data\\processed\\2025Q4-statins\\analytical.duckdb",
+        "--output",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022\\artifacts\\generated\\2025Q4-statins-mining",
+        "--jar",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar"
+      ],
+      "exit_code": 1,
+      "name": "primary_mining"
+    },
+    {
+      "args": [
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022\\.venv\\Scripts\\python.exe",
+        "-m",
+        "faersight.cli",
+        "mine",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022\\data\\processed\\2025Q4-statins-retry\\analytical.duckdb",
+        "--output",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022\\artifacts\\generated\\2025Q4-statins-mining",
+        "--jar",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar"
+      ],
+      "exit_code": 0,
+      "name": "primary_mining"
+    },
+    {
+      "args": [
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=artifacts/generated/sensitivity_tests.xml"
+      ],
+      "exit_code": 0,
+      "name": "milestone_tests"
+    },
+    {
+      "args": [
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022\\.venv\\Scripts\\python.exe",
+        "-m",
+        "faersight.cli",
+        "sensitivity",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022\\data\\processed\\2025Q4-statins-retry\\analytical.duckdb",
+        "--primary-run",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022\\artifacts\\generated\\2025Q4-statins-mining",
+        "--output",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022\\artifacts\\generated\\2025Q4-statins-sensitivity",
+        "--jar",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar"
+      ],
+      "exit_code": 0,
+      "name": "sensitivity"
+    }
+  ],
+  "finished_utc": "2026-10-22T20:57:21.027118+00:00",
+  "fresh_clone_method": "local_git_bundle",
+  "ingestion_recovery": {
+    "database": "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\fresh-clone-20261022\\data\\processed\\2025Q4-statins-retry\\analytical.duckdb",
+    "integration_manifest_sha256": "4913c4b16e1fdb36e803d09d62d8461448d3d141fb7afc54b8a0e1485b94045a",
+    "method": "direct_clone_python_cli_ingest_with_new_output_directory",
+    "quality": {
+      "background_n": 382990,
+      "candidate_reactions": 359,
+      "checks": {
+        "all_eligible_drug_records_preserved": true,
+        "background_reports_preserved": true,
+        "common_denominator_and_nonnegative_cells": true,
+        "complete_candidate_pair_grid": true,
+        "complete_eligible_population": true,
+        "contingency_marginals": true,
+        "database_sha256_matches_manifest": true,
+        "demo_source_row_reconciliation": true,
+        "drug_source_row_reconciliation": true,
+        "latest_versions_not_resurrected": true,
+        "no_deleted_cases": true,
+        "no_mapping_conflicts": true,
+        "nonempty_candidate_vocabulary": true,
+        "nonempty_reporting_population": true,
+        "reac_source_row_reconciliation": true,
+        "role_filter_integrity": true,
+        "target_exposure_present": true,
+        "unique_cases": true,
+        "unique_presence_items": true,
+        "valid_drug_joins": true,
+        "valid_item_joins": true,
+        "valid_reaction_joins": true
+      },
+      "counted_pairs": 2513,
+      "eligible_n": 385288,
+      "remaining_scientific_gates": [
+        "real WEKA experiment",
+        "manual source review",
+        "benchmark freeze/recovery",
+        "sensitivity/evaluation"
+      ],
+      "scientific_findings_validated": false,
+      "status": "passed",
+      "target_exposed_n": 2298,
+      "unmapped_target_candidate_drug_rows": 274,
+      "warnings": [
+        "Target-relevant unmapped names require review; no fuzzy mapping applied"
+      ]
+    },
+    "reason": "initial_ingest_returned_zero_without_completion_artifacts",
+    "scientific_findings_validated": false
+  },
+  "limitations": [
+    "same_host_and_existing_Java_runtime",
+    "cached_pinned_archive_and_dependency_jars",
+    "new_milestone_reproduced_from_hashed_uncommitted_overlay"
+  ],
+  "log_hashes": {
+    "acquire_verify_and_extract.log": "0d114117c52e19f996740a56bcb994b582567557e0b1d5f331ebb568ab824308",
+    "environment.log": "21351177a3ece5f59299dd9f44d9954dec39a864076f831390a010df529dd9c9",
+    "milestone_tests.log": "02815ee5654fbbfbd90a91046fa0f79402ee2996938b1f42df179568bb41df1c",
+    "primary_ingest.log": "020c47f243c9068a1efef4864fe3b82d2d057c547d43c4bde8d99843d3afd94c",
+    "primary_mining.log": "4f5dc5c71c4fc773bbd9362b8a6bbca8c5fc0c58bc8052612a90b806564f7ed0",
+    "primary_tests.log": "106f1df3a1b16e641aaa09781f5c06ef964bf29991ed047ed29ba77decc56b18",
+    "sensitivity.log": "d2f8ddb173f9ff9945cad0c34bdf87f86f94ce56ee0b9cd0d9a38404639c5e7f"
+  },
+  "milestone_overlay_hashes": {
+    "config/sensitivity.yaml": "602f5165300a6880009f52b8630a2833a6d88f09524c32fa38a0abd2ca1036bb",
+    "mappings/sensitivity_ss_aliases.csv": "23fb8e380d5c171e0007349258e15c0d7f68f031bd102e26176a41a712798292",
+    "mappings/sensitivity_ss_review.yaml": "54f4bd028568a77cd288f78e6fcf61b4f7eaa59eb6cd23928a94b0a2fffa066c",
+    "src/faersight/benchmark_ranking.py": "8c4f3b68481f0026ac66bf8a71094a9148e7a9e5eeccbfd9985fd631354d5a50",
+    "src/faersight/cli.py": "42e7dbb4fa5f19318e7aca12bb3cfabc0b8f19007a2207e8856ffcfd86aebeb1",
+    "src/faersight/manual_review.py": "ce19d50005017dcc341439b2508b3086b7d3afabbef1ded55f7f8a3f26bbaa9c",
+    "src/faersight/screening.py": "614bbedeaaee468d5df5534a9517368aaf16858f68bd7adc9cae5e566208ad75",
+    "src/faersight/sensitivity.py": "89a19ce1e0e81af2da755f4af923b5b4dcf120a1d6b4aa375ce9c52df05035a8",
+    "tests/integration/test_sensitivity.py": "f2f76fec99f8ec46021fefb6f3b9af725a437544e63b8cb2aa3dc14782ca33dd",
+    "tests/unit/test_benchmark_ranking.py": "c19d25432aefa3aa69f3fa297e24af9529c574864ad934c6a550ab16ea43f326",
+    "tests/unit/test_screening.py": "3b25901cebccc2978ea4242296e5d6126019c6d1c0a07d146e91fb6888c8f662"
+  },
+  "milestone_overlay_is_committed": false,
+  "primary_deterministic_artifacts": {
+    "evaluation/accepted_rules_scored.csv": {
+      "matches": true,
+      "reference_sha256": "5284ce15ddc2bc3fe0e2c865e38c52be1ea5621d3de6afe3c6788ab9105f3bde",
+      "reproduced_sha256": "5284ce15ddc2bc3fe0e2c865e38c52be1ea5621d3de6afe3c6788ab9105f3bde"
+    },
+    "evaluation/all_candidate_counts.csv": {
+      "matches": true,
+      "reference_sha256": "daa430e73eaecd70ee1b6219b86640e62c1d06f2e4bde52f9cb69f8073f284ea",
+      "reproduced_sha256": "daa430e73eaecd70ee1b6219b86640e62c1d06f2e4bde52f9cb69f8073f284ea"
+    },
+    "evaluation/benchmark_recovery.csv": {
+      "matches": true,
+      "reference_sha256": "96c1ed1378b0c3df341c473cbd63238cba192098046717d0502f0f8808e7694b",
+      "reproduced_sha256": "96c1ed1378b0c3df341c473cbd63238cba192098046717d0502f0f8808e7694b"
+    },
+    "evaluation/quality_gates.json": {
+      "matches": true,
+      "reference_sha256": "5ab46516aba31675e1189544b39e5df43eb551ecd14fe7c91c595ca0e2060d52",
+      "reproduced_sha256": "5ab46516aba31675e1189544b39e5df43eb551ecd14fe7c91c595ca0e2060d52"
+    },
+    "evaluation/ranking_comparison.json": {
+      "matches": true,
+      "reference_sha256": "35b0c96f592ddce86aa6b1b57171de8a0513b40cfc2d8d3b6cd5019d1315db59",
+      "reproduced_sha256": "35b0c96f592ddce86aa6b1b57171de8a0513b40cfc2d8d3b6cd5019d1315db59"
+    },
+    "evaluation/support_stability.json": {
+      "matches": true,
+      "reference_sha256": "c604084318d3f6b2556808ac4746aeaebf22611263d2d2c5617628eea047a140",
+      "reproduced_sha256": "c604084318d3f6b2556808ac4746aeaebf22611263d2d2c5617628eea047a140"
+    },
+    "input/case_index.csv": {
+      "matches": true,
+      "reference_sha256": "dbb8c53dd8e7991e301e410f3c28248ad04b89491753f403beeea74b8d152512",
+      "reproduced_sha256": "dbb8c53dd8e7991e301e410f3c28248ad04b89491753f403beeea74b8d152512"
+    },
+    "input/transactions.arff": {
+      "matches": true,
+      "reference_sha256": "de0f94f545ebae18033195524984fc842d3359154b864cb52bef2372a877dcf1",
+      "reproduced_sha256": "de0f94f545ebae18033195524984fc842d3359154b864cb52bef2372a877dcf1"
+    },
+    "weka/complete.txt": {
+      "matches": true,
+      "reference_sha256": "f9b68d89815d60cb7d328270635b08452edf767076e9d90bfd9f73bfe31c1d1e",
+      "reproduced_sha256": "f9b68d89815d60cb7d328270635b08452edf767076e9d90bfd9f73bfe31c1d1e"
+    },
+    "weka/weka_rules.csv": {
+      "matches": true,
+      "reference_sha256": "0f4018bf1d3ee778aa25c1122c1be80dca743a4691011447c0f95239e74435f3",
+      "reproduced_sha256": "0f4018bf1d3ee778aa25c1122c1be80dca743a4691011447c0f95239e74435f3"
+    }
+  },
+  "primary_git_commit": "262dfc0bea7c39e0430747927931b98fbbeca96f",
+  "primary_initial_worktree_clean": true,
+  "primary_weka": {
+    "all_raw_logs_byte_identical": true,
+    "raw_logs_compared": 1077,
+    "run_records_match_except_seconds": true
+  },
+  "processed_data_or_results_copied": false,
+  "resolved_attempt_failures": [
+    {
+      "error": "Reproduction command failed: primary_mining",
+      "finished_utc": "2026-10-22T20:48:42.113415+00:00"
+    }
+  ],
+  "runtime_jar_hashes": {
+    "bounce-0.18.jar": "bffff1505335c02256b7ab2ccffbe4aa4d3ac9fe14c17557809b7c9d99d666ca",
+    "weka-stable-3.8.6.jar": "932ea2f342b58fe45736389e9c426d5b5955e610d1f5f6485117f532068915e9"
+  },
+  "scientific_findings_validated": false,
+  "sensitivity_deterministic_artifacts": {
+    "all_counts_screened.csv": {
+      "matches": true,
+      "reference_sha256": "7a3f3a4e9ebbb41092e44a31e6709517ae49e56b3da050524dc9ab95bf4160b5",
+      "reproduced_sha256": "7a3f3a4e9ebbb41092e44a31e6709517ae49e56b3da050524dc9ab95bf4160b5"
+    },
+    "benchmark_ranks.csv": {
+      "matches": true,
+      "reference_sha256": "b898c10189265089fd2c7d1f8d52124672d3a42a008eef67dd196e193df3769b",
+      "reproduced_sha256": "b898c10189265089fd2c7d1f8d52124672d3a42a008eef67dd196e193df3769b"
+    },
+    "benchmark_recovery.csv": {
+      "matches": true,
+      "reference_sha256": "c0c4c8754d9529645274a81072bbead5451926e928b9681b0b75651370a6a69d",
+      "reproduced_sha256": "c0c4c8754d9529645274a81072bbead5451926e928b9681b0b75651370a6a69d"
+    },
+    "manual_review/README.md": {
+      "matches": true,
+      "reference_sha256": "b85298abb51885aa413125f482ce8addb2473cae82b4cd5fe8ccc1353f2ff493",
+      "reproduced_sha256": "b85298abb51885aa413125f482ce8addb2473cae82b4cd5fe8ccc1353f2ff493"
+    },
+    "manual_review/benchmark_checklist.csv": {
+      "matches": true,
+      "reference_sha256": "106549d38bd31eab5d48cc39b9bcb6f10e301ac513c6c0f75ad4b4b987e64e18",
+      "reproduced_sha256": "106549d38bd31eab5d48cc39b9bcb6f10e301ac513c6c0f75ad4b4b987e64e18"
+    },
+    "manual_review/case_checklist.csv": {
+      "matches": true,
+      "reference_sha256": "9c5a16ceb73e99adcb795899d0b84f6a9dc04a16e537dd630ad8a5600ca17758",
+      "reproduced_sha256": "9c5a16ceb73e99adcb795899d0b84f6a9dc04a16e537dd630ad8a5600ca17758"
+    },
+    "manual_review/cases.json": {
+      "matches": true,
+      "reference_sha256": "f0a220b363acc21d75077c3967a783a2be214dc59be1b86ff87eaa9678a919a9",
+      "reproduced_sha256": "f0a220b363acc21d75077c3967a783a2be214dc59be1b86ff87eaa9678a919a9"
+    },
+    "manual_review/package_manifest.json": {
+      "matches": true,
+      "reference_sha256": "a962535bb24c4b468bb0d33822bab2bb2bddd64566e82ff7c219c8a0ee2fbe08",
+      "reproduced_sha256": "a962535bb24c4b468bb0d33822bab2bb2bddd64566e82ff7c219c8a0ee2fbe08"
+    },
+    "manual_review/rules.csv": {
+      "matches": true,
+      "reference_sha256": "79408ac94245b807f7f623e9e9304f6651c9edf2865040fc822742b042cf73cf",
+      "reproduced_sha256": "79408ac94245b807f7f623e9e9304f6651c9edf2865040fc822742b042cf73cf"
+    },
+    "mart/deferred_reactions.csv": {
+      "matches": true,
+      "reference_sha256": "1030325e74639abf6f04765d9548419448a7d2e805b1ec393d877de3fd840de2",
+      "reproduced_sha256": "1030325e74639abf6f04765d9548419448a7d2e805b1ec393d877de3fd840de2"
+    },
+    "mart/ps_ss_without_overlay_counts.csv": {
+      "matches": true,
+      "reference_sha256": "9fca8c18d62d3cdd827695789831b238610e884512dfd669173133f6228c56d9",
+      "reproduced_sha256": "9fca8c18d62d3cdd827695789831b238610e884512dfd669173133f6228c56d9"
+    },
+    "method_rank_comparison.json": {
+      "matches": true,
+      "reference_sha256": "200f1ef9bb7b3631ce696381ab0054038ad01c5fd83a60b003a57173cada96ce",
+      "reproduced_sha256": "200f1ef9bb7b3631ce696381ab0054038ad01c5fd83a60b003a57173cada96ce"
+    },
+    "ps_ss/input/case_index.csv": {
+      "matches": true,
+      "reference_sha256": "dbb8c53dd8e7991e301e410f3c28248ad04b89491753f403beeea74b8d152512",
+      "reproduced_sha256": "dbb8c53dd8e7991e301e410f3c28248ad04b89491753f403beeea74b8d152512"
+    },
+    "ps_ss/input/transactions.arff": {
+      "matches": true,
+      "reference_sha256": "d5842c8b2b9e08e76d62d7f0de1111103e234f9313a3dad52150f26b9f4440c8",
+      "reproduced_sha256": "d5842c8b2b9e08e76d62d7f0de1111103e234f9313a3dad52150f26b9f4440c8"
+    },
+    "ps_ss/weka/complete.txt": {
+      "matches": true,
+      "reference_sha256": "f9b68d89815d60cb7d328270635b08452edf767076e9d90bfd9f73bfe31c1d1e",
+      "reproduced_sha256": "f9b68d89815d60cb7d328270635b08452edf767076e9d90bfd9f73bfe31c1d1e"
+    },
+    "ps_ss/weka/weka_rules.csv": {
+      "matches": true,
+      "reference_sha256": "fe07f9022982c45f8695a72f044943adb7f1d648d8508bf958337f0fdde7e145",
+      "reproduced_sha256": "fe07f9022982c45f8695a72f044943adb7f1d648d8508bf958337f0fdde7e145"
+    },
+    "role_comparison.json": {
+      "matches": true,
+      "reference_sha256": "98e7f48cccc76f696ba5bb46d71bcf5adfcb58e4f5c2d713c2c7dc4463c09c21",
+      "reproduced_sha256": "98e7f48cccc76f696ba5bb46d71bcf5adfcb58e4f5c2d713c2c7dc4463c09c21"
+    }
+  },
+  "sensitivity_weka": {
+    "all_raw_logs_byte_identical": true,
+    "raw_logs_compared": 1077,
+    "run_records_match_except_seconds": true
+  },
+  "started_utc": "2026-10-22T20:47:57.920271+00:00",
+  "status": "passed"
+}

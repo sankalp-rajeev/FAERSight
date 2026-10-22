@@ -1,0 +1,10 @@
+{
+  "actual_weka_tests_enabled": true,
+  "errors": 0,
+  "failures": 0,
+  "junit_sha256": "60f2ccd56e0e17596ac05fe297072748f0979e4eb778b14b23ae96367be85a16",
+  "passed": 100,
+  "scientific_findings_validated": false,
+  "skipped": 0,
+  "tests": 100
+}
