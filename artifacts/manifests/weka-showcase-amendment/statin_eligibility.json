@@ -1,0 +1,64 @@
+{
+  "basis": "Frozen PS single-item marginals only; no association rules mined",
+  "eligibility_is_not_rule_existence": true,
+  "empty_transactions": 117325,
+  "fallback_a_ladder": [
+    {
+      "apriori_count": 1541,
+      "apriori_eligible_statins": [],
+      "fpgrowth_ceil_count": 1542,
+      "fpgrowth_eligible_statins": [],
+      "support": "0.004"
+    },
+    {
+      "apriori_count": 1156,
+      "apriori_eligible_statins": [
+        "DRUG_atorvastatin"
+      ],
+      "fpgrowth_ceil_count": 1156,
+      "fpgrowth_eligible_statins": [
+        "DRUG_atorvastatin"
+      ],
+      "support": "0.003"
+    },
+    {
+      "apriori_count": 771,
+      "apriori_eligible_statins": [
+        "DRUG_atorvastatin",
+        "DRUG_rosuvastatin"
+      ],
+      "fpgrowth_ceil_count": 771,
+      "fpgrowth_eligible_statins": [
+        "DRUG_atorvastatin",
+        "DRUG_rosuvastatin"
+      ],
+      "support": "0.002"
+    }
+  ],
+  "input": {
+    "attributes": 366,
+    "nominal_values": [
+      "0",
+      "1"
+    ],
+    "path": "artifacts/generated/2025Q4-statins-mining/input/transactions.arff",
+    "quarters": [
+      "2025Q4"
+    ],
+    "roles": [
+      "PS"
+    ],
+    "rows": 385288,
+    "sha256": "de0f94f545ebae18033195524984fc842d3359154b864cb52bef2372a877dcf1"
+  },
+  "rows": 385288,
+  "statin_presence_counts": {
+    "DRUG_atorvastatin": 1157,
+    "DRUG_fluvastatin": 6,
+    "DRUG_lovastatin": 0,
+    "DRUG_pitavastatin": 16,
+    "DRUG_pravastatin": 67,
+    "DRUG_rosuvastatin": 864,
+    "DRUG_simvastatin": 188
+  }
+}

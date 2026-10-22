@@ -14,6 +14,11 @@ reviews or change any `scientific_findings_validated: false` boundary.
 
 ## Post-core milestone: WEKA Showcase / Tool-Study Extension
 
+**Subsequent authorization:** the appended post-timeout amendment below authorizes
+one FPGrowth 0.001 feasibility attempt after semantic/fixture/configuration gates.
+The original Apriori ladder remains stopped. Historical checkpoint statements
+below describe their respective authorizations; they are preserved as history.
+
 Purpose: stronger course alignment and demonstration of WEKA's association
 analysis tools, separately from the scientific pair-comparison question.
 
@@ -258,3 +263,88 @@ Produce a factual engineering summary containing:
 Do not rewrite the primary/sensitivity findings using showcase outputs. Preserve
 all Milestone 3/4 evidence and validation fields. Commit/push the final factual
 checkpoint and stop; this extension does not authorize further scope expansion.
+
+## Post-timeout amendment: one FPGrowth attempt and bounded contingency
+
+Registered before any FPGrowth full-data result. Apriori timed out at the highest
+registered support (0.001), leaving no successful Apriori full-data support level
+for the planned algorithm comparison. Exactly **one FPGrowth full-data feasibility
+run at 0.001** is authorized on the same frozen primary PS input and resource
+envelope. Verify pinned 3.8.6 semantics and fixtures, lock a separate manifest,
+commit/push it, then execute that one run. Do not retry Apriori, descend either
+original ladder, run metrics/Explorer, or alter any core artifact.
+
+Retain 4 GiB heap, 1,800-second JVM wall limit, one JVM, lift >= 1.2 and presence
+semantics. Verify FPGrowth's own support rounding, -S/-N/-U/-D interactions,
+positive value handling, length/direction family, completeness and processors.
+Choose fixed-support/cap mode from implementation and fixtures before the result;
+stop on semantic incompatibility rather than silently substitute. Record any
+Apriori/FPGrowth integer-count difference before execution. Do not infer rule
+overlap or a runtime ratio from Apriori's timeout. Any completion comparison is
+specific to this dataset/configuration/resource envelope, without a causal claim
+about why either algorithm completed or failed.
+
+If FPGrowth also fails to return an interpretable complete result, the original
+unrestricted full-data feasibility study ends. Preserve its evidence and stop.
+No improvised configuration follows. The bounded tool-study below then becomes
+eligible, with a **new explicit user authorization** required to execute it.
+
+### Fallback A: separately authorized higher-support paired comparison
+
+Eligible after **either** FPGrowth 0.001 outcome: success permits a comparable-output
+point; failure permits a bounded feasibility comparison. Eligibility never means
+automatic execution. Preserve all original failed evidence and configurations.
+
+Lock the corrected sequence now: **0.004, 0.003, 0.002**. The proposed 0.01 and
+0.005 levels are excluded before results because neither retains a statin item.
+The [marginal-only eligibility audit](../artifacts/manifests/weka-showcase-amendment/statin_eligibility.json)
+scans the hash-pinned PS ARFF without mining association rules:
+
+- Atorvastatin 1,157; rosuvastatin 864; simvastatin 188; pravastatin 67;
+  pitavastatin 16; fluvastatin 6; lovastatin 0 presence reports.
+- 0.004: Apriori count 1,541 / FPGrowth ceil count 1,542; no statin survives.
+  This rung is a reaction-only tractability/comparison baseline.
+- 0.003: both counts 1,156; only atorvastatin survives.
+- 0.002: both counts 771; atorvastatin and rosuvastatin survive.
+
+FPGrowth ceil counts require confirmation against the pinned implementation
+before its execution lock. Item eligibility does not promise any statin rule.
+This ladder is based solely on existing singleton counts, never discovered rules.
+
+For each algorithm start at 0.004 and descend only after a successful complete,
+below-cap result. Stop that algorithm at its first timeout/resource failure or
+unresolved truncation. Keep the same input, 4 GiB/1,800 seconds, one JVM, lift
+floor, presence semantics, 100,000-rule stop policy and non-causal boundary.
+Use separate milestone/config/output paths. Compare overlap and runtime only
+where both complete under verified equivalent definitions; disclose the 0.004
+integer-count mismatch, or preregister an equivalent-count comparison separately.
+
+### Fallback B: separately authorized deterministic scaling diagnostics
+
+Eligible only if both original full-data algorithms fail; no diagnostic runs are
+authorized now. These are tool studies, never replacements for scientific/core
+results. Retain the same association settings at support 0.001 across sizes and
+algorithms, subject to the pre-run verified semantics/completeness policy. Use
+the same 4 GiB/1,800-second/one-JVM bounds and stop an algorithm's increasing-size
+sequence on its first failure or truncation ambiguity.
+
+Row design: exact nested 10,000, 50,000 and 100,000 reports, all 366 attributes.
+Rank the frozen primary case-index report IDs by SHA-256 of UTF-8
+`FAERSight-WEKA-scaling-v1|` followed by the exact report-ID string; break hash ties
+lexically by report ID. Take the first N then emit in original case-index order.
+Retain empty baskets naturally; do not select by reactions, exposure or rule
+content. Freeze selected-ID/input hashes before mining; publish aggregate hashes
+rather than report identifiers. Verify one-to-one mapping to the primary ARFF.
+
+Attribute design: separately eligible for an additional dimensionality check
+after the row sequence is recorded and reviewed. Use the fixed 10,000-report
+subset above at every size, retaining all its rows (including newly empty rows).
+Use exactly 50, 100, 200 and 366 attributes: all seven statins first in frozen
+order, then reactions by descending singleton frequency in the **full frozen PS
+population**, lexical attribute-name tie break. Freeze frequencies, attribute
+lists/order and hashes before any diagnostic mining. Do not use discovered rules
+or attractiveness to choose features or rows. No non-statin co-drugs are added.
+
+Report observed transaction-count and dimensionality scaling only. Neither
+diagnostic proves the precise internal cause of the Apriori timeout. No later
+support, metric, fallback, GUI or clinical interpretation follows automatically.

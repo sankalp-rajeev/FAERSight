@@ -148,3 +148,33 @@ to 0.0005; stop after recording/committing/pushing this checkpoint.** Any retry
 or changed execution requires separate review and plan amendment. This tool
 feasibility outcome does not replace or reinterpret Milestone 3/4 findings or
 alter their `scientific_findings_validated` boundaries.
+
+## Post-timeout FPGrowth amendment and preregistered contingency
+
+Apriori evidence is committed at `6afd22d`: one 0.001 attempt exceeded the
+registered 4 GiB / 1,800-second budget, no model returned. This establishes a
+feasibility outcome, not its internal cause (memory, candidate generation and
+itemset width are unproven explanations). All rule statistics/build time are
+unavailable. No retry or lower-support descent is authorized.
+
+Before any FPGrowth full-data result, authorize exactly one full-ARFF FPGrowth
+0.001 run after pinned implementation/fixture verification and a separate locked
+manifest. Preserve the original plan/history. The appended
+[roadmap amendment](roadmap.md#post-timeout-amendment-one-fpgrowth-attempt-and-bounded-contingency)
+is the controlling new authorization; the original Apriori stop rule stays in
+force. Resolve cap/completeness and any integer-count difference before execution.
+
+Preregister Fallback A **0.004 -> 0.003 -> 0.002** now, replacing the unexecuted
+proposal 0.01 -> 0.005 -> 0.002 in the attached request as explicitly corrected
+by the user. Frozen marginal audit confirms no statins at 0.004, atorvastatin only
+at 0.003, atorvastatin plus rosuvastatin at 0.002; eligibility is not rule recovery.
+The ladder is fixed before rule results. Fallback A becomes eligible after either
+FPGrowth success or failure, providing a paired-completion opportunity even if
+FPGrowth 0.001 succeeds; **separate explicit authorization remains required**.
+
+If both algorithms fail, end the original full-data feasibility study; bounded
+Fallbacks A/B become eligible without automatic execution. Fallback B's exact
+row hash/seed, nested sizes, constant row population and support-frequency/lexical
+attribute ordering are preregistered in the roadmap and independent of rules.
+Scaling does not prove an internal failure mechanism. All configs/evidence remain
+separate from Milestone 3/4 and from the locked Apriori source/configuration.

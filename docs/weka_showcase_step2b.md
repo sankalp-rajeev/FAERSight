@@ -3,6 +3,12 @@
 Factual engineering record, October 22, 2026. This records one authorized
 feasibility attempt, not a scientific interpretation or a completed rule study.
 
+The full-ARFF attempt exceeded the registered **4 GiB / 1,800-second** budget.
+This is a resource/feasibility outcome. It does not establish memory exhaustion,
+candidate generation, itemset width, or any other internal mechanism as its
+cause. No completed model was returned; later diagnostics must not be presented
+as proving a precise internal cause from scaling behavior alone.
+
 ## Registered invocation and outcome
 
 The exact authorized command was invoked once from repository commit `78dd8de`,
