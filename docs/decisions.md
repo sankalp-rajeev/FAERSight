@@ -178,3 +178,22 @@ row hash/seed, nested sizes, constant row population and support-frequency/lexic
 attribute ordering are preregistered in the roadmap and independent of rules.
 Scaling does not prove an internal failure mechanism. All configs/evidence remain
 separate from Milestone 3/4 and from the locked Apriori source/configuration.
+
+### FPGrowth semantic gate resolved before execution
+
+Pinned implementation and fixture inspection confirms `-S` fixes support and
+returns all internal qualifying rules, ignoring `-N` clipping. Without `-S`,
+`-U 1 -D 1` takes two passes (starts at 1, then clamps to the lower bound), not
+one; U filters maximum joint rule support. Select **Mode 1 / -S** before results.
+Use internal/API count equality plus normal build/complete export as the reliable
+completeness signal. Retain N=100000 as a requested value and post-completion
+stop threshold, explicitly not an enforceable generation/export cap in this mode.
+Heap/time are the resource bounds. At or above that threshold preserve and stop.
+
+FPGrowth's `ceil(.001*385288)` gives **386**, versus Apriori's **385**. This
+pre-run difference limits equivalence; no support adjustment is authorized.
+Explicit P=2 is required for correct sparse presence labels. I=-1 retains general
+rule partitions including multi-item consequents. See
+[verified implementation/fixture semantics](../showcase_fpgrowth/SEMANTICS.md).
+Exactly one locked full-data attempt follows; fallback eligibility is distinct
+from authorization to execute either fallback.

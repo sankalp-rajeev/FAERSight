@@ -1,0 +1,68 @@
+Compiled from "BinaryItem.java"
+public class weka.associations.BinaryItem extends weka.associations.NominalItem implements java.io.Serializable {
+  private static final long serialVersionUID;
+
+  public weka.associations.BinaryItem(weka.core.Attribute, int) throws java.lang.Exception;
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #1                  // Method weka/associations/NominalItem."<init>":(Lweka/core/Attribute;I)V
+       6: aload_1
+       7: invokevirtual #7                  // Method weka/core/Attribute.isNumeric:()Z
+      10: ifne          28
+      13: aload_1
+      14: invokevirtual #13                 // Method weka/core/Attribute.isNominal:()Z
+      17: ifeq          38
+      20: aload_1
+      21: invokevirtual #16                 // Method weka/core/Attribute.numValues:()I
+      24: iconst_2
+      25: if_icmple     38
+      28: new           #20                 // class java/lang/Exception
+      31: dup
+      32: ldc           #22                 // String BinaryItem must be constructed using a nominal attribute with at most 2 values!
+      34: invokespecial #24                 // Method java/lang/Exception."<init>":(Ljava/lang/String;)V
+      37: athrow
+      38: return
+
+  public boolean equals(java.lang.Object);
+    Code:
+       0: aload_1
+       1: instanceof    #27                 // class weka/associations/BinaryItem
+       4: ifne          9
+       7: iconst_0
+       8: ireturn
+       9: aload_1
+      10: checkcast     #27                 // class weka/associations/BinaryItem
+      13: astore_2
+      14: aload_0
+      15: getfield      #29                 // Field m_attribute:Lweka/core/Attribute;
+      18: aload_2
+      19: invokevirtual #33                 // Method getAttribute:()Lweka/core/Attribute;
+      22: invokevirtual #37                 // Method weka/core/Attribute.equals:(Ljava/lang/Object;)Z
+      25: ifeq          41
+      28: aload_0
+      29: getfield      #41                 // Field m_valueIndex:I
+      32: aload_2
+      33: invokevirtual #45                 // Method getValueIndex:()I
+      36: if_icmpne     41
+      39: iconst_1
+      40: ireturn
+      41: iconst_0
+      42: ireturn
+
+  public int hashCode();
+    Code:
+       0: aload_0
+       1: getfield      #29                 // Field m_attribute:Lweka/core/Attribute;
+       4: invokevirtual #48                 // Method weka/core/Attribute.name:()Ljava/lang/String;
+       7: invokevirtual #52                 // Method java/lang/String.hashCode:()I
+      10: aload_0
+      11: getfield      #29                 // Field m_attribute:Lweka/core/Attribute;
+      14: invokevirtual #16                 // Method weka/core/Attribute.numValues:()I
+      17: ixor
+      18: aload_0
+      19: getfield      #57                 // Field m_frequency:I
+      22: imul
+      23: ireturn
+}

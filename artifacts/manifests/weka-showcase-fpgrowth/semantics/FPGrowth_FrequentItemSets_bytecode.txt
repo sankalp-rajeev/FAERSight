@@ -1,0 +1,161 @@
+Compiled from "FPGrowth.java"
+public class weka.associations.FPGrowth$FrequentItemSets implements java.io.Serializable {
+  private static final long serialVersionUID;
+
+  protected java.util.ArrayList<weka.associations.FPGrowth$FrequentBinaryItemSet> m_sets;
+
+  protected int m_numberOfTransactions;
+
+  public weka.associations.FPGrowth$FrequentItemSets(int);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #7                  // class java/util/ArrayList
+       8: dup
+       9: invokespecial #9                  // Method java/util/ArrayList."<init>":()V
+      12: putfield      #10                 // Field m_sets:Ljava/util/ArrayList;
+      15: aload_0
+      16: iload_1
+      17: putfield      #16                 // Field m_numberOfTransactions:I
+      20: return
+
+  public weka.associations.FPGrowth$FrequentBinaryItemSet getItemSet(int);
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field m_sets:Ljava/util/ArrayList;
+       4: iload_1
+       5: invokevirtual #20                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+       8: checkcast     #24                 // class weka/associations/FPGrowth$FrequentBinaryItemSet
+      11: areturn
+
+  public java.util.Iterator<weka.associations.FPGrowth$FrequentBinaryItemSet> iterator();
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field m_sets:Ljava/util/ArrayList;
+       4: invokevirtual #26                 // Method java/util/ArrayList.iterator:()Ljava/util/Iterator;
+       7: areturn
+
+  public int getNumberOfTransactions();
+    Code:
+       0: aload_0
+       1: getfield      #16                 // Field m_numberOfTransactions:I
+       4: ireturn
+
+  public void addItemSet(weka.associations.FPGrowth$FrequentBinaryItemSet);
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field m_sets:Ljava/util/ArrayList;
+       4: aload_1
+       5: invokevirtual #30                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+       8: pop
+       9: return
+
+  public void sort(java.util.Comparator<weka.associations.FPGrowth$FrequentBinaryItemSet>);
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field m_sets:Ljava/util/ArrayList;
+       4: aload_1
+       5: invokestatic  #34                 // Method java/util/Collections.sort:(Ljava/util/List;Ljava/util/Comparator;)V
+       8: return
+
+  public int size();
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field m_sets:Ljava/util/ArrayList;
+       4: invokevirtual #40                 // Method java/util/ArrayList.size:()I
+       7: ireturn
+
+  public void sort();
+    Code:
+       0: new           #44                 // class weka/associations/FPGrowth$FrequentItemSets$1
+       3: dup
+       4: aload_0
+       5: invokespecial #46                 // Method weka/associations/FPGrowth$FrequentItemSets$1."<init>":(Lweka/associations/FPGrowth$FrequentItemSets;)V
+       8: astore_1
+       9: aload_0
+      10: aload_1
+      11: invokevirtual #49                 // Method sort:(Ljava/util/Comparator;)V
+      14: return
+
+  public java.lang.String toString(int);
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field m_sets:Ljava/util/ArrayList;
+       4: invokevirtual #40                 // Method java/util/ArrayList.size:()I
+       7: ifne          13
+      10: ldc           #52                 // String No frequent items sets found!
+      12: areturn
+      13: new           #54                 // class java/lang/StringBuffer
+      16: dup
+      17: invokespecial #56                 // Method java/lang/StringBuffer."<init>":()V
+      20: astore_2
+      21: aload_2
+      22: new           #57                 // class java/lang/StringBuilder
+      25: dup
+      26: invokespecial #59                 // Method java/lang/StringBuilder."<init>":()V
+      29: ldc           #60                 // String
+      31: invokevirtual #62                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      34: aload_0
+      35: getfield      #10                 // Field m_sets:Ljava/util/ArrayList;
+      38: invokevirtual #40                 // Method java/util/ArrayList.size:()I
+      41: invokevirtual #66                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      44: ldc           #69                 // String  frequent item sets found
+      46: invokevirtual #62                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      49: invokevirtual #71                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      52: invokevirtual #75                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+      55: pop
+      56: iload_1
+      57: ifle          84
+      60: aload_2
+      61: new           #57                 // class java/lang/StringBuilder
+      64: dup
+      65: invokespecial #59                 // Method java/lang/StringBuilder."<init>":()V
+      68: ldc           #78                 // String  , displaying
+      70: invokevirtual #62                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      73: iload_1
+      74: invokevirtual #66                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      77: invokevirtual #71                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      80: invokevirtual #75                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+      83: pop
+      84: aload_2
+      85: ldc           #80                 // String :\n\n
+      87: invokevirtual #75                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+      90: pop
+      91: iconst_0
+      92: istore_3
+      93: aload_0
+      94: getfield      #10                 // Field m_sets:Ljava/util/ArrayList;
+      97: invokevirtual #26                 // Method java/util/ArrayList.iterator:()Ljava/util/Iterator;
+     100: astore        4
+     102: aload         4
+     104: invokeinterface #82,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     109: ifeq          170
+     112: aload         4
+     114: invokeinterface #88,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     119: checkcast     #24                 // class weka/associations/FPGrowth$FrequentBinaryItemSet
+     122: astore        5
+     124: iload_1
+     125: ifle          136
+     128: iload_3
+     129: iload_1
+     130: if_icmple     136
+     133: goto          170
+     136: aload_2
+     137: new           #57                 // class java/lang/StringBuilder
+     140: dup
+     141: invokespecial #59                 // Method java/lang/StringBuilder."<init>":()V
+     144: aload         5
+     146: invokevirtual #92                 // Method weka/associations/FPGrowth$FrequentBinaryItemSet.toString:()Ljava/lang/String;
+     149: invokevirtual #62                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     152: ldc           #93                 // String \n
+     154: invokevirtual #62                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     157: invokevirtual #71                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     160: invokevirtual #75                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+     163: pop
+     164: iinc          3, 1
+     167: goto          102
+     170: aload_2
+     171: invokevirtual #95                 // Method java/lang/StringBuffer.toString:()Ljava/lang/String;
+     174: areturn
+}

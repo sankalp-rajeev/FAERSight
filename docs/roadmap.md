@@ -307,7 +307,7 @@ scans the hash-pinned PS ARFF without mining association rules:
 - 0.003: both counts 1,156; only atorvastatin survives.
 - 0.002: both counts 771; atorvastatin and rosuvastatin survive.
 
-FPGrowth ceil counts require confirmation against the pinned implementation
+FPGrowth ceil counts were subsequently confirmed against the pinned implementation
 before its execution lock. Item eligibility does not promise any statin rule.
 This ladder is based solely on existing singleton counts, never discovered rules.
 
@@ -329,8 +329,8 @@ the same 4 GiB/1,800-second/one-JVM bounds and stop an algorithm's increasing-si
 sequence on its first failure or truncation ambiguity.
 
 Row design: exact nested 10,000, 50,000 and 100,000 reports, all 366 attributes.
-Rank the frozen primary case-index report IDs by SHA-256 of UTF-8
-`FAERSight-WEKA-scaling-v1|` followed by the exact report-ID string; break hash ties
+Rank the frozen primary case-index `primary_id` report identifiers by SHA-256 of UTF-8
+`FAERSight-WEKA-scaling-v1|` followed by the exact `primary_id` string; break hash ties
 lexically by report ID. Take the first N then emit in original case-index order.
 Retain empty baskets naturally; do not select by reactions, exposure or rule
 content. Freeze selected-ID/input hashes before mining; publish aggregate hashes

@@ -1,0 +1,156 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\java.exe",
+        "-version"
+      ],
+      "exit_code": 0,
+      "file": "java_version.txt"
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javac.exe",
+        "-version"
+      ],
+      "exit_code": 0,
+      "file": "javac_version.txt"
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\java.exe",
+        "-cp",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+        "weka.associations.FPGrowth",
+        "-h"
+      ],
+      "exit_code": 0,
+      "file": "fpgrowth_help.txt"
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javap.exe",
+        "-classpath",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+        "-c",
+        "-p",
+        "weka.associations.FPGrowth"
+      ],
+      "exit_code": 0,
+      "file": "FPGrowth_bytecode.txt"
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javap.exe",
+        "-classpath",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+        "-c",
+        "-p",
+        "weka.associations.FPGrowth$AssociationRule"
+      ],
+      "exit_code": 1,
+      "file": "FPGrowth_AssociationRule_bytecode.txt"
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javap.exe",
+        "-classpath",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+        "-c",
+        "-p",
+        "weka.associations.FPGrowth$FrequentBinaryItemSet"
+      ],
+      "exit_code": 0,
+      "file": "FPGrowth_FrequentBinaryItemSet_bytecode.txt"
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javap.exe",
+        "-classpath",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+        "-c",
+        "-p",
+        "weka.associations.FPGrowth$FrequentItemSets"
+      ],
+      "exit_code": 0,
+      "file": "FPGrowth_FrequentItemSets_bytecode.txt"
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javap.exe",
+        "-classpath",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+        "-c",
+        "-p",
+        "weka.associations.FPGrowth$FPTreeRoot"
+      ],
+      "exit_code": 0,
+      "file": "FPGrowth_FPTreeRoot_bytecode.txt"
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javap.exe",
+        "-classpath",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+        "-c",
+        "-p",
+        "weka.associations.BinaryItem"
+      ],
+      "exit_code": 0,
+      "file": "BinaryItem_bytecode.txt"
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javap.exe",
+        "-classpath",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+        "-c",
+        "-p",
+        "weka.associations.DefaultAssociationRule"
+      ],
+      "exit_code": 0,
+      "file": "DefaultAssociationRule_bytecode.txt"
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javap.exe",
+        "-classpath",
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+        "-c",
+        "-p",
+        "weka.associations.DefaultAssociationRule$METRIC_TYPE$4"
+      ],
+      "exit_code": 0,
+      "file": "DefaultAssociationRule_METRIC_TYPE_4_bytecode.txt"
+    }
+  ],
+  "hashes": {
+    "BinaryItem_bytecode.txt": "2664ad11b5aa9bbac38896c3a9b75f994cdfd8f3c539461cc0252066d8caebe5",
+    "DefaultAssociationRule_METRIC_TYPE_4_bytecode.txt": "64d128b842cdb96ec5fb16d08b7e0f2db20909021bf287418556dba3ae5139c3",
+    "DefaultAssociationRule_bytecode.txt": "9aba94a460815237f3fac17f35c3a23f8cfd94bb0f0cb063887a03bd83ec8020",
+    "FPGrowth_AssociationRule_bytecode.txt": "cefb1c6dcd917f7a3f63d8dc50ef8ffa2230ccf93fd4106c421a129ed740f120",
+    "FPGrowth_FPTreeRoot_bytecode.txt": "53703e20eafbeddbce0d88ffde7044909fbca0f3b89a45828d18fb499fe45c0c",
+    "FPGrowth_FrequentBinaryItemSet_bytecode.txt": "264d041f1c565766a5d113f413c4f8ceb0ef03c967ae1a936d6ee5e6180cd9ef",
+    "FPGrowth_FrequentItemSets_bytecode.txt": "9b8e06df3c76af2c53216dfa4ed3c4f691ec52b7de671be012dc431ff75ab5ad",
+    "FPGrowth_bytecode.txt": "f7b65e0d0714ad1e95ac0f8d3ab9f362e364033eeaaaeeaf5d16a6e6baa2d2bd",
+    "fpgrowth_help.txt": "98da5058b6fb7d17cade78132924d3f227c772e59c3383783440a969e3c53f5b",
+    "java_version.txt": "907fb83a3ce1d5eef9298371d8ecc7c0625a8d697504fab682215d015d363d9c",
+    "javac_version.txt": "e3502b01ab6c5e9d017090c3da055226f39ca5dd6705047fdab9fdfdcd2b3335"
+  },
+  "new_full_data_run_started": false,
+  "runtime": {
+    "apriori_parallelism": "not_applicable_no_thread_setting_single_threaded_search",
+    "apriori_processor_option": null,
+    "bounce": ".tools/weka/bounce-0.18.jar",
+    "bounce_sha256": "bffff1505335c02256b7ab2ccffbe4aa4d3ac9fe14c17557809b7c9d99d666ca",
+    "concurrent_jvms": 1,
+    "heap": "4g",
+    "jar": ".tools/weka/weka-stable-3.8.6.jar",
+    "jar_sha256": "932ea2f342b58fe45736389e9c426d5b5955e610d1f5f6485117f532068915e9",
+    "java": "C:/Program Files/Android/Android Studio/jbr/bin/java.exe",
+    "java_sha256": "7f7bc646f8697255fc98a950412c741a453360586e1208ce683212f638444d85",
+    "jvm_active_processor_count": 2,
+    "timeout_seconds": 1800,
+    "weka_version": "3.8.6"
+  }
+}

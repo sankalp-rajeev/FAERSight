@@ -1,0 +1,135 @@
+Compiled from "FPGrowth.java"
+public class weka.associations.FPGrowth$FrequentBinaryItemSet implements java.io.Serializable,java.lang.Cloneable {
+  private static final long serialVersionUID;
+
+  protected java.util.ArrayList<weka.associations.BinaryItem> m_items;
+
+  protected int m_support;
+
+  public weka.associations.FPGrowth$FrequentBinaryItemSet(java.util.ArrayList<weka.associations.BinaryItem>, int);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #7                  // class java/util/ArrayList
+       8: dup
+       9: invokespecial #9                  // Method java/util/ArrayList."<init>":()V
+      12: putfield      #10                 // Field m_items:Ljava/util/ArrayList;
+      15: aload_0
+      16: aload_1
+      17: putfield      #10                 // Field m_items:Ljava/util/ArrayList;
+      20: aload_0
+      21: iload_2
+      22: putfield      #16                 // Field m_support:I
+      25: aload_0
+      26: getfield      #10                 // Field m_items:Ljava/util/ArrayList;
+      29: invokestatic  #20                 // Method java/util/Collections.sort:(Ljava/util/List;)V
+      32: return
+
+  public void addItem(weka.associations.BinaryItem);
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field m_items:Ljava/util/ArrayList;
+       4: aload_1
+       5: invokevirtual #26                 // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+       8: pop
+       9: aload_0
+      10: getfield      #10                 // Field m_items:Ljava/util/ArrayList;
+      13: invokestatic  #20                 // Method java/util/Collections.sort:(Ljava/util/List;)V
+      16: return
+
+  public void setSupport(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #16                 // Field m_support:I
+       5: return
+
+  public int getSupport();
+    Code:
+       0: aload_0
+       1: getfield      #16                 // Field m_support:I
+       4: ireturn
+
+  public java.util.Collection<weka.associations.BinaryItem> getItems();
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field m_items:Ljava/util/ArrayList;
+       4: areturn
+
+  public weka.associations.BinaryItem getItem(int);
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field m_items:Ljava/util/ArrayList;
+       4: iload_1
+       5: invokevirtual #30                 // Method java/util/ArrayList.get:(I)Ljava/lang/Object;
+       8: checkcast     #34                 // class weka/associations/BinaryItem
+      11: areturn
+
+  public int numberOfItems();
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field m_items:Ljava/util/ArrayList;
+       4: invokevirtual #36                 // Method java/util/ArrayList.size:()I
+       7: ireturn
+
+  public java.lang.String toString();
+    Code:
+       0: new           #40                 // class java/lang/StringBuffer
+       3: dup
+       4: invokespecial #42                 // Method java/lang/StringBuffer."<init>":()V
+       7: astore_1
+       8: aload_0
+       9: getfield      #10                 // Field m_items:Ljava/util/ArrayList;
+      12: invokevirtual #43                 // Method java/util/ArrayList.iterator:()Ljava/util/Iterator;
+      15: astore_2
+      16: aload_2
+      17: invokeinterface #47,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      22: ifeq          63
+      25: aload_1
+      26: new           #53                 // class java/lang/StringBuilder
+      29: dup
+      30: invokespecial #55                 // Method java/lang/StringBuilder."<init>":()V
+      33: aload_2
+      34: invokeinterface #56,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      39: checkcast     #34                 // class weka/associations/BinaryItem
+      42: invokevirtual #60                 // Method weka/associations/BinaryItem.toString:()Ljava/lang/String;
+      45: invokevirtual #64                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      48: ldc           #68                 // String
+      50: invokevirtual #64                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      53: invokevirtual #70                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      56: invokevirtual #71                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+      59: pop
+      60: goto          16
+      63: aload_1
+      64: new           #53                 // class java/lang/StringBuilder
+      67: dup
+      68: invokespecial #55                 // Method java/lang/StringBuilder."<init>":()V
+      71: ldc           #74                 // String :
+      73: invokevirtual #64                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      76: aload_0
+      77: getfield      #16                 // Field m_support:I
+      80: invokevirtual #76                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      83: invokevirtual #70                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      86: invokevirtual #71                 // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+      89: pop
+      90: aload_1
+      91: invokevirtual #79                 // Method java/lang/StringBuffer.toString:()Ljava/lang/String;
+      94: areturn
+
+  public java.lang.Object clone();
+    Code:
+       0: new           #7                  // class java/util/ArrayList
+       3: dup
+       4: aload_0
+       5: getfield      #10                 // Field m_items:Ljava/util/ArrayList;
+       8: invokespecial #80                 // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+      11: astore_1
+      12: new           #11                 // class weka/associations/FPGrowth$FrequentBinaryItemSet
+      15: dup
+      16: aload_1
+      17: aload_0
+      18: getfield      #16                 // Field m_support:I
+      21: invokespecial #83                 // Method "<init>":(Ljava/util/ArrayList;I)V
+      24: areturn
+}
