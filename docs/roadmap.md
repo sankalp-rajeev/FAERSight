@@ -1,0 +1,250 @@
+# FAERSight roadmap
+
+Engineering planning record, October 22, 2026. These are implementation and
+demonstration aids; submitted reports, slides and narration remain student-authored.
+
+## Frozen 2025 Q4 scientific core
+
+The [Milestone 3 primary PS experiment](milestone3.md) and
+[Milestone 4 PS+SS sensitivity](milestone4.md) are completed computational
+checkpoints. Their input definitions, mappings, results, hashes, evidence and
+manifests remain unchanged. Student source/alias/benchmark inspection and final
+interpretation remain unsigned. Planning this extension does not complete those
+reviews or change any `scientific_findings_validated: false` boundary.
+
+## Post-core milestone: WEKA Showcase / Tool-Study Extension
+
+Purpose: stronger course alignment and demonstration of WEKA's association
+analysis tools, separately from the scientific pair-comparison question.
+
+**Current authorization: Step 1 documentation only. Steps 2-7 are not started.**
+Proceed one step at a time. Stop after this documentation checkpoint and wait
+for the user's explicit instruction before beginning Step 2. Subsequent steps
+are ordered work, not authorization to execute the whole extension unattended.
+Commit and push meaningful completed checkpoints, including this plan.
+
+### 1. Freeze/document the extension plan
+
+Status: plan recorded here and in [decisions.md](decisions.md). No new mining,
+benchmark interpretation or GUI execution is part of this documentation step.
+
+Use the existing **primary PS full sparse ARFF**, not a regenerated PS+SS input:
+
+- Local input: `artifacts/generated/2025Q4-statins-mining/input/transactions.arff`.
+- 385,288 reports; 366 attributes: seven statins and 359 reactions.
+- Nominal order `{0,1}`; present items are `1`, and omitted sparse values are `0`.
+- Retain all reports, including the 117,325 empty transactions.
+- Registered SHA-256:
+  `de0f94f545ebae18033195524984fc842d3359154b864cb52bef2372a877dcf1`.
+- Authoritative input record:
+  [primary ARFF manifest](../artifacts/manifests/2025Q4-statins-mining/arff_manifest.json).
+
+No extra FDA quarter, non-statin co-drug attributes, classifier, new reaction
+vocabulary, or change to the primary PS experiment or PS+SS sensitivity belongs
+to this milestone. Multi-item rules use only attributes already in this ARFF.
+All interpretation remains non-causal.
+
+Before any new mining invocation, create and lock a **separate** extension
+configuration and decision record. Record its commit/hash, verified input hash,
+WEKA 3.8.6 jar/runtime hashes, exact options and resolved defaults, binary presence
+semantics, support schedule and integer cutoff policy, rule-length/direction
+policies, metric thresholds/pool definition, rule cap, heap, processors, timeout,
+timing boundary and failure/stop rules. Verify option semantics with the pinned
+3.8.6 implementation/help and a small semantic fixture before the full-data run.
+No full-data mining begins while any applicable setting is unspecified.
+
+The support ladder, lift floor, resource bounds, cap and ranking policies below
+are registered planning choices now. Exact associator options and the later
+metric/FPGrowth equivalence decisions remain pre-execution gates, not claims
+that those checks have already been performed. Lock each later phase's remaining
+settings before executing that phase; do not choose them from desirable results.
+Any necessary change requires a separately documented plan amendment before a
+new run, preserving the original plan and failed evidence.
+
+Keep new configuration, outputs, failures and evidence in separate showcase
+paths. Never overwrite or re-export Milestone 3/4 snapshots. No new result can
+replace a core result or change its validation status.
+
+### 2. Full-ARFF WEKA Apriori feasibility study
+
+Status: not started; requires explicit user continuation.
+
+Run actual WEKA 3.8.6 Apriori on all 366 attributes together, without per-reaction
+projection. Retain general association rules; do not impose the primary
+one-drug antecedent / one-reaction consequent restriction. Keep all presence-only
+directions and multi-item antecedents/consequents available. Register any
+associator-imposed length limits explicitly rather than silently imposing one.
+
+Execute the registered minimum-support ladder serially, in this order:
+
+1. `0.001`
+2. `0.0005`
+3. `0.0002`
+4. `0.0001`
+
+Initial ranking metric: **lift**, with floor **1.2**. Preserve the existing
+**4 GB Java heap** and **30-minute wall-clock limit per full-data invocation**;
+use two active processors and one JVM at a time. Record both whole-process time
+(including load/export) and association-build time when available. Use a fixed
+support run at each ladder value, not a rule-count-driven support descent.
+Verify WEKA's upper/lower-support and cycle semantics before registering exact
+flags; retain reported integer minimum counts and actual cycle/support output.
+
+Register a **100,000-rule output cap**. Record the requested cap, returned count,
+and any internal cap/early-stop behavior. Treat reaching the cap as possible
+truncation, not a complete rule universe. Preserve that run and stop the ladder
+at a cap hit until a separately registered decision; do not increase the cap
+after inspecting desirable rules. A below-cap count alone is insufficient if
+the associator has another restriction that limits enumeration.
+
+**Stop descending after the first memory/resource failure or timeout.** Preserve
+the failing support, command, timestamps, exit status, partial files, stdout and
+stderr as feasibility evidence. Mark lower levels not attempted due to the stop
+rule. Do not tune heap, timeout, support, feature set or rule restrictions around
+the failed run within this registered study. Distinguish resource failure,
+truncation and semantic/implementation errors; none is a successful result.
+
+Implementation prerequisite: the existing Java bridge's `full` mode still
+filters its exported rules to one drug -> one reaction. A separate showcase
+runner/exporter must capture complete rule itemsets and metrics. Do not change
+the frozen bridge or interpret its restricted export as general full-ARFF output.
+
+### 3. Multi-item rule analysis
+
+Status: not started; uses successful, clearly scoped Step 2 outputs.
+
+Identify, count and summarize observed structures, especially:
+
+- `{statin_A, statin_B} -> reaction`.
+- `{statin, reaction_A} -> reaction_B`.
+- `reaction_A -> reaction_B`.
+- Other interpretable multi-item patterns, including larger consequents if present.
+
+Retain complete antecedent/consequent itemsets, joint and side counts, support
+and WEKA metrics for examples. Report structures absent from successful runs
+as absent; do not manufacture examples or expand the attributes to obtain them.
+Explain that the original two-by-two PRR/ROR pair table cannot express these
+conditional or reaction-to-reaction structures directly. Do not apply pair-table
+scores to a multi-item rule as though it were the same estimand.
+
+There are no non-statin co-drug features in this input. Co-occurrence, conditioning
+on reported reactions, co-suspected statins and reaction clusters do not establish
+causality, chronology, interactions or clinical risk. Preserve sparse-count and
+report-composition cautions for student inspection.
+
+### 4. WEKA rule-metric comparison
+
+Status: not started; metric semantics must be verified before execution.
+
+Compare **confidence, lift, leverage and conviction**. Verify WEKA 3.8.6's exact
+metric identifiers, threshold direction/scale, formulas, conviction convention,
+zero/infinite handling, ranking behavior and defaults directly. Do not assume
+the same numeric threshold is meaningful for all four metrics.
+
+Preferred registered approach: rescore/rank the **same complete rule pool** from
+each successful, untruncated Step 2 support run using all four WEKA metrics.
+This pool is explicitly conditional on the Step 2 lift floor of 1.2; conclusions
+compare metrics within that pool, not unrestricted global confidence/leverage/
+conviction leaders. Obtain/verify all four metric values through WEKA; preserve
+the original lift-ranked output. Do not silently union independently truncated
+top-N lists and call that an exhaustive common pool.
+
+If the common-pool approach cannot be implemented faithfully, stop and register
+metric-specific thresholds and exact commands **before** new metric runs. No
+shared `1.2` threshold across metrics and no post-result threshold optimization.
+
+For each support pool, report top-K overlap and rank changes for all six metric
+pairs, with **K = 10, 25, 50**. Use descending average ranks for ties; fixed-size
+top-K ties break by canonical antecedent then consequent itemset. Record boundary
+ties and effective K. Use a declared common finite-score intersection for
+numerical comparisons; separately retain nonfinite/undefined values and counts,
+especially conviction. Never silently discard these rules or imply identical
+comparison denominators when pools differ.
+
+### 5. Apriori vs WEKA FPGrowth
+
+Status: not started; exact algorithm conditions must be registered first.
+
+Use WEKA 3.8.6 FPGrowth on the **same full ARFF**, initially at Step 2's successful,
+untruncated support levels, in the same descending-support order. Do not descend
+past the Apriori resource-stop boundary under this plan. Stop FPGrowth's descent
+on its first resource/time failure and retain the failed evidence as well.
+
+Verify FPGrowth's own option semantics directly; do not reuse Apriori flags by
+name or assume identical support/rule-generation schedules. Pre-register its
+fixed-support behavior, metric selection and threshold, rule cap, length and
+direction constraints, heap, processors and timeout. Match the lift floor 1.2,
+100,000-rule cap, 4 GB heap and 30-minute bound as far as the associator permits.
+Record every remaining difference, including integer support rounding and any
+unsupported rule structures, before claiming comparability.
+
+For sparse `{0,1}` input, the positive item is the **declared nominal value `1`**
+(the second nominal value), not implicit sparse `0`. Distinguish the zero-based
+API nominal index from any one-based CLI value index. Verify the pinned
+FPGrowth binary positive-value option/default and its sparse-instance behavior
+on a fixture with both values and empty baskets; record the exact resolved
+setting. Do not assume Apriori's zero-as-missing flag applies to FPGrowth.
+
+Where both algorithms complete, compare runtime, qualifying rule counts and
+overlap/agreement of canonical comparable rules. Record frequent-pattern counts
+separately when available; patterns and rules are different counting units.
+Use identical timing boundaries and report raw times. Resource measurements
+(such as process peak memory) are optional only if measured reliably with the
+same method; otherwise mark them unavailable and report failures/limits without
+inventing measurements.
+
+Check actual rule-cap hits for both algorithms. Compare complete rules only on
+a verified common definition of support, presence, itemsets, direction, length
+and metric threshold. If WEKA's associators cannot emit equivalent rule families,
+report the limitation and restrict any agreement statistic to an explicit common
+family; do not claim algorithmic disagreement from unmatched definitions,
+truncation, timeouts or threshold differences.
+
+### 6. WEKA Explorer GUI demo
+
+Status: not started; GUI output is a demonstration aid.
+
+Attempt to load the same full 366-attribute sparse ARFF in WEKA Explorer with
+an explicitly configured 4 GB Java heap. Record the Java/WEKA version, launch
+settings, load outcome and responsiveness. Demonstrate:
+
+- Preprocess tab and loaded report/attribute counts.
+- Attribute inspection and filtering controls.
+- Associate tab and Apriori configuration.
+- Resulting rules and their metrics.
+
+Prefer the **highest numeric support that succeeded** in the registered ladder
+for the stable live demo (0.001 if it succeeds). Do not choose the lowest support
+to maximize spectacle. Register and record the GUI rule count/other settings
+before execution, and label any display limit separately from automated results.
+
+If the full file is impractical in Explorer, use a clearly labeled **GUI-only
+subset**: the first 10,000 rows in the existing case-index order, retaining all
+366 attributes and empty baskets, with no outcome-based selection. Record its
+selection rule, row count, hash and full-input provenance. Do not substitute
+subset outputs for full-data experiment evidence or compare their rule counts
+as though the populations were equal. If no full-data run succeeded, say so.
+
+Capture screenshots and factual demo notes for the student's presentation
+preparation: input counts, Preprocess, controls, Associate/settings, results and
+any fallback. Student slide text and narration remain student-authored.
+
+### 7. Final showcase summary
+
+Status: not started; write only after the preceding work is complete or its
+registered failures/limitations are resolved and documented.
+
+Produce a factual engineering summary containing:
+
+- What was added and where separate showcase evidence lives.
+- Which support levels completed, failed, truncated or were not attempted, and why.
+- Observed multi-item rule types and count-supported examples.
+- Ranking changes and top-K overlap across WEKA metrics, with pool boundaries.
+- Apriori/FPGrowth runtime and comparable-rule agreement, including limitations.
+- Whether the full ARFF worked in Explorer and any documented GUI-only fallback.
+- A recommended **2-3 minute** WEKA demo flow grounded in the captured screens.
+- Remaining manual student interpretation and the unchanged non-causal boundary.
+
+Do not rewrite the primary/sensitivity findings using showcase outputs. Preserve
+all Milestone 3/4 evidence and validation fields. Commit/push the final factual
+checkpoint and stop; this extension does not authorize further scope expansion.

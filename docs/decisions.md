@@ -69,3 +69,36 @@ Yates-corrected PRR convention; none constitutes clinical validation.
 Student source/alias/label review and interpretation remain pending in the
 unsigned packet. Stop before the optional WEKA showcase extension; no new
 quarter, discovery vocabulary, reference pairs or ranking thresholds are added.
+
+## October 22 post-core WEKA showcase plan
+
+Add a separate **WEKA Showcase / Tool-Study Extension**, after the frozen
+2025 Q4 scientific core, for course alignment and demonstration of WEKA itself.
+The ordered plan and pre-execution gates are in the [roadmap](roadmap.md):
+
+1. Freeze/document the extension plan.
+2. Study actual full-ARFF WEKA Apriori feasibility at supports 0.001, 0.0005,
+   0.0002 and 0.0001, initially lift >= 1.2, with the existing 4 GB / 30-minute
+   bounds and an explicitly checked 100,000-rule cap. Stop descending on the
+   first resource/time failure; preserve all failures and truncation evidence.
+3. Analyze general multi-item and reaction-to-reaction rules separately from
+   the scientific pair table, with non-causal interpretation.
+4. Compare confidence, lift, leverage and conviction rankings after verifying
+   exact WEKA 3.8.6 semantics and registering a common pool or distinct thresholds.
+5. Compare actual WEKA Apriori and FPGrowth only under verified comparable
+   conditions, including sparse binary positive-value handling.
+6. Attempt a full-ARFF Explorer demo and capture factual screenshots/notes;
+   document any GUI-only subset explicitly.
+7. Summarize completed/failed supports, rule structures, metric rankings,
+   algorithm runtime/agreement, Explorer feasibility and a 2-3 minute demo flow.
+
+Use the existing primary full sparse ARFF: **385,288 reports and 366 attributes
+(seven statins + 359 reactions)**. No extra FDA quarter, non-statin co-drug
+feature expansion, classifier or alteration/reinterpretation of primary PS or
+completed PS+SS work is part of this milestone. Preserve existing artifacts,
+hashes, manifests and `scientific_findings_validated: false` boundaries.
+
+**Only Step 1 documentation is authorized now. Stop after committing/pushing
+this plan; do not begin Step 2 until the user explicitly says to continue.**
+All applicable settings must be pre-registered in a separate extension record
+before any new mining run. No extension run or GUI attempt has been performed.

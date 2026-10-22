@@ -179,6 +179,11 @@ cases remain local under the new output's `manual_review/` directory.
 The core stays within 2025 Q4. Student inspection and interpretation remain
 required before the final scientific freeze or optional WEKA showcase extension.
 
+The [roadmap](docs/roadmap.md) separately plans a post-core **WEKA Showcase /
+Tool-Study Extension**: full-ARFF Apriori feasibility, multi-item rules, metric
+comparisons, FPGrowth and an Explorer demonstration. Only the documentation
+step is currently authorized; execution awaits explicit user continuation.
+
 ## Experiment configuration
 
 See [decisions](docs/decisions.md) and [course compliance](docs/course_compliance.md).
