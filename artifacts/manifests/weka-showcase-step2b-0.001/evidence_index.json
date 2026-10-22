@@ -1,0 +1,40 @@
+{
+  "artifacts": {
+    ".gitattributes": "b873fc9ed017e83efeb40f150b9125fff9cce83469b2bc856927a355f803a165",
+    "capture_command_record.json": "a774ab35af3cb55ad802811878c4848a4c8c89dcd0dbc43ec8c8066d57ff91c5",
+    "capture_java_version.txt": "907fb83a3ce1d5eef9298371d8ecc7c0625a8d697504fab682215d015d363d9c",
+    "capture_javac_version.txt": "e3502b01ab6c5e9d017090c3da055226f39ca5dd6705047fdab9fdfdcd2b3335",
+    "capture_runner_stdout_stderr.txt": "33b691f49a921849282dfdfba270616b9d93198c27958bd25f1ec690c2336396",
+    "compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "invocation.json": "4f0dc806b430fdb5b36b79af28f05f2f450127bd66427c5ad2ce7800e0f857ce",
+    "process.txt": "a6597552ff74d839005dc43b76efa2e8958ceed7bd7d7421dc22315d2dbce69e",
+    "raw_output.zip": "6f2007bfb36cf69397534b5e66b64d3eb97e1b92887ae4edb1b2017ddc165f3c",
+    "resolved_options.json": "f4afcf744dfd0ffbc113ed39954782611272e0eb7725af3a9e363eb56e22d833",
+    "run_outcome.json": "d354260be1c78005ab1117fe87edb40ee3766b942c12794c6fb70dbf63148b5f",
+    "test_results.json": "39647ffad54a509eb2416fcfc29503981d378acdde8e7f638a6431c6aa753fa7"
+  },
+  "authorized_support_only": "0.001",
+  "core_preservation": {
+    "all_match_committed_bytes": true,
+    "plan_commit": "69d27d7",
+    "tracked_frozen_files_verified": 108
+  },
+  "exit_code": 1,
+  "full_data_mining_completed": false,
+  "full_data_mining_started": true,
+  "later_showcase_steps_run": false,
+  "lower_supports_run": false,
+  "mechanical_analysis_performed": false,
+  "raw_output_hashes": {
+    "classes/faersight/showcase/ShowcaseApriori$Audit.class": "12b52fe0f238703b8e42121f76570ad94aff4ccbaedf6fe8e91396a6235a6da7",
+    "classes/faersight/showcase/ShowcaseApriori.class": "c064b8add9969f19a6f71e943e2e9aa23345117b0d98a269b678e359750a5922",
+    "compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "invocation.json": "4f0dc806b430fdb5b36b79af28f05f2f450127bd66427c5ad2ce7800e0f857ce",
+    "process.txt": "a6597552ff74d839005dc43b76efa2e8958ceed7bd7d7421dc22315d2dbce69e",
+    "resolved_options.json": "f4afcf744dfd0ffbc113ed39954782611272e0eb7725af3a9e363eb56e22d833"
+  },
+  "raw_output_location": "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-showcase\\full\\0.001",
+  "scientific_findings_validated": false,
+  "status": "stopped",
+  "total_command_wall_seconds": 1804.680537200009
+}

@@ -1,0 +1,8 @@
+{
+  "actual_weka_enabled": true,
+  "errors": 0,
+  "failures": 0,
+  "junit_sha256": "94921882bd96c71cc4bb4ff99cb06e6dc8b683ee7c8b10729cd30b7287932b5e",
+  "skipped": 0,
+  "tests": 113
+}

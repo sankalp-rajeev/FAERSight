@@ -17,13 +17,13 @@ reviews or change any `scientific_findings_validated: false` boundary.
 Purpose: stronger course alignment and demonstration of WEKA's association
 analysis tools, separately from the scientific pair-comparison question.
 
-**Current checkpoint: Step 2A prerequisites locked and validated; no full-data
-showcase mining has begun.** The user authorized pinned semantics inspection,
-the separate exporter, small-fixture validation and execution configuration only.
-Stop at this checkpoint. The full-data Step 2 invocation and Steps 3-7 remain
-unstarted and require explicit user continuation. Subsequent steps are ordered
-work, not authorization to execute the whole extension unattended. Commit and
-push meaningful completed checkpoints.
+**Current checkpoint: Step 2B support 0.001 attempted once and stopped at the
+registered 1,800-second timeout.** See the [attempt record](weka_showcase_step2b.md).
+Step 2A prerequisites remain locked and unchanged. The registered first-failure
+rule blocks descent; no lower support or Step 3-7 execution has begun. Preserve
+the failed attempt, commit/push its evidence, and stop. Any retry or change needs
+a separate review/plan amendment; subsequent listed steps are not authorization
+to execute the extension unattended.
 
 ### 1. Freeze/document the extension plan
 
@@ -69,14 +69,15 @@ replace a core result or change its validation status.
 
 ### 2. Full-ARFF WEKA Apriori feasibility study
 
-Status: **Step 2A complete; full-data execution not started.** Implementation
+Status: **Step 2A complete; Step 2B 0.001 timed out; ladder descent stopped.** Implementation
 commit `11d81fa` validates the separate runner/configuration on the small fixture.
 The [verified semantics](../showcase/SEMANTICS.md) and
 [locked execution manifest](../artifacts/manifests/weka-showcase-step2a/locked/execution_manifest.json)
 record the exact prerequisites, runtime applicability and implementation caveats.
-No registered support/metric/resource choice was substituted. The full-data
-invocation still requires the user's explicit authorization; do not execute it
-as part of this configuration/fixture checkpoint.
+No registered support/metric/resource choice was substituted. The user separately
+authorized exactly the first 0.001 full-data invocation; its
+[preserved timeout evidence](weka_showcase_step2b.md) supplies the current decision
+gate. Do not retry, descend to 0.0005 or begin later showcase work under this plan.
 
 Run actual WEKA 3.8.6 Apriori on all 366 attributes together, without per-reaction
 projection. Retain general association rules; do not impose the primary

@@ -126,3 +126,25 @@ primary/sensitivity artifact, configuration, manifest or validation flag changes
 Stop after this checkpoint's commit/push. The first full-data support 0.001
 invocation requires a new explicit user authorization; the registered ladder,
 lift threshold, resource limits and non-causal boundaries remain unchanged.
+
+## October 22 Step 2B support 0.001 attempt
+
+The user subsequently authorized exactly one registered full-data Apriori
+invocation at support 0.001, using the Step 2A lock without modifications.
+The JVM timed out at 1,800 seconds; total command wall time was 1,804.68 seconds,
+and the runner exited 1. No completed rule export or association-build timing
+was returned. Cap status, long-itemset caveat status, side lengths, structural
+counts and representative rules are unavailable rather than zero. Mechanical
+rule analysis was skipped because the successful-below-cap condition was unmet.
+
+The [Step 2B record](weka_showcase_step2b.md) and separate tracked evidence under
+`artifacts/manifests/weka-showcase-step2b-0.001/` preserve the exact invocation,
+options, versions, failure logs and all emitted raw-file hashes. All 108 frozen
+core files and the Step 2A source/configuration remain unchanged. No retry,
+lower support, resource tuning, metric comparison, FPGrowth or Explorer work ran.
+
+The first resource/time failure stops the registered ladder. **Do not proceed
+to 0.0005; stop after recording/committing/pushing this checkpoint.** Any retry
+or changed execution requires separate review and plan amendment. This tool
+feasibility outcome does not replace or reinterpret Milestone 3/4 findings or
+alter their `scientific_findings_validated` boundaries.

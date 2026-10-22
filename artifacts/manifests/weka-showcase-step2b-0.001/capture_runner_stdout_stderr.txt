@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Umich\Fall2026\CIS 568\Project\FAERSight\showcase\runner.py", line 717, in <module>
+    main()
+    ~~~~^^
+  File "C:\Umich\Fall2026\CIS 568\Project\FAERSight\showcase\runner.py", line 699, in main
+    result = full_run(
+        args.execution_manifest, args.output, args.support, authorized=args.authorize_full_data
+    )
+  File "C:\Umich\Fall2026\CIS 568\Project\FAERSight\showcase\runner.py", line 673, in full_run
+    return invoke(
+        output, arff=path, n=385288, attributes=366, support=support, cap=100000, fixture_only=False
+    )
+  File "C:\Umich\Fall2026\CIS 568\Project\FAERSight\showcase\runner.py", line 228, in invoke
+    subprocess.run(
+    ~~~~~~~~~~~~~~^
+        command,
+        ^^^^^^^^
+    ...<3 lines>...
+        check=True,
+        ^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\rajee\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\subprocess.py", line 556, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rajee\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\subprocess.py", line 1239, in communicate
+    sts = self.wait(timeout=self._remaining_time(endtime))
+  File "C:\Users\rajee\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\subprocess.py", line 1278, in wait
+    return self._wait(timeout=timeout)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\rajee\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\subprocess.py", line 1607, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\java.exe', '-Xmx4g', '-XX:ActiveProcessorCount=2', '-cp', 'C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-showcase\\full\\0.001\\classes;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar', 'faersight.showcase.ShowcaseApriori', 'mine', 'C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\2025Q4-statins-mining\\input\\transactions.arff', 'C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-showcase\\full\\0.001', '385288', '366', '-N', '100000', '-T', '1', '-C', '1.2', '-D', '1.0', '-U', '1.0', '-M', '0.001', '-S', '-1.0', '-Z', '-c', '-1']' timed out after 1800 seconds

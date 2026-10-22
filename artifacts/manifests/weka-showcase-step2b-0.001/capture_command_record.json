@@ -1,0 +1,88 @@
+{
+  "argv": [
+    ".venv/Scripts/python",
+    "-m",
+    "showcase.runner",
+    "run",
+    "--execution-manifest",
+    "artifacts/manifests/weka-showcase-step2a/locked/execution_manifest.json",
+    "--support",
+    "0.001",
+    "--output",
+    "artifacts/generated/weka-showcase/full/0.001",
+    "--authorize-full-data"
+  ],
+  "authorized_command": ".venv/Scripts/python -m showcase.runner run --execution-manifest artifacts/manifests/weka-showcase-step2a/locked/execution_manifest.json --support 0.001 --output artifacts/generated/weka-showcase/full/0.001 --authorize-full-data",
+  "authorized_support_only": "0.001",
+  "capture_hashes": {
+    "java_version.txt": "907fb83a3ce1d5eef9298371d8ecc7c0625a8d697504fab682215d015d363d9c",
+    "javac_version.txt": "e3502b01ab6c5e9d017090c3da055226f39ca5dd6705047fdab9fdfdcd2b3335",
+    "runner_stdout_stderr.txt": "33b691f49a921849282dfdfba270616b9d93198c27958bd25f1ec690c2336396"
+  },
+  "capture_script_sha256": "7098b4cad56cbcc908e77107212041fd41c04ad155f640438913f78abfd07cee",
+  "core_after": {
+    "all_match_committed_bytes": true,
+    "plan_commit": "69d27d7",
+    "tracked_frozen_files_verified": 108
+  },
+  "core_before": {
+    "all_match_committed_bytes": true,
+    "plan_commit": "69d27d7",
+    "tracked_frozen_files_verified": 108
+  },
+  "cwd": "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight",
+  "execution_manifest_sha256": "c45fc8c1d9a1a1cd903176e743cc153f5f2756cd1fe2e458dd62c0864215ca49",
+  "exit_code": 1,
+  "finished_utc": "2026-10-22T22:10:51.354483+00:00",
+  "input": {
+    "attributes": 366,
+    "nominal_values": [
+      "0",
+      "1"
+    ],
+    "path": "artifacts/generated/2025Q4-statins-mining/input/transactions.arff",
+    "quarters": [
+      "2025Q4"
+    ],
+    "roles": [
+      "PS"
+    ],
+    "rows": 385288,
+    "sha256": "de0f94f545ebae18033195524984fc842d3359154b864cb52bef2372a877dcf1"
+  },
+  "later_steps_authorized": false,
+  "launch_git_commit": "78dd8deb19214cc08f8c51bbe10870d825955308",
+  "locked_implementation_commit": "11d81fa5d27cd5a4c27f2d58089fdb5bb19c64dd",
+  "locked_sources_still_match": true,
+  "lower_supports_authorized": false,
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python_version": "3.14.3",
+  "raw_output_hashes": {
+    "classes/faersight/showcase/ShowcaseApriori$Audit.class": "12b52fe0f238703b8e42121f76570ad94aff4ccbaedf6fe8e91396a6235a6da7",
+    "classes/faersight/showcase/ShowcaseApriori.class": "c064b8add9969f19a6f71e943e2e9aa23345117b0d98a269b678e359750a5922",
+    "compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "invocation.json": "4f0dc806b430fdb5b36b79af28f05f2f450127bd66427c5ad2ce7800e0f857ce",
+    "process.txt": "a6597552ff74d839005dc43b76efa2e8958ceed7bd7d7421dc22315d2dbce69e",
+    "resolved_options.json": "f4afcf744dfd0ffbc113ed39954782611272e0eb7725af3a9e363eb56e22d833"
+  },
+  "runner_status": "failed",
+  "runtime": {
+    "apriori_parallelism": "not_applicable_no_thread_setting_single_threaded_search",
+    "apriori_processor_option": null,
+    "bounce": ".tools/weka/bounce-0.18.jar",
+    "bounce_sha256": "bffff1505335c02256b7ab2ccffbe4aa4d3ac9fe14c17557809b7c9d99d666ca",
+    "concurrent_jvms": 1,
+    "heap": "4g",
+    "jar": ".tools/weka/weka-stable-3.8.6.jar",
+    "jar_sha256": "932ea2f342b58fe45736389e9c426d5b5955e610d1f5f6485117f532068915e9",
+    "java": "C:/Program Files/Android/Android Studio/jbr/bin/java.exe",
+    "java_sha256": "7f7bc646f8697255fc98a950412c741a453360586e1208ce683212f638444d85",
+    "jvm_active_processor_count": 2,
+    "timeout_seconds": 1800,
+    "weka_version": "3.8.6"
+  },
+  "scientific_findings_validated": false,
+  "started_utc": "2026-10-22T21:40:46.492600+00:00",
+  "status": "stopped",
+  "total_command_wall_seconds": 1804.680537200009
+}

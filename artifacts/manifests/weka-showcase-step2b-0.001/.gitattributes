@@ -1,0 +1,2 @@
+# Retain exact raw JVM/capture output, including CRLF and display whitespace.
+*.txt -diff
