@@ -288,3 +288,37 @@ of frozen primary/sensitivity findings. See [A2 preregistration](weka_showcase_f
 
 Run full tests/lint/frozen-history hash checks, commit/push and stop. No 0.002,
 metric-ranking, Explorer, scaling or additional algorithm is authorized.
+
+### Completed Fallback A2 at 0.003
+
+Implementation/preregistration `4741fbc`; separate lock `a41bb28` and manifest
+SHA-256 `752db0a8fa8197a7b764b4c4843ed320af9b013ed655298d804cce2162f38fd3`
+preceded both invocations. Both verified native cutoffs are 1,156; the frozen
+input scan confirms only atorvastatin (1,157) is singleton-eligible under each.
+Apriori completed first: JVM wall 360.891450 s, build 360.5035305 s. Then
+FPGrowth completed: JVM wall 0.750769 s, build 0.3391509 s. Both exited 0,
+returned 194 complete rules and 241 frequent itemsets, with unchanged
+cap/completeness policies passed and no >=31 Apriori caveat.
+
+Native canonical intersection 194, algorithm-only counts 0/0, Jaccard 1.0.
+All shared metrics agree exactly (maximum difference 0), within 1e-12;
+every raw count independently reconciles against the frozen ARFF. No common-
+count adjustment is required because both native thresholds equal 1,156.
+Record raw times with A1's timing boundaries; no extrapolation or ratio here.
+
+Observed statin-containing rules: **0 for each algorithm**, with zero in all
+seven statin categories and complete explicit empty CSV/JSON exports; no
+representatives are fabricated. Atorvastatin singleton eligibility does not
+imply a qualifying co-occurrence rule or override monotonic support. Both
+outputs contain 176 reaction->reaction rules, 9 multi-reaction->reaction and
+9 reaction->multi-reaction; none has total size >=4. Maximum side/total sizes
+2/2/3; each side-size histogram is 185 single-item and 9 two-item sides.
+All interpretation remains factual and non-causal.
+
+See [A2 outcome and hashes](weka_showcase_fallback_a2.md). Post-run: all 145
+tests pass (8 new, 137 retained), zero skips; lint/format pass. All 270 protected
+earlier files, 108 frozen core files, 1,096 primary generated artifacts and
+1,106 sensitivity generated artifacts retain their hashes. Earlier 0.001/A1
+evidence and all scientific validation boundaries remain unchanged. **0.002 is
+eligible, awaiting new explicit authorization. Stop after commit/push.** No
+later support, metric-ranking, Explorer, scaling or additional algorithm ran.

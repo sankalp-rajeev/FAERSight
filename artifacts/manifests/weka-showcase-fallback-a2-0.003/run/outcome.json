@@ -1,0 +1,557 @@
+{
+  "apriori": {
+    "algorithm": "apriori",
+    "association_build_seconds": 360.5035305,
+    "command": [
+      "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\java.exe",
+      "-Xmx4g",
+      "-XX:ActiveProcessorCount=2",
+      "-cp",
+      "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-showcase-fallback-a2\\0.003\\apriori\\classes;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+      "faersight.showcase.ShowcaseApriori",
+      "mine",
+      "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\2025Q4-statins-mining\\input\\transactions.arff",
+      "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-showcase-fallback-a2\\0.003\\apriori",
+      "385288",
+      "366",
+      "-N",
+      "100000",
+      "-T",
+      "1",
+      "-C",
+      "1.2",
+      "-D",
+      "1.0",
+      "-U",
+      "1.0",
+      "-M",
+      "0.003",
+      "-S",
+      "-1.0",
+      "-Z",
+      "-c",
+      "-1"
+    ],
+    "compile_command": [
+      "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javac.exe",
+      "-encoding",
+      "UTF-8",
+      "-cp",
+      "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+      "-d",
+      "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-showcase-fallback-a2\\0.003\\apriori\\classes",
+      "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\showcase\\java\\ShowcaseApriori.java"
+    ],
+    "finished_utc": "2026-10-23T02:54:44.478951+00:00",
+    "fixture": false,
+    "frequent_itemsets": 241,
+    "hashes": {
+      "apriori_raw.txt": "fe5b021dc265d37b01c64364769e64b8976153e597dcc2e6e3accebb55f98298",
+      "classes/faersight/showcase/ShowcaseApriori$Audit.class": "12b52fe0f238703b8e42121f76570ad94aff4ccbaedf6fe8e91396a6235a6da7",
+      "classes/faersight/showcase/ShowcaseApriori.class": "c064b8add9969f19a6f71e943e2e9aa23345117b0d98a269b678e359750a5922",
+      "compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "complete.txt": "7aba1ecfde9bc5c411fbddf1d2e2df5608ea0cfb685678cb80c1c0d170b7a9ae",
+      "resolved_options.json": "095691030c8fe4031f3a5e3252b7aac9448eb65fd1b0f4f39ed899e6b86f8646",
+      "rules.csv": "ee78971c54488072362c3380e46665fde2ff9427e38daf615d8a318ef3022ddb",
+      "run.json": "7691fd88299ec4e2dc563353fdc6e2e6054f1812f417eed603209ffb16bc087f",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout.txt": "a6597552ff74d839005dc43b76efa2e8958ceed7bd7d7421dc22315d2dbce69e"
+    },
+    "input_sha256": "de0f94f545ebae18033195524984fc842d3359154b864cb52bef2372a877dcf1",
+    "jvm_wall_seconds": 360.8914503999986,
+    "options": [
+      "-N",
+      "100000",
+      "-T",
+      "1",
+      "-C",
+      "1.2",
+      "-D",
+      "1.0",
+      "-U",
+      "1.0",
+      "-M",
+      "0.003",
+      "-S",
+      "-1.0",
+      "-Z",
+      "-c",
+      "-1"
+    ],
+    "process_and_compile_wall_seconds": 361.57572700001765,
+    "process_exit_code": 0,
+    "resolved_minimum_count": 1156,
+    "returned_rules": 194,
+    "scientific_findings_validated": false,
+    "source_sha256": "473f56c2a242c863863129d3ae08100403e35ff58b239d3b96d2620558473d24",
+    "started_utc": "2026-10-23T02:48:42.848447+00:00",
+    "status": "passed",
+    "structure": {
+      "antecedent_size_histogram": {
+        "1": 185,
+        "2": 9
+      },
+      "consequent_size_histogram": {
+        "1": 185,
+        "2": 9
+      },
+      "larger_reaction_only_total_ge_4": 0,
+      "maximum_antecedent_size": 2,
+      "maximum_consequent_size": 2,
+      "maximum_total_size": 3,
+      "multi_item_antecedent": 9,
+      "multi_item_consequent": 9,
+      "multi_reaction_antecedent_to_single_reaction": 9,
+      "reaction_only": 194,
+      "rules": 194,
+      "side_length_histogram": {
+        "1->1": 176,
+        "1->2": 9,
+        "2->1": 9
+      },
+      "single_reaction_to_multi_reaction_consequent": 9,
+      "single_reaction_to_single_reaction": 176,
+      "statin_containing": 0,
+      "statin_structure_breakdown": {
+        "other_statin_containing": 0,
+        "reaction_only": 194,
+        "single_reaction_to_single_statin": 0,
+        "single_statin_to_multi_reaction_consequent": 0,
+        "single_statin_to_single_reaction": 0,
+        "statin_plus_one_reaction_to_single_reaction": 0,
+        "two_reactions_to_single_statin": 0,
+        "two_statins_to_single_reaction": 0
+      }
+    },
+    "support": "0.003",
+    "total_driver_wall_seconds": 361.6262166000088
+  },
+  "argv": [
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\showcase_fallback_a2\\runner.py",
+    "run",
+    "--authorize-full-data"
+  ],
+  "comparison": {
+    "causal_interpretation": false,
+    "common_count_filter_required": false,
+    "common_support_comparison": {
+      "apriori_only": 0,
+      "apriori_rules": 194,
+      "empty_union_jaccard_convention": "null_not_defined",
+      "fpgrowth_only": 0,
+      "fpgrowth_rules": 194,
+      "intersection": 194,
+      "jaccard": 1.0,
+      "maximum_absolute_metric_differences": {
+        "confidence": 0.0,
+        "conviction": 0.0,
+        "leverage": 0.0,
+        "lift": 0.0,
+        "support": 0.0
+      },
+      "metric_mismatches": [],
+      "shared_metric_test_applicable": true,
+      "shared_metrics_reconcile": true,
+      "tolerance": 1e-12
+    },
+    "common_support_count": 1156,
+    "common_support_filter_is_not_a_new_mining_run": true,
+    "native_comparison": {
+      "apriori_only": 0,
+      "apriori_rules": 194,
+      "empty_union_jaccard_convention": "null_not_defined",
+      "fpgrowth_only": 0,
+      "fpgrowth_rules": 194,
+      "intersection": 194,
+      "jaccard": 1.0,
+      "maximum_absolute_metric_differences": {
+        "confidence": 0.0,
+        "conviction": 0.0,
+        "leverage": 0.0,
+        "lift": 0.0,
+        "support": 0.0
+      },
+      "metric_mismatches": [],
+      "shared_metric_test_applicable": true,
+      "shared_metrics_reconcile": true,
+      "tolerance": 1e-12
+    },
+    "native_minimum_counts_identical": true,
+    "native_only_rules": [],
+    "speed_ratio": null
+  },
+  "cwd": "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight",
+  "finished_utc": "2026-10-23T02:54:46.051653+00:00",
+  "fpgrowth": {
+    "algorithm": "fpgrowth",
+    "association_build_seconds": 0.3391509,
+    "command": [
+      "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\java.exe",
+      "-Xmx4g",
+      "-XX:ActiveProcessorCount=2",
+      "-cp",
+      "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-showcase-fallback-a2\\0.003\\fpgrowth\\classes;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+      "faersight.showcasefp.ShowcaseFPGrowth",
+      "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\2025Q4-statins-mining\\input\\transactions.arff",
+      "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-showcase-fallback-a2\\0.003\\fpgrowth",
+      "385288",
+      "366",
+      "true",
+      "-P",
+      "2",
+      "-I",
+      "-1",
+      "-N",
+      "100000",
+      "-T",
+      "1",
+      "-C",
+      "1.2",
+      "-U",
+      "1.0",
+      "-M",
+      "0.003",
+      "-D",
+      "1.0",
+      "-S"
+    ],
+    "compile_command": [
+      "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javac.exe",
+      "-encoding",
+      "UTF-8",
+      "-cp",
+      "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+      "-d",
+      "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-showcase-fallback-a2\\0.003\\fpgrowth\\classes",
+      "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\showcase_fpgrowth\\java\\ShowcaseFPGrowth.java"
+    ],
+    "finished_utc": "2026-10-23T02:54:45.988681+00:00",
+    "fixture": false,
+    "frequent_itemsets": 241,
+    "hashes": {
+      "classes/faersight/showcasefp/ShowcaseFPGrowth$Audit.class": "7321facd5d6c30800238a26ba7a78d3a5a4e68990ad6d6d57526be4963569040",
+      "classes/faersight/showcasefp/ShowcaseFPGrowth$CountedInstances.class": "7b2f941f36f93c95f632afb39501fabc2bbe038aa1185f83f2e4a309eb9c4dc9",
+      "classes/faersight/showcasefp/ShowcaseFPGrowth.class": "ec97176b537ceda70216295cdc4fdc7d1058f3052f4c9dddf678250318489a69",
+      "compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "complete.txt": "7aba1ecfde9bc5c411fbddf1d2e2df5608ea0cfb685678cb80c1c0d170b7a9ae",
+      "fpgrowth_raw.txt": "aaefee81557ecc8711021a778b3f3e71630d0e4079bdd402c4cdfd7f0c78ef22",
+      "resolved_options.json": "5c61384a6ea06f66f2058e12747e0ce7a9ef7252db393c515169bb19ca5fce0c",
+      "rules.csv": "75600fde84a2596beab86fd6931391993dcb1c4e695ad42cdf3825cf227ed34a",
+      "run.json": "7d34381a7908525014fd9f535956a2083a89506d2f93fe64c12b22b3e24b9986",
+      "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout.txt": "a6597552ff74d839005dc43b76efa2e8958ceed7bd7d7421dc22315d2dbce69e"
+    },
+    "input_sha256": "de0f94f545ebae18033195524984fc842d3359154b864cb52bef2372a877dcf1",
+    "jvm_wall_seconds": 0.7507686999742873,
+    "options": [
+      "-P",
+      "2",
+      "-I",
+      "-1",
+      "-N",
+      "100000",
+      "-T",
+      "1",
+      "-C",
+      "1.2",
+      "-U",
+      "1.0",
+      "-M",
+      "0.003",
+      "-D",
+      "1.0",
+      "-S"
+    ],
+    "process_and_compile_wall_seconds": 1.3707200000062585,
+    "process_exit_code": 0,
+    "resolved_minimum_count": 1156,
+    "returned_rules": 194,
+    "scientific_findings_validated": false,
+    "source_sha256": "9a9f3bd8b677f3189f2a50e04901206f9330e520cb530b47ee07cfdaa80877b2",
+    "started_utc": "2026-10-23T02:54:44.568004+00:00",
+    "status": "passed",
+    "structure": {
+      "antecedent_size_histogram": {
+        "1": 185,
+        "2": 9
+      },
+      "consequent_size_histogram": {
+        "1": 185,
+        "2": 9
+      },
+      "larger_reaction_only_total_ge_4": 0,
+      "maximum_antecedent_size": 2,
+      "maximum_consequent_size": 2,
+      "maximum_total_size": 3,
+      "multi_item_antecedent": 9,
+      "multi_item_consequent": 9,
+      "multi_reaction_antecedent_to_single_reaction": 9,
+      "reaction_only": 194,
+      "rules": 194,
+      "side_length_histogram": {
+        "1->1": 176,
+        "1->2": 9,
+        "2->1": 9
+      },
+      "single_reaction_to_multi_reaction_consequent": 9,
+      "single_reaction_to_single_reaction": 176,
+      "statin_containing": 0,
+      "statin_structure_breakdown": {
+        "other_statin_containing": 0,
+        "reaction_only": 194,
+        "single_reaction_to_single_statin": 0,
+        "single_statin_to_multi_reaction_consequent": 0,
+        "single_statin_to_single_reaction": 0,
+        "statin_plus_one_reaction_to_single_reaction": 0,
+        "two_reactions_to_single_statin": 0,
+        "two_statins_to_single_reaction": 0
+      }
+    },
+    "support": "0.003",
+    "total_driver_wall_seconds": 1.4163668000255711
+  },
+  "launch_commit": "a41bb28b06b29e0f588a82333134455baa9d417f",
+  "manifest_sha256": "752db0a8fa8197a7b764b4c4843ed320af9b013ed655298d804cce2162f38fd3",
+  "next_0_002_eligible_not_authorized": true,
+  "next_level_executed": false,
+  "results": {
+    "apriori": {
+      "independent_ARFF_counts": {
+        "distinct_itemset_counts_verified": 123,
+        "rules_verified": 194
+      },
+      "native": {
+        "association_build_seconds": 360.5035305,
+        "attributes": 366,
+        "cycles": 1,
+        "empty_transactions": 117325,
+        "frequent_itemsets": 241,
+        "integer_partition_limit_exceeded": false,
+        "load_and_build_seconds": 360.7203939,
+        "maximum_frequent_itemset_length": 3,
+        "minimum_count": 1156,
+        "returned_rules": 194,
+        "rows": 385288,
+        "rule_cap_reached_or_ambiguous": false,
+        "settings": {
+          "class_index_option": -1,
+          "class_rules": false,
+          "delta": 1.0,
+          "lower_support": 0.003,
+          "metric_id": 1,
+          "minimum_metric": 1.2,
+          "options": [
+            "-N",
+            "100000",
+            "-T",
+            "1",
+            "-C",
+            "1.2",
+            "-D",
+            "1.0",
+            "-U",
+            "1.0",
+            "-M",
+            "0.003",
+            "-S",
+            "-1.0",
+            "-Z",
+            "-c",
+            "-1"
+          ],
+          "print_itemsets": false,
+          "remove_all_missing_columns": false,
+          "requested_rules": 100000,
+          "significance_level": -1.0,
+          "treat_zero_as_missing": true,
+          "upper_support": 1.0,
+          "verbose": false
+        },
+        "support_used": 0.0030000000000000027,
+        "weka_version": "3.8.6"
+      },
+      "statin_export": {
+        "algorithm": "apriori",
+        "all_statin_rules_exported": 0,
+        "deterministic_representatives": [],
+        "files": {
+          "statin_rules_apriori.csv": "887c5c68c968b171b4b698e28b31198951f06144f741f5edac428f5aa433be78",
+          "statin_rules_apriori.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        "selection": "first 8 by total item count, canonical lhs/rhs; metrics not consulted",
+        "structure_breakdown": {
+          "other_statin_containing": 0,
+          "reaction_only": 194,
+          "single_reaction_to_single_statin": 0,
+          "single_statin_to_multi_reaction_consequent": 0,
+          "single_statin_to_single_reaction": 0,
+          "statin_plus_one_reaction_to_single_reaction": 0,
+          "two_reactions_to_single_statin": 0,
+          "two_statins_to_single_reaction": 0
+        }
+      },
+      "structure": {
+        "antecedent_size_histogram": {
+          "1": 185,
+          "2": 9
+        },
+        "consequent_size_histogram": {
+          "1": 185,
+          "2": 9
+        },
+        "larger_reaction_only_total_ge_4": 0,
+        "maximum_antecedent_size": 2,
+        "maximum_consequent_size": 2,
+        "maximum_total_size": 3,
+        "multi_item_antecedent": 9,
+        "multi_item_consequent": 9,
+        "multi_reaction_antecedent_to_single_reaction": 9,
+        "reaction_only": 194,
+        "rules": 194,
+        "side_length_histogram": {
+          "1->1": 176,
+          "1->2": 9,
+          "2->1": 9
+        },
+        "single_reaction_to_multi_reaction_consequent": 9,
+        "single_reaction_to_single_reaction": 176,
+        "statin_containing": 0,
+        "statin_structure_breakdown": {
+          "other_statin_containing": 0,
+          "reaction_only": 194,
+          "single_reaction_to_single_statin": 0,
+          "single_statin_to_multi_reaction_consequent": 0,
+          "single_statin_to_single_reaction": 0,
+          "statin_plus_one_reaction_to_single_reaction": 0,
+          "two_reactions_to_single_statin": 0,
+          "two_statins_to_single_reaction": 0
+        }
+      }
+    },
+    "fpgrowth": {
+      "independent_ARFF_counts": {
+        "distinct_itemset_counts_verified": 123,
+        "rules_verified": 194
+      },
+      "native": {
+        "api_equals_internal_count": true,
+        "association_build_seconds": 0.3391509,
+        "attributes": 366,
+        "empty_transactions": 117325,
+        "frequent_itemsets": 241,
+        "has_nonpresence_items": false,
+        "internal_qualifying_rules": 194,
+        "load_validation_seconds": 0.1842831,
+        "maximum_frequent_itemset_length": 3,
+        "resolved_lower_count": 1156,
+        "returned_rules": 194,
+        "rows": 385288,
+        "rule_policy_limit_reached": false,
+        "settings": {
+          "available_processors": 2,
+          "delta": 1.0,
+          "find_all": true,
+          "lower": 0.003,
+          "max_heap_bytes": 4294967296,
+          "maximum_items": -1,
+          "metric_id": 1,
+          "minimum_metric": 1.2,
+          "options": [
+            "-P",
+            "2",
+            "-I",
+            "-1",
+            "-N",
+            "100000",
+            "-T",
+            "1",
+            "-C",
+            "1.2",
+            "-D",
+            "1.0",
+            "-U",
+            "1.0",
+            "-M",
+            "0.003",
+            "-S"
+          ],
+          "positive_index": 2,
+          "requested_rules": 100000,
+          "rules_filter": "",
+          "transactions_filter": "",
+          "upper": 1.0
+        },
+        "tree_build_passes": 1,
+        "tree_row_reads": 385288,
+        "weka_version": "3.8.6"
+      },
+      "statin_export": {
+        "algorithm": "fpgrowth",
+        "all_statin_rules_exported": 0,
+        "deterministic_representatives": [],
+        "files": {
+          "statin_rules_fpgrowth.csv": "887c5c68c968b171b4b698e28b31198951f06144f741f5edac428f5aa433be78",
+          "statin_rules_fpgrowth.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        "selection": "first 8 by total item count, canonical lhs/rhs; metrics not consulted",
+        "structure_breakdown": {
+          "other_statin_containing": 0,
+          "reaction_only": 194,
+          "single_reaction_to_single_statin": 0,
+          "single_statin_to_multi_reaction_consequent": 0,
+          "single_statin_to_single_reaction": 0,
+          "statin_plus_one_reaction_to_single_reaction": 0,
+          "two_reactions_to_single_statin": 0,
+          "two_statins_to_single_reaction": 0
+        }
+      },
+      "structure": {
+        "antecedent_size_histogram": {
+          "1": 185,
+          "2": 9
+        },
+        "consequent_size_histogram": {
+          "1": 185,
+          "2": 9
+        },
+        "larger_reaction_only_total_ge_4": 0,
+        "maximum_antecedent_size": 2,
+        "maximum_consequent_size": 2,
+        "maximum_total_size": 3,
+        "multi_item_antecedent": 9,
+        "multi_item_consequent": 9,
+        "multi_reaction_antecedent_to_single_reaction": 9,
+        "reaction_only": 194,
+        "rules": 194,
+        "side_length_histogram": {
+          "1->1": 176,
+          "1->2": 9,
+          "2->1": 9
+        },
+        "single_reaction_to_multi_reaction_consequent": 9,
+        "single_reaction_to_single_reaction": 176,
+        "statin_containing": 0,
+        "statin_structure_breakdown": {
+          "other_statin_containing": 0,
+          "reaction_only": 194,
+          "single_reaction_to_single_statin": 0,
+          "single_statin_to_multi_reaction_consequent": 0,
+          "single_statin_to_single_reaction": 0,
+          "statin_plus_one_reaction_to_single_reaction": 0,
+          "two_reactions_to_single_statin": 0,
+          "two_statins_to_single_reaction": 0
+        }
+      }
+    }
+  },
+  "scientific_findings_validated": false,
+  "started_utc": "2026-10-23T02:48:42.831999+00:00",
+  "status": "passed",
+  "support": "0.003",
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 145
+  }
+}

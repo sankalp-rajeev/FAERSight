@@ -99,3 +99,50 @@ effects, clinical risks or validated safety claims.
 
 Stop after validation and commit/push. A successful, reconciled A2 can make
 0.002 eligible for separate explicit authorization; no later execution follows.
+
+
+## Completed authorized A2 attempt
+
+Implementation/preregistration `4741fbc`; execution lock `a41bb28`. The committed manifest and SHA-256 sidecar preceded either full invocation; manifest SHA-256 `752db0a8fa8197a7b764b4c4843ed320af9b013ed655298d804cce2162f38fd3`. No run setting, resource bound or earlier evidence was changed.
+
+### Raw execution times and completion
+
+- **apriori: passed**, JVM exit 0; total driver wall 361.626217 s; JVM wall 360.891450 s. Association-build 360.503531 s; 241 frequent itemsets; 194 complete rules. Existing cap/completeness gates passed.
+- **fpgrowth: passed**, JVM exit 0; total driver wall 1.416367 s; JVM wall 0.750769 s. Association-build 0.339151 s; 241 frequent itemsets; 194 complete rules. Existing cap/completeness gates passed.
+
+JVM wall includes launch/load/validation/build/export; build brackets `buildAssociations`; total driver also includes compilation and post-return validation, as in A1. Raw times are preserved without extrapolation or speed ratio. Peak-memory behavior was not measured comparably.
+
+### Verified singleton eligibility
+
+- **apriori, cutoff 1,156**: atorvastatin 1,157 (eligible); fluvastatin 6 (ineligible); lovastatin 0 (ineligible); pitavastatin 16 (ineligible); pravastatin 67 (ineligible); rosuvastatin 864 (ineligible); simvastatin 188 (ineligible).
+- **fpgrowth, cutoff 1,156**: atorvastatin 1,157 (eligible); fluvastatin 6 (ineligible); lovastatin 0 (ineligible); pitavastatin 16 (ineligible); pravastatin 67 (ineligible); rosuvastatin 864 (ineligible); simvastatin 188 (ineligible).
+
+### Direct comparable-rule analysis
+
+Native cutoffs both equal 1,156. Apriori 194; FPGrowth 194; intersection **194**; Apriori-only **0**; FPGrowth-only **0**; Jaccard **1.0**. No common-count restriction is required; the redundant 1,156 audit uses the same pool.
+
+Shared metrics reconcile at absolute/relative 1e-12: **True**. Maximum absolute differences: `{"confidence": 0.0, "conviction": 0.0, "leverage": 0.0, "lift": 0.0, "support": 0.0}`. Every exported count and all finite metrics were independently reconciled against the frozen ARFF. Direction, presence, lift floor and unrestricted itemset family were preserved. No metric ranking was performed.
+
+### Statin-containing rules and complexity
+
+- **apriori**: statin-containing **0**; reaction-only **194**. Maximum antecedent/consequent/total rule sizes **2/2/3**; maximum frequent-itemset size 3. Antecedent-size counts `{"1": 185, "2": 9}`; consequent-size counts `{"1": 185, "2": 9}`; multi-item antecedents 9; multi-item consequents 9.
+  Statin breakdown: `{"other_statin_containing": 0, "reaction_only": 194, "single_reaction_to_single_statin": 0, "single_statin_to_multi_reaction_consequent": 0, "single_statin_to_single_reaction": 0, "statin_plus_one_reaction_to_single_reaction": 0, "two_reactions_to_single_statin": 0, "two_statins_to_single_reaction": 0}`.
+  Reaction-only progression: 1->1 176; multi->1 9; 1->multi 9; total size >=4 0.
+  Complete canonical exports: `statin_rules_apriori.csv` and `statin_rules_apriori.json`, preserving algorithm source and all native itemsets/counts/metrics. No statin representatives exist; empty exports are explicit, with no fabricated examples.
+- **fpgrowth**: statin-containing **0**; reaction-only **194**. Maximum antecedent/consequent/total rule sizes **2/2/3**; maximum frequent-itemset size 3. Antecedent-size counts `{"1": 185, "2": 9}`; consequent-size counts `{"1": 185, "2": 9}`; multi-item antecedents 9; multi-item consequents 9.
+  Statin breakdown: `{"other_statin_containing": 0, "reaction_only": 194, "single_reaction_to_single_statin": 0, "single_statin_to_multi_reaction_consequent": 0, "single_statin_to_single_reaction": 0, "statin_plus_one_reaction_to_single_reaction": 0, "two_reactions_to_single_statin": 0, "two_statins_to_single_reaction": 0}`.
+  Reaction-only progression: 1->1 176; multi->1 9; 1->multi 9; total size >=4 0.
+  Complete canonical exports: `statin_rules_fpgrowth.csv` and `statin_rules_fpgrowth.json`, preserving algorithm source and all native itemsets/counts/metrics. No statin representatives exist; empty exports are explicit, with no fabricated examples.
+
+These are observed A2 counts. Atorvastatin singleton eligibility does not override monotonic rule support or imply a statin co-occurrence rule. No clinical/causal interpretation or validated safety claim is made.
+
+## Validation and stop gate
+
+**145 tests passed**, zero failures/errors/skips; 8 new A2 tests and all 137 pre-existing tests retained, actual WEKA enabled. Deterministic CSV/JSON exports and sample order were checked independently of dictionary order. Ruff lint/format pass (59 source files). All 270 protected earlier files match `b5daa01`; all 108 frozen scientific-core files match `69d27d7`; all 1,096 primary and 1,106 sensitivity generated artifacts retain their registered hashes. Earlier 0.001/A1 evidence, code/configuration, manifests and scientific validation flags are unchanged; scientific validation remains false.
+
+Preregistered 0.002 eligible: **True**, pending new explicit authorization. No 0.002, metric-ranking, Explorer, scaling or new algorithm ran. Stop after commit/push.
+
+Tracked evidence: `artifacts/manifests/weka-showcase-fallback-a2-0.003/run/`. The [outcome](../artifacts/manifests/weka-showcase-fallback-a2-0.003/run/outcome.json) retains commands/times/native metadata/comparison/counts/statin export provenance. The [evidence index](../artifacts/manifests/weka-showcase-fallback-a2-0.003/run/evidence_index.json) hashes every snapshot and every raw emitted file; the ZIP preserves full native logs, rules, resolved options, partial outputs if any and compiled classes.
+
+- Raw archive SHA-256: `6347461eacea75b112bbd9e24c097d5542f72b891f1d9ad8a03860e3f12814bf`.
+- Evidence index SHA-256: `eae861c335cf46bf1e0427c67e08acd045b5954a5f58aa177e5629d475c70acc`.

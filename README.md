@@ -196,6 +196,12 @@ exact shared-metric agreement. Native cutoffs remain 1,541/1,542; the registered
 common-support comparison gives the same result. All 137 tests pass. The next
 level 0.003 is eligible and awaits separate explicit authorization.
 
+The subsequently authorized [Fallback A2 at 0.003](docs/weka_showcase_fallback_a2.md)
+completed with 194 matching reaction-only rules per algorithm, Jaccard 1.0 and
+exact shared-metric agreement. Both cutoffs are 1,156. Atorvastatin is singleton-
+eligible but no statin-containing rule was emitted; complete empty statin exports
+are retained. All 145 tests pass. The next level 0.002 awaits explicit authorization.
+
 ## Experiment configuration
 
 See [decisions](docs/decisions.md) and [course compliance](docs/course_compliance.md).

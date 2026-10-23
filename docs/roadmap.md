@@ -14,6 +14,12 @@ reviews or change any `scientific_findings_validated: false` boundary.
 
 ## Post-core milestone: WEKA Showcase / Tool-Study Extension
 
+**Latest checkpoint: A2 at 0.003 completed and validated; stop before 0.002.**
+Both algorithms return the same 194 reaction-only rules at count 1,156, with
+exact shared metrics and no statin-containing rules. All 145 tests pass. See
+[the A2 record](weka_showcase_fallback_a2.md). Earlier status/authorization
+statements below remain preserved history; no later work is automatically authorized.
+
 **Subsequent authorization:** the appended post-timeout amendment below authorizes
 one FPGrowth 0.001 feasibility attempt after semantic/fixture/configuration gates.
 The original Apriori ladder remains stopped. Historical checkpoint statements
@@ -324,6 +330,15 @@ resolve 1,156; only atorvastatin is singleton-eligible. Apriori-first gating,
 resources and old evidence stay unchanged. Mechanically export/count all statin
 rules, preserving the distinction between singleton eligibility and monotonic
 rule support. No 0.002 or later showcase work is authorized by this checkpoint.
+
+**A2 outcome: both completed; 0.002 eligible pending explicit authorization.**
+Native intersection 194, algorithm-only counts 0/0, Jaccard 1.0; shared metrics
+match exactly and all exported counts reconcile independently. Both have 241
+frequent itemsets, maximum rule sizes 2/2/3 and zero statin-containing rules in
+all requested categories. Complete empty statin exports retain explicit schema
+and provenance. JVM wall/build seconds: Apriori 360.891450 / 360.5035305;
+FPGrowth 0.750769 / 0.3391509. All 145 tests and frozen-history checks pass.
+No 0.002, metric-ranking, Explorer, scaling or new algorithm was executed.
 
 Eligible after **either** FPGrowth 0.001 outcome: success permits a comparable-output
 point; failure permits a bounded feasibility comparison. Eligibility never means
