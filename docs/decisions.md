@@ -222,3 +222,21 @@ pass. Scientific validation fields remain false. **Fallback A is eligible but
 not authorized to run; Fallback B is not eligible. Stop after commit/push.**
 No retry, lower support, higher-support pair, scaling, metric comparison or
 Explorer was executed. The 0.004 -> 0.003 -> 0.002 ladder stays preregistered.
+
+## Fallback A1 authorization: 0.004 paired-completion checkpoint
+
+The user now authorizes only Fallback A1 at 0.004: Apriori first, FPGrowth only
+after complete below-cap Apriori output. Preserve all previous evidence and
+settings. Exact cutoffs are Apriori 1,541 and FPGrowth 1,542. Preregister raw-set
+statistics with that limitation plus common-support comparison at joint >=1,542
+using complete canonical finite-metric outputs, tolerance 1e-12. No support
+adjustment, extra mining or speed ratio is registered. See the separate
+[A1 preregistration and outcome record](weka_showcase_fallback_a1.md).
+
+The purpose is a tractable algorithm comparison, not statin rule recovery.
+Increasing support cannot introduce statin-containing rules absent from the
+complete 0.001 FPGrowth pool with other settings fixed. At 0.004, no statin
+singleton survives either cutoff (largest primary count 1,157). No clinical
+interpretation or diagnosis of the earlier timeout's internal cause follows.
+Lock a separate manifest before execution; stop after A1 validation/commit/push.
+0.003, 0.002 and all other extension steps require new explicit authorization.

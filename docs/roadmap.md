@@ -303,6 +303,13 @@ eligible, with a **new explicit user authorization** required to execute it.
 
 ### Fallback A: separately authorized higher-support paired comparison
 
+**Subsequent authorization: A1 at 0.004 only.** The
+[A1 record](weka_showcase_fallback_a1.md) preregisters the 1,541/1,542 cutoff
+difference and common-support export comparison. Apriori must complete before
+FPGrowth may run. No statin rules are sought; higher support cannot introduce
+such rules absent from the complete 0.001 FPGrowth pool. Preserve original
+history below. No descent to 0.003/0.002 is authorized by this checkpoint.
+
 Eligible after **either** FPGrowth 0.001 outcome: success permits a comparable-output
 point; failure permits a bounded feasibility comparison. Eligibility never means
 automatic execution. Preserve all original failed evidence and configurations.
