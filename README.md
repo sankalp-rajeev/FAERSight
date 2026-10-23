@@ -200,7 +200,18 @@ The subsequently authorized [Fallback A2 at 0.003](docs/weka_showcase_fallback_a
 completed with 194 matching reaction-only rules per algorithm, Jaccard 1.0 and
 exact shared-metric agreement. Both cutoffs are 1,156. Atorvastatin is singleton-
 eligible but no statin-containing rule was emitted; complete empty statin exports
-are retained. All 145 tests pass. The next level 0.002 awaits explicit authorization.
+are retained. All 145 tests passed at that checkpoint.
+
+The final authorized [Fallback A3 at 0.002](docs/weka_showcase_fallback_a3.md)
+completed with 586 matching reaction-only rules and 447 frequent itemsets per
+algorithm at cutoff 771. Jaccard is 1.0; all shared metrics agree exactly.
+Atorvastatin and rosuvastatin are singleton-eligible but no statin-containing
+rules were emitted; explicit empty exports are retained. Apriori build/JVM wall
+times were 828.229/828.657 s; FPGrowth 0.395/0.832 s. The recorded A1/A2/A3
+progression does not assume monotonic runtime. All 153 tests and frozen-core/prior
+evidence checks pass. **Fallback A is complete.** No further supports,
+metric-ranking, Explorer, scaling diagnostics or additional algorithms are
+authorized. Earlier scientific validation boundaries remain unchanged.
 
 ## Experiment configuration
 

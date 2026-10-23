@@ -1,0 +1,384 @@
+{
+  "A1_native_rounding_caveat": "1541 versus 1542; common-count comparison at 1542 retained",
+  "completed_rows": [
+    {
+      "algorithm": "apriori",
+      "build_seconds": 393.9657375,
+      "common_count_jaccard": 1.0,
+      "eligible_statins": [],
+      "frequent_itemsets": 154,
+      "jvm_wall_seconds": 394.3502293000347,
+      "maximum_total_rule_size": 3,
+      "minimum_count": 1541,
+      "native_jaccard": 1.0,
+      "reaction_only_rule_count": 70,
+      "rule_count": 70,
+      "source_manifest_sha256": "aed8532f46c0a4489713715e3d14cfed3b590b8f93a1eaf061800b8aa31f10e1",
+      "source_outcome_path": "artifacts/manifests/weka-showcase-fallback-a1-0.004/run/outcome.json",
+      "source_outcome_sha256": "9017d4b8830dcaf3c08fbfd6bd84ad74683476c6e65d8a9fb5433227a7812aa8",
+      "statin_containing_rule_count": 0,
+      "statin_singleton_eligibility": {
+        "DRUG_atorvastatin": {
+          "count": 1157,
+          "eligible": false
+        },
+        "DRUG_fluvastatin": {
+          "count": 6,
+          "eligible": false
+        },
+        "DRUG_lovastatin": {
+          "count": 0,
+          "eligible": false
+        },
+        "DRUG_pitavastatin": {
+          "count": 16,
+          "eligible": false
+        },
+        "DRUG_pravastatin": {
+          "count": 67,
+          "eligible": false
+        },
+        "DRUG_rosuvastatin": {
+          "count": 864,
+          "eligible": false
+        },
+        "DRUG_simvastatin": {
+          "count": 188,
+          "eligible": false
+        }
+      },
+      "support": "0.004"
+    },
+    {
+      "algorithm": "fpgrowth",
+      "build_seconds": 0.32545,
+      "common_count_jaccard": 1.0,
+      "eligible_statins": [],
+      "frequent_itemsets": 154,
+      "jvm_wall_seconds": 0.7356508999946527,
+      "maximum_total_rule_size": 3,
+      "minimum_count": 1542,
+      "native_jaccard": 1.0,
+      "reaction_only_rule_count": 70,
+      "rule_count": 70,
+      "source_manifest_sha256": "aed8532f46c0a4489713715e3d14cfed3b590b8f93a1eaf061800b8aa31f10e1",
+      "source_outcome_path": "artifacts/manifests/weka-showcase-fallback-a1-0.004/run/outcome.json",
+      "source_outcome_sha256": "9017d4b8830dcaf3c08fbfd6bd84ad74683476c6e65d8a9fb5433227a7812aa8",
+      "statin_containing_rule_count": 0,
+      "statin_singleton_eligibility": {
+        "DRUG_atorvastatin": {
+          "count": 1157,
+          "eligible": false
+        },
+        "DRUG_fluvastatin": {
+          "count": 6,
+          "eligible": false
+        },
+        "DRUG_lovastatin": {
+          "count": 0,
+          "eligible": false
+        },
+        "DRUG_pitavastatin": {
+          "count": 16,
+          "eligible": false
+        },
+        "DRUG_pravastatin": {
+          "count": 67,
+          "eligible": false
+        },
+        "DRUG_rosuvastatin": {
+          "count": 864,
+          "eligible": false
+        },
+        "DRUG_simvastatin": {
+          "count": 188,
+          "eligible": false
+        }
+      },
+      "support": "0.004"
+    },
+    {
+      "algorithm": "apriori",
+      "build_seconds": 360.5035305,
+      "common_count_jaccard": 1.0,
+      "eligible_statins": [
+        "DRUG_atorvastatin"
+      ],
+      "frequent_itemsets": 241,
+      "jvm_wall_seconds": 360.8914503999986,
+      "maximum_total_rule_size": 3,
+      "minimum_count": 1156,
+      "native_jaccard": 1.0,
+      "reaction_only_rule_count": 194,
+      "rule_count": 194,
+      "source_manifest_sha256": "752db0a8fa8197a7b764b4c4843ed320af9b013ed655298d804cce2162f38fd3",
+      "source_outcome_path": "artifacts/manifests/weka-showcase-fallback-a2-0.003/run/outcome.json",
+      "source_outcome_sha256": "c7db8b5c0b85780a2b25eb6e100465f5c2c7315039147d765f5161eb47a05ca9",
+      "statin_containing_rule_count": 0,
+      "statin_singleton_eligibility": {
+        "DRUG_atorvastatin": {
+          "count": 1157,
+          "eligible": true
+        },
+        "DRUG_fluvastatin": {
+          "count": 6,
+          "eligible": false
+        },
+        "DRUG_lovastatin": {
+          "count": 0,
+          "eligible": false
+        },
+        "DRUG_pitavastatin": {
+          "count": 16,
+          "eligible": false
+        },
+        "DRUG_pravastatin": {
+          "count": 67,
+          "eligible": false
+        },
+        "DRUG_rosuvastatin": {
+          "count": 864,
+          "eligible": false
+        },
+        "DRUG_simvastatin": {
+          "count": 188,
+          "eligible": false
+        }
+      },
+      "support": "0.003"
+    },
+    {
+      "algorithm": "fpgrowth",
+      "build_seconds": 0.3391509,
+      "common_count_jaccard": 1.0,
+      "eligible_statins": [
+        "DRUG_atorvastatin"
+      ],
+      "frequent_itemsets": 241,
+      "jvm_wall_seconds": 0.7507686999742873,
+      "maximum_total_rule_size": 3,
+      "minimum_count": 1156,
+      "native_jaccard": 1.0,
+      "reaction_only_rule_count": 194,
+      "rule_count": 194,
+      "source_manifest_sha256": "752db0a8fa8197a7b764b4c4843ed320af9b013ed655298d804cce2162f38fd3",
+      "source_outcome_path": "artifacts/manifests/weka-showcase-fallback-a2-0.003/run/outcome.json",
+      "source_outcome_sha256": "c7db8b5c0b85780a2b25eb6e100465f5c2c7315039147d765f5161eb47a05ca9",
+      "statin_containing_rule_count": 0,
+      "statin_singleton_eligibility": {
+        "DRUG_atorvastatin": {
+          "count": 1157,
+          "eligible": true
+        },
+        "DRUG_fluvastatin": {
+          "count": 6,
+          "eligible": false
+        },
+        "DRUG_lovastatin": {
+          "count": 0,
+          "eligible": false
+        },
+        "DRUG_pitavastatin": {
+          "count": 16,
+          "eligible": false
+        },
+        "DRUG_pravastatin": {
+          "count": 67,
+          "eligible": false
+        },
+        "DRUG_rosuvastatin": {
+          "count": 864,
+          "eligible": false
+        },
+        "DRUG_simvastatin": {
+          "count": 188,
+          "eligible": false
+        }
+      },
+      "support": "0.003"
+    },
+    {
+      "algorithm": "apriori",
+      "build_seconds": 828.2294597,
+      "common_count_jaccard": 1.0,
+      "eligible_statins": [
+        "DRUG_atorvastatin",
+        "DRUG_rosuvastatin"
+      ],
+      "frequent_itemsets": 447,
+      "jvm_wall_seconds": 828.6570237000124,
+      "maximum_total_rule_size": 3,
+      "minimum_count": 771,
+      "native_jaccard": 1.0,
+      "reaction_only_rule_count": 586,
+      "rule_count": 586,
+      "source_manifest_sha256": "589c32b4aaa0299ac24fe1a1ebae727f87ff2a81f4804d5b7b9377895f035132",
+      "source_outcome_path": "artifacts/manifests/weka-showcase-fallback-a3-0.002/run/a3_outcome_before_progression.json",
+      "source_outcome_sha256": "69a4c4935188d753255a1db3dff2a7dd512a69e82207151dd605bc736499e950",
+      "statin_containing_rule_count": 0,
+      "statin_singleton_eligibility": {
+        "DRUG_atorvastatin": {
+          "count": 1157,
+          "eligible": true
+        },
+        "DRUG_fluvastatin": {
+          "count": 6,
+          "eligible": false
+        },
+        "DRUG_lovastatin": {
+          "count": 0,
+          "eligible": false
+        },
+        "DRUG_pitavastatin": {
+          "count": 16,
+          "eligible": false
+        },
+        "DRUG_pravastatin": {
+          "count": 67,
+          "eligible": false
+        },
+        "DRUG_rosuvastatin": {
+          "count": 864,
+          "eligible": true
+        },
+        "DRUG_simvastatin": {
+          "count": 188,
+          "eligible": false
+        }
+      },
+      "support": "0.002"
+    },
+    {
+      "algorithm": "fpgrowth",
+      "build_seconds": 0.3950281,
+      "common_count_jaccard": 1.0,
+      "eligible_statins": [
+        "DRUG_atorvastatin",
+        "DRUG_rosuvastatin"
+      ],
+      "frequent_itemsets": 447,
+      "jvm_wall_seconds": 0.8315231000306085,
+      "maximum_total_rule_size": 3,
+      "minimum_count": 771,
+      "native_jaccard": 1.0,
+      "reaction_only_rule_count": 586,
+      "rule_count": 586,
+      "source_manifest_sha256": "589c32b4aaa0299ac24fe1a1ebae727f87ff2a81f4804d5b7b9377895f035132",
+      "source_outcome_path": "artifacts/manifests/weka-showcase-fallback-a3-0.002/run/a3_outcome_before_progression.json",
+      "source_outcome_sha256": "69a4c4935188d753255a1db3dff2a7dd512a69e82207151dd605bc736499e950",
+      "statin_containing_rule_count": 0,
+      "statin_singleton_eligibility": {
+        "DRUG_atorvastatin": {
+          "count": 1157,
+          "eligible": true
+        },
+        "DRUG_fluvastatin": {
+          "count": 6,
+          "eligible": false
+        },
+        "DRUG_lovastatin": {
+          "count": 0,
+          "eligible": false
+        },
+        "DRUG_pitavastatin": {
+          "count": 16,
+          "eligible": false
+        },
+        "DRUG_pravastatin": {
+          "count": 67,
+          "eligible": false
+        },
+        "DRUG_rosuvastatin": {
+          "count": 864,
+          "eligible": true
+        },
+        "DRUG_simvastatin": {
+          "count": 188,
+          "eligible": false
+        }
+      },
+      "support": "0.002"
+    }
+  ],
+  "further_support_levels": [],
+  "registered_supports": [
+    "0.004",
+    "0.003",
+    "0.002"
+  ],
+  "scientific_findings_validated": false,
+  "scope": "same pinned PS input, WEKA 3.8.6, fixed options and 4 GiB/1800 s envelope",
+  "sources": {
+    "0.002": {
+      "source_manifest_sha256": "589c32b4aaa0299ac24fe1a1ebae727f87ff2a81f4804d5b7b9377895f035132",
+      "source_outcome_path": "artifacts/manifests/weka-showcase-fallback-a3-0.002/run/a3_outcome_before_progression.json",
+      "source_outcome_sha256": "69a4c4935188d753255a1db3dff2a7dd512a69e82207151dd605bc736499e950"
+    },
+    "0.003": {
+      "source_manifest_sha256": "752db0a8fa8197a7b764b4c4843ed320af9b013ed655298d804cce2162f38fd3",
+      "source_outcome_path": "artifacts/manifests/weka-showcase-fallback-a2-0.003/run/outcome.json",
+      "source_outcome_sha256": "c7db8b5c0b85780a2b25eb6e100465f5c2c7315039147d765f5161eb47a05ca9"
+    },
+    "0.004": {
+      "source_manifest_sha256": "aed8532f46c0a4489713715e3d14cfed3b590b8f93a1eaf061800b8aa31f10e1",
+      "source_outcome_path": "artifacts/manifests/weka-showcase-fallback-a1-0.004/run/outcome.json",
+      "source_outcome_sha256": "9017d4b8830dcaf3c08fbfd6bd84ad74683476c6e65d8a9fb5433227a7812aa8"
+    }
+  },
+  "statuses": {
+    "0.002": {
+      "apriori": "passed",
+      "fpgrowth": "passed"
+    },
+    "0.003": {
+      "apriori": "passed",
+      "fpgrowth": "passed"
+    },
+    "0.004": {
+      "apriori": "passed",
+      "fpgrowth": "passed"
+    }
+  },
+  "timing_notes": {
+    "apriori": {
+      "build_seconds": [
+        393.9657375,
+        360.5035305,
+        828.2294597
+      ],
+      "build_time_nondecreasing_as_support_decreases": false,
+      "jvm_wall_nondecreasing_as_support_decreases": false,
+      "jvm_wall_seconds": [
+        394.3502293000347,
+        360.8914503999986,
+        828.6570237000124
+      ],
+      "limitation": "one observed invocation per level; no extrapolation or universal performance claim",
+      "support_order": [
+        "0.004",
+        "0.003",
+        "0.002"
+      ]
+    },
+    "fpgrowth": {
+      "build_seconds": [
+        0.32545,
+        0.3391509,
+        0.3950281
+      ],
+      "build_time_nondecreasing_as_support_decreases": true,
+      "jvm_wall_nondecreasing_as_support_decreases": true,
+      "jvm_wall_seconds": [
+        0.7356508999946527,
+        0.7507686999742873,
+        0.8315231000306085
+      ],
+      "limitation": "one observed invocation per level; no extrapolation or universal performance claim",
+      "support_order": [
+        "0.004",
+        "0.003",
+        "0.002"
+      ]
+    }
+  }
+}

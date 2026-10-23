@@ -14,10 +14,13 @@ reviews or change any `scientific_findings_validated: false` boundary.
 
 ## Post-core milestone: WEKA Showcase / Tool-Study Extension
 
-**Latest checkpoint: A2 at 0.003 completed and validated; stop before 0.002.**
-Both algorithms return the same 194 reaction-only rules at count 1,156, with
-exact shared metrics and no statin-containing rules. All 145 tests pass. See
-[the A2 record](weka_showcase_fallback_a2.md). Earlier status/authorization
+**Latest checkpoint: final Fallback A3 at 0.002 completed and validated.**
+Both algorithms return the same 586 reaction-only rules at count 771, with
+exact shared metrics and no statin-containing rules. All 153 tests pass. See
+[the A3 record and A1/A2/A3 progression](weka_showcase_fallback_a3.md).
+Fallback A is complete; no further support levels follow. Metric-ranking,
+Explorer, scaling diagnostics and additional algorithms await new authorization.
+Earlier status/authorization
 statements below remain preserved history; no later work is automatically authorized.
 
 **Subsequent authorization:** the appended post-timeout amendment below authorizes

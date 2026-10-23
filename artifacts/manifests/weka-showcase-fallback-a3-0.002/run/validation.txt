@@ -1,0 +1,16 @@
+All checks passed!
+64 files already formatted
+Evidence index, source snapshot, reproduction overlay, frozen primary inputs and mart verified
+Primary deterministic artifacts: 10
+Sensitivity deterministic artifacts: 17
+All new raw/capture/archive/manifest/code hashes verified; exactly one full run per algorithm
+Raw ZIP 1bd9def2d1d77c5e82fdc444d59dc3146060a4fd54ec990602d47d0778dd10ab
+Rules CSV 746b3972949863831ca268f34ba66ff75db190e234b1a009532a6e24f0b3a5a8
+Evidence index 26cdd8a1177d0649ca047b73f22f72aea595cdccbb290a69079e80c46214dce3
+All A1 and protected prior hashes verified; both complete; overlap 70; no later levels run
+Evidence index f818836a91b21a970fc3622247ba9afcb5a1ebb337a436d64a358479b44d1d76
+Raw archive d7bfb636a9c925b71bcc622c038f7bcb52a54ca6d186af6d3596afe48ace9a2e
+All A2 and protected prior hashes verified; both complete; overlap 194; no later levels run
+Evidence index eae861c335cf46bf1e0427c67e08acd045b5954a5f58aa177e5629d475c70acc
+Raw archive 6347461eacea75b112bbd9e24c097d5542f72b891f1d9ad8a03860e3f12814bf
+Complete deterministic empty statin exports and manifest hash sidecar verified

@@ -346,3 +346,37 @@ or assume monotonic runtime; Apriori A2 was measured below A1. Conclusions stay
 specific to this dataset, WEKA version, configuration and resource envelope.
 Validate, commit/push and stop: no support level follows A3 and no metric-ranking,
 Explorer, scaling or new algorithm is authorized.
+
+## Final Fallback A3 result and terminal gate
+
+A3 was locked before execution: implementation/preregistration `602c1ab`,
+manifest commit `adb5f35`, manifest SHA-256
+`589c32b4aaa0299ac24fe1a1ebae727f87ff2a81f4804d5b7b9377895f035132`.
+Both native minimum counts are 771. Atorvastatin 1,157 and rosuvastatin 864 are
+singleton-eligible; the remaining five are not. Apriori completed first, then
+FPGrowth; each returned 586 rules and 447 frequent itemsets. Both cap/completeness
+gates passed; maximum frequent-itemset/rule total size is 3, side maxima 2/2.
+No >=31-itemset caveat was encountered.
+
+Canonical native and common-count comparisons both give intersection 586,
+Apriori-only 0, FPGrowth-only 0 and Jaccard 1.0. All five metric differences are
+exactly zero (tolerance 1e-12); every rule's counts/metrics reconcile independently
+against the frozen ARFF. Every statin-containing category is zero; complete empty
+CSV/JSON exports are retained. Both outputs partition into 472 reaction->reaction,
+57 two-reaction->reaction and 57 reaction->two-reaction rules. No clinical or
+causal interpretation is implied.
+
+Apriori build/JVM/driver seconds: 828.229460/828.657024/829.371142.
+FPGrowth: 0.395028/0.831523/1.494203. A1/A2/A3 progression is recorded in
+[the final engineering record](weka_showcase_fallback_a3.md) and hashed CSV/JSON.
+A1's native 1541/1542 mismatch and common-count agreement remain disclosed;
+A2/A3 thresholds match. These single measurements establish no monotonic runtime
+law or universal performance claim. The original Apriori 0.001 timeout and
+FPGrowth success remain unchanged; no internal timeout cause is established.
+
+All 153 tests pass (8 new A3; 145 retained), zero skips; lint/format pass.
+All 292 prior protected files, 108 scientific-core files, 1,096 primary generated
+artifacts and 1,106 sensitivity generated artifacts retain their registered
+hashes. No frozen configuration, manifest or scientific validation flag changed.
+**Fallback A is complete.** Stop after commit/push. No further support level,
+metric-ranking, Explorer, scaling diagnostic or additional algorithm is authorized.

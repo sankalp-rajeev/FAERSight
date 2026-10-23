@@ -1,0 +1,43 @@
+{
+  "artifacts": {
+    "a3_outcome_before_progression.json": "69a4c4935188d753255a1db3dff2a7dd512a69e82207151dd605bc736499e950",
+    "outcome.json": "18798d9dee3c3363e17583b45082fa49cfe0c3b637244ee46e312d6412800854",
+    "raw_output.zip": "98dae74683399ead3207b5457418f9936e5fa4c54ebc4fca56d1289df5ee22f7",
+    "statin_rules_apriori.csv": "887c5c68c968b171b4b698e28b31198951f06144f741f5edac428f5aa433be78",
+    "statin_rules_apriori.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "statin_rules_fpgrowth.csv": "887c5c68c968b171b4b698e28b31198951f06144f741f5edac428f5aa433be78",
+    "statin_rules_fpgrowth.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "support_progression.csv": "a17de6374a5b8e4139c988ac786a5c7aa91ae162304217248e913ffdb0c68a2b",
+    "support_progression.json": "af8e119b9963061e668079527f1d692b8db706335ed2820415900b36d0ec2638",
+    "test_results.xml": "faa7f21a62213d740c5356d5ba43e48f8b62bda0c5ad4e997d3180e76cce4649",
+    "validation.json": "6817efb975fc08947d48200f1a9e314dd7cc4bf0f9f70f85638bfbb7fde7454e",
+    "validation.txt": "e3ae17197807162d8e8a332fa888657cb43896dbfa6c44ebec7e0e93aab4c9c2"
+  },
+  "raw_output_hashes": {
+    "apriori/apriori_raw.txt": "9b6c9240978321ac6b5f32545db7090af4364338d07f4d5b0320de47f4abd9cb",
+    "apriori/classes/faersight/showcase/ShowcaseApriori$Audit.class": "12b52fe0f238703b8e42121f76570ad94aff4ccbaedf6fe8e91396a6235a6da7",
+    "apriori/classes/faersight/showcase/ShowcaseApriori.class": "c064b8add9969f19a6f71e943e2e9aa23345117b0d98a269b678e359750a5922",
+    "apriori/compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "apriori/complete.txt": "7aba1ecfde9bc5c411fbddf1d2e2df5608ea0cfb685678cb80c1c0d170b7a9ae",
+    "apriori/invocation.json": "99cb713f1cf36fa7d9db1fd48c315768f0c4d3fad65dffa6d32a4640b6a1e285",
+    "apriori/resolved_options.json": "fa33ba575af2ffcad7cd2875fd18e836721a2d65d79bbf1e57aebcc6ba44dfed",
+    "apriori/rules.csv": "c5f3f3397ade64a68c3aa4b1879c5d2cd54b5a1197466ba00680fcfc7d2d6e4b",
+    "apriori/run.json": "8ad81d2b349e6a02ca541438346a498cd51fa0c1cbfe4d321efb7b198be9888c",
+    "apriori/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "apriori/stdout.txt": "a6597552ff74d839005dc43b76efa2e8958ceed7bd7d7421dc22315d2dbce69e",
+    "checkpoint.json": "fdde59e585235f134778503ca8dbec5801d2029195529e0ec0bdc8c08f597171",
+    "fpgrowth/classes/faersight/showcasefp/ShowcaseFPGrowth$Audit.class": "7321facd5d6c30800238a26ba7a78d3a5a4e68990ad6d6d57526be4963569040",
+    "fpgrowth/classes/faersight/showcasefp/ShowcaseFPGrowth$CountedInstances.class": "7b2f941f36f93c95f632afb39501fabc2bbe038aa1185f83f2e4a309eb9c4dc9",
+    "fpgrowth/classes/faersight/showcasefp/ShowcaseFPGrowth.class": "ec97176b537ceda70216295cdc4fdc7d1058f3052f4c9dddf678250318489a69",
+    "fpgrowth/compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fpgrowth/complete.txt": "7aba1ecfde9bc5c411fbddf1d2e2df5608ea0cfb685678cb80c1c0d170b7a9ae",
+    "fpgrowth/fpgrowth_raw.txt": "9d41f41a9695d4575000d597bc1e4d1063311833d435394dc468930740e2d8d3",
+    "fpgrowth/invocation.json": "a902d0e105c9e8e234385d2ff54bbafb6cdc56c1c537b6c36816afde1125406e",
+    "fpgrowth/resolved_options.json": "4f362674ca2132ff1390dae69cf096d47ddce106bc5dfbca7ce486f24edb5a22",
+    "fpgrowth/rules.csv": "02019b8dafecd42cfbd46e84b5fdb87b2bb96b278285f1772d042d11ce532488",
+    "fpgrowth/run.json": "a2f634a24b93a7bfd0edbeba0d64e78ec824581de4557e8b960e8b500487c4c0",
+    "fpgrowth/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fpgrowth/stdout.txt": "a6597552ff74d839005dc43b76efa2e8958ceed7bd7d7421dc22315d2dbce69e"
+  },
+  "scientific_findings_validated": false
+}
