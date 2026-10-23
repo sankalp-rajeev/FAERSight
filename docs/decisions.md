@@ -380,3 +380,13 @@ artifacts and 1,106 sensitivity generated artifacts retain their registered
 hashes. No frozen configuration, manifest or scientific validation flag changed.
 **Fallback A is complete.** Stop after commit/push. No further support level,
 metric-ranking, Explorer, scaling diagnostic or additional algorithm is authorized.
+
+## Authorized offline metric-ranking checkpoint
+
+After frozen A3 `0c80bd1`, authorize only the [registered metric study](weka_showcase_metrics.md)
+of its exact 586-rule common pool. No new mining. Use full-precision API values,
+average statistical ties, lexical Top-K ties and fixed gap/chart selectors. Report
+lift-range restriction and rule non-independence. The statin explanation covers
+every statin-containing itemset of size >=2 via all statin-reaction/statin-statin
+pair counts and support anti-monotonicity. Preserve all earlier artifacts. Commit
+and push, then stop before Explorer or final packaging.

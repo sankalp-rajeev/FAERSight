@@ -1,0 +1,83 @@
+{
+  "baseline_commit": "0c80bd1",
+  "expected_rules": 586,
+  "expected_single_to_single_rules": 472,
+  "export_ties": "metric descending then canonical tuple(antecedent),tuple(consequent) lexical",
+  "finite_metric_tolerance": 1e-12,
+  "infinity": "retain positive infinity for conviction; ranks above finite; average tied ranks; JSON string Infinity",
+  "lift_floor": 1.2,
+  "metric_source": "Double.toString of getNamedMetricValue API values; never printed model text",
+  "metrics": [
+    "confidence",
+    "lift",
+    "leverage",
+    "conviction"
+  ],
+  "minimum_count": 771,
+  "new_mining_authorized": false,
+  "percentile_method": "empirical inverse CDF: sorted[ceil(p*N/100)-1]",
+  "percentiles": [
+    5,
+    25,
+    50,
+    75,
+    95
+  ],
+  "plotting_python": "C:/Umich/Projects/Kairos/.venv/Scripts/python.exe",
+  "plotting_versions": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.4.2",
+    "pillow": "12.1.1"
+  },
+  "population": "A3 verified common pool",
+  "rank_gap_maximum_examples": 3,
+  "rank_gap_minimum": 100,
+  "rank_gaps": {
+    "high_confidence_relative_to_lift": [
+      "lift",
+      "confidence"
+    ],
+    "high_conviction_relative_to_confidence": [
+      "confidence",
+      "conviction"
+    ],
+    "high_leverage_relative_to_lift": [
+      "lift",
+      "leverage"
+    ],
+    "high_lift_relative_to_leverage": [
+      "leverage",
+      "lift"
+    ]
+  },
+  "scatter_selection": "highest and lowest full-pool Spearman; canonical sorted metric-name pair tie break",
+  "scientific_findings_validated": false,
+  "source_archive_sha256": "98dae74683399ead3207b5457418f9936e5fa4c54ebc4fca56d1289df5ee22f7",
+  "source_area": "artifacts/manifests/weka-showcase-fallback-a3-0.002",
+  "statin_bound": "all statin-reaction pairs and distinct statin-statin pairs; maximum over pairs equals maximum over all statin-containing itemsets size>=2 by support anti-monotonicity",
+  "statistical_ties": "exact equality of parsed full-precision API doubles; average descending ranks",
+  "support": "0.002",
+  "support_count_comparisons": {
+    "0.001": {
+      "apriori": 385,
+      "fpgrowth": 386
+    },
+    "0.002": {
+      "apriori": 771,
+      "fpgrowth": 771
+    },
+    "0.003": {
+      "apriori": 1156,
+      "fpgrowth": 1156
+    },
+    "0.004": {
+      "apriori": 1541,
+      "fpgrowth": 1542
+    }
+  },
+  "top_k": [
+    10,
+    25,
+    50
+  ]
+}
