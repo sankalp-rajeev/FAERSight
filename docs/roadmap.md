@@ -318,6 +318,13 @@ Apriori 394.350229 / 393.9657375; FPGrowth 0.735651 / 0.32545. Native support
 cutoffs still differ by one report. All 137 tests and frozen-byte checks pass.
 The next preregistered level **0.003 is eligible but not authorized to execute**.
 
+**Subsequent A2 authorization: 0.003 only**, with a separate pre-run manifest.
+See [A2 registration and outcome](weka_showcase_fallback_a2.md). Both algorithms
+resolve 1,156; only atorvastatin is singleton-eligible. Apriori-first gating,
+resources and old evidence stay unchanged. Mechanically export/count all statin
+rules, preserving the distinction between singleton eligibility and monotonic
+rule support. No 0.002 or later showcase work is authorized by this checkpoint.
+
 Eligible after **either** FPGrowth 0.001 outcome: success permits a comparable-output
 point; failure permits a bounded feasibility comparison. Eligibility never means
 automatic execution. Preserve all original failed evidence and configurations.

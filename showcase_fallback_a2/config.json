@@ -1,0 +1,44 @@
+{
+  "checkpoint": "Fallback A2",
+  "baseline_commit": "b5daa01",
+  "preregistration_commit": "23a3a34",
+  "support": "0.003",
+  "minimum_counts": {
+    "apriori": 1156,
+    "fpgrowth": 1156
+  },
+  "order": [
+    "apriori",
+    "fpgrowth"
+  ],
+  "fpgrowth_requires_apriori_complete_below_limit": true,
+  "lift_floor": 1.2,
+  "requested_rules": 100000,
+  "apriori_cap": "post_generation_top_N; equality_is_ambiguous_and_stops",
+  "fpgrowth_cap": "S_ignores_N; require_API_internal_count_equality; stop_at_internal_count_ge_N",
+  "heap": "4g",
+  "jvm_active_processor_count": 2,
+  "processor_applicability": "JVM_hint_only; no_associator_parallelism_or_CPU_quota",
+  "timeout_seconds_per_jvm": 1800,
+  "compile_timeout_seconds": 120,
+  "concurrent_jvms": 1,
+  "rule_family": "all_nonempty_disjoint_presence_itemsets_any_direction",
+  "length_policy": "no_user_limit; stop_if_Apriori_frequent_itemset_length_ge_31",
+  "common_support_count_for_posthoc_comparison": 1156,
+  "comparison": "identical native integer support; canonical finite-metric comparison at 1156",
+  "finite_metrics": [
+    "support",
+    "confidence",
+    "lift",
+    "leverage",
+    "conviction"
+  ],
+  "metric_tolerance_relative_and_absolute": 1e-12,
+  "timing": "JVM_wall_includes_load_validation_build_export; build_is_buildAssociations_only",
+  "speed_ratio": "not_reported; retain identical A1 raw timing boundaries for later study",
+  "full_output": "artifacts/generated/weka-showcase-fallback-a2/0.003",
+  "next_support_authorized": false,
+  "scientific_findings_validated": false,
+  "statin_export": "all statin rules per algorithm with full native schema and algorithm source",
+  "deterministic_statin_sample": "first 8 by total length then canonical lhs/rhs, independent of metrics"
+}

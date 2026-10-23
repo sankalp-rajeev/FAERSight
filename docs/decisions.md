@@ -268,3 +268,23 @@ prior files, 108 frozen core files, 1,096 primary generated artifacts and 1,106
 sensitivity generated artifacts retain their hashes. The 0.001 records and all
 scientific validation boundaries are unchanged. **0.003 is eligible, awaiting
 new explicit authorization. Stop after commit/push; no later run was executed.**
+
+## Fallback A2 authorization: 0.003 only
+
+The user now authorizes A2 after frozen A1 `b5daa01`. Use a separate committed
+execution manifest and hash before either run; Apriori first, FPGrowth only
+after complete eligible Apriori output. Preserve all old sources, configs and
+evidence, resource limits, cap/completeness policies and A1 timing boundaries.
+Verified Apriori/FPGrowth cutoffs both equal **1,156**. Only atorvastatin (1,157)
+is singleton-eligible; record all seven primary statin counts per algorithm.
+
+Clarify the purpose: singleton eligibility does not override monotonic rule
+support. Higher support cannot introduce qualifying statin rules absent from
+the complete 0.001 FPGrowth pool when other definitions are fixed. Count A2's
+actual statin-rule output nonetheless, preserve every rule and direction with
+algorithm provenance, and use metric-independent canonical deterministic export
+and up to eight representatives. No clinical interpretation or reinterpretation
+of frozen primary/sensitivity findings. See [A2 preregistration](weka_showcase_fallback_a2.md).
+
+Run full tests/lint/frozen-history hash checks, commit/push and stop. No 0.002,
+metric-ranking, Explorer, scaling or additional algorithm is authorized.
