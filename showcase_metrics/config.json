@@ -23,7 +23,7 @@
     75,
     95
   ],
-  "plotting_python": "C:/Umich/Projects/Kairos/.venv/Scripts/python.exe",
+  "plotting_python_env": "FAERSIGHT_PLOTTING_PYTHON",
   "plotting_versions": {
     "matplotlib": "3.10.8",
     "numpy": "2.4.2",

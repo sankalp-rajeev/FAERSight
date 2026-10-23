@@ -5,11 +5,9 @@ import csv
 import hashlib
 import io
 import json
-import os
 import shutil
 import subprocess
 import zipfile
-from pathlib import Path
 
 from faersight.audit import sha256
 from showcase.inspect import ROOT, pinned_runtime
@@ -35,6 +33,12 @@ from showcase_metrics.analysis import (
     write_json,
 )
 from showcase_metrics.probe import run_probe
+from showcase_metrics.runtime import (
+    PORTABILITY_FILES,
+    plotting_env,
+    plotting_python,
+    plotting_runtime,
+)
 
 BASE = ROOT / "showcase_metrics"
 EVIDENCE = ROOT / "artifacts/manifests/weka-showcase-metrics"
@@ -73,29 +77,8 @@ def mining_inventory():
     return result
 
 
-def plotting_env():
-    env = os.environ.copy()
-    env["MPLCONFIGDIR"] = str(ROOT / ".tools/metric-matplotlib-config")
-    env["PYTHONDONTWRITEBYTECODE"] = "1"
-    return env
-
-
 def plotting_versions():
-    code = (
-        "import importlib.metadata as m,json; "
-        "print(json.dumps({p:m.version(p) for p in ('matplotlib','numpy','pillow')}))"
-    )
-    result = subprocess.run(
-        [config()["plotting_python"], "-c", code],
-        capture_output=True,
-        timeout=30,
-        check=True,
-        env=plotting_env(),
-    )
-    versions = json.loads(result.stdout)
-    if versions != config()["plotting_versions"]:
-        raise ValueError("Plotting dependency version changed")
-    return versions
+    return plotting_runtime()["versions"]
 
 
 def lock():
@@ -107,6 +90,7 @@ def lock():
             raise ValueError("Commit analysis sources before locking")
     LOCK.parent.mkdir(parents=True, exist_ok=False)
     original, _, _ = pinned_runtime()
+    plotting = plotting_runtime()
     manifest = {
         "status": "locked_before_full_pool_rank_calculations",
         "code_commit": commit,
@@ -115,8 +99,9 @@ def lock():
         "protected_prior_hashes": protected_history(),
         "input": original["input"],
         "runtime": original["runtime"],
-        "plotting_versions": plotting_versions(),
-        "plotting_python_sha256": sha256(Path(cfg["plotting_python"])),
+        "plotting_versions": plotting["versions"],
+        "plotting_runtime": plotting,
+        "plotting_python_sha256": plotting["executable_sha256"],
         "full_data_mining_invocations_before": mining_inventory(),
         "new_association_runs": 0,
         "scientific_findings_validated": False,
@@ -132,16 +117,32 @@ def lock():
     }
 
 
-def verify_lock():
+def verify_lock(*, historical=False):
     m = json.loads(LOCK.read_text())
     if git("show", "HEAD:" + LOCK.relative_to(ROOT).as_posix(), binary=True) != LOCK.read_bytes():
         raise ValueError("Analysis manifest must be committed")
-    if m["source_hashes"] != source_hashes() or m["config"] != config():
+    if historical:
+        for name, digest in m["source_hashes"].items():
+            archived = git("show", m["code_commit"] + ":" + name, binary=True)
+            if hashlib.sha256(archived).hexdigest() != digest:
+                raise ValueError("Historical locked source changed: " + name)
+            if name not in PORTABILITY_FILES and sha256(ROOT / name) != digest:
+                raise ValueError("Scientific source changed: " + name)
+        old_config, current_config = dict(m["config"]), config()
+        old_config.pop("plotting_python", None)
+        current_config.pop("plotting_python_env", None)
+        if old_config != current_config:
+            raise ValueError("Historical scientific configuration changed")
+    elif m["source_hashes"] != source_hashes() or m["config"] != config():
+        # A historical audit is not authorization to execute amended analysis code.
         raise ValueError("Locked code/configuration changed")
-    if sha256(Path(config()["plotting_python"])) != m["plotting_python_sha256"]:
-        raise ValueError("Locked plotting Python changed")
+    plotting_versions()
     for name, digest in m["protected_prior_hashes"].items():
-        if sha256(ROOT / name) != digest:
+        if historical and name in PORTABILITY_FILES:
+            archived = git("show", m["code_commit"] + ":" + name, binary=True)
+            if hashlib.sha256(archived).hexdigest() != digest:
+                raise ValueError("Historical protected source changed: " + name)
+        elif sha256(ROOT / name) != digest:
             raise ValueError("Protected prior artifact changed: " + name)
     if mining_inventory() != m["full_data_mining_invocations_before"]:
         raise ValueError("Unexpected new or modified full-data mining invocation")
@@ -317,7 +318,7 @@ def run():
         write_csv(OUTPUT / f"{name}.csv", values)
     versions = plotting_versions()
     command = [
-        cfg["plotting_python"],
+        plotting_python(),
         "-m",
         "showcase_metrics.plots",
         str(OUTPUT / "chart_data.json"),

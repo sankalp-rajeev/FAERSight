@@ -9,6 +9,7 @@ from faersight.audit import sha256
 from showcase_metrics import analysis as a
 from showcase_metrics.probe import run_probe
 from showcase_metrics.runner import config, load_pool, plotting_env
+from showcase_metrics.runtime import plotting_python
 from tests.showcase.test_runner import require_pinned_runtime
 
 
@@ -203,7 +204,7 @@ def test_deterministic_chart_and_data_bytes(tmp_path):
     for name in ["one", "two"]:
         output = tmp_path / name
         subprocess.run(
-            [config()["plotting_python"], "-m", "showcase_metrics.plots", str(first), str(output)],
+            [plotting_python(), "-m", "showcase_metrics.plots", str(first), str(output)],
             env=plotting_env(),
             capture_output=True,
             check=True,

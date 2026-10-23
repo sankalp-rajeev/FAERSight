@@ -25,6 +25,13 @@ jobs:
           distribution: temurin
           java-version: '21'
       - run: uv sync --frozen --extra dev
+      - name: Provision pinned plotting runtime
+        run: |
+          python -m venv .tools/plotting-venv
+          .tools/plotting-venv/bin/python -m pip install matplotlib==3.10.8 numpy==2.4.2 pillow==12.1.1
+          echo "FAERSIGHT_PLOTTING_PYTHON=$GITHUB_WORKSPACE/.tools/plotting-venv/bin/python" >> "$GITHUB_ENV"
+      - name: Verify plotting runtime
+        run: uv run --frozen python -c "from showcase_metrics.runtime import plotting_runtime; print(plotting_runtime())"
       - run: uv run --frozen ruff check .
       - run: uv run --frozen ruff format --check src tests
       - run: uv run --frozen faersight validate-config config/experiment.example.yaml

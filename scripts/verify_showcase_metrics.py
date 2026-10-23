@@ -17,14 +17,14 @@ from showcase_metrics.runner import (  # noqa: E402
     EVIDENCE,
     LOCK,
     OUTPUT,
-    config,
     plotting_env,
     verify_lock,
 )
+from showcase_metrics.runtime import plotting_python, plotting_runtime  # noqa: E402
 
 
 def verify(*, record=False):
-    manifest = verify_lock()
+    manifest = verify_lock(historical=True)
     assert LOCK.with_suffix(".sha256").read_text().split()[0] == sha256(LOCK)
     core = verify_core()
     generated = {}
@@ -108,7 +108,7 @@ print(json.dumps({'status':'passed','correlations_verified':tested,
  'versions':{m:metadata.version(m) for m in ['scipy','numpy']},'p_values_used':False}))
 """
     checked = subprocess.run(
-        [config()["plotting_python"], "-c", worker, str(OUTPUT)],
+        [plotting_python(), "-c", worker, str(OUTPUT)],
         env=plotting_env(),
         capture_output=True,
         timeout=60,
@@ -135,7 +135,7 @@ print(json.dumps({'status':'passed','correlations_verified':tested,
     charts = scratch / "charts"
     subprocess.run(
         [
-            config()["plotting_python"],
+            plotting_python(),
             "-m",
             "showcase_metrics.plots",
             str(OUTPUT / "chart_data.json"),
@@ -170,6 +170,7 @@ print(json.dumps({'status':'passed','correlations_verified':tested,
         "new_full_data_mining_invocations": 0,
         "checks": logs,
         "verification_source_sha256": sha256(Path(__file__)),
+        "current_plotting_runtime": plotting_runtime(),
         "scientific_findings_validated": False,
     }
     if record:

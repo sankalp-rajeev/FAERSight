@@ -235,6 +235,10 @@ authorization.
 
 ## Experiment configuration
 
+For metric-study chart tests, provision the [portable pinned plotting runtime](docs/plotting_runtime.md)
+or set `FAERSIGHT_PLOTTING_PYTHON` explicitly. CI provisions its own Python 3.11
+plotting environment; no contributor-specific interpreter path is required.
+
 See [decisions](docs/decisions.md) and [course compliance](docs/course_compliance.md).
 The frozen [experiment](config/experiment.yaml),
 [class definition](config/therapeutic_class.yaml) and

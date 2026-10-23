@@ -17,12 +17,19 @@ from showcase.runner import verify_core  # noqa: E402
 from showcase_explorer.prepare import EVIDENCE, frozen_selection  # noqa: E402
 from showcase_fpgrowth.runner import git  # noqa: E402
 from showcase_metrics.runner import mining_inventory  # noqa: E402
+from showcase_metrics.runtime import PORTABILITY_FILES  # noqa: E402
 
 
 def verify(*, record=False):
     manifest = json.loads((EVIDENCE / "preparation_manifest.json").read_text())
     for name, digest in manifest["protected_prior_files"].items():
-        assert sha256(ROOT / name) == digest, name
+        if name in PORTABILITY_FILES:
+            # Keep old execution provenance exact, without imposing its host path
+            # on the separately amended portable code/configuration.
+            archived = git("show", manifest["code_commit"] + ":" + name, binary=True)
+            assert hashlib.sha256(archived).hexdigest() == digest, name
+        else:
+            assert sha256(ROOT / name) == digest, name
     for name, digest in manifest["source_hashes"].items():
         assert sha256(ROOT / name) == digest, name
         assert (
