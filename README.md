@@ -190,6 +190,12 @@ Under the separate preregistered amendment, the
 The corrected higher-support paired comparison is eligible but awaits separate
 authorization; no fallback, lower support, metric comparison or GUI ran.
 
+The subsequently authorized [Fallback A1 at 0.004](docs/weka_showcase_fallback_a1.md)
+completed both algorithms with 70 matching reaction-only rules, Jaccard 1.0 and
+exact shared-metric agreement. Native cutoffs remain 1,541/1,542; the registered
+common-support comparison gives the same result. All 137 tests pass. The next
+level 0.003 is eligible and awaits separate explicit authorization.
+
 ## Experiment configuration
 
 See [decisions](docs/decisions.md) and [course compliance](docs/course_compliance.md).

@@ -1,0 +1,59 @@
+{
+  "all_current_raw_and_archive_hashes_match": true,
+  "commands": [
+    {
+      "argv": [
+        ".venv/Scripts/ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        ".venv/Scripts/ruff",
+        "format",
+        "--check",
+        "src",
+        "tests",
+        "showcase",
+        "showcase_fpgrowth",
+        "showcase_fallback_a1",
+        "scripts/record_showcase_step2b.py",
+        "scripts/export_showcase_step2b.py",
+        "scripts/record_showcase_fpgrowth.py",
+        "scripts/export_showcase_fpgrowth.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        ".venv/Scripts/python",
+        ".tools/verify_milestone4.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        ".venv/Scripts/python",
+        ".tools/verify_fp_result.py"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "core": {
+    "all_match_committed_bytes": true,
+    "plan_commit": "69d27d7",
+    "tracked_frozen_files_verified": 108
+  },
+  "frozen_generated_artifact_checks": {
+    "artifacts/generated/2025Q4-statins-mining": 1096,
+    "artifacts/generated/2025Q4-statins-sensitivity": 1106
+  },
+  "full_data_runs_in_validation": 0,
+  "prior_0_001_evidence_docs_unchanged": true,
+  "protected_prior_files": 251,
+  "scientific_findings_validated": false,
+  "status": "passed",
+  "verified_utc": "2026-10-23T01:46:57.892682+00:00"
+}

@@ -240,3 +240,31 @@ singleton survives either cutoff (largest primary count 1,157). No clinical
 interpretation or diagnosis of the earlier timeout's internal cause follows.
 Lock a separate manifest before execution; stop after A1 validation/commit/push.
 0.003, 0.002 and all other extension steps require new explicit authorization.
+
+### Completed Fallback A1 at 0.004
+
+Pre-run lock `2504de6` references implementation/preregistration `b5b151f`.
+Apriori completed first (JVM wall 394.350229 s; build 393.9657375 s), then
+FPGrowth completed (JVM wall 0.735651 s; build 0.32545 s). Both exited 0,
+returned 70 complete rules and 154 frequent itemsets, and passed their unchanged
+cap/completeness checks. The exact native cutoffs remain 1,541 and 1,542.
+
+Raw canonical intersection is 70, each algorithm-only count 0, Jaccard 1.0.
+The preregistered common joint-count >=1,542 comparison excludes no rules and
+has the same overlap. All shared metrics agree exactly (maximum absolute
+difference 0), within 1e-12; all rule counts independently match the frozen ARFF.
+No speed ratio, metric-ranking experiment, clinical interpretation or diagnosis
+of the 0.001 timeout's internal cause is claimed.
+
+Both outputs: 64 single reaction -> single reaction; 3 multi-reaction antecedent
+-> reaction; 3 reaction -> multi-reaction consequent; zero total size >=4;
+maximum side/total sizes 2/2/3. All 70 are reaction-only, as expected from
+pre-run statin singleton counts and monotonic support. No statin-rule recovery
+is an objective of this fallback.
+
+See [A1 evidence and hashes](weka_showcase_fallback_a1.md). Post-run: all 137
+tests pass (10 new, 127 retained), zero skips; lint/format pass. All 251 protected
+prior files, 108 frozen core files, 1,096 primary generated artifacts and 1,106
+sensitivity generated artifacts retain their hashes. The 0.001 records and all
+scientific validation boundaries are unchanged. **0.003 is eligible, awaiting
+new explicit authorization. Stop after commit/push; no later run was executed.**

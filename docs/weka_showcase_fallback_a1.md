@@ -84,3 +84,40 @@ FPGrowth options, executed only after complete Apriori success:
 ```text
 -P 2 -I -1 -N 100000 -T 1 -C 1.2 -U 1.0 -M 0.004 -D 1.0 -S
 ```
+
+
+## Completed authorized A1 attempt
+
+Pre-run implementation/preregistration commit `b5b151f`; execution lock `2504de6`. Exactly the authorized Apriori-first checkpoint was invoked. Native supports remained 1,541 and 1,542; no support/resource/configuration tuning.
+
+- **apriori: passed**; JVM exit 0; JVM wall 394.350229 s; total driver wall 395.039922 s. Association-build 393.965737 s; 70 complete exported rules; 154 frequent itemsets. Cap/completeness checks passed.
+- **fpgrowth: passed**; JVM exit 0; JVM wall 0.735651 s; total driver wall 1.409278 s. Association-build 0.325450 s; 70 complete exported rules; 154 frequent itemsets. Cap/completeness checks passed.
+
+JVM wall covers load/validation/build/export; total driver wall additionally includes compilation and post-return validation. Build timing brackets `buildAssociations`. Compile+process wall, where returned, is retained separately in invocation metadata. No peak-memory estimate or speed ratio is claimed.
+
+### Direct canonical comparison
+
+- **Raw native sets (unequal cutoffs)**: Apriori 70; FPGrowth 70; intersection 70; Apriori-only 0; FPGrowth-only 0; Jaccard 1.0. Shared metrics reconcile within 1e-12: True.
+- **Common joint count >=1,542**: Apriori 70; FPGrowth 70; intersection 70; Apriori-only 0; FPGrowth-only 0; Jaccard 1.0. Shared metrics reconcile within 1e-12: True.
+
+Counts and support/confidence/lift/leverage/WEKA-conviction were independently checked for all exported rules using the frozen ARFF. Maximum absolute shared-metric difference is **0.0 for every metric**. All 70 native rules meet joint count >=1,542, so the common-support filter excludes none. There are no observed output differences; the registered native cutoff mismatch did not change this qualifying rule pool. The outcome JSON preserves the complete comparison and empty native-only list. No metric ranking was performed.
+
+### Mechanical reaction-only structures
+
+- **apriori**: reaction-only 70; statin-containing 0; single reaction -> single reaction 64; multi-reaction antecedent -> single reaction 3; single reaction -> multi-reaction consequent 3; larger reaction-only rules (>=4 items) 0. Maximum antecedent/consequent/total sizes 2/2/3.
+- **fpgrowth**: reaction-only 70; statin-containing 0; single reaction -> single reaction 64; multi-reaction antecedent -> single reaction 3; single reaction -> multi-reaction consequent 3; larger reaction-only rules (>=4 items) 0. Maximum antecedent/consequent/total sizes 2/2/3.
+
+Some structural categories overlap; the JSON side-length histogram is disjoint. Zero statin rules is expected from the pre-run singleton counts and monotonic support observation, not a safety finding. Both maximum frequent-itemset sizes are 3; Apriori's >=31 caveat was not encountered. Apriori remained below its clipping cap; FPGrowth returned its complete internal pool below the post-completion threshold.
+
+## Stop gate and verification
+
+Next preregistered level 0.003 eligible: **True**. Eligibility is not execution authorization. No 0.003, 0.002, metric-ranking, Explorer or scaling run was performed. No precise internal cause of the earlier Apriori timeout is established by this checkpoint. No clinical interpretation.
+
+Post-run tests: **137 passed**, zero failures/errors/skips, actual pinned WEKA enabled (10 new A1 tests, 127 pre-existing tests retained). Ruff lint and formatting pass (55 checked source files). All 251 protected prior files match `c9e4526`; all 108 frozen scientific-core files match `69d27d7`. All 1,096 primary and 1,106 sensitivity generated artifacts match their frozen manifests. Prior 0.001 evidence records, source/configuration hashes and validation flags are unchanged; all scientific validation fields remain false.
+
+Tracked evidence: `artifacts/manifests/weka-showcase-fallback-a1-0.004/run/`. The [outcome](../artifacts/manifests/weka-showcase-fallback-a1-0.004/run/outcome.json) contains commands, timings, statuses, native metadata, structures and any comparison. The [evidence index](../artifacts/manifests/weka-showcase-fallback-a1-0.004/run/evidence_index.json) hashes every snapshot file and every emitted raw output; the verified raw ZIP retains stdout/stderr, resolved options, native output, compiled classes and failures. No full input/report identifiers are newly published.
+
+SHA-256:
+
+- Raw archive: `d7bfb636a9c925b71bcc622c038f7bcb52a54ca6d186af6d3596afe48ace9a2e`.
+- Evidence index: `f818836a91b21a970fc3622247ba9afcb5a1ebb337a436d64a358479b44d1d76`.

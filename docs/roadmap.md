@@ -310,6 +310,14 @@ FPGrowth may run. No statin rules are sought; higher support cannot introduce
 such rules absent from the complete 0.001 FPGrowth pool. Preserve original
 history below. No descent to 0.003/0.002 is authorized by this checkpoint.
 
+**A1 outcome: both completed; stop pending authorization.** Each returned 70
+complete reaction-only rules and 154 frequent itemsets. Raw and common-support
+intersection 70, algorithm-only counts 0, Jaccard 1.0; shared metrics match
+exactly and all counts reconcile independently. JVM wall/build seconds:
+Apriori 394.350229 / 393.9657375; FPGrowth 0.735651 / 0.32545. Native support
+cutoffs still differ by one report. All 137 tests and frozen-byte checks pass.
+The next preregistered level **0.003 is eligible but not authorized to execute**.
+
 Eligible after **either** FPGrowth 0.001 outcome: success permits a comparable-output
 point; failure permits a bounded feasibility comparison. Eligibility never means
 automatic execution. Preserve all original failed evidence and configurations.

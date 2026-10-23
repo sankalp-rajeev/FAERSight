@@ -1,0 +1,36 @@
+{
+  "artifacts": {
+    "outcome.json": "9017d4b8830dcaf3c08fbfd6bd84ad74683476c6e65d8a9fb5433227a7812aa8",
+    "raw_output.zip": "d7bfb636a9c925b71bcc622c038f7bcb52a54ca6d186af6d3596afe48ace9a2e",
+    "test_results.xml": "50644211041bccf80e5ebe8143189c7b1c8c22347bd57e17aded007708b35b9f",
+    "validation.json": "7f6b14fd4b81e118adaac3d42e6bdd132f31c3586b07d9bb967fea69cc5ae9da",
+    "validation.txt": "c1545c5c60424cf9e7ebe1a58c90608949d4be6114157703cb1a369626674e48"
+  },
+  "raw_output_hashes": {
+    "apriori/apriori_raw.txt": "7b7af01e17dbd509b08b38486f6477f86eeb92ba2063b1e9073d5fab67a4d3a0",
+    "apriori/classes/faersight/showcase/ShowcaseApriori$Audit.class": "12b52fe0f238703b8e42121f76570ad94aff4ccbaedf6fe8e91396a6235a6da7",
+    "apriori/classes/faersight/showcase/ShowcaseApriori.class": "c064b8add9969f19a6f71e943e2e9aa23345117b0d98a269b678e359750a5922",
+    "apriori/compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "apriori/complete.txt": "7aba1ecfde9bc5c411fbddf1d2e2df5608ea0cfb685678cb80c1c0d170b7a9ae",
+    "apriori/invocation.json": "5ebca1d994f362de1657bcde688d76c37cf9b8ef7a240e638455b480b7950c92",
+    "apriori/resolved_options.json": "74f748c04deb5c6f1e763bd1b3c25cf06bf4c570c6cb98c5281d3263c98f0942",
+    "apriori/rules.csv": "00518868205b0f2aa52d435e728166eab10fa83ee49cd6ab0bae5a0c97250709",
+    "apriori/run.json": "a9e21c7dc8fd69fbbcc9ecc5c8541b064577dabcdb09df7ae81d6ca0940618d5",
+    "apriori/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "apriori/stdout.txt": "a6597552ff74d839005dc43b76efa2e8958ceed7bd7d7421dc22315d2dbce69e",
+    "checkpoint.json": "7017abb5697e94c33991a8be5aaf42eed8f3f2f1fd1d064d0643515e6d267a2d",
+    "fpgrowth/classes/faersight/showcasefp/ShowcaseFPGrowth$Audit.class": "7321facd5d6c30800238a26ba7a78d3a5a4e68990ad6d6d57526be4963569040",
+    "fpgrowth/classes/faersight/showcasefp/ShowcaseFPGrowth$CountedInstances.class": "7b2f941f36f93c95f632afb39501fabc2bbe038aa1185f83f2e4a309eb9c4dc9",
+    "fpgrowth/classes/faersight/showcasefp/ShowcaseFPGrowth.class": "ec97176b537ceda70216295cdc4fdc7d1058f3052f4c9dddf678250318489a69",
+    "fpgrowth/compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fpgrowth/complete.txt": "7aba1ecfde9bc5c411fbddf1d2e2df5608ea0cfb685678cb80c1c0d170b7a9ae",
+    "fpgrowth/fpgrowth_raw.txt": "67994e98dc0da2ebf31e1f9da90fd261aefeeae6d3865bf15df17e733692559b",
+    "fpgrowth/invocation.json": "618be4955d39ddabeb5cd4705c38bf27f8c3185da9778f74f8e2cdb6e3912c54",
+    "fpgrowth/resolved_options.json": "c21ccf150a45b19c4232037e03354ac8cff30b8ad949abfe1e72af0c4a016135",
+    "fpgrowth/rules.csv": "85378950bcfcbbe8226db2faf10061fd6de383eff3f68d38800b0c2d7bcd69e7",
+    "fpgrowth/run.json": "4b9a567e5fdb2e03dbfe5a1cbb0bc8c7176d394b0f674b5c976fc93e00873a66",
+    "fpgrowth/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fpgrowth/stdout.txt": "a6597552ff74d839005dc43b76efa2e8958ceed7bd7d7421dc22315d2dbce69e"
+  },
+  "scientific_findings_validated": false
+}
