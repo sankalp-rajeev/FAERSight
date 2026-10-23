@@ -218,11 +218,20 @@ robustness analysis, fixed rank-gap examples and three deterministic charts.
 The lift >=1.2 pool restriction and rule dependence limit the correlations.
 All statin-containing itemsets of size >=2 have joint count at most 141, below
 the showcased cutoffs; singleton eligibility alone cannot produce a rule.
-All 171 tests and prior-evidence/core hash checks pass. No new mining ran.
-**Explorer is next, pending explicit authorization**; final packaging follows it.
+All 171 tests and prior-evidence/core hash checks passed at that checkpoint.
+No new mining ran.
 Earlier scientific validation boundaries remain unchanged.
 
 The unrestricted WEKA showcase is an algorithm and metric study on reaction co-reporting. The projected experiment is the FAERSight drug-safety analysis.
+
+The authorized [Explorer preparation](docs/weka_explorer_demo.md) now supplies
+the all-report eight-column MYOPATHY projection, frozen result references, exact
+underlying option mappings and [rehearsal cues](docs/weka_explorer_demo_script.md).
+All 180 tests pass; prior/core evidence is unchanged. **Explorer verification is
+incomplete:** the Windows GUI connection is unavailable, so full-file GUI usability,
+GUI result agreement and screenshots are pending. No 10k fallback or new mining
+experiment was run. Final packaging remains after completed Explorer and explicit
+authorization.
 
 ## Experiment configuration
 

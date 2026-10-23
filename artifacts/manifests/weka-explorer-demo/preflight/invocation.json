@@ -1,0 +1,28 @@
+{
+  "GUI_observed": false,
+  "association_builds": 0,
+  "command": [
+    "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\java.exe",
+    "-Xmx4g",
+    "-XX:ActiveProcessorCount=2",
+    "-cp",
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-explorer-demo\\preflight\\classes;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+    "faersight.explorerdemo.ExplorerPreflight",
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-explorer-demo\\primary_MYOPATHY_projection.arff",
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-explorer-demo\\preflight\\preflight.json",
+    "-N 10000 -T 1 -C 1.2 -D 1.0 -U 1.0 -M 1.0E-5 -S -1.0 -Z -c -1",
+    "-N 100000 -T 1 -C 1.2 -D 1.0 -U 1.0 -M 0.004 -S -1.0 -Z -c -1",
+    "-P 2 -I -1 -N 100000 -T 1 -C 1.2 -U 1.0 -M 0.004 -D 1.0 -S"
+  ],
+  "compile_command": [
+    "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javac.exe",
+    "-encoding",
+    "UTF-8",
+    "-cp",
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+    "-d",
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-explorer-demo\\preflight\\classes",
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\showcase_explorer\\java\\ExplorerPreflight.java"
+  ],
+  "exit_code": 0
+}

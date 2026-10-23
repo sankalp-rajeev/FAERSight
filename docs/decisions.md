@@ -445,3 +445,33 @@ remain pending. No GUI or fallback usability result can be inferred from API par
 Complete independent preparation/tests/hash checks and preserve this blocker in
 [the Explorer record](weka_explorer_demo.md); do not mark the demonstration complete
 or advance to final packaging without the required GUI observations.
+
+## Explorer preparation result: validated material, GUI still pending
+
+Preparation code `296b8a2` deterministically regenerates the primary r0239
+projection as 385,288 rows and 8 attributes, retaining all seven statins, MYOPATHY,
+original order and 382,855 empty projected rows. SHA-256
+`c13b0b84f123c26d48be11b0662f96805eeaf34292c5d5b2388cea1f89c3d73b`.
+Native WEKA parser/JavaBean inspection confirms binary counts and underlying
+options without GUI input or any association build. It does not establish
+Explorer usability, screen labels, timing or rule agreement. The full original
+ARFF/hash remains unchanged; 10k fallback need is unobserved and none was generated.
+
+Selected frozen atorvastatin/MYOPATHY counts are joint 19, antecedent 1157,
+consequent 168, N=385288; confidence 0.016421780466724288 and lift
+37.66139852656707. Frozen raw output has four general rules, while the scientific
+CSV retains two statin->reaction rules. Presenter notes explain that expected
+display/export distinction and rounding without claiming a completed GUI comparison.
+Preserved A1 result logs, exact Apriori/FPGrowth bean mappings and the existing
+metric matrix are referenced; no unrestricted search was repeated.
+
+All 180 tests pass (9 new; 171 retained), lint/format and frozen/prior hash checks
+pass. All 393 protected prior tracked files, 108 frozen-core files, 1,096 primary
+and 1,106 sensitivity generated artifacts retain their hashes. Scientific validation
+flags remain false. [Rehearsal cues](weka_explorer_demo_script.md) are preparation
+support for student adaptation, not final report/slide packaging.
+
+**Explorer remains incomplete pending the Windows GUI connection.** No screenshots
+or actual GUI observations were obtainable. Resume that authorized checklist after
+connection restoration; final packaging still requires completed Explorer and new
+explicit authorization. Stop after committing/pushing this preparation evidence.

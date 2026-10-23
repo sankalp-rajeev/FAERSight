@@ -1,0 +1,38 @@
+{
+  "candidate_order": [
+    [
+      "atorvastatin",
+      "MYOPATHY"
+    ],
+    [
+      "atorvastatin",
+      "RHABDOMYOLYSIS"
+    ],
+    [
+      "rosuvastatin",
+      "MYOPATHY"
+    ],
+    [
+      "rosuvastatin",
+      "RHABDOMYOLYSIS"
+    ],
+    [
+      "simvastatin",
+      "RHABDOMYOLYSIS"
+    ]
+  ],
+  "rule": {
+    "drug": "atorvastatin",
+    "drug_count": "1157",
+    "joint_count": "19",
+    "n": "385288",
+    "projection": "r0239",
+    "projection_rank": "1",
+    "reaction": "MYOPATHY",
+    "reaction_count": "168",
+    "support_requested": "1.0E-5",
+    "weka_confidence": "0.016421780466724288",
+    "weka_lift": "37.66139852656707"
+  },
+  "selection_rule": "first benchmark-positive drug/reaction in canonical lexical order accepted in frozen primary WEKA export at support 0.00001"
+}

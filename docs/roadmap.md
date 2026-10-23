@@ -14,13 +14,17 @@ reviews or change any `scientific_findings_validated: false` boundary.
 
 ## Post-core milestone: WEKA Showcase / Tool-Study Extension
 
-**Latest checkpoint: common-pool metric-ranking comparison complete.**
-The [metric record](weka_showcase_metrics.md) compares the unchanged 586 A3 rules
-using full-precision API values. All 171 tests pass; prior evidence/core hashes
-are preserved. Unrestricted Apriori study, Apriori/FPGrowth comparison, Fallback A
-and metric-ranking comparison are complete. **WEKA Explorer demonstration is next,
-pending explicit authorization**; final showcase summary/demo packaging follows
-Explorer. No further association experiments or statin-recovery mining are scheduled.
+**Latest checkpoint: Explorer preparation validated; GUI verification blocked.**
+The [Explorer record](weka_explorer_demo.md) and
+[2-3 minute rehearsal cues](weka_explorer_demo_script.md) prepare the deterministic
+atorvastatin/MYOPATHY projection, exact options and frozen result references.
+All 180 tests pass. The Windows computer-use native pipe is unavailable after
+documented recovery; no Explorer usability result, GUI rule comparison or screenshot
+is claimed. **Explorer is authorized but incomplete pending GUI connection.**
+Primary projected computation, unrestricted Apriori/FPGrowth study, Fallback A and
+metric-ranking comparison remain complete and frozen. Final showcase/project
+packaging remains after completed Explorer and explicit authorization. No new
+mining stage or statin-recovery experiment is scheduled.
 Earlier status/authorization
 statements below remain preserved history; no later work is automatically authorized.
 
@@ -249,9 +253,13 @@ truncation, timeouts or threshold differences.
 
 ### 6. WEKA Explorer GUI demo
 
-Status: next checkpoint, not started; requires explicit authorization. GUI output
-is a demonstration aid. Use the exact reaction-co-reporting/tool-study versus
-projected drug-safety framing above in future demo instructions.
+Status: authorized preparation validated; actual GUI verification is blocked by
+the unavailable Windows computer-use native pipe. Full ARFF usability, live
+projected result comparison, actual FPGrowth GUI mapping and screenshots remain
+pending. No fallback subset was generated because its need has not been observed.
+GUI output is a demonstration aid. Use the exact reaction-co-reporting/tool-study
+versus projected drug-safety framing above in demo instructions. Resume these
+pending checks when the connection is restored; do not mark Explorer complete yet.
 
 Attempt to load the same full 366-attribute sparse ARFF in WEKA Explorer with
 an explicitly configured 4 GB Java heap. Record the Java/WEKA version, launch

@@ -1,0 +1,46 @@
+{
+  "attribute_names": [
+    "DRUG_atorvastatin",
+    "DRUG_fluvastatin",
+    "DRUG_lovastatin",
+    "DRUG_pitavastatin",
+    "DRUG_pravastatin",
+    "DRUG_rosuvastatin",
+    "DRUG_simvastatin",
+    "REAC_MYOPATHY"
+  ],
+  "attributes": 8,
+  "drug_reaction_joint_counts": {
+    "DRUG_atorvastatin": 19,
+    "DRUG_rosuvastatin": 12,
+    "DRUG_simvastatin": 2
+  },
+  "empty_reports": 382855,
+  "new_mining": false,
+  "output": "artifacts/generated/weka-explorer-demo/primary_MYOPATHY_projection.arff",
+  "presence_counts": {
+    "DRUG_atorvastatin": 1157,
+    "DRUG_fluvastatin": 6,
+    "DRUG_lovastatin": 0,
+    "DRUG_pitavastatin": 16,
+    "DRUG_pravastatin": 67,
+    "DRUG_rosuvastatin": 864,
+    "DRUG_simvastatin": 188,
+    "REAC_MYOPATHY": 168
+  },
+  "rows": 385288,
+  "selection": "all source rows in identical order; all statins and selected reaction only",
+  "sha256": "c13b0b84f123c26d48be11b0662f96805eeaf34292c5d5b2388cea1f89c3d73b",
+  "source": "artifacts/generated/2025Q4-statins-mining/input/transactions.arff",
+  "source_column_indexes_zero_based": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    246
+  ],
+  "source_sha256": "de0f94f545ebae18033195524984fc842d3359154b864cb52bef2372a877dcf1"
+}

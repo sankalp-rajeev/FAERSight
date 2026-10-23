@@ -1,0 +1,20 @@
+
+Apriori
+=======
+
+Minimum support: 0 (4 instances)
+Minimum metric <lift>: 1.2
+Number of cycles performed: 1
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 7
+
+Size of set of large itemsets L(2): 2
+
+Best rules found:
+
+    1. DRUG_atorvastatin=1 1157 ==> REAC_MYOPATHY=1 19    conf:(0.02) < lift:(37.66)> lev:(0) [18] conv:(1.02)
+    2. REAC_MYOPATHY=1 168 ==> DRUG_atorvastatin=1 19    conf:(0.11) < lift:(37.66)> lev:(0) [18] conv:(1.12)
+    3. DRUG_rosuvastatin=1 864 ==> REAC_MYOPATHY=1 12    conf:(0.01) < lift:(31.85)> lev:(0) [11] conv:(1.01)
+    4. REAC_MYOPATHY=1 168 ==> DRUG_rosuvastatin=1 12    conf:(0.07) < lift:(31.85)> lev:(0) [11] conv:(1.07)

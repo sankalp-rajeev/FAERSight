@@ -1,0 +1,88 @@
+
+Apriori
+=======
+
+Minimum support: 0 (1541 instances)
+Minimum metric <lift>: 1.2
+Number of cycles performed: 1
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 121
+
+Size of set of large itemsets L(2): 32
+
+Size of set of large itemsets L(3): 1
+
+Best rules found:
+
+     1. REAC_DIARRHOEA=1 REAC_NAUSEA=1 3683 ==> REAC_VOMITING=1 1811    conf:(0.49) < lift:(19.3)> lev:(0) [1717] conv:(1.92)
+     2. REAC_VOMITING=1 9814 ==> REAC_DIARRHOEA=1 REAC_NAUSEA=1 1811    conf:(0.18) < lift:(19.3)> lev:(0) [1717] conv:(1.21)
+     3. REAC_NAUSEA=1 14759 ==> REAC_DIARRHOEA=1 REAC_VOMITING=1 1811    conf:(0.12) < lift:(15.37)> lev:(0) [1693] conv:(1.13)
+     4. REAC_DIARRHOEA=1 REAC_VOMITING=1 3075 ==> REAC_NAUSEA=1 1811    conf:(0.59) < lift:(15.37)> lev:(0) [1693] conv:(2.34)
+     5. REAC_NAUSEA=1 14759 ==> REAC_VOMITING=1 4997    conf:(0.34) < lift:(13.29)> lev:(0.01) [4621] conv:(1.47)
+     6. REAC_VOMITING=1 9814 ==> REAC_NAUSEA=1 4997    conf:(0.51) < lift:(13.29)> lev:(0.01) [4621] conv:(1.96)
+     7. REAC_DYSPNOEA=1 10701 ==> REAC_COUGH=1 1897    conf:(0.18) < lift:(10.05)> lev:(0) [1708] conv:(1.19)
+     8. REAC_COUGH=1 6799 ==> REAC_DYSPNOEA=1 1897    conf:(0.28) < lift:(10.05)> lev:(0) [1708] conv:(1.35)
+     9. REAC_ABDOMINAL PAIN=1 5616 ==> REAC_DIARRHOEA=1 2152    conf:(0.38) < lift:(9.99)> lev:(0.01) [1936] conv:(1.56)
+    10. REAC_DIARRHOEA=1 14774 ==> REAC_ABDOMINAL PAIN=1 2152    conf:(0.15) < lift:(9.99)> lev:(0.01) [1936] conv:(1.15)
+    11. REAC_DIARRHOEA=1 14774 ==> REAC_NAUSEA=1 REAC_VOMITING=1 1811    conf:(0.12) < lift:(9.45)> lev:(0) [1619] conv:(1.12)
+    12. REAC_NAUSEA=1 REAC_VOMITING=1 4997 ==> REAC_DIARRHOEA=1 1811    conf:(0.36) < lift:(9.45)> lev:(0) [1619] conv:(1.51)
+    13. REAC_DECREASED APPETITE=1 5138 ==> REAC_NAUSEA=1 1744    conf:(0.34) < lift:(8.86)> lev:(0) [1547] conv:(1.46)
+    14. REAC_NAUSEA=1 14759 ==> REAC_DECREASED APPETITE=1 1744    conf:(0.12) < lift:(8.86)> lev:(0) [1547] conv:(1.12)
+    15. REAC_ABDOMINAL PAIN=1 5616 ==> REAC_NAUSEA=1 1785    conf:(0.32) < lift:(8.3)> lev:(0) [1569] conv:(1.41)
+    16. REAC_NAUSEA=1 14759 ==> REAC_ABDOMINAL PAIN=1 1785    conf:(0.12) < lift:(8.3)> lev:(0) [1569] conv:(1.12)
+    17. REAC_ASTHENIA=1 6986 ==> REAC_FATIGUE=1 2331    conf:(0.33) < lift:(8.18)> lev:(0.01) [2046] conv:(1.44)
+    18. REAC_FATIGUE=1 15718 ==> REAC_ASTHENIA=1 2331    conf:(0.15) < lift:(8.18)> lev:(0.01) [2046] conv:(1.15)
+    19. REAC_DIARRHOEA=1 14774 ==> REAC_VOMITING=1 3075    conf:(0.21) < lift:(8.17)> lev:(0.01) [2698] conv:(1.23)
+    20. REAC_VOMITING=1 9814 ==> REAC_DIARRHOEA=1 3075    conf:(0.31) < lift:(8.17)> lev:(0.01) [2698] conv:(1.4)
+    21. REAC_DIZZINESS=1 8684 ==> REAC_HEADACHE=1 2148    conf:(0.25) < lift:(7.97)> lev:(0) [1878] conv:(1.29)
+    22. REAC_HEADACHE=1 11965 ==> REAC_DIZZINESS=1 2148    conf:(0.18) < lift:(7.97)> lev:(0) [1878] conv:(1.19)
+    23. REAC_PRURITUS=1 11461 ==> REAC_RASH=1 2394    conf:(0.21) < lift:(7.8)> lev:(0.01) [2086] conv:(1.23)
+    24. REAC_RASH=1 10321 ==> REAC_PRURITUS=1 2394    conf:(0.23) < lift:(7.8)> lev:(0.01) [2086] conv:(1.26)
+    25. REAC_DECREASED APPETITE=1 5138 ==> REAC_FATIGUE=1 1584    conf:(0.31) < lift:(7.56)> lev:(0) [1374] conv:(1.39)
+    26. REAC_FATIGUE=1 15718 ==> REAC_DECREASED APPETITE=1 1584    conf:(0.1) < lift:(7.56)> lev:(0) [1374] conv:(1.1)
+    27. REAC_DIZZINESS=1 8684 ==> REAC_NAUSEA=1 2416    conf:(0.28) < lift:(7.26)> lev:(0.01) [2083] conv:(1.33)
+    28. REAC_NAUSEA=1 14759 ==> REAC_DIZZINESS=1 2416    conf:(0.16) < lift:(7.26)> lev:(0.01) [2083] conv:(1.17)
+    29. REAC_ARTHRALGIA=1 10017 ==> REAC_PAIN=1 1833    conf:(0.18) < lift:(6.76)> lev:(0) [1562] conv:(1.19)
+    30. REAC_PAIN=1 10423 ==> REAC_ARTHRALGIA=1 1833    conf:(0.18) < lift:(6.76)> lev:(0) [1562] conv:(1.18)
+    31. REAC_DIARRHOEA=1 14774 ==> REAC_NAUSEA=1 3683    conf:(0.25) < lift:(6.51)> lev:(0.01) [3117] conv:(1.28)
+    32. REAC_NAUSEA=1 14759 ==> REAC_DIARRHOEA=1 3683    conf:(0.25) < lift:(6.51)> lev:(0.01) [3117] conv:(1.28)
+    33. REAC_DIZZINESS=1 8684 ==> REAC_FATIGUE=1 2262    conf:(0.26) < lift:(6.39)> lev:(0) [1907] conv:(1.3)
+    34. REAC_FATIGUE=1 15718 ==> REAC_DIZZINESS=1 2262    conf:(0.14) < lift:(6.39)> lev:(0) [1907] conv:(1.14)
+    35. REAC_FATIGUE=1 15718 ==> REAC_HEADACHE=1 3081    conf:(0.2) < lift:(6.31)> lev:(0.01) [2592] conv:(1.21)
+    36. REAC_HEADACHE=1 11965 ==> REAC_FATIGUE=1 3081    conf:(0.26) < lift:(6.31)> lev:(0.01) [2592] conv:(1.29)
+    37. REAC_HEADACHE=1 11965 ==> REAC_NAUSEA=1 2851    conf:(0.24) < lift:(6.22)> lev:(0.01) [2392] conv:(1.26)
+    38. REAC_NAUSEA=1 14759 ==> REAC_HEADACHE=1 2851    conf:(0.19) < lift:(6.22)> lev:(0.01) [2392] conv:(1.2)
+    39. REAC_HEADACHE=1 11965 ==> REAC_PAIN=1 1947    conf:(0.16) < lift:(6.02)> lev:(0) [1623] conv:(1.16)
+    40. REAC_PAIN=1 10423 ==> REAC_HEADACHE=1 1947    conf:(0.19) < lift:(6.02)> lev:(0) [1623] conv:(1.19)
+    41. REAC_FATIGUE=1 15718 ==> REAC_MALAISE=1 1823    conf:(0.12) < lift:(5.77)> lev:(0) [1506] conv:(1.11)
+    42. REAC_MALAISE=1 7747 ==> REAC_FATIGUE=1 1823    conf:(0.24) < lift:(5.77)> lev:(0) [1506] conv:(1.25)
+    43. REAC_PAIN=1 10423 ==> REAC_FATIGUE=1 2416    conf:(0.23) < lift:(5.68)> lev:(0.01) [1990] conv:(1.25)
+    44. REAC_FATIGUE=1 15718 ==> REAC_PAIN=1 2416    conf:(0.15) < lift:(5.68)> lev:(0.01) [1990] conv:(1.15)
+    45. REAC_FATIGUE=1 15718 ==> REAC_NAUSEA=1 3294    conf:(0.21) < lift:(5.47)> lev:(0.01) [2691] conv:(1.22)
+    46. REAC_NAUSEA=1 14759 ==> REAC_FATIGUE=1 3294    conf:(0.22) < lift:(5.47)> lev:(0.01) [2691] conv:(1.23)
+    47. REAC_ARTHRALGIA=1 10017 ==> REAC_FATIGUE=1 2152    conf:(0.21) < lift:(5.27)> lev:(0) [1743] conv:(1.22)
+    48. REAC_FATIGUE=1 15718 ==> REAC_ARTHRALGIA=1 2152    conf:(0.14) < lift:(5.27)> lev:(0) [1743] conv:(1.13)
+    49. REAC_HEADACHE=1 11965 ==> REAC_ARTHRALGIA=1 1542    conf:(0.13) < lift:(4.96)> lev:(0) [1230] conv:(1.12)
+    50. REAC_ARTHRALGIA=1 10017 ==> REAC_HEADACHE=1 1542    conf:(0.15) < lift:(4.96)> lev:(0) [1230] conv:(1.15)
+    51. REAC_DIARRHOEA=1 14774 ==> REAC_FATIGUE=1 2825    conf:(0.19) < lift:(4.69)> lev:(0.01) [2222] conv:(1.19)
+    52. REAC_FATIGUE=1 15718 ==> REAC_DIARRHOEA=1 2825    conf:(0.18) < lift:(4.69)> lev:(0.01) [2222] conv:(1.17)
+    53. REAC_DYSPNOEA=1 10701 ==> REAC_FATIGUE=1 1966    conf:(0.18) < lift:(4.5)> lev:(0) [1529] conv:(1.17)
+    54. REAC_FATIGUE=1 15718 ==> REAC_DYSPNOEA=1 1966    conf:(0.13) < lift:(4.5)> lev:(0) [1529] conv:(1.11)
+    55. REAC_NAUSEA=1 14759 ==> REAC_PAIN=1 1650    conf:(0.11) < lift:(4.13)> lev:(0) [1250] conv:(1.1)
+    56. REAC_PAIN=1 10423 ==> REAC_NAUSEA=1 1650    conf:(0.16) < lift:(4.13)> lev:(0) [1250] conv:(1.14)
+    57. REAC_DIARRHOEA=1 14774 ==> REAC_HEADACHE=1 1895    conf:(0.13) < lift:(4.13)> lev:(0) [1436] conv:(1.11)
+    58. REAC_HEADACHE=1 11965 ==> REAC_DIARRHOEA=1 1895    conf:(0.16) < lift:(4.13)> lev:(0) [1436] conv:(1.14)
+    59. REAC_FATIGUE=1 15718 ==> REAC_VOMITING=1 1564    conf:(0.1) < lift:(3.91)> lev:(0) [1163] conv:(1.08)
+    60. REAC_VOMITING=1 9814 ==> REAC_FATIGUE=1 1564    conf:(0.16) < lift:(3.91)> lev:(0) [1163] conv:(1.14)
+    61. REAC_CONDITION AGGRAVATED=1 9979 ==> REAC_OFF LABEL USE=1 1966    conf:(0.2) < lift:(2.83)> lev:(0) [1270] conv:(1.16)
+    62. REAC_OFF LABEL USE=1 26853 ==> REAC_CONDITION AGGRAVATED=1 1966    conf:(0.07) < lift:(2.83)> lev:(0) [1270] conv:(1.05)
+    63. REAC_OFF LABEL USE=1 26853 ==> REAC_NAUSEA=1 1778    conf:(0.07) < lift:(1.73)> lev:(0) [749] conv:(1.03)
+    64. REAC_NAUSEA=1 14759 ==> REAC_OFF LABEL USE=1 1778    conf:(0.12) < lift:(1.73)> lev:(0) [749] conv:(1.06)
+    65. REAC_OFF LABEL USE=1 26853 ==> REAC_FATIGUE=1 1886    conf:(0.07) < lift:(1.72)> lev:(0) [790] conv:(1.03)
+    66. REAC_FATIGUE=1 15718 ==> REAC_OFF LABEL USE=1 1886    conf:(0.12) < lift:(1.72)> lev:(0) [790] conv:(1.06)
+    67. REAC_OFF LABEL USE=1 26853 ==> REAC_DIARRHOEA=1 1756    conf:(0.07) < lift:(1.71)> lev:(0) [726] conv:(1.03)
+    68. REAC_DIARRHOEA=1 14774 ==> REAC_OFF LABEL USE=1 1756    conf:(0.12) < lift:(1.71)> lev:(0) [726] conv:(1.06)
+    69. REAC_OFF LABEL USE=1 26853 ==> REAC_DRUG INEFFECTIVE=1 2115    conf:(0.08) < lift:(1.36)> lev:(0) [562] conv:(1.02)
+    70. REAC_DRUG INEFFECTIVE=1 22270 ==> REAC_OFF LABEL USE=1 2115    conf:(0.09) < lift:(1.36)> lev:(0) [562] conv:(1.03)

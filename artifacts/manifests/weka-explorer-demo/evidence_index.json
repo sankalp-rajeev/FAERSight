@@ -1,0 +1,21 @@
+{
+  "artifacts": {
+    ".gitattributes": "3685f826e2b25d17d2bcbe0768bee899cbfea3b285bf20b92d0702f32b5b14c1",
+    "frozen_A1_apriori_result.log": "7b7af01e17dbd509b08b38486f6477f86eeb92ba2063b1e9073d5fab67a4d3a0",
+    "frozen_A1_fpgrowth_result.log": "67994e98dc0da2ebf31e1f9da90fd261aefeeae6d3865bf15df17e733692559b",
+    "frozen_primary_projected_result.log": "67c3a2f10fdc2a252318cf65c584679e30644612e8832dcbdcab6008da6dd8d1",
+    "java_version.txt": "907fb83a3ce1d5eef9298371d8ecc7c0625a8d697504fab682215d015d363d9c",
+    "preflight/classes/faersight/explorerdemo/ExplorerPreflight.class": "181efc8f52d8e3442664fdebf0826031ac46d39b29749a96e019245a2d4938d6",
+    "preflight/compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "preflight/invocation.json": "8dbe67943050f0a097596764a0d312d53590676b4f1fff991278e6e67d5146e9",
+    "preflight/preflight.json": "aa914706a66ac13cf2cdd2f940690f3e1a187fdcce2a786e8b436ba3131a51a3",
+    "preflight/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "preflight/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "preparation_manifest.json": "f598023af843546a6b097101377bca7fc94ad7fded5255b66c74e233eb908331",
+    "projection_manifest.json": "4a0ef4f6cc71911dcca5f9bb9a2b5ff032d7d84f414b8326416eb0f3aac5e431",
+    "selection.json": "74a9392113f3fec5cb7cbeabba3c1d2814246721e7b16613e5f86fa6ddd54a02",
+    "test_results.xml": "a5fb3ca538a63df6ae25d72dab157c2614809413d3d2f7b02a8cd838d8dd6bd1",
+    "validation.json": "d6140966a7d19e1ff419976723c01c1127079a0cfdfbd809a3284a8d85176b30"
+  },
+  "scientific_findings_validated": false
+}
