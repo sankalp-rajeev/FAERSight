@@ -1,0 +1,76 @@
+{
+  "all_ranking_orders_verified": true,
+  "chart_formats": [
+    "png",
+    "svg"
+  ],
+  "chart_visual_review": "all three PNGs inspected; labels and source limitations readable",
+  "checks": [
+    {
+      "argv": [
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.venv\\Scripts\\ruff.exe",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "All checks passed!\n"
+    },
+    {
+      "argv": [
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.venv\\Scripts\\ruff.exe",
+        "format",
+        "--check",
+        "src",
+        "tests",
+        "showcase",
+        "showcase_fpgrowth",
+        "showcase_fallback_a1",
+        "showcase_fallback_a2",
+        "showcase_fallback_a3",
+        "showcase_metrics",
+        "scripts/verify_showcase_metrics.py",
+        "scripts/record_showcase_step2b.py",
+        "scripts/export_showcase_step2b.py",
+        "scripts/record_showcase_fpgrowth.py",
+        "scripts/export_showcase_fpgrowth.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "71 files already formatted\n"
+    }
+  ],
+  "deterministic_charts_verified": 3,
+  "frozen_core": {
+    "all_match_committed_bytes": true,
+    "plan_commit": "69d27d7",
+    "tracked_frozen_files_verified": 108
+  },
+  "frozen_generated_artifacts": {
+    "artifacts/generated/2025Q4-statins-mining": 1096,
+    "artifacts/generated/2025Q4-statins-sensitivity": 1106
+  },
+  "independent_SciPy_check": {
+    "average_ranks_exactly_match_SciPy": true,
+    "correlations_verified": 12,
+    "maximum_rho_difference": 1.1102230246251565e-16,
+    "p_values_used": false,
+    "status": "passed",
+    "versions": {
+      "numpy": "2.4.2",
+      "scipy": "1.17.0"
+    }
+  },
+  "new_full_data_mining_invocations": 0,
+  "protected_prior_files": 336,
+  "rank_export_serialization_stable": true,
+  "scientific_findings_validated": false,
+  "status": "passed",
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 171
+  },
+  "verification_source_sha256": "bd51c994b4d2cba1f64944b800a3e5974670c9be88d66a2a2fb05ed9b327ecd0"
+}

@@ -1,0 +1,15 @@
+{
+  "chart_files": [
+    "spearman_matrix.png",
+    "spearman_matrix.svg",
+    "rank_scatter_highest.png",
+    "rank_scatter_highest.svg",
+    "rank_scatter_lowest.png",
+    "rank_scatter_lowest.svg"
+  ],
+  "versions": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.4.2",
+    "pillow": "12.1.1"
+  }
+}

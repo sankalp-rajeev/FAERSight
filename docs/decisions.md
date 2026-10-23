@@ -390,3 +390,43 @@ lift-range restriction and rule non-independence. The statin explanation covers
 every statin-containing itemset of size >=2 via all statin-reaction/statin-statin
 pair counts and support anti-monotonicity. Preserve all earlier artifacts. Commit
 and push, then stop before Explorer or final packaging.
+
+## Offline metric-ranking result and stop gate
+
+The exact common A3 pool remains 586 rules, identical between the two miners.
+API values are used at full precision; no printed/rounded model values enter
+rankings. Every count/metric independently reconciles with zero difference.
+Confidence/conviction has the highest Spearman (0.9648123764153352), and
+confidence/lift the lowest (0.46369169898167756). The 472-rule single-to-single
+analysis preserves the ordering of the six pairwise correlations. These dependent
+rules and the lift >=1.2 range restriction preclude general metric or inferential
+claims. Lexical tie breaks apply to exports/Top-K only; statistical ties average.
+
+Top-K four-way intersections at 10/25/50 are 0/0/2. Lift and leverage each split
+a two-rule tie 1-inside/1-outside at K=25; other inspected boundaries do not split.
+Three registered example categories export three rules each; conviction relative
+to confidence has no gap >=100 and stays empty. The common pool has no confidence-1
+rules, infinite conviction or sentinel values. Count-only pinned WEKA API probes
+verify finite conviction at confidence 1 using the +1 denominator correction.
+
+All 2,513 statin-reaction and 21 statin-statin pairs were counted. The maximum
+joint count over every statin-containing itemset of size >=2 is exactly 141,
+attained by rosuvastatin/MYALGIA; all statin-statin pairs have count zero. Any
+larger itemset contains one of these pairs and cannot increase its support.
+**No statin-containing itemset of size 2 or more reaches the minimum:** 385/386,
+771, 1156 and 1541/1542 at the showcased supports. This concerns joint support,
+not a clinical absence claim. No statin-recovery extension is scheduled.
+
+The unrestricted WEKA showcase is an algorithm and metric study on reaction co-reporting. The projected experiment is the FAERSight drug-safety analysis.
+
+[Metric evidence](weka_showcase_metrics.md) contains complete rankings, Top-K/tie
+tables, distributions, rank-gap examples, the complete statin pair table and
+exactly three deterministic charts. All 171 tests pass (18 new, 153 retained),
+lint/format pass; independent SciPy verifies all 12 descriptive correlations
+within 1.12e-16 and exactly matches average ranks. All 336 protected prior files,
+108 frozen-core files, 1,096 primary and 1,106 sensitivity generated artifacts
+retain their hashes. No scientific validation flag changed; no new mining ran.
+
+Unrestricted Apriori study, Apriori/FPGrowth comparison, Fallback A and metric
+ranking are complete. Explorer is next, pending explicit authorization; final
+showcase summary/demo packaging follows Explorer. Commit/push and stop here.

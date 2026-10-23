@@ -1,0 +1,13 @@
+population,rules,metric_a,metric_b,spearman
+all_586,586,confidence,conviction,0.9648123764153352
+all_586,586,confidence,leverage,0.4726716957680197
+all_586,586,confidence,lift,0.46369169898167756
+all_586,586,conviction,leverage,0.5686218614982582
+all_586,586,conviction,lift,0.6272550543265024
+all_586,586,leverage,lift,0.5124119676204995
+single_to_single_472,472,confidence,conviction,0.9615493478152493
+single_to_single_472,472,confidence,leverage,0.5566072087580073
+single_to_single_472,472,confidence,lift,0.551234411994408
+single_to_single_472,472,conviction,leverage,0.6557915282116992
+single_to_single_472,472,conviction,lift,0.7166570625886899
+single_to_single_472,472,leverage,lift,0.6169152627799822

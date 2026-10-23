@@ -1,0 +1,46 @@
+{
+  "analysis_manifest_sha256": "35ed664d003881c10d69ee0967cdd97f186380d36d309ec1dcc58a000b0a0494",
+  "canonical_rules": 586,
+  "code_commit": "5b34861917f5dff644ee06ecc589836909bf6ae7",
+  "independent_ARFF_counts": {
+    "distinct_itemset_counts_verified": 314,
+    "rules_verified": 586
+  },
+  "maximum_independent_metric_differences": {
+    "confidence": 0.0,
+    "conviction": 0.0,
+    "leverage": 0.0,
+    "lift": 0.0,
+    "support": 0.0
+  },
+  "new_association_runs": 0,
+  "plot_command": [
+    "C:/Umich/Projects/Kairos/.venv/Scripts/python.exe",
+    "-m",
+    "showcase_metrics.plots",
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-showcase-metrics\\analysis\\chart_data.json",
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-showcase-metrics\\analysis\\charts"
+  ],
+  "plot_versions": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.4.2",
+    "pillow": "12.1.1"
+  },
+  "scientific_findings_validated": false,
+  "source_pools_identical": true,
+  "source_provenance": {
+    "apriori": {
+      "archive_member": "apriori/rules.csv",
+      "minimum_count": 771,
+      "rules": 586,
+      "sha256": "c5f3f3397ade64a68c3aa4b1879c5d2cd54b5a1197466ba00680fcfc7d2d6e4b"
+    },
+    "fpgrowth": {
+      "archive_member": "fpgrowth/rules.csv",
+      "minimum_count": 771,
+      "rules": 586,
+      "sha256": "02019b8dafecd42cfbd46e84b5fdb87b2bb96b278285f1772d042d11ce532488"
+    }
+  },
+  "status": "passed"
+}

@@ -1,0 +1,13 @@
+metric,k,boundary_value,boundary_group_size,boundary_inside,boundary_outside,membership_split_by_lexical_order
+confidence,10,0.5719887955182072,1,1,0,False
+lift,10,21.982700791993565,1,1,0,False
+leverage,10,0.006729725187735146,2,2,0,False
+conviction,10,2.2738990054193224,1,1,0,False
+confidence,25,0.4331813398807436,1,1,0,False
+lift,25,17.636989749123728,2,1,1,True
+leverage,25,0.004951444769204562,2,1,1,True
+conviction,25,1.6912134522968125,1,1,0,False
+confidence,50,0.34303753069098564,1,1,0,False
+lift,50,13.651560783757928,2,2,0,False
+leverage,50,0.0039112497543584,2,2,0,False
+conviction,50,1.473221437540442,1,1,0,False

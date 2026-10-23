@@ -14,14 +14,17 @@ reviews or change any `scientific_findings_validated: false` boundary.
 
 ## Post-core milestone: WEKA Showcase / Tool-Study Extension
 
-**Latest checkpoint: final Fallback A3 at 0.002 completed and validated.**
-Both algorithms return the same 586 reaction-only rules at count 771, with
-exact shared metrics and no statin-containing rules. All 153 tests pass. See
-[the A3 record and A1/A2/A3 progression](weka_showcase_fallback_a3.md).
-Fallback A is complete; no further support levels follow. Metric-ranking,
-Explorer, scaling diagnostics and additional algorithms await new authorization.
+**Latest checkpoint: common-pool metric-ranking comparison complete.**
+The [metric record](weka_showcase_metrics.md) compares the unchanged 586 A3 rules
+using full-precision API values. All 171 tests pass; prior evidence/core hashes
+are preserved. Unrestricted Apriori study, Apriori/FPGrowth comparison, Fallback A
+and metric-ranking comparison are complete. **WEKA Explorer demonstration is next,
+pending explicit authorization**; final showcase summary/demo packaging follows
+Explorer. No further association experiments or statin-recovery mining are scheduled.
 Earlier status/authorization
 statements below remain preserved history; no later work is automatically authorized.
+
+The unrestricted WEKA showcase is an algorithm and metric study on reaction co-reporting. The projected experiment is the FAERSight drug-safety analysis.
 
 **Subsequent authorization:** the appended post-timeout amendment below authorizes
 one FPGrowth 0.001 feasibility attempt after semantic/fixture/configuration gates.
@@ -91,7 +94,9 @@ replace a core result or change its validation status.
 
 ### 2. Full-ARFF WEKA Apriori feasibility study
 
-Status: **Step 2A complete; Step 2B 0.001 timed out; ladder descent stopped.** Implementation
+Status: **complete**, including the preserved 0.001 timeout and subsequently
+authorized completed Fallback A1/A2/A3 comparisons. No further mining is scheduled.
+Historical original gate: Step 2A complete; Step 2B 0.001 timed out; ladder descent stopped. Implementation
 commit `11d81fa` validates the separate runner/configuration on the small fixture.
 The [verified semantics](../showcase/SEMANTICS.md) and
 [locked execution manifest](../artifacts/manifests/weka-showcase-step2a/locked/execution_manifest.json)
@@ -143,7 +148,10 @@ the frozen bridge or interpret its restricted export as general full-ARFF output
 
 ### 3. Multi-item rule analysis
 
-Status: not started; uses successful, clearly scoped Step 2 outputs.
+Status: complete through Fallback A1/A2/A3 structure exports. A3 has 472 single->single,
+57 two-reaction->reaction and 57 reaction->two-reaction rules per miner, and no
+statin-containing rules. The metric checkpoint verifies the all-itemset support
+bound of 141, below every showcased cutoff; absent structures remain absent.
 
 Identify, count and summarize observed structures, especially:
 
@@ -166,7 +174,12 @@ report-composition cautions for student inspection.
 
 ### 4. WEKA rule-metric comparison
 
-Status: not started; metric semantics must be verified before execution.
+Status: complete on the verified common A3 pool of 586 rules only; see the
+[metric checkpoint](weka_showcase_metrics.md). Full-precision API metrics,
+average-rank Spearman (586 and 472 rules), deterministic Top-K/boundary ties,
+fixed rank-gap examples and three deterministic charts are recorded. The original
+lift >=1.2 restriction limits the conclusions. No separate metric-threshold mining
+or additional support experiment is scheduled. Earlier planning guidance follows.
 
 Compare **confidence, lift, leverage and conviction**. Verify WEKA 3.8.6's exact
 metric identifiers, threshold direction/scale, formulas, conviction convention,
@@ -195,7 +208,9 @@ comparison denominators when pools differ.
 
 ### 5. Apriori vs WEKA FPGrowth
 
-Status: not started; exact algorithm conditions must be registered first.
+Status: complete. Original FPGrowth 0.001 and matched Fallback A1/A2/A3 outputs,
+semantics, timing boundaries and cap/completeness evidence are preserved. No
+further Apriori/FPGrowth experiment is scheduled. Historical planning follows.
 
 Use WEKA 3.8.6 FPGrowth on the **same full ARFF**, initially at Step 2's successful,
 untruncated support levels, in the same descending-support order. Do not descend
@@ -234,7 +249,9 @@ truncation, timeouts or threshold differences.
 
 ### 6. WEKA Explorer GUI demo
 
-Status: not started; GUI output is a demonstration aid.
+Status: next checkpoint, not started; requires explicit authorization. GUI output
+is a demonstration aid. Use the exact reaction-co-reporting/tool-study versus
+projected drug-safety framing above in future demo instructions.
 
 Attempt to load the same full 366-attribute sparse ARFF in WEKA Explorer with
 an explicitly configured 4 GB Java heap. Record the Java/WEKA version, launch
@@ -263,7 +280,8 @@ any fallback. Student slide text and narration remain student-authored.
 
 ### 7. Final showcase summary
 
-Status: not started; write only after the preceding work is complete or its
+Status: after Explorer, not started; requires explicit authorization. Write only
+after the preceding work is complete or its
 registered failures/limitations are resolved and documented.
 
 Produce a factual engineering summary containing:

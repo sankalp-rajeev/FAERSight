@@ -1,0 +1,164 @@
+{
+  "association_builds": 0,
+  "cases": [
+    {
+      "confidence_one": true,
+      "counts": {
+        "joint": 5,
+        "lhs": 5,
+        "n": 20,
+        "rhs": 7
+      },
+      "independent": {
+        "confidence": 1.0,
+        "conviction": 3.25,
+        "leverage": 0.1625,
+        "lift": 2.857142857142857,
+        "support": 0.25
+      },
+      "parsed": {
+        "confidence": 1.0,
+        "conviction": 3.25,
+        "leverage": 0.1625,
+        "lift": 2.857142857142857
+      },
+      "ranking_treatment": "unchanged finite API value, descending; exact ties averaged",
+      "raw_WEKA": {
+        "apriori_conviction": "3.25",
+        "confidence": "1.0",
+        "conviction": "3.25",
+        "joint": "5",
+        "leverage": "0.1625",
+        "lhs": "5",
+        "lift": "2.857142857142857",
+        "n": "20",
+        "rhs": "7"
+      }
+    },
+    {
+      "confidence_one": true,
+      "counts": {
+        "joint": 1,
+        "lhs": 1,
+        "n": 20,
+        "rhs": 1
+      },
+      "independent": {
+        "confidence": 1.0,
+        "conviction": 0.95,
+        "leverage": 0.0475,
+        "lift": 20.0,
+        "support": 0.05
+      },
+      "parsed": {
+        "confidence": 1.0,
+        "conviction": 0.95,
+        "leverage": 0.0475,
+        "lift": 20.0
+      },
+      "ranking_treatment": "unchanged finite API value, descending; exact ties averaged",
+      "raw_WEKA": {
+        "apriori_conviction": "0.95",
+        "confidence": "1.0",
+        "conviction": "0.95",
+        "joint": "1",
+        "leverage": "0.0475",
+        "lhs": "1",
+        "lift": "20.0",
+        "n": "20",
+        "rhs": "1"
+      }
+    },
+    {
+      "confidence_one": true,
+      "counts": {
+        "joint": 20,
+        "lhs": 20,
+        "n": 20,
+        "rhs": 20
+      },
+      "independent": {
+        "confidence": 1.0,
+        "conviction": 0.0,
+        "leverage": 0.0,
+        "lift": 1.0,
+        "support": 1.0
+      },
+      "parsed": {
+        "confidence": 1.0,
+        "conviction": 0.0,
+        "leverage": 0.0,
+        "lift": 1.0
+      },
+      "ranking_treatment": "unchanged finite API value, descending; exact ties averaged",
+      "raw_WEKA": {
+        "apriori_conviction": "0.0",
+        "confidence": "1.0",
+        "conviction": "0.0",
+        "joint": "20",
+        "leverage": "0.0",
+        "lhs": "20",
+        "lift": "1.0",
+        "n": "20",
+        "rhs": "20"
+      }
+    },
+    {
+      "confidence_one": false,
+      "counts": {
+        "joint": 5,
+        "lhs": 9,
+        "n": 20,
+        "rhs": 7
+      },
+      "independent": {
+        "confidence": 0.5555555555555556,
+        "conviction": 1.17,
+        "leverage": 0.0925,
+        "lift": 1.5873015873015874,
+        "support": 0.25
+      },
+      "parsed": {
+        "confidence": 0.5555555555555556,
+        "conviction": 1.17,
+        "leverage": 0.0925,
+        "lift": 1.5873015873015874
+      },
+      "ranking_treatment": "unchanged finite API value, descending; exact ties averaged",
+      "raw_WEKA": {
+        "apriori_conviction": "1.17",
+        "confidence": "0.5555555555555556",
+        "conviction": "1.17",
+        "joint": "5",
+        "leverage": "0.0925",
+        "lhs": "9",
+        "lift": "1.5873015873015874",
+        "n": "20",
+        "rhs": "7"
+      }
+    }
+  ],
+  "command": [
+    "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\java.exe",
+    "-Xmx4g",
+    "-XX:ActiveProcessorCount=2",
+    "-cp",
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-showcase-metrics\\analysis\\metric_api_probe\\classes;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+    "faersight.metricstudy.MetricProbe"
+  ],
+  "compile_command": [
+    "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\javac.exe",
+    "-encoding",
+    "UTF-8",
+    "-cp",
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\weka-stable-3.8.6.jar;C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.tools\\weka\\bounce-0.18.jar",
+    "-d",
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\artifacts\\generated\\weka-showcase-metrics\\analysis\\metric_api_probe\\classes",
+    "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\showcase_metrics\\java\\MetricProbe.java"
+  ],
+  "exit_code": 0,
+  "formula": "(lhs*(N-rhs)/N)/(lhs-joint+1)",
+  "source_sha256": "708f208aa726b675720ca135a54bc5dd2bb4d0ab529a0641d859716080cc6002",
+  "status": "passed",
+  "weka_version": "3.8.6"
+}

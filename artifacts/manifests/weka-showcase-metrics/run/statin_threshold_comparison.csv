@@ -1,0 +1,9 @@
+support,algorithm,minimum_count,maximum_statin_itemset_joint_count,below_minimum
+0.001,apriori,385,141,True
+0.001,fpgrowth,386,141,True
+0.002,apriori,771,141,True
+0.002,fpgrowth,771,141,True
+0.003,apriori,1156,141,True
+0.003,fpgrowth,1156,141,True
+0.004,apriori,1541,141,True
+0.004,fpgrowth,1542,141,True

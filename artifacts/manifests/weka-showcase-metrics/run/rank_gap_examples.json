@@ -1,0 +1,346 @@
+{
+  "high_confidence_relative_to_lift": {
+    "eligible_rules": 187,
+    "examples": [
+      {
+        "antecedent": [
+          "REAC_CONDITION AGGRAVATED=1"
+        ],
+        "antecedent_count": 9979,
+        "average_ranks": {
+          "confidence": 150.0,
+          "conviction": 201.0,
+          "leverage": 67.5,
+          "lift": 489.5
+        },
+        "category": "high_confidence_relative_to_lift",
+        "confidence": 0.19701372883054413,
+        "consequent": [
+          "REAC_OFF LABEL USE=1"
+        ],
+        "consequent_count": 26853,
+        "conviction": 1.1584108380841822,
+        "joint_count": 1966,
+        "leverage": 0.0032975448402406404,
+        "lift": 2.8267614625428323,
+        "n": 385288,
+        "rank_gap": 339.5,
+        "raw_API_values": {
+          "confidence": "0.19701372883054413",
+          "conviction": "1.1584108380841822",
+          "leverage": "0.0032975448402406404",
+          "lift": "2.8267614625428323",
+          "support": "0.005102676439442702"
+        },
+        "source_miners": [
+          "apriori",
+          "fpgrowth"
+        ],
+        "support": 0.005102676439442702
+      },
+      {
+        "antecedent": [
+          "REAC_HYPERTENSION=1"
+        ],
+        "antecedent_count": 4436,
+        "average_ranks": {
+          "confidence": 147.0,
+          "conviction": 193.0,
+          "leverage": 511.5,
+          "lift": 486.0
+        },
+        "category": "high_confidence_relative_to_lift",
+        "confidence": 0.20175834084761046,
+        "consequent": [
+          "REAC_OFF LABEL USE=1"
+        ],
+        "consequent_count": 26853,
+        "conviction": 1.165112624954523,
+        "joint_count": 895,
+        "leverage": 0.0015204961420779272,
+        "lift": 2.8948373600154222,
+        "n": 385288,
+        "rank_gap": 339.0,
+        "raw_API_values": {
+          "confidence": "0.20175834084761046",
+          "conviction": "1.165112624954523",
+          "leverage": "0.0015204961420779272",
+          "lift": "2.8948373600154222",
+          "support": "0.0023229376466435496"
+        },
+        "source_miners": [
+          "apriori",
+          "fpgrowth"
+        ],
+        "support": 0.0023229376466435496
+      },
+      {
+        "antecedent": [
+          "REAC_PRODUCT USE ISSUE=1"
+        ],
+        "antecedent_count": 4691,
+        "average_ranks": {
+          "confidence": 164.0,
+          "conviction": 226.0,
+          "leverage": 521.5,
+          "lift": 495.5
+        },
+        "category": "high_confidence_relative_to_lift",
+        "confidence": 0.18567469622681732,
+        "consequent": [
+          "REAC_OFF LABEL USE=1"
+        ],
+        "consequent_count": 26853,
+        "conviction": 1.142124171437945,
+        "joint_count": 871,
+        "leverage": 0.0014120773526930196,
+        "lift": 2.6640685346083486,
+        "n": 385288,
+        "rank_gap": 331.5,
+        "raw_API_values": {
+          "confidence": "0.18567469622681732",
+          "conviction": "1.142124171437945",
+          "leverage": "0.0014120773526930196",
+          "lift": "2.6640685346083486",
+          "support": "0.0022606465812586947"
+        },
+        "source_miners": [
+          "apriori",
+          "fpgrowth"
+        ],
+        "support": 0.0022606465812586947
+      }
+    ]
+  },
+  "high_conviction_relative_to_confidence": {
+    "eligible_rules": 0,
+    "examples": []
+  },
+  "high_leverage_relative_to_lift": {
+    "eligible_rules": 165,
+    "examples": [
+      {
+        "antecedent": [
+          "REAC_CONDITION AGGRAVATED=1"
+        ],
+        "antecedent_count": 9979,
+        "average_ranks": {
+          "confidence": 150.0,
+          "conviction": 201.0,
+          "leverage": 67.5,
+          "lift": 489.5
+        },
+        "category": "high_leverage_relative_to_lift",
+        "confidence": 0.19701372883054413,
+        "consequent": [
+          "REAC_OFF LABEL USE=1"
+        ],
+        "consequent_count": 26853,
+        "conviction": 1.1584108380841822,
+        "joint_count": 1966,
+        "leverage": 0.0032975448402406404,
+        "lift": 2.8267614625428323,
+        "n": 385288,
+        "rank_gap": 422.0,
+        "raw_API_values": {
+          "confidence": "0.19701372883054413",
+          "conviction": "1.1584108380841822",
+          "leverage": "0.0032975448402406404",
+          "lift": "2.8267614625428323",
+          "support": "0.005102676439442702"
+        },
+        "source_miners": [
+          "apriori",
+          "fpgrowth"
+        ],
+        "support": 0.005102676439442702
+      },
+      {
+        "antecedent": [
+          "REAC_OFF LABEL USE=1"
+        ],
+        "antecedent_count": 26853,
+        "average_ranks": {
+          "confidence": 477.0,
+          "conviction": 500.0,
+          "leverage": 67.5,
+          "lift": 489.5
+        },
+        "category": "high_leverage_relative_to_lift",
+        "confidence": 0.07321342121923062,
+        "consequent": [
+          "REAC_CONDITION AGGRAVATED=1"
+        ],
+        "consequent_count": 9979,
+        "conviction": 1.0510086972198103,
+        "joint_count": 1966,
+        "leverage": 0.0032975448402406404,
+        "lift": 2.8267614625428323,
+        "n": 385288,
+        "rank_gap": 422.0,
+        "raw_API_values": {
+          "confidence": "0.07321342121923062",
+          "conviction": "1.0510086972198103",
+          "leverage": "0.0032975448402406404",
+          "lift": "2.8267614625428323",
+          "support": "0.005102676439442702"
+        },
+        "source_miners": [
+          "apriori",
+          "fpgrowth"
+        ],
+        "support": 0.005102676439442702
+      },
+      {
+        "antecedent": [
+          "REAC_DIARRHOEA=1"
+        ],
+        "antecedent_count": 14774,
+        "average_ranks": {
+          "confidence": 159.0,
+          "conviction": 171.0,
+          "leverage": 13.5,
+          "lift": 397.5
+        },
+        "category": "high_leverage_relative_to_lift",
+        "confidence": 0.19121429538378232,
+        "consequent": [
+          "REAC_FATIGUE=1"
+        ],
+        "consequent_count": 15718,
+        "conviction": 1.1858818342833517,
+        "joint_count": 2825,
+        "leverage": 0.0057678617545473855,
+        "lift": 4.687146802381138,
+        "n": 385288,
+        "rank_gap": 384.0,
+        "raw_API_values": {
+          "confidence": "0.19121429538378232",
+          "conviction": "1.1858818342833517",
+          "leverage": "0.0057678617545473855",
+          "lift": "4.687146802381138",
+          "support": "0.00733217748800897"
+        },
+        "source_miners": [
+          "apriori",
+          "fpgrowth"
+        ],
+        "support": 0.00733217748800897
+      }
+    ]
+  },
+  "high_lift_relative_to_leverage": {
+    "eligible_rules": 170,
+    "examples": [
+      {
+        "antecedent": [
+          "REAC_PRURITUS=1"
+        ],
+        "antecedent_count": 11461,
+        "average_ranks": {
+          "confidence": 491.5,
+          "conviction": 420.0,
+          "leverage": 373.5,
+          "lift": 9.0
+        },
+        "category": "high_lift_relative_to_leverage",
+        "confidence": 0.0685804031061862,
+        "consequent": [
+          "REAC_SKIN BURNING SENSATION=1"
+        ],
+        "consequent_count": 1202,
+        "conviction": 1.0701802746181008,
+        "joint_count": 786,
+        "leverage": 0.0019472306737371636,
+        "lift": 21.98270079199357,
+        "n": 385288,
+        "rank_gap": 364.5,
+        "raw_API_values": {
+          "confidence": "0.0685804031061862",
+          "conviction": "1.0701802746181008",
+          "leverage": "0.0019472306737371636",
+          "lift": "21.98270079199357",
+          "support": "0.002040032391354"
+        },
+        "source_miners": [
+          "apriori",
+          "fpgrowth"
+        ],
+        "support": 0.002040032391354
+      },
+      {
+        "antecedent": [
+          "REAC_SKIN BURNING SENSATION=1"
+        ],
+        "antecedent_count": 1202,
+        "average_ranks": {
+          "confidence": 7.0,
+          "conviction": 7.0,
+          "leverage": 373.5,
+          "lift": 10.0
+        },
+        "category": "high_lift_relative_to_leverage",
+        "confidence": 0.653910149750416,
+        "consequent": [
+          "REAC_PRURITUS=1"
+        ],
+        "consequent_count": 11461,
+        "conviction": 2.7967496686399143,
+        "joint_count": 786,
+        "leverage": 0.0019472306737371636,
+        "lift": 21.982700791993565,
+        "n": 385288,
+        "rank_gap": 363.5,
+        "raw_API_values": {
+          "confidence": "0.653910149750416",
+          "conviction": "2.7967496686399143",
+          "leverage": "0.0019472306737371636",
+          "lift": "21.982700791993565",
+          "support": "0.002040032391354"
+        },
+        "source_miners": [
+          "apriori",
+          "fpgrowth"
+        ],
+        "support": 0.002040032391354
+      },
+      {
+        "antecedent": [
+          "REAC_ABDOMINAL PAIN=1"
+        ],
+        "antecedent_count": 5616,
+        "average_ranks": {
+          "confidence": 240.5,
+          "conviction": 204.0,
+          "leverage": 365.5,
+          "lift": 21.5
+        },
+        "category": "high_lift_relative_to_leverage",
+        "confidence": 0.14227207977207978,
+        "consequent": [
+          "REAC_DIARRHOEA=1",
+          "REAC_VOMITING=1"
+        ],
+        "consequent_count": 3075,
+        "conviction": 1.156325957638507,
+        "joint_count": 799,
+        "leverage": 0.0019574408336162233,
+        "lift": 17.82625205568295,
+        "n": 385288,
+        "rank_gap": 344.0,
+        "raw_API_values": {
+          "confidence": "0.14227207977207978",
+          "conviction": "1.156325957638507",
+          "leverage": "0.0019574408336162233",
+          "lift": "17.82625205568295",
+          "support": "0.0020737733851041297"
+        },
+        "source_miners": [
+          "apriori",
+          "fpgrowth"
+        ],
+        "support": 0.0020737733851041297
+      }
+    ]
+  }
+}

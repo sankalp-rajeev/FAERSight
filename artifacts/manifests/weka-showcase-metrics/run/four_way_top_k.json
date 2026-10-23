@@ -1,0 +1,36 @@
+[
+  {
+    "intersection": 0,
+    "k": 10,
+    "rules": []
+  },
+  {
+    "intersection": 0,
+    "k": 25,
+    "rules": []
+  },
+  {
+    "intersection": 2,
+    "k": 50,
+    "rules": [
+      [
+        [
+          "REAC_DIARRHOEA=1",
+          "REAC_NAUSEA=1"
+        ],
+        [
+          "REAC_VOMITING=1"
+        ]
+      ],
+      [
+        [
+          "REAC_DIARRHOEA=1",
+          "REAC_VOMITING=1"
+        ],
+        [
+          "REAC_NAUSEA=1"
+        ]
+      ]
+    ]
+  }
+]

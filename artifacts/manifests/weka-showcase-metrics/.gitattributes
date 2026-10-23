@@ -1,0 +1,3 @@
+*.txt -diff
+*.svg -diff
+run/metric_api_probe/stdout.csv -diff

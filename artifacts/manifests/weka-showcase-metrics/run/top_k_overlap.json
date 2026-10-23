@@ -1,0 +1,164 @@
+[
+  {
+    "intersection": 10,
+    "jaccard": 1.0,
+    "k": 10,
+    "metric_a": "confidence",
+    "metric_b": "conviction",
+    "overlap_fraction_k": 1.0,
+    "union": 10
+  },
+  {
+    "intersection": 0,
+    "jaccard": 0.0,
+    "k": 10,
+    "metric_a": "confidence",
+    "metric_b": "leverage",
+    "overlap_fraction_k": 0.0,
+    "union": 20
+  },
+  {
+    "intersection": 4,
+    "jaccard": 0.25,
+    "k": 10,
+    "metric_a": "confidence",
+    "metric_b": "lift",
+    "overlap_fraction_k": 0.4,
+    "union": 16
+  },
+  {
+    "intersection": 0,
+    "jaccard": 0.0,
+    "k": 10,
+    "metric_a": "conviction",
+    "metric_b": "leverage",
+    "overlap_fraction_k": 0.0,
+    "union": 20
+  },
+  {
+    "intersection": 4,
+    "jaccard": 0.25,
+    "k": 10,
+    "metric_a": "conviction",
+    "metric_b": "lift",
+    "overlap_fraction_k": 0.4,
+    "union": 16
+  },
+  {
+    "intersection": 0,
+    "jaccard": 0.0,
+    "k": 10,
+    "metric_a": "leverage",
+    "metric_b": "lift",
+    "overlap_fraction_k": 0.0,
+    "union": 20
+  },
+  {
+    "intersection": 25,
+    "jaccard": 1.0,
+    "k": 25,
+    "metric_a": "confidence",
+    "metric_b": "conviction",
+    "overlap_fraction_k": 1.0,
+    "union": 25
+  },
+  {
+    "intersection": 1,
+    "jaccard": 0.02040816326530612,
+    "k": 25,
+    "metric_a": "confidence",
+    "metric_b": "leverage",
+    "overlap_fraction_k": 0.04,
+    "union": 49
+  },
+  {
+    "intersection": 10,
+    "jaccard": 0.25,
+    "k": 25,
+    "metric_a": "confidence",
+    "metric_b": "lift",
+    "overlap_fraction_k": 0.4,
+    "union": 40
+  },
+  {
+    "intersection": 1,
+    "jaccard": 0.02040816326530612,
+    "k": 25,
+    "metric_a": "conviction",
+    "metric_b": "leverage",
+    "overlap_fraction_k": 0.04,
+    "union": 49
+  },
+  {
+    "intersection": 10,
+    "jaccard": 0.25,
+    "k": 25,
+    "metric_a": "conviction",
+    "metric_b": "lift",
+    "overlap_fraction_k": 0.4,
+    "union": 40
+  },
+  {
+    "intersection": 0,
+    "jaccard": 0.0,
+    "k": 25,
+    "metric_a": "leverage",
+    "metric_b": "lift",
+    "overlap_fraction_k": 0.0,
+    "union": 50
+  },
+  {
+    "intersection": 48,
+    "jaccard": 0.9230769230769231,
+    "k": 50,
+    "metric_a": "confidence",
+    "metric_b": "conviction",
+    "overlap_fraction_k": 0.96,
+    "union": 52
+  },
+  {
+    "intersection": 5,
+    "jaccard": 0.05263157894736842,
+    "k": 50,
+    "metric_a": "confidence",
+    "metric_b": "leverage",
+    "overlap_fraction_k": 0.1,
+    "union": 95
+  },
+  {
+    "intersection": 17,
+    "jaccard": 0.20481927710843373,
+    "k": 50,
+    "metric_a": "confidence",
+    "metric_b": "lift",
+    "overlap_fraction_k": 0.34,
+    "union": 83
+  },
+  {
+    "intersection": 6,
+    "jaccard": 0.06382978723404255,
+    "k": 50,
+    "metric_a": "conviction",
+    "metric_b": "leverage",
+    "overlap_fraction_k": 0.12,
+    "union": 94
+  },
+  {
+    "intersection": 17,
+    "jaccard": 0.20481927710843373,
+    "k": 50,
+    "metric_a": "conviction",
+    "metric_b": "lift",
+    "overlap_fraction_k": 0.34,
+    "union": 83
+  },
+  {
+    "intersection": 4,
+    "jaccard": 0.041666666666666664,
+    "k": 50,
+    "metric_a": "leverage",
+    "metric_b": "lift",
+    "overlap_fraction_k": 0.08,
+    "union": 96
+  }
+]

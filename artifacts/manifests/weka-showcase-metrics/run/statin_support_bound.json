@@ -1,0 +1,290 @@
+{
+  "all_statin_containing_itemsets_size_ge_2_maximum_joint_count": 141,
+  "comparisons": [
+    {
+      "algorithm": "apriori",
+      "below_minimum": true,
+      "maximum_statin_itemset_joint_count": 141,
+      "minimum_count": 385,
+      "support": "0.001"
+    },
+    {
+      "algorithm": "fpgrowth",
+      "below_minimum": true,
+      "maximum_statin_itemset_joint_count": 141,
+      "minimum_count": 386,
+      "support": "0.001"
+    },
+    {
+      "algorithm": "apriori",
+      "below_minimum": true,
+      "maximum_statin_itemset_joint_count": 141,
+      "minimum_count": 771,
+      "support": "0.002"
+    },
+    {
+      "algorithm": "fpgrowth",
+      "below_minimum": true,
+      "maximum_statin_itemset_joint_count": 141,
+      "minimum_count": 771,
+      "support": "0.002"
+    },
+    {
+      "algorithm": "apriori",
+      "below_minimum": true,
+      "maximum_statin_itemset_joint_count": 141,
+      "minimum_count": 1156,
+      "support": "0.003"
+    },
+    {
+      "algorithm": "fpgrowth",
+      "below_minimum": true,
+      "maximum_statin_itemset_joint_count": 141,
+      "minimum_count": 1156,
+      "support": "0.003"
+    },
+    {
+      "algorithm": "apriori",
+      "below_minimum": true,
+      "maximum_statin_itemset_joint_count": 141,
+      "minimum_count": 1541,
+      "support": "0.004"
+    },
+    {
+      "algorithm": "fpgrowth",
+      "below_minimum": true,
+      "maximum_statin_itemset_joint_count": 141,
+      "minimum_count": 1542,
+      "support": "0.004"
+    }
+  ],
+  "conclusion": "No statin-containing itemset of size 2 or more reaches the minimum.",
+  "families": {
+    "statin_reaction": {
+      "maximum_joint_count": 141,
+      "maximum_witnesses": [
+        {
+          "family": "statin_reaction",
+          "items": [
+            "DRUG_rosuvastatin=1",
+            "REAC_MYALGIA=1"
+          ],
+          "joint_count": 141
+        }
+      ],
+      "pairs_checked": 2513
+    },
+    "statin_statin": {
+      "maximum_joint_count": 0,
+      "maximum_witnesses": [
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_atorvastatin=1",
+            "DRUG_fluvastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_atorvastatin=1",
+            "DRUG_lovastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_atorvastatin=1",
+            "DRUG_pitavastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_atorvastatin=1",
+            "DRUG_pravastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_atorvastatin=1",
+            "DRUG_rosuvastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_atorvastatin=1",
+            "DRUG_simvastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_fluvastatin=1",
+            "DRUG_lovastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_fluvastatin=1",
+            "DRUG_pitavastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_fluvastatin=1",
+            "DRUG_pravastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_fluvastatin=1",
+            "DRUG_rosuvastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_fluvastatin=1",
+            "DRUG_simvastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_lovastatin=1",
+            "DRUG_pitavastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_lovastatin=1",
+            "DRUG_pravastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_lovastatin=1",
+            "DRUG_rosuvastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_lovastatin=1",
+            "DRUG_simvastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_pitavastatin=1",
+            "DRUG_pravastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_pitavastatin=1",
+            "DRUG_rosuvastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_pitavastatin=1",
+            "DRUG_simvastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_pravastatin=1",
+            "DRUG_rosuvastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_pravastatin=1",
+            "DRUG_simvastatin=1"
+          ],
+          "joint_count": 0
+        },
+        {
+          "family": "statin_statin",
+          "items": [
+            "DRUG_rosuvastatin=1",
+            "DRUG_simvastatin=1"
+          ],
+          "joint_count": 0
+        }
+      ],
+      "pairs_checked": 21
+    }
+  },
+  "maximum_witnesses": [
+    {
+      "family": "statin_reaction",
+      "items": [
+        "DRUG_rosuvastatin=1",
+        "REAC_MYALGIA=1"
+      ],
+      "joint_count": 141
+    }
+  ],
+  "proof": "Every statin-containing itemset size>=2 contains a statin-reaction or statin-statin pair; support of a superset cannot exceed its subset. Pairs are in the family, so this bound is attained.",
+  "singleton_counts": {
+    "DRUG_atorvastatin=1": 1157,
+    "DRUG_fluvastatin=1": 6,
+    "DRUG_lovastatin=1": 0,
+    "DRUG_pitavastatin=1": 16,
+    "DRUG_pravastatin=1": 67,
+    "DRUG_rosuvastatin=1": 864,
+    "DRUG_simvastatin=1": 188
+  },
+  "thresholds": {
+    "0.001": {
+      "apriori": 385,
+      "fpgrowth": 386
+    },
+    "0.002": {
+      "apriori": 771,
+      "fpgrowth": 771
+    },
+    "0.003": {
+      "apriori": 1156,
+      "fpgrowth": 1156
+    },
+    "0.004": {
+      "apriori": 1541,
+      "fpgrowth": 1542
+    }
+  }
+}

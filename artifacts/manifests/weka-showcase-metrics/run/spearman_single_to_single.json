@@ -1,0 +1,44 @@
+[
+  {
+    "metric_a": "confidence",
+    "metric_b": "conviction",
+    "population": "single_to_single_472",
+    "rules": 472,
+    "spearman": 0.9615493478152493
+  },
+  {
+    "metric_a": "confidence",
+    "metric_b": "leverage",
+    "population": "single_to_single_472",
+    "rules": 472,
+    "spearman": 0.5566072087580073
+  },
+  {
+    "metric_a": "confidence",
+    "metric_b": "lift",
+    "population": "single_to_single_472",
+    "rules": 472,
+    "spearman": 0.551234411994408
+  },
+  {
+    "metric_a": "conviction",
+    "metric_b": "leverage",
+    "population": "single_to_single_472",
+    "rules": 472,
+    "spearman": 0.6557915282116992
+  },
+  {
+    "metric_a": "conviction",
+    "metric_b": "lift",
+    "population": "single_to_single_472",
+    "rules": 472,
+    "spearman": 0.7166570625886899
+  },
+  {
+    "metric_a": "leverage",
+    "metric_b": "lift",
+    "population": "single_to_single_472",
+    "rules": 472,
+    "spearman": 0.6169152627799822
+  }
+]

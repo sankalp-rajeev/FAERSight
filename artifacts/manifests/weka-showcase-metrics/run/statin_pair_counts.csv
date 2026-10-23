@@ -1,0 +1,2535 @@
+items,joint_count,family
+"[""DRUG_atorvastatin=1"",""DRUG_fluvastatin=1""]",0,statin_statin
+"[""DRUG_atorvastatin=1"",""DRUG_lovastatin=1""]",0,statin_statin
+"[""DRUG_atorvastatin=1"",""DRUG_pitavastatin=1""]",0,statin_statin
+"[""DRUG_atorvastatin=1"",""DRUG_pravastatin=1""]",0,statin_statin
+"[""DRUG_atorvastatin=1"",""DRUG_rosuvastatin=1""]",0,statin_statin
+"[""DRUG_atorvastatin=1"",""DRUG_simvastatin=1""]",0,statin_statin
+"[""DRUG_atorvastatin=1"",""REAC_ABDOMINAL DISCOMFORT=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ABDOMINAL DISTENSION=1""]",12,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ABDOMINAL HERNIA=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ABDOMINAL PAIN UPPER=1""]",22,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ABDOMINAL PAIN=1""]",12,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ABNORMAL DREAMS=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ABNORMAL LOSS OF WEIGHT=1""]",10,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ACCIDENTAL OVERDOSE=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ACUTE KIDNEY INJURY=1""]",62,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ACUTE MYOCARDIAL INFARCTION=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ADVERSE DRUG REACTION=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_AGGRESSION=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_AGITATION=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ALANINE AMINOTRANSFERASE INCREASED=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ALOPECIA=1""]",23,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_AMNESIA=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ANAEMIA=1""]",11,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ANGINA PECTORIS=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ANGIOEDEMA=1""]",14,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ANTIBODY TEST POSITIVE=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ANXIETY=1""]",18,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ARRHYTHMIA=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ARTHRALGIA=1""]",73,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ARTHRITIS=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ARTHROPATHY=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ASPARTATE AMINOTRANSFERASE INCREASED=1""]",10,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ASPIRATION=1""]",7,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ASTHENIA=1""]",48,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ASTHMA=1""]",12,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ATRIAL FIBRILLATION=1""]",17,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_AUTOIMMUNE HEPATITIS=1""]",7,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_AUTOIMMUNE MYOSITIS=1""]",16,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BACK PAIN=1""]",26,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BACTERIAL SEPSIS=1""]",7,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BALANCE DISORDER=1""]",12,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BEDRIDDEN=1""]",10,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BLISTER=1""]",7,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BLOOD ALKALINE PHOSPHATASE INCREASED=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BLOOD CALCIUM DECREASED=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BLOOD CALCIUM INCREASED=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BLOOD CHOLESTEROL DECREASED=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BLOOD CHOLESTEROL INCREASED=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BLOOD CREATINE PHOSPHOKINASE INCREASED=1""]",23,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BLOOD CREATININE ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BLOOD CREATININE INCREASED=1""]",7,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BLOOD GLUCOSE INCREASED=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BLOOD POTASSIUM INCREASED=1""]",9,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BLOOD PRESSURE DECREASED=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BLOOD PRESSURE INCREASED=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BLOOD TEST ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BLOOD UREA INCREASED=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BLOOD URINE PRESENT=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BONE PAIN=1""]",7,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BRADYCARDIA=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BRAIN FOG=1""]",32,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BULBAR PALSY=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_BURNING SENSATION=1""]",13,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_C-REACTIVE PROTEIN INCREASED=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CARDIAC ARREST=1""]",15,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CARDIAC FAILURE=1""]",11,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CARDIO-RESPIRATORY ARREST=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CARDIOGENIC SHOCK=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CARPAL TUNNEL SYNDROME=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CEREBROVASCULAR ACCIDENT=1""]",7,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CHEST DISCOMFORT=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CHEST PAIN=1""]",9,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CHOLELITHIASIS=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CHOLESTASIS=1""]",11,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CHROMATURIA=1""]",12,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CHRONIC KIDNEY DISEASE=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CHRONIC LYMPHOCYTIC LEUKAEMIA=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CHRONIC OBSTRUCTIVE PULMONARY DISEASE=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_COAGULOPATHY=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_COGNITIVE DISORDER=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_COLITIS=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CONDITION AGGRAVATED=1""]",9,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CONFUSIONAL STATE=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CONSTIPATION=1""]",23,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CONTRAINDICATED PRODUCT PRESCRIBED=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CONTUSION=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_COORDINATION ABNORMAL=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CORONARY ARTERY OCCLUSION=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_COUGH=1""]",10,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_COVID-19=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_CRUSH SYNDROME=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DEAFNESS=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DEATH=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DECREASED APPETITE=1""]",16,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DEHYDRATION=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DEPRESSED LEVEL OF CONSCIOUSNESS=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DEPRESSED MOOD=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DEPRESSION=1""]",18,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DIABETES MELLITUS INADEQUATE CONTROL=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DIABETES MELLITUS=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DIARRHOEA=1""]",57,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DIPLOPIA=1""]",9,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DISEASE PROGRESSION=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DISEASE RECURRENCE=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DIVERTICULITIS=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DIZZINESS POSTURAL=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DIZZINESS=1""]",25,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DRUG HYPERSENSITIVITY=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DRUG INEFFECTIVE=1""]",31,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DRUG INTERACTION=1""]",62,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DRUG INTOLERANCE=1""]",13,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DRUG LEVEL INCREASED=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DRUG REACTION WITH EOSINOPHILIA AND SYSTEMIC SYMPTOMS=1""]",10,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DRUG-DISEASE INTERACTION=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DRUG-INDUCED LIVER INJURY=1""]",20,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DRY MOUTH=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DYSPEPSIA=1""]",10,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DYSPHAGIA=1""]",29,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DYSPNOEA EXERTIONAL=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_DYSPNOEA=1""]",24,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ELECTROCARDIOGRAM QT PROLONGED=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_EMOTIONAL DISTRESS=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_EOSINOPHILIA=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ERECTILE DYSFUNCTION=1""]",19,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ERYTHEMA=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ERYTHROMELALGIA=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_EXERCISE TOLERANCE DECREASED=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_EXFOLIATIVE RASH=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_EYE PRURITUS=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_EYE SWELLING=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_EYELID PTOSIS=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_FACE OEDEMA=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_FALL=1""]",21,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_FATIGUE=1""]",66,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_FEELING ABNORMAL=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_FEELING COLD=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_FLATULENCE=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_FOOT DEFORMITY=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_GAIT DISTURBANCE=1""]",29,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_GAIT INABILITY=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_GAMMA-GLUTAMYLTRANSFERASE INCREASED=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_GASTROINTESTINAL DISORDER=1""]",9,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_GASTROINTESTINAL HAEMORRHAGE=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_GASTROINTESTINAL MUCOSAL DISORDER=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_GASTROINTESTINAL PAIN=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_GASTROOESOPHAGEAL REFLUX DISEASE=1""]",26,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_GENERAL PHYSICAL HEALTH DETERIORATION=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_GENERALISED OEDEMA=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_GLOMERULAR FILTRATION RATE DECREASED=1""]",7,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_GLOMERULONEPHRITIS MINIMAL LESION=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_GOUT=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HAEMATOCHEZIA=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HAEMATURIA=1""]",14,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HAEMOGLOBIN DECREASED=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HALLUCINATION=1""]",9,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HEAD INJURY=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HEADACHE=1""]",33,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HEART RATE INCREASED=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HEART RATE IRREGULAR=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HEPATIC CYTOLYSIS=1""]",20,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HEPATIC ENZYME INCREASED=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HEPATIC FUNCTION ABNORMAL=1""]",7,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HEPATIC STEATOSIS=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HEPATITIS ACUTE=1""]",11,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HEPATITIS CHOLESTATIC=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HEPATITIS=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HEPATOCELLULAR INJURY=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HEPATOTOXICITY=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HERNIA=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HMG COA REDUCTASE ANTIBODY TEST=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HOSPITALISATION=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HYPERBILIRUBINAEMIA=1""]",10,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HYPERHIDROSIS=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HYPERKALAEMIA=1""]",12,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HYPERPHOSPHATAEMIA=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HYPERSENSITIVITY=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HYPERTENSION=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HYPERTHYROIDISM=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HYPERTRANSAMINASAEMIA=1""]",15,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HYPERVOLAEMIA=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HYPOACUSIS=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HYPOAESTHESIA=1""]",21,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HYPOALBUMINAEMIA=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HYPOCALCAEMIA=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HYPOKALAEMIA=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HYPONATRAEMIA=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_HYPOTENSION=1""]",12,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ILLNESS=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_IMMUNE-MEDIATED MYOSITIS=1""]",74,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_INAPPROPRIATE SCHEDULE OF PRODUCT ADMINISTRATION=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_INCORRECT ROUTE OF PRODUCT ADMINISTRATION=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_INFECTION=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_INFLUENZA=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_INSOMNIA=1""]",28,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_INTENTIONAL OVERDOSE=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_INTENTIONAL PRODUCT MISUSE=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_INTERSTITIAL LUNG DISEASE=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_INTERVERTEBRAL DISC PROTRUSION=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_IRRITABILITY=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ISCHAEMIC STROKE=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_JAUNDICE=1""]",12,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_JOINT EFFUSION=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_JOINT STIFFNESS=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_JOINT SWELLING=1""]",7,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_LARGE INTESTINE POLYP=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_LETHARGY=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_LIP DRY=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_LIP PAIN=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_LIP SWELLING=1""]",9,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_LIPOPROTEIN (A) INCREASED=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_LIVER DISORDER=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_LIVER FUNCTION TEST ABNORMAL=1""]",9,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_LIVER FUNCTION TEST INCREASED=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_LIVER INJURY=1""]",18,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_LOSS OF CONSCIOUSNESS=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_LOSS OF LIBIDO=1""]",14,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_LOSS OF PERSONAL INDEPENDENCE IN DAILY ACTIVITIES=1""]",7,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_LOWER RESPIRATORY TRACT INFECTION=1""]",11,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_LUNG DISORDER=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MALAISE=1""]",20,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MALNUTRITION=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MASTICATION DISORDER=1""]",7,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MEDICATION ERROR=1""]",43,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MEMORY IMPAIRMENT=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MENTAL FATIGUE=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MENTAL IMPAIRMENT=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_METABOLIC ACIDOSIS=1""]",7,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MIOSIS=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MIXED LIVER INJURY=1""]",12,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MOBILITY DECREASED=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MOUTH ULCERATION=1""]",9,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MULTIPLE ORGAN DYSFUNCTION SYNDROME=1""]",10,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MUSCLE ATROPHY=1""]",19,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MUSCLE RUPTURE=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MUSCLE SPASMS=1""]",31,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MUSCLE TIGHTNESS=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MUSCLE TWITCHING=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MUSCULAR WEAKNESS=1""]",37,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MUSCULOSKELETAL CHEST PAIN=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MUSCULOSKELETAL STIFFNESS=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MYALGIA=1""]",126,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MYASTHENIA GRAVIS=1""]",11,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MYOCARDIAL INFARCTION=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MYOCARDITIS=1""]",10,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MYOGLOBIN BLOOD INCREASED=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MYOPATHY=1""]",19,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_MYOSITIS=1""]",24,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_NASAL CONGESTION=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_NASAL OEDEMA=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_NASOPHARYNGITIS=1""]",9,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_NAUSEA=1""]",35,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_NECK PAIN=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_NECROTISING MYOSITIS=1""]",22,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_NEPHROPATHY TOXIC=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_NEPHROTIC SYNDROME=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_NEURALGIA=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_NEUROPATHY PERIPHERAL=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_NEUTROPENIA=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_OEDEMA PERIPHERAL=1""]",13,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_OEDEMA=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_OFF LABEL USE=1""]",23,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_OLIGURIA=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ORAL MUCOSAL BLISTERING=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_ORAL PAIN=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_OROPHARYNGEAL PAIN=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_OSTEOARTHRITIS=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_OSTEOPOROSIS=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PAIN IN EXTREMITY=1""]",45,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PAIN IN JAW=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PAIN=1""]",29,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PALLIATIVE CARE=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PALPITATIONS=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PANCREATITIS ACUTE=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PANIC ATTACK=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PARAESTHESIA=1""]",28,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PARKINSON'S DISEASE=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PERIPHERAL SWELLING=1""]",12,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PHARYNGEAL SWELLING=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PLATELET COUNT DECREASED=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PLATELET COUNT INCREASED=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PLEURAL EFFUSION=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PNEUMONIA ASPIRATION=1""]",16,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PNEUMONIA=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_POLYMYOSITIS=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_POOR QUALITY SLEEP=1""]",9,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_POTENTIATING DRUG INTERACTION=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PRESYNCOPE=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PRODUCT DOSE OMISSION ISSUE=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PRODUCT SUBSTITUTION ISSUE=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PRODUCT USE IN UNAPPROVED INDICATION=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PRODUCT USE ISSUE=1""]",10,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PRODUCTIVE COUGH=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PROTEINURIA=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PRURITUS=1""]",35,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PSYCHOGENIC LOSS OF APPETITE=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PULMONARY EMBOLISM=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PUSTULAR PSORIASIS=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_PYREXIA=1""]",9,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_RASH ERYTHEMATOUS=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_RASH PRURITIC=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_RASH=1""]",20,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_RECTAL HAEMORRHAGE=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_RED BLOOD CELL COUNT DECREASED=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_REFLUX GASTRITIS=1""]",7,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_RENAL DISORDER=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_RENAL FAILURE=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_RENAL IMPAIRMENT=1""]",15,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_RENAL TUBULAR NECROSIS=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_RESPIRATORY FAILURE=1""]",37,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_RESPIRATORY TRACT INFECTION=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_RESTLESS LEGS SYNDROME=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_RHABDOMYOLYSIS=1""]",112,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_RHINORRHOEA=1""]",10,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_SEPSIS=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_SERUM FERRITIN INCREASED=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_SHOCK=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_SKIN BURNING SENSATION=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_SLEEP APNOEA SYNDROME=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_SLEEP DISORDER=1""]",14,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_SNEEZING=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_SOMNOLENCE=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_SPINAL FRACTURE=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_SUDDEN HEARING LOSS=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_SUICIDAL IDEATION=1""]",10,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_SWELLING=1""]",9,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_SWOLLEN TONGUE=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_SYNCOPE=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_TACHYCARDIA=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_TENDON DISCOMFORT=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_TENDON DISORDER=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_TENDON PAIN=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_TENDON RUPTURE=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_TENDONITIS=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_THERAPEUTIC PRODUCT EFFECT INCOMPLETE=1""]",9,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_THROMBOCYTOPENIA=1""]",9,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_THROMBOSIS=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_TINNITUS=1""]",17,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_TOXICITY TO VARIOUS AGENTS=1""]",2,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_TRANSAMINASES INCREASED=1""]",7,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_TRANSIENT ISCHAEMIC ATTACK=1""]",10,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_TREATMENT FAILURE=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_TREATMENT NONCOMPLIANCE=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_TROPONIN INCREASED=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_TUBULOINTERSTITIAL NEPHRITIS=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_UMBILICAL HERNIA=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_UPPER RESPIRATORY TRACT INFECTION=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_URGE INCONTINENCE=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_URINARY RETENTION=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_URINARY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_URINE OUTPUT DECREASED=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_URTICARIA=1""]",4,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_VASCULAR PAIN=1""]",6,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_VENTRICULAR TACHYCARDIA=1""]",1,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_VERTIGO=1""]",8,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_VISION BLURRED=1""]",7,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_VISUAL IMPAIRMENT=1""]",12,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_VITREOUS FLOATERS=1""]",7,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_VOMITING=1""]",20,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_VULVOVAGINAL PAIN=1""]",0,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_WEIGHT DECREASED=1""]",21,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_WEIGHT INCREASED=1""]",10,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_WHEEZING=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_WHITE BLOOD CELL COUNT INCREASED=1""]",3,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_WOUND=1""]",5,statin_reaction
+"[""DRUG_atorvastatin=1"",""REAC_WRONG TECHNIQUE IN PRODUCT USAGE PROCESS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""DRUG_lovastatin=1""]",0,statin_statin
+"[""DRUG_fluvastatin=1"",""DRUG_pitavastatin=1""]",0,statin_statin
+"[""DRUG_fluvastatin=1"",""DRUG_pravastatin=1""]",0,statin_statin
+"[""DRUG_fluvastatin=1"",""DRUG_rosuvastatin=1""]",0,statin_statin
+"[""DRUG_fluvastatin=1"",""DRUG_simvastatin=1""]",0,statin_statin
+"[""DRUG_fluvastatin=1"",""REAC_ABDOMINAL DISCOMFORT=1""]",2,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ABDOMINAL DISTENSION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ABDOMINAL HERNIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ABDOMINAL PAIN UPPER=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ABDOMINAL PAIN=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ABNORMAL DREAMS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ABNORMAL LOSS OF WEIGHT=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ACCIDENTAL OVERDOSE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ACUTE KIDNEY INJURY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ACUTE MYOCARDIAL INFARCTION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ADVERSE DRUG REACTION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_AGGRESSION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_AGITATION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ALANINE AMINOTRANSFERASE INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ALOPECIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_AMNESIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ANAEMIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ANGINA PECTORIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ANGIOEDEMA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ANTIBODY TEST POSITIVE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ANXIETY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ARRHYTHMIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ARTHRALGIA=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ARTHRITIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ARTHROPATHY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ASPARTATE AMINOTRANSFERASE INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ASPIRATION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ASTHENIA=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ASTHMA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ATRIAL FIBRILLATION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_AUTOIMMUNE HEPATITIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_AUTOIMMUNE MYOSITIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BACK PAIN=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BACTERIAL SEPSIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BALANCE DISORDER=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BEDRIDDEN=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BLISTER=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BLOOD ALKALINE PHOSPHATASE INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BLOOD CALCIUM DECREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BLOOD CALCIUM INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BLOOD CHOLESTEROL DECREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BLOOD CHOLESTEROL INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BLOOD CREATINE PHOSPHOKINASE INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BLOOD CREATININE ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BLOOD CREATININE INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BLOOD GLUCOSE INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BLOOD POTASSIUM INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BLOOD PRESSURE DECREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BLOOD PRESSURE INCREASED=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BLOOD TEST ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BLOOD UREA INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BLOOD URINE PRESENT=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BONE PAIN=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BRADYCARDIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BRAIN FOG=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BULBAR PALSY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_BURNING SENSATION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_C-REACTIVE PROTEIN INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CARDIAC ARREST=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CARDIAC FAILURE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CARDIO-RESPIRATORY ARREST=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CARDIOGENIC SHOCK=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CARPAL TUNNEL SYNDROME=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CEREBROVASCULAR ACCIDENT=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CHEST DISCOMFORT=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CHEST PAIN=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CHOLELITHIASIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CHOLESTASIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CHROMATURIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CHRONIC KIDNEY DISEASE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CHRONIC LYMPHOCYTIC LEUKAEMIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CHRONIC OBSTRUCTIVE PULMONARY DISEASE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_COAGULOPATHY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_COGNITIVE DISORDER=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_COLITIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CONDITION AGGRAVATED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CONFUSIONAL STATE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CONSTIPATION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CONTRAINDICATED PRODUCT PRESCRIBED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CONTUSION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_COORDINATION ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CORONARY ARTERY OCCLUSION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_COUGH=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_COVID-19=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_CRUSH SYNDROME=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DEAFNESS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DEATH=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DECREASED APPETITE=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DEHYDRATION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DEPRESSED LEVEL OF CONSCIOUSNESS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DEPRESSED MOOD=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DEPRESSION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DIABETES MELLITUS INADEQUATE CONTROL=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DIABETES MELLITUS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DIARRHOEA=1""]",2,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DIPLOPIA=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DISEASE PROGRESSION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DISEASE RECURRENCE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DIVERTICULITIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DIZZINESS POSTURAL=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DIZZINESS=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DRUG HYPERSENSITIVITY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DRUG INEFFECTIVE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DRUG INTERACTION=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DRUG INTOLERANCE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DRUG LEVEL INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DRUG REACTION WITH EOSINOPHILIA AND SYSTEMIC SYMPTOMS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DRUG-DISEASE INTERACTION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DRUG-INDUCED LIVER INJURY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DRY MOUTH=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DYSPEPSIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DYSPHAGIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DYSPNOEA EXERTIONAL=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_DYSPNOEA=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ELECTROCARDIOGRAM QT PROLONGED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_EMOTIONAL DISTRESS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_EOSINOPHILIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ERECTILE DYSFUNCTION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ERYTHEMA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ERYTHROMELALGIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_EXERCISE TOLERANCE DECREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_EXFOLIATIVE RASH=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_EYE PRURITUS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_EYE SWELLING=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_EYELID PTOSIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_FACE OEDEMA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_FALL=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_FATIGUE=1""]",2,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_FEELING ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_FEELING COLD=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_FLATULENCE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_FOOT DEFORMITY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_GAIT DISTURBANCE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_GAIT INABILITY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_GAMMA-GLUTAMYLTRANSFERASE INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_GASTROINTESTINAL DISORDER=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_GASTROINTESTINAL HAEMORRHAGE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_GASTROINTESTINAL MUCOSAL DISORDER=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_GASTROINTESTINAL PAIN=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_GASTROOESOPHAGEAL REFLUX DISEASE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_GENERAL PHYSICAL HEALTH DETERIORATION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_GENERALISED OEDEMA=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_GLOMERULAR FILTRATION RATE DECREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_GLOMERULONEPHRITIS MINIMAL LESION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_GOUT=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HAEMATOCHEZIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HAEMATURIA=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HAEMOGLOBIN DECREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HALLUCINATION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HEAD INJURY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HEADACHE=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HEART RATE INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HEART RATE IRREGULAR=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HEPATIC CYTOLYSIS=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HEPATIC ENZYME INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HEPATIC FUNCTION ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HEPATIC STEATOSIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HEPATITIS ACUTE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HEPATITIS CHOLESTATIC=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HEPATITIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HEPATOCELLULAR INJURY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HEPATOTOXICITY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HERNIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HMG COA REDUCTASE ANTIBODY TEST=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HOSPITALISATION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HYPERBILIRUBINAEMIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HYPERHIDROSIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HYPERKALAEMIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HYPERPHOSPHATAEMIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HYPERSENSITIVITY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HYPERTENSION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HYPERTHYROIDISM=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HYPERTRANSAMINASAEMIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HYPERVOLAEMIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HYPOACUSIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HYPOAESTHESIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HYPOALBUMINAEMIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HYPOCALCAEMIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HYPOKALAEMIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HYPONATRAEMIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_HYPOTENSION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ILLNESS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_IMMUNE-MEDIATED MYOSITIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_INAPPROPRIATE SCHEDULE OF PRODUCT ADMINISTRATION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_INCORRECT ROUTE OF PRODUCT ADMINISTRATION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_INFECTION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_INFLUENZA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_INSOMNIA=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_INTENTIONAL OVERDOSE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_INTENTIONAL PRODUCT MISUSE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_INTERSTITIAL LUNG DISEASE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_INTERVERTEBRAL DISC PROTRUSION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_IRRITABILITY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ISCHAEMIC STROKE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_JAUNDICE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_JOINT EFFUSION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_JOINT STIFFNESS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_JOINT SWELLING=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_LARGE INTESTINE POLYP=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_LETHARGY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_LIP DRY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_LIP PAIN=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_LIP SWELLING=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_LIPOPROTEIN (A) INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_LIVER DISORDER=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_LIVER FUNCTION TEST ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_LIVER FUNCTION TEST INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_LIVER INJURY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_LOSS OF CONSCIOUSNESS=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_LOSS OF LIBIDO=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_LOSS OF PERSONAL INDEPENDENCE IN DAILY ACTIVITIES=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_LOWER RESPIRATORY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_LUNG DISORDER=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MALAISE=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MALNUTRITION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MASTICATION DISORDER=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MEDICATION ERROR=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MEMORY IMPAIRMENT=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MENTAL FATIGUE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MENTAL IMPAIRMENT=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_METABOLIC ACIDOSIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MIOSIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MIXED LIVER INJURY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MOBILITY DECREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MOUTH ULCERATION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MULTIPLE ORGAN DYSFUNCTION SYNDROME=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MUSCLE ATROPHY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MUSCLE RUPTURE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MUSCLE SPASMS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MUSCLE TIGHTNESS=1""]",2,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MUSCLE TWITCHING=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MUSCULAR WEAKNESS=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MUSCULOSKELETAL CHEST PAIN=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MUSCULOSKELETAL STIFFNESS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MYALGIA=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MYASTHENIA GRAVIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MYOCARDIAL INFARCTION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MYOCARDITIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MYOGLOBIN BLOOD INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MYOPATHY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_MYOSITIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_NASAL CONGESTION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_NASAL OEDEMA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_NASOPHARYNGITIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_NAUSEA=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_NECK PAIN=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_NECROTISING MYOSITIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_NEPHROPATHY TOXIC=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_NEPHROTIC SYNDROME=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_NEURALGIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_NEUROPATHY PERIPHERAL=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_NEUTROPENIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_OEDEMA PERIPHERAL=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_OEDEMA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_OFF LABEL USE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_OLIGURIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ORAL MUCOSAL BLISTERING=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_ORAL PAIN=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_OROPHARYNGEAL PAIN=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_OSTEOARTHRITIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_OSTEOPOROSIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PAIN IN EXTREMITY=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PAIN IN JAW=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PAIN=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PALLIATIVE CARE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PALPITATIONS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PANCREATITIS ACUTE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PANIC ATTACK=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PARAESTHESIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PARKINSON'S DISEASE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PERIPHERAL SWELLING=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PHARYNGEAL SWELLING=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PLATELET COUNT DECREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PLATELET COUNT INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PLEURAL EFFUSION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PNEUMONIA ASPIRATION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PNEUMONIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_POLYMYOSITIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_POOR QUALITY SLEEP=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_POTENTIATING DRUG INTERACTION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PRESYNCOPE=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PRODUCT DOSE OMISSION ISSUE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PRODUCT SUBSTITUTION ISSUE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PRODUCT USE IN UNAPPROVED INDICATION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PRODUCT USE ISSUE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PRODUCTIVE COUGH=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PROTEINURIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PRURITUS=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PSYCHOGENIC LOSS OF APPETITE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PULMONARY EMBOLISM=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PUSTULAR PSORIASIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_PYREXIA=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_RASH ERYTHEMATOUS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_RASH PRURITIC=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_RASH=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_RECTAL HAEMORRHAGE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_RED BLOOD CELL COUNT DECREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_REFLUX GASTRITIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_RENAL DISORDER=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_RENAL FAILURE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_RENAL IMPAIRMENT=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_RENAL TUBULAR NECROSIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_RESPIRATORY FAILURE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_RESPIRATORY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_RESTLESS LEGS SYNDROME=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_RHABDOMYOLYSIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_RHINORRHOEA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_SEPSIS=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_SERUM FERRITIN INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_SHOCK=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_SKIN BURNING SENSATION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_SLEEP APNOEA SYNDROME=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_SLEEP DISORDER=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_SNEEZING=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_SOMNOLENCE=1""]",2,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_SPINAL FRACTURE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_SUDDEN HEARING LOSS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_SUICIDAL IDEATION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_SWELLING=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_SWOLLEN TONGUE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_SYNCOPE=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_TACHYCARDIA=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_TENDON DISCOMFORT=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_TENDON DISORDER=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_TENDON PAIN=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_TENDON RUPTURE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_TENDONITIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_THERAPEUTIC PRODUCT EFFECT INCOMPLETE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_THROMBOCYTOPENIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_THROMBOSIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_TINNITUS=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_TOXICITY TO VARIOUS AGENTS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_TRANSAMINASES INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_TRANSIENT ISCHAEMIC ATTACK=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_TREATMENT FAILURE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_TREATMENT NONCOMPLIANCE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_TROPONIN INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_TUBULOINTERSTITIAL NEPHRITIS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_UMBILICAL HERNIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_UPPER RESPIRATORY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_URGE INCONTINENCE=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_URINARY RETENTION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_URINARY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_URINE OUTPUT DECREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_URTICARIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_VASCULAR PAIN=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_VENTRICULAR TACHYCARDIA=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_VERTIGO=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_VISION BLURRED=1""]",1,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_VISUAL IMPAIRMENT=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_VITREOUS FLOATERS=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_VOMITING=1""]",2,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_VULVOVAGINAL PAIN=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_WEIGHT DECREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_WEIGHT INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_WHEEZING=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_WHITE BLOOD CELL COUNT INCREASED=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_WOUND=1""]",0,statin_reaction
+"[""DRUG_fluvastatin=1"",""REAC_WRONG TECHNIQUE IN PRODUCT USAGE PROCESS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""DRUG_pitavastatin=1""]",0,statin_statin
+"[""DRUG_lovastatin=1"",""DRUG_pravastatin=1""]",0,statin_statin
+"[""DRUG_lovastatin=1"",""DRUG_rosuvastatin=1""]",0,statin_statin
+"[""DRUG_lovastatin=1"",""DRUG_simvastatin=1""]",0,statin_statin
+"[""DRUG_lovastatin=1"",""REAC_ABDOMINAL DISCOMFORT=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ABDOMINAL DISTENSION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ABDOMINAL HERNIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ABDOMINAL PAIN UPPER=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ABDOMINAL PAIN=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ABNORMAL DREAMS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ABNORMAL LOSS OF WEIGHT=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ACCIDENTAL OVERDOSE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ACUTE KIDNEY INJURY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ACUTE MYOCARDIAL INFARCTION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ADVERSE DRUG REACTION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_AGGRESSION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_AGITATION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ALANINE AMINOTRANSFERASE INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ALOPECIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_AMNESIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ANAEMIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ANGINA PECTORIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ANGIOEDEMA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ANTIBODY TEST POSITIVE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ANXIETY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ARRHYTHMIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ARTHRALGIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ARTHRITIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ARTHROPATHY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ASPARTATE AMINOTRANSFERASE INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ASPIRATION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ASTHENIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ASTHMA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ATRIAL FIBRILLATION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_AUTOIMMUNE HEPATITIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_AUTOIMMUNE MYOSITIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BACK PAIN=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BACTERIAL SEPSIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BALANCE DISORDER=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BEDRIDDEN=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BLISTER=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BLOOD ALKALINE PHOSPHATASE INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BLOOD CALCIUM DECREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BLOOD CALCIUM INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BLOOD CHOLESTEROL DECREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BLOOD CHOLESTEROL INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BLOOD CREATINE PHOSPHOKINASE INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BLOOD CREATININE ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BLOOD CREATININE INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BLOOD GLUCOSE INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BLOOD POTASSIUM INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BLOOD PRESSURE DECREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BLOOD PRESSURE INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BLOOD TEST ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BLOOD UREA INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BLOOD URINE PRESENT=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BONE PAIN=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BRADYCARDIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BRAIN FOG=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BULBAR PALSY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_BURNING SENSATION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_C-REACTIVE PROTEIN INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CARDIAC ARREST=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CARDIAC FAILURE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CARDIO-RESPIRATORY ARREST=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CARDIOGENIC SHOCK=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CARPAL TUNNEL SYNDROME=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CEREBROVASCULAR ACCIDENT=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CHEST DISCOMFORT=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CHEST PAIN=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CHOLELITHIASIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CHOLESTASIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CHROMATURIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CHRONIC KIDNEY DISEASE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CHRONIC LYMPHOCYTIC LEUKAEMIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CHRONIC OBSTRUCTIVE PULMONARY DISEASE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_COAGULOPATHY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_COGNITIVE DISORDER=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_COLITIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CONDITION AGGRAVATED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CONFUSIONAL STATE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CONSTIPATION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CONTRAINDICATED PRODUCT PRESCRIBED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CONTUSION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_COORDINATION ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CORONARY ARTERY OCCLUSION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_COUGH=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_COVID-19=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_CRUSH SYNDROME=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DEAFNESS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DEATH=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DECREASED APPETITE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DEHYDRATION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DEPRESSED LEVEL OF CONSCIOUSNESS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DEPRESSED MOOD=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DEPRESSION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DIABETES MELLITUS INADEQUATE CONTROL=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DIABETES MELLITUS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DIARRHOEA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DIPLOPIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DISEASE PROGRESSION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DISEASE RECURRENCE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DIVERTICULITIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DIZZINESS POSTURAL=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DIZZINESS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DRUG HYPERSENSITIVITY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DRUG INEFFECTIVE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DRUG INTERACTION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DRUG INTOLERANCE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DRUG LEVEL INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DRUG REACTION WITH EOSINOPHILIA AND SYSTEMIC SYMPTOMS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DRUG-DISEASE INTERACTION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DRUG-INDUCED LIVER INJURY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DRY MOUTH=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DYSPEPSIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DYSPHAGIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DYSPNOEA EXERTIONAL=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_DYSPNOEA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ELECTROCARDIOGRAM QT PROLONGED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_EMOTIONAL DISTRESS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_EOSINOPHILIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ERECTILE DYSFUNCTION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ERYTHEMA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ERYTHROMELALGIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_EXERCISE TOLERANCE DECREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_EXFOLIATIVE RASH=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_EYE PRURITUS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_EYE SWELLING=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_EYELID PTOSIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_FACE OEDEMA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_FALL=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_FATIGUE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_FEELING ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_FEELING COLD=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_FLATULENCE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_FOOT DEFORMITY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_GAIT DISTURBANCE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_GAIT INABILITY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_GAMMA-GLUTAMYLTRANSFERASE INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_GASTROINTESTINAL DISORDER=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_GASTROINTESTINAL HAEMORRHAGE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_GASTROINTESTINAL MUCOSAL DISORDER=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_GASTROINTESTINAL PAIN=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_GASTROOESOPHAGEAL REFLUX DISEASE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_GENERAL PHYSICAL HEALTH DETERIORATION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_GENERALISED OEDEMA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_GLOMERULAR FILTRATION RATE DECREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_GLOMERULONEPHRITIS MINIMAL LESION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_GOUT=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HAEMATOCHEZIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HAEMATURIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HAEMOGLOBIN DECREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HALLUCINATION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HEAD INJURY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HEADACHE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HEART RATE INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HEART RATE IRREGULAR=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HEPATIC CYTOLYSIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HEPATIC ENZYME INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HEPATIC FUNCTION ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HEPATIC STEATOSIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HEPATITIS ACUTE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HEPATITIS CHOLESTATIC=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HEPATITIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HEPATOCELLULAR INJURY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HEPATOTOXICITY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HERNIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HMG COA REDUCTASE ANTIBODY TEST=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HOSPITALISATION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HYPERBILIRUBINAEMIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HYPERHIDROSIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HYPERKALAEMIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HYPERPHOSPHATAEMIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HYPERSENSITIVITY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HYPERTENSION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HYPERTHYROIDISM=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HYPERTRANSAMINASAEMIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HYPERVOLAEMIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HYPOACUSIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HYPOAESTHESIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HYPOALBUMINAEMIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HYPOCALCAEMIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HYPOKALAEMIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HYPONATRAEMIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_HYPOTENSION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ILLNESS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_IMMUNE-MEDIATED MYOSITIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_INAPPROPRIATE SCHEDULE OF PRODUCT ADMINISTRATION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_INCORRECT ROUTE OF PRODUCT ADMINISTRATION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_INFECTION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_INFLUENZA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_INSOMNIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_INTENTIONAL OVERDOSE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_INTENTIONAL PRODUCT MISUSE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_INTERSTITIAL LUNG DISEASE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_INTERVERTEBRAL DISC PROTRUSION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_IRRITABILITY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ISCHAEMIC STROKE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_JAUNDICE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_JOINT EFFUSION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_JOINT STIFFNESS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_JOINT SWELLING=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_LARGE INTESTINE POLYP=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_LETHARGY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_LIP DRY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_LIP PAIN=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_LIP SWELLING=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_LIPOPROTEIN (A) INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_LIVER DISORDER=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_LIVER FUNCTION TEST ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_LIVER FUNCTION TEST INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_LIVER INJURY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_LOSS OF CONSCIOUSNESS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_LOSS OF LIBIDO=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_LOSS OF PERSONAL INDEPENDENCE IN DAILY ACTIVITIES=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_LOWER RESPIRATORY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_LUNG DISORDER=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MALAISE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MALNUTRITION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MASTICATION DISORDER=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MEDICATION ERROR=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MEMORY IMPAIRMENT=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MENTAL FATIGUE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MENTAL IMPAIRMENT=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_METABOLIC ACIDOSIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MIOSIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MIXED LIVER INJURY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MOBILITY DECREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MOUTH ULCERATION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MULTIPLE ORGAN DYSFUNCTION SYNDROME=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MUSCLE ATROPHY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MUSCLE RUPTURE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MUSCLE SPASMS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MUSCLE TIGHTNESS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MUSCLE TWITCHING=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MUSCULAR WEAKNESS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MUSCULOSKELETAL CHEST PAIN=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MUSCULOSKELETAL STIFFNESS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MYALGIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MYASTHENIA GRAVIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MYOCARDIAL INFARCTION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MYOCARDITIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MYOGLOBIN BLOOD INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MYOPATHY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_MYOSITIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_NASAL CONGESTION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_NASAL OEDEMA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_NASOPHARYNGITIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_NAUSEA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_NECK PAIN=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_NECROTISING MYOSITIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_NEPHROPATHY TOXIC=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_NEPHROTIC SYNDROME=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_NEURALGIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_NEUROPATHY PERIPHERAL=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_NEUTROPENIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_OEDEMA PERIPHERAL=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_OEDEMA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_OFF LABEL USE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_OLIGURIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ORAL MUCOSAL BLISTERING=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_ORAL PAIN=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_OROPHARYNGEAL PAIN=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_OSTEOARTHRITIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_OSTEOPOROSIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PAIN IN EXTREMITY=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PAIN IN JAW=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PAIN=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PALLIATIVE CARE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PALPITATIONS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PANCREATITIS ACUTE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PANIC ATTACK=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PARAESTHESIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PARKINSON'S DISEASE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PERIPHERAL SWELLING=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PHARYNGEAL SWELLING=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PLATELET COUNT DECREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PLATELET COUNT INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PLEURAL EFFUSION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PNEUMONIA ASPIRATION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PNEUMONIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_POLYMYOSITIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_POOR QUALITY SLEEP=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_POTENTIATING DRUG INTERACTION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PRESYNCOPE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PRODUCT DOSE OMISSION ISSUE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PRODUCT SUBSTITUTION ISSUE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PRODUCT USE IN UNAPPROVED INDICATION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PRODUCT USE ISSUE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PRODUCTIVE COUGH=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PROTEINURIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PRURITUS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PSYCHOGENIC LOSS OF APPETITE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PULMONARY EMBOLISM=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PUSTULAR PSORIASIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_PYREXIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_RASH ERYTHEMATOUS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_RASH PRURITIC=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_RASH=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_RECTAL HAEMORRHAGE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_RED BLOOD CELL COUNT DECREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_REFLUX GASTRITIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_RENAL DISORDER=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_RENAL FAILURE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_RENAL IMPAIRMENT=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_RENAL TUBULAR NECROSIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_RESPIRATORY FAILURE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_RESPIRATORY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_RESTLESS LEGS SYNDROME=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_RHABDOMYOLYSIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_RHINORRHOEA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_SEPSIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_SERUM FERRITIN INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_SHOCK=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_SKIN BURNING SENSATION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_SLEEP APNOEA SYNDROME=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_SLEEP DISORDER=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_SNEEZING=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_SOMNOLENCE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_SPINAL FRACTURE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_SUDDEN HEARING LOSS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_SUICIDAL IDEATION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_SWELLING=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_SWOLLEN TONGUE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_SYNCOPE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_TACHYCARDIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_TENDON DISCOMFORT=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_TENDON DISORDER=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_TENDON PAIN=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_TENDON RUPTURE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_TENDONITIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_THERAPEUTIC PRODUCT EFFECT INCOMPLETE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_THROMBOCYTOPENIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_THROMBOSIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_TINNITUS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_TOXICITY TO VARIOUS AGENTS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_TRANSAMINASES INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_TRANSIENT ISCHAEMIC ATTACK=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_TREATMENT FAILURE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_TREATMENT NONCOMPLIANCE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_TROPONIN INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_TUBULOINTERSTITIAL NEPHRITIS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_UMBILICAL HERNIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_UPPER RESPIRATORY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_URGE INCONTINENCE=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_URINARY RETENTION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_URINARY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_URINE OUTPUT DECREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_URTICARIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_VASCULAR PAIN=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_VENTRICULAR TACHYCARDIA=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_VERTIGO=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_VISION BLURRED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_VISUAL IMPAIRMENT=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_VITREOUS FLOATERS=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_VOMITING=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_VULVOVAGINAL PAIN=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_WEIGHT DECREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_WEIGHT INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_WHEEZING=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_WHITE BLOOD CELL COUNT INCREASED=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_WOUND=1""]",0,statin_reaction
+"[""DRUG_lovastatin=1"",""REAC_WRONG TECHNIQUE IN PRODUCT USAGE PROCESS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""DRUG_pravastatin=1""]",0,statin_statin
+"[""DRUG_pitavastatin=1"",""DRUG_rosuvastatin=1""]",0,statin_statin
+"[""DRUG_pitavastatin=1"",""DRUG_simvastatin=1""]",0,statin_statin
+"[""DRUG_pitavastatin=1"",""REAC_ABDOMINAL DISCOMFORT=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ABDOMINAL DISTENSION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ABDOMINAL HERNIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ABDOMINAL PAIN UPPER=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ABDOMINAL PAIN=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ABNORMAL DREAMS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ABNORMAL LOSS OF WEIGHT=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ACCIDENTAL OVERDOSE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ACUTE KIDNEY INJURY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ACUTE MYOCARDIAL INFARCTION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ADVERSE DRUG REACTION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_AGGRESSION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_AGITATION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ALANINE AMINOTRANSFERASE INCREASED=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ALOPECIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_AMNESIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ANAEMIA=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ANGINA PECTORIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ANGIOEDEMA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ANTIBODY TEST POSITIVE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ANXIETY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ARRHYTHMIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ARTHRALGIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ARTHRITIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ARTHROPATHY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ASPARTATE AMINOTRANSFERASE INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ASPIRATION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ASTHENIA=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ASTHMA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ATRIAL FIBRILLATION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_AUTOIMMUNE HEPATITIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_AUTOIMMUNE MYOSITIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BACK PAIN=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BACTERIAL SEPSIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BALANCE DISORDER=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BEDRIDDEN=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BLISTER=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BLOOD ALKALINE PHOSPHATASE INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BLOOD CALCIUM DECREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BLOOD CALCIUM INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BLOOD CHOLESTEROL DECREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BLOOD CHOLESTEROL INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BLOOD CREATINE PHOSPHOKINASE INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BLOOD CREATININE ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BLOOD CREATININE INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BLOOD GLUCOSE INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BLOOD POTASSIUM INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BLOOD PRESSURE DECREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BLOOD PRESSURE INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BLOOD TEST ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BLOOD UREA INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BLOOD URINE PRESENT=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BONE PAIN=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BRADYCARDIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BRAIN FOG=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BULBAR PALSY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_BURNING SENSATION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_C-REACTIVE PROTEIN INCREASED=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CARDIAC ARREST=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CARDIAC FAILURE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CARDIO-RESPIRATORY ARREST=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CARDIOGENIC SHOCK=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CARPAL TUNNEL SYNDROME=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CEREBROVASCULAR ACCIDENT=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CHEST DISCOMFORT=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CHEST PAIN=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CHOLELITHIASIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CHOLESTASIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CHROMATURIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CHRONIC KIDNEY DISEASE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CHRONIC LYMPHOCYTIC LEUKAEMIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CHRONIC OBSTRUCTIVE PULMONARY DISEASE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_COAGULOPATHY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_COGNITIVE DISORDER=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_COLITIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CONDITION AGGRAVATED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CONFUSIONAL STATE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CONSTIPATION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CONTRAINDICATED PRODUCT PRESCRIBED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CONTUSION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_COORDINATION ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CORONARY ARTERY OCCLUSION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_COUGH=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_COVID-19=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_CRUSH SYNDROME=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DEAFNESS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DEATH=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DECREASED APPETITE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DEHYDRATION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DEPRESSED LEVEL OF CONSCIOUSNESS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DEPRESSED MOOD=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DEPRESSION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DIABETES MELLITUS INADEQUATE CONTROL=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DIABETES MELLITUS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DIARRHOEA=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DIPLOPIA=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DISEASE PROGRESSION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DISEASE RECURRENCE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DIVERTICULITIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DIZZINESS POSTURAL=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DIZZINESS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DRUG HYPERSENSITIVITY=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DRUG INEFFECTIVE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DRUG INTERACTION=1""]",3,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DRUG INTOLERANCE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DRUG LEVEL INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DRUG REACTION WITH EOSINOPHILIA AND SYSTEMIC SYMPTOMS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DRUG-DISEASE INTERACTION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DRUG-INDUCED LIVER INJURY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DRY MOUTH=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DYSPEPSIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DYSPHAGIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DYSPNOEA EXERTIONAL=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_DYSPNOEA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ELECTROCARDIOGRAM QT PROLONGED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_EMOTIONAL DISTRESS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_EOSINOPHILIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ERECTILE DYSFUNCTION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ERYTHEMA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ERYTHROMELALGIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_EXERCISE TOLERANCE DECREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_EXFOLIATIVE RASH=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_EYE PRURITUS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_EYE SWELLING=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_EYELID PTOSIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_FACE OEDEMA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_FALL=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_FATIGUE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_FEELING ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_FEELING COLD=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_FLATULENCE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_FOOT DEFORMITY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_GAIT DISTURBANCE=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_GAIT INABILITY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_GAMMA-GLUTAMYLTRANSFERASE INCREASED=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_GASTROINTESTINAL DISORDER=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_GASTROINTESTINAL HAEMORRHAGE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_GASTROINTESTINAL MUCOSAL DISORDER=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_GASTROINTESTINAL PAIN=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_GASTROOESOPHAGEAL REFLUX DISEASE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_GENERAL PHYSICAL HEALTH DETERIORATION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_GENERALISED OEDEMA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_GLOMERULAR FILTRATION RATE DECREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_GLOMERULONEPHRITIS MINIMAL LESION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_GOUT=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HAEMATOCHEZIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HAEMATURIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HAEMOGLOBIN DECREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HALLUCINATION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HEAD INJURY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HEADACHE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HEART RATE INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HEART RATE IRREGULAR=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HEPATIC CYTOLYSIS=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HEPATIC ENZYME INCREASED=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HEPATIC FUNCTION ABNORMAL=1""]",2,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HEPATIC STEATOSIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HEPATITIS ACUTE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HEPATITIS CHOLESTATIC=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HEPATITIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HEPATOCELLULAR INJURY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HEPATOTOXICITY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HERNIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HMG COA REDUCTASE ANTIBODY TEST=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HOSPITALISATION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HYPERBILIRUBINAEMIA=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HYPERHIDROSIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HYPERKALAEMIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HYPERPHOSPHATAEMIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HYPERSENSITIVITY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HYPERTENSION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HYPERTHYROIDISM=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HYPERTRANSAMINASAEMIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HYPERVOLAEMIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HYPOACUSIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HYPOAESTHESIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HYPOALBUMINAEMIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HYPOCALCAEMIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HYPOKALAEMIA=1""]",2,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HYPONATRAEMIA=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_HYPOTENSION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ILLNESS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_IMMUNE-MEDIATED MYOSITIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_INAPPROPRIATE SCHEDULE OF PRODUCT ADMINISTRATION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_INCORRECT ROUTE OF PRODUCT ADMINISTRATION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_INFECTION=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_INFLUENZA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_INSOMNIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_INTENTIONAL OVERDOSE=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_INTENTIONAL PRODUCT MISUSE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_INTERSTITIAL LUNG DISEASE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_INTERVERTEBRAL DISC PROTRUSION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_IRRITABILITY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ISCHAEMIC STROKE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_JAUNDICE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_JOINT EFFUSION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_JOINT STIFFNESS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_JOINT SWELLING=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_LARGE INTESTINE POLYP=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_LETHARGY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_LIP DRY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_LIP PAIN=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_LIP SWELLING=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_LIPOPROTEIN (A) INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_LIVER DISORDER=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_LIVER FUNCTION TEST ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_LIVER FUNCTION TEST INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_LIVER INJURY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_LOSS OF CONSCIOUSNESS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_LOSS OF LIBIDO=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_LOSS OF PERSONAL INDEPENDENCE IN DAILY ACTIVITIES=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_LOWER RESPIRATORY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_LUNG DISORDER=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MALAISE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MALNUTRITION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MASTICATION DISORDER=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MEDICATION ERROR=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MEMORY IMPAIRMENT=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MENTAL FATIGUE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MENTAL IMPAIRMENT=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_METABOLIC ACIDOSIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MIOSIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MIXED LIVER INJURY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MOBILITY DECREASED=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MOUTH ULCERATION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MULTIPLE ORGAN DYSFUNCTION SYNDROME=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MUSCLE ATROPHY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MUSCLE RUPTURE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MUSCLE SPASMS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MUSCLE TIGHTNESS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MUSCLE TWITCHING=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MUSCULAR WEAKNESS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MUSCULOSKELETAL CHEST PAIN=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MUSCULOSKELETAL STIFFNESS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MYALGIA=1""]",4,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MYASTHENIA GRAVIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MYOCARDIAL INFARCTION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MYOCARDITIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MYOGLOBIN BLOOD INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MYOPATHY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_MYOSITIS=1""]",2,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_NASAL CONGESTION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_NASAL OEDEMA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_NASOPHARYNGITIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_NAUSEA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_NECK PAIN=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_NECROTISING MYOSITIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_NEPHROPATHY TOXIC=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_NEPHROTIC SYNDROME=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_NEURALGIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_NEUROPATHY PERIPHERAL=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_NEUTROPENIA=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_OEDEMA PERIPHERAL=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_OEDEMA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_OFF LABEL USE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_OLIGURIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ORAL MUCOSAL BLISTERING=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_ORAL PAIN=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_OROPHARYNGEAL PAIN=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_OSTEOARTHRITIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_OSTEOPOROSIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PAIN IN EXTREMITY=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PAIN IN JAW=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PAIN=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PALLIATIVE CARE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PALPITATIONS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PANCREATITIS ACUTE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PANIC ATTACK=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PARAESTHESIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PARKINSON'S DISEASE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PERIPHERAL SWELLING=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PHARYNGEAL SWELLING=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PLATELET COUNT DECREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PLATELET COUNT INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PLEURAL EFFUSION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PNEUMONIA ASPIRATION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PNEUMONIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_POLYMYOSITIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_POOR QUALITY SLEEP=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_POTENTIATING DRUG INTERACTION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PRESYNCOPE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PRODUCT DOSE OMISSION ISSUE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PRODUCT SUBSTITUTION ISSUE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PRODUCT USE IN UNAPPROVED INDICATION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PRODUCT USE ISSUE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PRODUCTIVE COUGH=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PROTEINURIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PRURITUS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PSYCHOGENIC LOSS OF APPETITE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PULMONARY EMBOLISM=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PUSTULAR PSORIASIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_PYREXIA=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_RASH ERYTHEMATOUS=1""]",2,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_RASH PRURITIC=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_RASH=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_RECTAL HAEMORRHAGE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_RED BLOOD CELL COUNT DECREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_REFLUX GASTRITIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_RENAL DISORDER=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_RENAL FAILURE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_RENAL IMPAIRMENT=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_RENAL TUBULAR NECROSIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_RESPIRATORY FAILURE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_RESPIRATORY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_RESTLESS LEGS SYNDROME=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_RHABDOMYOLYSIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_RHINORRHOEA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_SEPSIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_SERUM FERRITIN INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_SHOCK=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_SKIN BURNING SENSATION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_SLEEP APNOEA SYNDROME=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_SLEEP DISORDER=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_SNEEZING=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_SOMNOLENCE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_SPINAL FRACTURE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_SUDDEN HEARING LOSS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_SUICIDAL IDEATION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_SWELLING=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_SWOLLEN TONGUE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_SYNCOPE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_TACHYCARDIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_TENDON DISCOMFORT=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_TENDON DISORDER=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_TENDON PAIN=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_TENDON RUPTURE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_TENDONITIS=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_THERAPEUTIC PRODUCT EFFECT INCOMPLETE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_THROMBOCYTOPENIA=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_THROMBOSIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_TINNITUS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_TOXICITY TO VARIOUS AGENTS=1""]",1,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_TRANSAMINASES INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_TRANSIENT ISCHAEMIC ATTACK=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_TREATMENT FAILURE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_TREATMENT NONCOMPLIANCE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_TROPONIN INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_TUBULOINTERSTITIAL NEPHRITIS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_UMBILICAL HERNIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_UPPER RESPIRATORY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_URGE INCONTINENCE=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_URINARY RETENTION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_URINARY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_URINE OUTPUT DECREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_URTICARIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_VASCULAR PAIN=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_VENTRICULAR TACHYCARDIA=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_VERTIGO=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_VISION BLURRED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_VISUAL IMPAIRMENT=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_VITREOUS FLOATERS=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_VOMITING=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_VULVOVAGINAL PAIN=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_WEIGHT DECREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_WEIGHT INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_WHEEZING=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_WHITE BLOOD CELL COUNT INCREASED=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_WOUND=1""]",0,statin_reaction
+"[""DRUG_pitavastatin=1"",""REAC_WRONG TECHNIQUE IN PRODUCT USAGE PROCESS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""DRUG_rosuvastatin=1""]",0,statin_statin
+"[""DRUG_pravastatin=1"",""DRUG_simvastatin=1""]",0,statin_statin
+"[""DRUG_pravastatin=1"",""REAC_ABDOMINAL DISCOMFORT=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ABDOMINAL DISTENSION=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ABDOMINAL HERNIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ABDOMINAL PAIN UPPER=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ABDOMINAL PAIN=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ABNORMAL DREAMS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ABNORMAL LOSS OF WEIGHT=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ACCIDENTAL OVERDOSE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ACUTE KIDNEY INJURY=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ACUTE MYOCARDIAL INFARCTION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ADVERSE DRUG REACTION=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_AGGRESSION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_AGITATION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ALANINE AMINOTRANSFERASE INCREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ALOPECIA=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_AMNESIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ANAEMIA=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ANGINA PECTORIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ANGIOEDEMA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ANTIBODY TEST POSITIVE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ANXIETY=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ARRHYTHMIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ARTHRALGIA=1""]",5,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ARTHRITIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ARTHROPATHY=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ASPARTATE AMINOTRANSFERASE INCREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ASPIRATION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ASTHENIA=1""]",2,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ASTHMA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ATRIAL FIBRILLATION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_AUTOIMMUNE HEPATITIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_AUTOIMMUNE MYOSITIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BACK PAIN=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BACTERIAL SEPSIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BALANCE DISORDER=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BEDRIDDEN=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BLISTER=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BLOOD ALKALINE PHOSPHATASE INCREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BLOOD CALCIUM DECREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BLOOD CALCIUM INCREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BLOOD CHOLESTEROL DECREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BLOOD CHOLESTEROL INCREASED=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BLOOD CREATINE PHOSPHOKINASE INCREASED=1""]",3,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BLOOD CREATININE ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BLOOD CREATININE INCREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BLOOD GLUCOSE INCREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BLOOD POTASSIUM INCREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BLOOD PRESSURE DECREASED=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BLOOD PRESSURE INCREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BLOOD TEST ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BLOOD UREA INCREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BLOOD URINE PRESENT=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BONE PAIN=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BRADYCARDIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BRAIN FOG=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BULBAR PALSY=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_BURNING SENSATION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_C-REACTIVE PROTEIN INCREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CARDIAC ARREST=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CARDIAC FAILURE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CARDIO-RESPIRATORY ARREST=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CARDIOGENIC SHOCK=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CARPAL TUNNEL SYNDROME=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CEREBROVASCULAR ACCIDENT=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CHEST DISCOMFORT=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CHEST PAIN=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CHOLELITHIASIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CHOLESTASIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CHROMATURIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CHRONIC KIDNEY DISEASE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CHRONIC LYMPHOCYTIC LEUKAEMIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CHRONIC OBSTRUCTIVE PULMONARY DISEASE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_COAGULOPATHY=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_COGNITIVE DISORDER=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_COLITIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CONDITION AGGRAVATED=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CONFUSIONAL STATE=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CONSTIPATION=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CONTRAINDICATED PRODUCT PRESCRIBED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CONTUSION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_COORDINATION ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CORONARY ARTERY OCCLUSION=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_COUGH=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_COVID-19=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_CRUSH SYNDROME=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DEAFNESS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DEATH=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DECREASED APPETITE=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DEHYDRATION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DEPRESSED LEVEL OF CONSCIOUSNESS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DEPRESSED MOOD=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DEPRESSION=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DIABETES MELLITUS INADEQUATE CONTROL=1""]",2,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DIABETES MELLITUS=1""]",2,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DIARRHOEA=1""]",4,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DIPLOPIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DISEASE PROGRESSION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DISEASE RECURRENCE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DIVERTICULITIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DIZZINESS POSTURAL=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DIZZINESS=1""]",2,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DRUG HYPERSENSITIVITY=1""]",2,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DRUG INEFFECTIVE=1""]",3,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DRUG INTERACTION=1""]",9,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DRUG INTOLERANCE=1""]",3,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DRUG LEVEL INCREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DRUG REACTION WITH EOSINOPHILIA AND SYSTEMIC SYMPTOMS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DRUG-DISEASE INTERACTION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DRUG-INDUCED LIVER INJURY=1""]",4,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DRY MOUTH=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DYSPEPSIA=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DYSPHAGIA=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DYSPNOEA EXERTIONAL=1""]",2,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_DYSPNOEA=1""]",2,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ELECTROCARDIOGRAM QT PROLONGED=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_EMOTIONAL DISTRESS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_EOSINOPHILIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ERECTILE DYSFUNCTION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ERYTHEMA=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ERYTHROMELALGIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_EXERCISE TOLERANCE DECREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_EXFOLIATIVE RASH=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_EYE PRURITUS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_EYE SWELLING=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_EYELID PTOSIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_FACE OEDEMA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_FALL=1""]",2,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_FATIGUE=1""]",3,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_FEELING ABNORMAL=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_FEELING COLD=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_FLATULENCE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_FOOT DEFORMITY=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_GAIT DISTURBANCE=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_GAIT INABILITY=1""]",2,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_GAMMA-GLUTAMYLTRANSFERASE INCREASED=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_GASTROINTESTINAL DISORDER=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_GASTROINTESTINAL HAEMORRHAGE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_GASTROINTESTINAL MUCOSAL DISORDER=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_GASTROINTESTINAL PAIN=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_GASTROOESOPHAGEAL REFLUX DISEASE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_GENERAL PHYSICAL HEALTH DETERIORATION=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_GENERALISED OEDEMA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_GLOMERULAR FILTRATION RATE DECREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_GLOMERULONEPHRITIS MINIMAL LESION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_GOUT=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HAEMATOCHEZIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HAEMATURIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HAEMOGLOBIN DECREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HALLUCINATION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HEAD INJURY=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HEADACHE=1""]",2,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HEART RATE INCREASED=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HEART RATE IRREGULAR=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HEPATIC CYTOLYSIS=1""]",4,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HEPATIC ENZYME INCREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HEPATIC FUNCTION ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HEPATIC STEATOSIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HEPATITIS ACUTE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HEPATITIS CHOLESTATIC=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HEPATITIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HEPATOCELLULAR INJURY=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HEPATOTOXICITY=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HERNIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HMG COA REDUCTASE ANTIBODY TEST=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HOSPITALISATION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HYPERBILIRUBINAEMIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HYPERHIDROSIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HYPERKALAEMIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HYPERPHOSPHATAEMIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HYPERSENSITIVITY=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HYPERTENSION=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HYPERTHYROIDISM=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HYPERTRANSAMINASAEMIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HYPERVOLAEMIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HYPOACUSIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HYPOAESTHESIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HYPOALBUMINAEMIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HYPOCALCAEMIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HYPOKALAEMIA=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HYPONATRAEMIA=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_HYPOTENSION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ILLNESS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_IMMUNE-MEDIATED MYOSITIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_INAPPROPRIATE SCHEDULE OF PRODUCT ADMINISTRATION=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_INCORRECT ROUTE OF PRODUCT ADMINISTRATION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_INFECTION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_INFLUENZA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_INSOMNIA=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_INTENTIONAL OVERDOSE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_INTENTIONAL PRODUCT MISUSE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_INTERSTITIAL LUNG DISEASE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_INTERVERTEBRAL DISC PROTRUSION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_IRRITABILITY=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ISCHAEMIC STROKE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_JAUNDICE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_JOINT EFFUSION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_JOINT STIFFNESS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_JOINT SWELLING=1""]",3,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_LARGE INTESTINE POLYP=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_LETHARGY=1""]",2,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_LIP DRY=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_LIP PAIN=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_LIP SWELLING=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_LIPOPROTEIN (A) INCREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_LIVER DISORDER=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_LIVER FUNCTION TEST ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_LIVER FUNCTION TEST INCREASED=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_LIVER INJURY=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_LOSS OF CONSCIOUSNESS=1""]",2,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_LOSS OF LIBIDO=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_LOSS OF PERSONAL INDEPENDENCE IN DAILY ACTIVITIES=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_LOWER RESPIRATORY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_LUNG DISORDER=1""]",2,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MALAISE=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MALNUTRITION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MASTICATION DISORDER=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MEDICATION ERROR=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MEMORY IMPAIRMENT=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MENTAL FATIGUE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MENTAL IMPAIRMENT=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_METABOLIC ACIDOSIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MIOSIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MIXED LIVER INJURY=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MOBILITY DECREASED=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MOUTH ULCERATION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MULTIPLE ORGAN DYSFUNCTION SYNDROME=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MUSCLE ATROPHY=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MUSCLE RUPTURE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MUSCLE SPASMS=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MUSCLE TIGHTNESS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MUSCLE TWITCHING=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MUSCULAR WEAKNESS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MUSCULOSKELETAL CHEST PAIN=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MUSCULOSKELETAL STIFFNESS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MYALGIA=1""]",9,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MYASTHENIA GRAVIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MYOCARDIAL INFARCTION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MYOCARDITIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MYOGLOBIN BLOOD INCREASED=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MYOPATHY=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_MYOSITIS=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_NASAL CONGESTION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_NASAL OEDEMA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_NASOPHARYNGITIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_NAUSEA=1""]",3,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_NECK PAIN=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_NECROTISING MYOSITIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_NEPHROPATHY TOXIC=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_NEPHROTIC SYNDROME=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_NEURALGIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_NEUROPATHY PERIPHERAL=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_NEUTROPENIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_OEDEMA PERIPHERAL=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_OEDEMA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_OFF LABEL USE=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_OLIGURIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ORAL MUCOSAL BLISTERING=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_ORAL PAIN=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_OROPHARYNGEAL PAIN=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_OSTEOARTHRITIS=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_OSTEOPOROSIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PAIN IN EXTREMITY=1""]",4,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PAIN IN JAW=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PAIN=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PALLIATIVE CARE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PALPITATIONS=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PANCREATITIS ACUTE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PANIC ATTACK=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PARAESTHESIA=1""]",4,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PARKINSON'S DISEASE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PERIPHERAL SWELLING=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PHARYNGEAL SWELLING=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PLATELET COUNT DECREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PLATELET COUNT INCREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PLEURAL EFFUSION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PNEUMONIA ASPIRATION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PNEUMONIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_POLYMYOSITIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_POOR QUALITY SLEEP=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_POTENTIATING DRUG INTERACTION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PRESYNCOPE=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PRODUCT DOSE OMISSION ISSUE=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PRODUCT SUBSTITUTION ISSUE=1""]",3,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PRODUCT USE IN UNAPPROVED INDICATION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PRODUCT USE ISSUE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PRODUCTIVE COUGH=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PROTEINURIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PRURITUS=1""]",4,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PSYCHOGENIC LOSS OF APPETITE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PULMONARY EMBOLISM=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PUSTULAR PSORIASIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_PYREXIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_RASH ERYTHEMATOUS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_RASH PRURITIC=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_RASH=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_RECTAL HAEMORRHAGE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_RED BLOOD CELL COUNT DECREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_REFLUX GASTRITIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_RENAL DISORDER=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_RENAL FAILURE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_RENAL IMPAIRMENT=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_RENAL TUBULAR NECROSIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_RESPIRATORY FAILURE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_RESPIRATORY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_RESTLESS LEGS SYNDROME=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_RHABDOMYOLYSIS=1""]",2,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_RHINORRHOEA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_SEPSIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_SERUM FERRITIN INCREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_SHOCK=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_SKIN BURNING SENSATION=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_SLEEP APNOEA SYNDROME=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_SLEEP DISORDER=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_SNEEZING=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_SOMNOLENCE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_SPINAL FRACTURE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_SUDDEN HEARING LOSS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_SUICIDAL IDEATION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_SWELLING=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_SWOLLEN TONGUE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_SYNCOPE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_TACHYCARDIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_TENDON DISCOMFORT=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_TENDON DISORDER=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_TENDON PAIN=1""]",3,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_TENDON RUPTURE=1""]",6,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_TENDONITIS=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_THERAPEUTIC PRODUCT EFFECT INCOMPLETE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_THROMBOCYTOPENIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_THROMBOSIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_TINNITUS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_TOXICITY TO VARIOUS AGENTS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_TRANSAMINASES INCREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_TRANSIENT ISCHAEMIC ATTACK=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_TREATMENT FAILURE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_TREATMENT NONCOMPLIANCE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_TROPONIN INCREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_TUBULOINTERSTITIAL NEPHRITIS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_UMBILICAL HERNIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_UPPER RESPIRATORY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_URGE INCONTINENCE=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_URINARY RETENTION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_URINARY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_URINE OUTPUT DECREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_URTICARIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_VASCULAR PAIN=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_VENTRICULAR TACHYCARDIA=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_VERTIGO=1""]",2,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_VISION BLURRED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_VISUAL IMPAIRMENT=1""]",3,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_VITREOUS FLOATERS=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_VOMITING=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_VULVOVAGINAL PAIN=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_WEIGHT DECREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_WEIGHT INCREASED=1""]",1,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_WHEEZING=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_WHITE BLOOD CELL COUNT INCREASED=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_WOUND=1""]",0,statin_reaction
+"[""DRUG_pravastatin=1"",""REAC_WRONG TECHNIQUE IN PRODUCT USAGE PROCESS=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""DRUG_simvastatin=1""]",0,statin_statin
+"[""DRUG_rosuvastatin=1"",""REAC_ABDOMINAL DISCOMFORT=1""]",12,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ABDOMINAL DISTENSION=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ABDOMINAL HERNIA=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ABDOMINAL PAIN UPPER=1""]",18,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ABDOMINAL PAIN=1""]",16,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ABNORMAL DREAMS=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ABNORMAL LOSS OF WEIGHT=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ACCIDENTAL OVERDOSE=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ACUTE KIDNEY INJURY=1""]",111,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ACUTE MYOCARDIAL INFARCTION=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ADVERSE DRUG REACTION=1""]",6,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_AGGRESSION=1""]",11,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_AGITATION=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ALANINE AMINOTRANSFERASE INCREASED=1""]",11,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ALOPECIA=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_AMNESIA=1""]",8,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ANAEMIA=1""]",6,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ANGINA PECTORIS=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ANGIOEDEMA=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ANTIBODY TEST POSITIVE=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ANXIETY=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ARRHYTHMIA=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ARTHRALGIA=1""]",58,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ARTHRITIS=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ARTHROPATHY=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ASPARTATE AMINOTRANSFERASE INCREASED=1""]",11,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ASPIRATION=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ASTHENIA=1""]",15,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ASTHMA=1""]",18,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ATRIAL FIBRILLATION=1""]",15,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_AUTOIMMUNE HEPATITIS=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_AUTOIMMUNE MYOSITIS=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BACK PAIN=1""]",12,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BACTERIAL SEPSIS=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BALANCE DISORDER=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BEDRIDDEN=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BLISTER=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BLOOD ALKALINE PHOSPHATASE INCREASED=1""]",8,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BLOOD CALCIUM DECREASED=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BLOOD CALCIUM INCREASED=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BLOOD CHOLESTEROL DECREASED=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BLOOD CHOLESTEROL INCREASED=1""]",10,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BLOOD CREATINE PHOSPHOKINASE INCREASED=1""]",14,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BLOOD CREATININE ABNORMAL=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BLOOD CREATININE INCREASED=1""]",8,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BLOOD GLUCOSE INCREASED=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BLOOD POTASSIUM INCREASED=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BLOOD PRESSURE DECREASED=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BLOOD PRESSURE INCREASED=1""]",11,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BLOOD TEST ABNORMAL=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BLOOD UREA INCREASED=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BLOOD URINE PRESENT=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BONE PAIN=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BRADYCARDIA=1""]",6,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BRAIN FOG=1""]",30,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BULBAR PALSY=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_BURNING SENSATION=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_C-REACTIVE PROTEIN INCREASED=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CARDIAC ARREST=1""]",6,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CARDIAC FAILURE=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CARDIO-RESPIRATORY ARREST=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CARDIOGENIC SHOCK=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CARPAL TUNNEL SYNDROME=1""]",6,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CEREBROVASCULAR ACCIDENT=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CHEST DISCOMFORT=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CHEST PAIN=1""]",17,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CHOLELITHIASIS=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CHOLESTASIS=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CHROMATURIA=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CHRONIC KIDNEY DISEASE=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CHRONIC LYMPHOCYTIC LEUKAEMIA=1""]",6,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CHRONIC OBSTRUCTIVE PULMONARY DISEASE=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_COAGULOPATHY=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_COGNITIVE DISORDER=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_COLITIS=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CONDITION AGGRAVATED=1""]",8,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CONFUSIONAL STATE=1""]",9,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CONSTIPATION=1""]",19,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CONTRAINDICATED PRODUCT PRESCRIBED=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CONTUSION=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_COORDINATION ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CORONARY ARTERY OCCLUSION=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_COUGH=1""]",33,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_COVID-19=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_CRUSH SYNDROME=1""]",7,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DEAFNESS=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DEATH=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DECREASED APPETITE=1""]",11,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DEHYDRATION=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DEPRESSED LEVEL OF CONSCIOUSNESS=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DEPRESSED MOOD=1""]",20,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DEPRESSION=1""]",11,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DIABETES MELLITUS INADEQUATE CONTROL=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DIABETES MELLITUS=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DIARRHOEA=1""]",24,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DIPLOPIA=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DISEASE PROGRESSION=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DISEASE RECURRENCE=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DIVERTICULITIS=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DIZZINESS POSTURAL=1""]",7,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DIZZINESS=1""]",25,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DRUG HYPERSENSITIVITY=1""]",20,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DRUG INEFFECTIVE=1""]",12,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DRUG INTERACTION=1""]",80,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DRUG INTOLERANCE=1""]",23,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DRUG LEVEL INCREASED=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DRUG REACTION WITH EOSINOPHILIA AND SYSTEMIC SYMPTOMS=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DRUG-DISEASE INTERACTION=1""]",6,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DRUG-INDUCED LIVER INJURY=1""]",14,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DRY MOUTH=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DYSPEPSIA=1""]",12,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DYSPHAGIA=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DYSPNOEA EXERTIONAL=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_DYSPNOEA=1""]",42,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ELECTROCARDIOGRAM QT PROLONGED=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_EMOTIONAL DISTRESS=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_EOSINOPHILIA=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ERECTILE DYSFUNCTION=1""]",14,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ERYTHEMA=1""]",10,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ERYTHROMELALGIA=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_EXERCISE TOLERANCE DECREASED=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_EXFOLIATIVE RASH=1""]",7,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_EYE PRURITUS=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_EYE SWELLING=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_EYELID PTOSIS=1""]",11,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_FACE OEDEMA=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_FALL=1""]",20,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_FATIGUE=1""]",32,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_FEELING ABNORMAL=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_FEELING COLD=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_FLATULENCE=1""]",7,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_FOOT DEFORMITY=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_GAIT DISTURBANCE=1""]",17,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_GAIT INABILITY=1""]",8,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_GAMMA-GLUTAMYLTRANSFERASE INCREASED=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_GASTROINTESTINAL DISORDER=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_GASTROINTESTINAL HAEMORRHAGE=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_GASTROINTESTINAL MUCOSAL DISORDER=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_GASTROINTESTINAL PAIN=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_GASTROOESOPHAGEAL REFLUX DISEASE=1""]",23,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_GENERAL PHYSICAL HEALTH DETERIORATION=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_GENERALISED OEDEMA=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_GLOMERULAR FILTRATION RATE DECREASED=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_GLOMERULONEPHRITIS MINIMAL LESION=1""]",7,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_GOUT=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HAEMATOCHEZIA=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HAEMATURIA=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HAEMOGLOBIN DECREASED=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HALLUCINATION=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HEAD INJURY=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HEADACHE=1""]",25,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HEART RATE INCREASED=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HEART RATE IRREGULAR=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HEPATIC CYTOLYSIS=1""]",13,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HEPATIC ENZYME INCREASED=1""]",9,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HEPATIC FUNCTION ABNORMAL=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HEPATIC STEATOSIS=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HEPATITIS ACUTE=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HEPATITIS CHOLESTATIC=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HEPATITIS=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HEPATOCELLULAR INJURY=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HEPATOTOXICITY=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HERNIA=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HMG COA REDUCTASE ANTIBODY TEST=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HOSPITALISATION=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HYPERBILIRUBINAEMIA=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HYPERHIDROSIS=1""]",6,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HYPERKALAEMIA=1""]",6,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HYPERPHOSPHATAEMIA=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HYPERSENSITIVITY=1""]",7,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HYPERTENSION=1""]",7,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HYPERTHYROIDISM=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HYPERTRANSAMINASAEMIA=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HYPERVOLAEMIA=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HYPOACUSIS=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HYPOAESTHESIA=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HYPOALBUMINAEMIA=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HYPOCALCAEMIA=1""]",6,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HYPOKALAEMIA=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HYPONATRAEMIA=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_HYPOTENSION=1""]",11,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ILLNESS=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_IMMUNE-MEDIATED MYOSITIS=1""]",8,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_INAPPROPRIATE SCHEDULE OF PRODUCT ADMINISTRATION=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_INCORRECT ROUTE OF PRODUCT ADMINISTRATION=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_INFECTION=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_INFLUENZA=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_INSOMNIA=1""]",14,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_INTENTIONAL OVERDOSE=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_INTENTIONAL PRODUCT MISUSE=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_INTERSTITIAL LUNG DISEASE=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_INTERVERTEBRAL DISC PROTRUSION=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_IRRITABILITY=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ISCHAEMIC STROKE=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_JAUNDICE=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_JOINT EFFUSION=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_JOINT STIFFNESS=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_JOINT SWELLING=1""]",30,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_LARGE INTESTINE POLYP=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_LETHARGY=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_LIP DRY=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_LIP PAIN=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_LIP SWELLING=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_LIPOPROTEIN (A) INCREASED=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_LIVER DISORDER=1""]",8,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_LIVER FUNCTION TEST ABNORMAL=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_LIVER FUNCTION TEST INCREASED=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_LIVER INJURY=1""]",17,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_LOSS OF CONSCIOUSNESS=1""]",8,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_LOSS OF LIBIDO=1""]",6,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_LOSS OF PERSONAL INDEPENDENCE IN DAILY ACTIVITIES=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_LOWER RESPIRATORY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_LUNG DISORDER=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MALAISE=1""]",33,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MALNUTRITION=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MASTICATION DISORDER=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MEDICATION ERROR=1""]",17,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MEMORY IMPAIRMENT=1""]",17,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MENTAL FATIGUE=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MENTAL IMPAIRMENT=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_METABOLIC ACIDOSIS=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MIOSIS=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MIXED LIVER INJURY=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MOBILITY DECREASED=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MOUTH ULCERATION=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MULTIPLE ORGAN DYSFUNCTION SYNDROME=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MUSCLE ATROPHY=1""]",14,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MUSCLE RUPTURE=1""]",6,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MUSCLE SPASMS=1""]",56,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MUSCLE TIGHTNESS=1""]",7,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MUSCLE TWITCHING=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MUSCULAR WEAKNESS=1""]",14,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MUSCULOSKELETAL CHEST PAIN=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MUSCULOSKELETAL STIFFNESS=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MYALGIA=1""]",141,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MYASTHENIA GRAVIS=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MYOCARDIAL INFARCTION=1""]",9,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MYOCARDITIS=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MYOGLOBIN BLOOD INCREASED=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MYOPATHY=1""]",12,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_MYOSITIS=1""]",6,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_NASAL CONGESTION=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_NASAL OEDEMA=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_NASOPHARYNGITIS=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_NAUSEA=1""]",30,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_NECK PAIN=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_NECROTISING MYOSITIS=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_NEPHROPATHY TOXIC=1""]",6,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_NEPHROTIC SYNDROME=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_NEURALGIA=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_NEUROPATHY PERIPHERAL=1""]",7,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_NEUTROPENIA=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_OEDEMA PERIPHERAL=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_OEDEMA=1""]",19,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_OFF LABEL USE=1""]",11,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_OLIGURIA=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ORAL MUCOSAL BLISTERING=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_ORAL PAIN=1""]",11,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_OROPHARYNGEAL PAIN=1""]",8,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_OSTEOARTHRITIS=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_OSTEOPOROSIS=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PAIN IN EXTREMITY=1""]",23,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PAIN IN JAW=1""]",9,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PAIN=1""]",41,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PALLIATIVE CARE=1""]",7,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PALPITATIONS=1""]",6,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PANCREATITIS ACUTE=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PANIC ATTACK=1""]",10,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PARAESTHESIA=1""]",9,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PARKINSON'S DISEASE=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PERIPHERAL SWELLING=1""]",20,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PHARYNGEAL SWELLING=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PLATELET COUNT DECREASED=1""]",7,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PLATELET COUNT INCREASED=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PLEURAL EFFUSION=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PNEUMONIA ASPIRATION=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PNEUMONIA=1""]",19,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_POLYMYOSITIS=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_POOR QUALITY SLEEP=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_POTENTIATING DRUG INTERACTION=1""]",11,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PRESYNCOPE=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PRODUCT DOSE OMISSION ISSUE=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PRODUCT SUBSTITUTION ISSUE=1""]",8,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PRODUCT USE IN UNAPPROVED INDICATION=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PRODUCT USE ISSUE=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PRODUCTIVE COUGH=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PROTEINURIA=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PRURITUS=1""]",24,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PSYCHOGENIC LOSS OF APPETITE=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PULMONARY EMBOLISM=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PUSTULAR PSORIASIS=1""]",9,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_PYREXIA=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_RASH ERYTHEMATOUS=1""]",8,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_RASH PRURITIC=1""]",8,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_RASH=1""]",10,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_RECTAL HAEMORRHAGE=1""]",14,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_RED BLOOD CELL COUNT DECREASED=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_REFLUX GASTRITIS=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_RENAL DISORDER=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_RENAL FAILURE=1""]",7,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_RENAL IMPAIRMENT=1""]",7,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_RENAL TUBULAR NECROSIS=1""]",11,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_RESPIRATORY FAILURE=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_RESPIRATORY TRACT INFECTION=1""]",10,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_RESTLESS LEGS SYNDROME=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_RHABDOMYOLYSIS=1""]",127,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_RHINORRHOEA=1""]",10,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_SEPSIS=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_SERUM FERRITIN INCREASED=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_SHOCK=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_SKIN BURNING SENSATION=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_SLEEP APNOEA SYNDROME=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_SLEEP DISORDER=1""]",7,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_SNEEZING=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_SOMNOLENCE=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_SPINAL FRACTURE=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_SUDDEN HEARING LOSS=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_SUICIDAL IDEATION=1""]",7,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_SWELLING=1""]",19,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_SWOLLEN TONGUE=1""]",9,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_SYNCOPE=1""]",6,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_TACHYCARDIA=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_TENDON DISCOMFORT=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_TENDON DISORDER=1""]",10,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_TENDON PAIN=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_TENDON RUPTURE=1""]",19,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_TENDONITIS=1""]",7,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_THERAPEUTIC PRODUCT EFFECT INCOMPLETE=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_THROMBOCYTOPENIA=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_THROMBOSIS=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_TINNITUS=1""]",7,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_TOXICITY TO VARIOUS AGENTS=1""]",6,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_TRANSAMINASES INCREASED=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_TRANSIENT ISCHAEMIC ATTACK=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_TREATMENT FAILURE=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_TREATMENT NONCOMPLIANCE=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_TROPONIN INCREASED=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_TUBULOINTERSTITIAL NEPHRITIS=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_UMBILICAL HERNIA=1""]",2,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_UPPER RESPIRATORY TRACT INFECTION=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_URGE INCONTINENCE=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_URINARY RETENTION=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_URINARY TRACT INFECTION=1""]",5,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_URINE OUTPUT DECREASED=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_URTICARIA=1""]",13,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_VASCULAR PAIN=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_VENTRICULAR TACHYCARDIA=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_VERTIGO=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_VISION BLURRED=1""]",4,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_VISUAL IMPAIRMENT=1""]",13,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_VITREOUS FLOATERS=1""]",1,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_VOMITING=1""]",38,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_VULVOVAGINAL PAIN=1""]",8,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_WEIGHT DECREASED=1""]",8,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_WEIGHT INCREASED=1""]",6,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_WHEEZING=1""]",17,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_WHITE BLOOD CELL COUNT INCREASED=1""]",3,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_WOUND=1""]",0,statin_reaction
+"[""DRUG_rosuvastatin=1"",""REAC_WRONG TECHNIQUE IN PRODUCT USAGE PROCESS=1""]",7,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ABDOMINAL DISCOMFORT=1""]",6,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ABDOMINAL DISTENSION=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ABDOMINAL HERNIA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ABDOMINAL PAIN UPPER=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ABDOMINAL PAIN=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ABNORMAL DREAMS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ABNORMAL LOSS OF WEIGHT=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ACCIDENTAL OVERDOSE=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ACUTE KIDNEY INJURY=1""]",7,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ACUTE MYOCARDIAL INFARCTION=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ADVERSE DRUG REACTION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_AGGRESSION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_AGITATION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ALANINE AMINOTRANSFERASE INCREASED=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ALOPECIA=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_AMNESIA=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ANAEMIA=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ANGINA PECTORIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ANGIOEDEMA=1""]",6,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ANTIBODY TEST POSITIVE=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ANXIETY=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ARRHYTHMIA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ARTHRALGIA=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ARTHRITIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ARTHROPATHY=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ASPARTATE AMINOTRANSFERASE INCREASED=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ASPIRATION=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ASTHENIA=1""]",7,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ASTHMA=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ATRIAL FIBRILLATION=1""]",6,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_AUTOIMMUNE HEPATITIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_AUTOIMMUNE MYOSITIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BACK PAIN=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BACTERIAL SEPSIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BALANCE DISORDER=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BEDRIDDEN=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BLISTER=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BLOOD ALKALINE PHOSPHATASE INCREASED=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BLOOD CALCIUM DECREASED=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BLOOD CALCIUM INCREASED=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BLOOD CHOLESTEROL DECREASED=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BLOOD CHOLESTEROL INCREASED=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BLOOD CREATINE PHOSPHOKINASE INCREASED=1""]",15,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BLOOD CREATININE ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BLOOD CREATININE INCREASED=1""]",7,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BLOOD GLUCOSE INCREASED=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BLOOD POTASSIUM INCREASED=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BLOOD PRESSURE DECREASED=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BLOOD PRESSURE INCREASED=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BLOOD TEST ABNORMAL=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BLOOD UREA INCREASED=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BLOOD URINE PRESENT=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BONE PAIN=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BRADYCARDIA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BRAIN FOG=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BULBAR PALSY=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_BURNING SENSATION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_C-REACTIVE PROTEIN INCREASED=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CARDIAC ARREST=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CARDIAC FAILURE=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CARDIO-RESPIRATORY ARREST=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CARDIOGENIC SHOCK=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CARPAL TUNNEL SYNDROME=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CEREBROVASCULAR ACCIDENT=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CHEST DISCOMFORT=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CHEST PAIN=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CHOLELITHIASIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CHOLESTASIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CHROMATURIA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CHRONIC KIDNEY DISEASE=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CHRONIC LYMPHOCYTIC LEUKAEMIA=1""]",84,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CHRONIC OBSTRUCTIVE PULMONARY DISEASE=1""]",5,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_COAGULOPATHY=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_COGNITIVE DISORDER=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_COLITIS=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CONDITION AGGRAVATED=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CONFUSIONAL STATE=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CONSTIPATION=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CONTRAINDICATED PRODUCT PRESCRIBED=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CONTUSION=1""]",5,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_COORDINATION ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CORONARY ARTERY OCCLUSION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_COUGH=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_COVID-19=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_CRUSH SYNDROME=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DEAFNESS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DEATH=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DECREASED APPETITE=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DEHYDRATION=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DEPRESSED LEVEL OF CONSCIOUSNESS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DEPRESSED MOOD=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DEPRESSION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DIABETES MELLITUS INADEQUATE CONTROL=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DIABETES MELLITUS=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DIARRHOEA=1""]",5,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DIPLOPIA=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DISEASE PROGRESSION=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DISEASE RECURRENCE=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DIVERTICULITIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DIZZINESS POSTURAL=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DIZZINESS=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DRUG HYPERSENSITIVITY=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DRUG INEFFECTIVE=1""]",8,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DRUG INTERACTION=1""]",17,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DRUG INTOLERANCE=1""]",7,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DRUG LEVEL INCREASED=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DRUG REACTION WITH EOSINOPHILIA AND SYSTEMIC SYMPTOMS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DRUG-DISEASE INTERACTION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DRUG-INDUCED LIVER INJURY=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DRY MOUTH=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DYSPEPSIA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DYSPHAGIA=1""]",7,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DYSPNOEA EXERTIONAL=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_DYSPNOEA=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ELECTROCARDIOGRAM QT PROLONGED=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_EMOTIONAL DISTRESS=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_EOSINOPHILIA=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ERECTILE DYSFUNCTION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ERYTHEMA=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ERYTHROMELALGIA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_EXERCISE TOLERANCE DECREASED=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_EXFOLIATIVE RASH=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_EYE PRURITUS=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_EYE SWELLING=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_EYELID PTOSIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_FACE OEDEMA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_FALL=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_FATIGUE=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_FEELING ABNORMAL=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_FEELING COLD=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_FLATULENCE=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_FOOT DEFORMITY=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_GAIT DISTURBANCE=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_GAIT INABILITY=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_GAMMA-GLUTAMYLTRANSFERASE INCREASED=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_GASTROINTESTINAL DISORDER=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_GASTROINTESTINAL HAEMORRHAGE=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_GASTROINTESTINAL MUCOSAL DISORDER=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_GASTROINTESTINAL PAIN=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_GASTROOESOPHAGEAL REFLUX DISEASE=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_GENERAL PHYSICAL HEALTH DETERIORATION=1""]",6,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_GENERALISED OEDEMA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_GLOMERULAR FILTRATION RATE DECREASED=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_GLOMERULONEPHRITIS MINIMAL LESION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_GOUT=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HAEMATOCHEZIA=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HAEMATURIA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HAEMOGLOBIN DECREASED=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HALLUCINATION=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HEAD INJURY=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HEADACHE=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HEART RATE INCREASED=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HEART RATE IRREGULAR=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HEPATIC CYTOLYSIS=1""]",8,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HEPATIC ENZYME INCREASED=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HEPATIC FUNCTION ABNORMAL=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HEPATIC STEATOSIS=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HEPATITIS ACUTE=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HEPATITIS CHOLESTATIC=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HEPATITIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HEPATOCELLULAR INJURY=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HEPATOTOXICITY=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HERNIA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HMG COA REDUCTASE ANTIBODY TEST=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HOSPITALISATION=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HYPERBILIRUBINAEMIA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HYPERHIDROSIS=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HYPERKALAEMIA=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HYPERPHOSPHATAEMIA=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HYPERSENSITIVITY=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HYPERTENSION=1""]",6,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HYPERTHYROIDISM=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HYPERTRANSAMINASAEMIA=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HYPERVOLAEMIA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HYPOACUSIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HYPOAESTHESIA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HYPOALBUMINAEMIA=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HYPOCALCAEMIA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HYPOKALAEMIA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HYPONATRAEMIA=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_HYPOTENSION=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ILLNESS=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_IMMUNE-MEDIATED MYOSITIS=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_INAPPROPRIATE SCHEDULE OF PRODUCT ADMINISTRATION=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_INCORRECT ROUTE OF PRODUCT ADMINISTRATION=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_INFECTION=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_INFLUENZA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_INSOMNIA=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_INTENTIONAL OVERDOSE=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_INTENTIONAL PRODUCT MISUSE=1""]",6,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_INTERSTITIAL LUNG DISEASE=1""]",5,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_INTERVERTEBRAL DISC PROTRUSION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_IRRITABILITY=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ISCHAEMIC STROKE=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_JAUNDICE=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_JOINT EFFUSION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_JOINT STIFFNESS=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_JOINT SWELLING=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_LARGE INTESTINE POLYP=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_LETHARGY=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_LIP DRY=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_LIP PAIN=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_LIP SWELLING=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_LIPOPROTEIN (A) INCREASED=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_LIVER DISORDER=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_LIVER FUNCTION TEST ABNORMAL=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_LIVER FUNCTION TEST INCREASED=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_LIVER INJURY=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_LOSS OF CONSCIOUSNESS=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_LOSS OF LIBIDO=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_LOSS OF PERSONAL INDEPENDENCE IN DAILY ACTIVITIES=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_LOWER RESPIRATORY TRACT INFECTION=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_LUNG DISORDER=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MALAISE=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MALNUTRITION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MASTICATION DISORDER=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MEDICATION ERROR=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MEMORY IMPAIRMENT=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MENTAL FATIGUE=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MENTAL IMPAIRMENT=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_METABOLIC ACIDOSIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MIOSIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MIXED LIVER INJURY=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MOBILITY DECREASED=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MOUTH ULCERATION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MULTIPLE ORGAN DYSFUNCTION SYNDROME=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MUSCLE ATROPHY=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MUSCLE RUPTURE=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MUSCLE SPASMS=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MUSCLE TIGHTNESS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MUSCLE TWITCHING=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MUSCULAR WEAKNESS=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MUSCULOSKELETAL CHEST PAIN=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MUSCULOSKELETAL STIFFNESS=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MYALGIA=1""]",8,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MYASTHENIA GRAVIS=1""]",5,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MYOCARDIAL INFARCTION=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MYOCARDITIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MYOGLOBIN BLOOD INCREASED=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MYOPATHY=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_MYOSITIS=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_NASAL CONGESTION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_NASAL OEDEMA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_NASOPHARYNGITIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_NAUSEA=1""]",6,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_NECK PAIN=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_NECROTISING MYOSITIS=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_NEPHROPATHY TOXIC=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_NEPHROTIC SYNDROME=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_NEURALGIA=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_NEUROPATHY PERIPHERAL=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_NEUTROPENIA=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_OEDEMA PERIPHERAL=1""]",9,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_OEDEMA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_OFF LABEL USE=1""]",15,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_OLIGURIA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ORAL MUCOSAL BLISTERING=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_ORAL PAIN=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_OROPHARYNGEAL PAIN=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_OSTEOARTHRITIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_OSTEOPOROSIS=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PAIN IN EXTREMITY=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PAIN IN JAW=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PAIN=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PALLIATIVE CARE=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PALPITATIONS=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PANCREATITIS ACUTE=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PANIC ATTACK=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PARAESTHESIA=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PARKINSON'S DISEASE=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PERIPHERAL SWELLING=1""]",6,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PHARYNGEAL SWELLING=1""]",5,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PLATELET COUNT DECREASED=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PLATELET COUNT INCREASED=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PLEURAL EFFUSION=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PNEUMONIA ASPIRATION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PNEUMONIA=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_POLYMYOSITIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_POOR QUALITY SLEEP=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_POTENTIATING DRUG INTERACTION=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PRESYNCOPE=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PRODUCT DOSE OMISSION ISSUE=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PRODUCT SUBSTITUTION ISSUE=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PRODUCT USE IN UNAPPROVED INDICATION=1""]",8,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PRODUCT USE ISSUE=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PRODUCTIVE COUGH=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PROTEINURIA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PRURITUS=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PSYCHOGENIC LOSS OF APPETITE=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PULMONARY EMBOLISM=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PUSTULAR PSORIASIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_PYREXIA=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_RASH ERYTHEMATOUS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_RASH PRURITIC=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_RASH=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_RECTAL HAEMORRHAGE=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_RED BLOOD CELL COUNT DECREASED=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_REFLUX GASTRITIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_RENAL DISORDER=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_RENAL FAILURE=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_RENAL IMPAIRMENT=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_RENAL TUBULAR NECROSIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_RESPIRATORY FAILURE=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_RESPIRATORY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_RESTLESS LEGS SYNDROME=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_RHABDOMYOLYSIS=1""]",19,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_RHINORRHOEA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_SEPSIS=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_SERUM FERRITIN INCREASED=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_SHOCK=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_SKIN BURNING SENSATION=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_SLEEP APNOEA SYNDROME=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_SLEEP DISORDER=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_SNEEZING=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_SOMNOLENCE=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_SPINAL FRACTURE=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_SUDDEN HEARING LOSS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_SUICIDAL IDEATION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_SWELLING=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_SWOLLEN TONGUE=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_SYNCOPE=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_TACHYCARDIA=1""]",5,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_TENDON DISCOMFORT=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_TENDON DISORDER=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_TENDON PAIN=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_TENDON RUPTURE=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_TENDONITIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_THERAPEUTIC PRODUCT EFFECT INCOMPLETE=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_THROMBOCYTOPENIA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_THROMBOSIS=1""]",5,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_TINNITUS=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_TOXICITY TO VARIOUS AGENTS=1""]",3,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_TRANSAMINASES INCREASED=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_TRANSIENT ISCHAEMIC ATTACK=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_TREATMENT FAILURE=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_TREATMENT NONCOMPLIANCE=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_TROPONIN INCREASED=1""]",6,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_TUBULOINTERSTITIAL NEPHRITIS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_UMBILICAL HERNIA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_UPPER RESPIRATORY TRACT INFECTION=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_URGE INCONTINENCE=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_URINARY RETENTION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_URINARY TRACT INFECTION=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_URINE OUTPUT DECREASED=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_URTICARIA=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_VASCULAR PAIN=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_VENTRICULAR TACHYCARDIA=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_VERTIGO=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_VISION BLURRED=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_VISUAL IMPAIRMENT=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_VITREOUS FLOATERS=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_VOMITING=1""]",4,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_VULVOVAGINAL PAIN=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_WEIGHT DECREASED=1""]",2,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_WEIGHT INCREASED=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_WHEEZING=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_WHITE BLOOD CELL COUNT INCREASED=1""]",1,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_WOUND=1""]",0,statin_reaction
+"[""DRUG_simvastatin=1"",""REAC_WRONG TECHNIQUE IN PRODUCT USAGE PROCESS=1""]",0,statin_reaction

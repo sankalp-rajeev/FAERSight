@@ -1,0 +1,110 @@
+[
+  {
+    "boundary_group_size": 1,
+    "boundary_inside": 1,
+    "boundary_outside": 0,
+    "boundary_value": 0.5719887955182072,
+    "k": 10,
+    "membership_split_by_lexical_order": false,
+    "metric": "confidence"
+  },
+  {
+    "boundary_group_size": 1,
+    "boundary_inside": 1,
+    "boundary_outside": 0,
+    "boundary_value": 21.982700791993565,
+    "k": 10,
+    "membership_split_by_lexical_order": false,
+    "metric": "lift"
+  },
+  {
+    "boundary_group_size": 2,
+    "boundary_inside": 2,
+    "boundary_outside": 0,
+    "boundary_value": 0.006729725187735146,
+    "k": 10,
+    "membership_split_by_lexical_order": false,
+    "metric": "leverage"
+  },
+  {
+    "boundary_group_size": 1,
+    "boundary_inside": 1,
+    "boundary_outside": 0,
+    "boundary_value": 2.2738990054193224,
+    "k": 10,
+    "membership_split_by_lexical_order": false,
+    "metric": "conviction"
+  },
+  {
+    "boundary_group_size": 1,
+    "boundary_inside": 1,
+    "boundary_outside": 0,
+    "boundary_value": 0.4331813398807436,
+    "k": 25,
+    "membership_split_by_lexical_order": false,
+    "metric": "confidence"
+  },
+  {
+    "boundary_group_size": 2,
+    "boundary_inside": 1,
+    "boundary_outside": 1,
+    "boundary_value": 17.636989749123728,
+    "k": 25,
+    "membership_split_by_lexical_order": true,
+    "metric": "lift"
+  },
+  {
+    "boundary_group_size": 2,
+    "boundary_inside": 1,
+    "boundary_outside": 1,
+    "boundary_value": 0.004951444769204562,
+    "k": 25,
+    "membership_split_by_lexical_order": true,
+    "metric": "leverage"
+  },
+  {
+    "boundary_group_size": 1,
+    "boundary_inside": 1,
+    "boundary_outside": 0,
+    "boundary_value": 1.6912134522968125,
+    "k": 25,
+    "membership_split_by_lexical_order": false,
+    "metric": "conviction"
+  },
+  {
+    "boundary_group_size": 1,
+    "boundary_inside": 1,
+    "boundary_outside": 0,
+    "boundary_value": 0.34303753069098564,
+    "k": 50,
+    "membership_split_by_lexical_order": false,
+    "metric": "confidence"
+  },
+  {
+    "boundary_group_size": 2,
+    "boundary_inside": 2,
+    "boundary_outside": 0,
+    "boundary_value": 13.651560783757928,
+    "k": 50,
+    "membership_split_by_lexical_order": false,
+    "metric": "lift"
+  },
+  {
+    "boundary_group_size": 2,
+    "boundary_inside": 2,
+    "boundary_outside": 0,
+    "boundary_value": 0.0039112497543584,
+    "k": 50,
+    "membership_split_by_lexical_order": false,
+    "metric": "leverage"
+  },
+  {
+    "boundary_group_size": 1,
+    "boundary_inside": 1,
+    "boundary_outside": 0,
+    "boundary_value": 1.473221437540442,
+    "k": 50,
+    "membership_split_by_lexical_order": false,
+    "metric": "conviction"
+  }
+]

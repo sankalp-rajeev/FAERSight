@@ -209,9 +209,20 @@ Atorvastatin and rosuvastatin are singleton-eligible but no statin-containing
 rules were emitted; explicit empty exports are retained. Apriori build/JVM wall
 times were 828.229/828.657 s; FPGrowth 0.395/0.832 s. The recorded A1/A2/A3
 progression does not assume monotonic runtime. All 153 tests and frozen-core/prior
-evidence checks pass. **Fallback A is complete.** No further supports,
-metric-ranking, Explorer, scaling diagnostics or additional algorithms are
-authorized. Earlier scientific validation boundaries remain unchanged.
+evidence checks passed at that checkpoint. **Fallback A is complete.**
+
+The authorized [metric-ranking checkpoint](docs/weka_showcase_metrics.md) now
+compares exactly those 586 rules using full-precision API metrics and average
+statistical ranks for ties. It records Top-K overlaps/boundary ties, the 472-rule
+robustness analysis, fixed rank-gap examples and three deterministic charts.
+The lift >=1.2 pool restriction and rule dependence limit the correlations.
+All statin-containing itemsets of size >=2 have joint count at most 141, below
+the showcased cutoffs; singleton eligibility alone cannot produce a rule.
+All 171 tests and prior-evidence/core hash checks pass. No new mining ran.
+**Explorer is next, pending explicit authorization**; final packaging follows it.
+Earlier scientific validation boundaries remain unchanged.
+
+The unrestricted WEKA showcase is an algorithm and metric study on reaction co-reporting. The projected experiment is the FAERSight drug-safety analysis.
 
 ## Experiment configuration
 
