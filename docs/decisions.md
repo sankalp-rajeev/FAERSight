@@ -322,3 +322,27 @@ earlier files, 108 frozen core files, 1,096 primary generated artifacts and
 evidence and all scientific validation boundaries remain unchanged. **0.002 is
 eligible, awaiting new explicit authorization. Stop after commit/push.** No
 later support, metric-ranking, Explorer, scaling or additional algorithm ran.
+
+## Final Fallback A authorization: A3 at 0.002 only
+
+After frozen A2 `a1113d0`, authorize the last registered level, 0.002. Create
+and hash a separate manifest before either run. Apriori first; if it fails or
+is incomplete/ambiguous, retain evidence, skip FPGrowth and terminate Fallback A.
+Otherwise run the fixed preregistered FPGrowth configuration. No configuration
+or earlier evidence changes. Both exact native minimum counts resolve to 771.
+Atorvastatin 1,157 and rosuvastatin 864 are singleton-eligible under each; the
+other five statins are not. Verify the frozen input marginals before locking.
+
+Preserve all statin rules and directions, or explicit empty exports; multiple
+reaction->statin includes two or more reactions. Singleton eligibility is not
+rule recovery; count the actual output without clinical interpretation. Retain
+native/common-count canonical agreement, all independent count/metric checks
+and the same A1/A2 timing boundaries. The
+[A3 preregistration](weka_showcase_fallback_a3.md) fixes the scope and commands.
+
+Add a read-only CSV/JSON progression over A1/A2/A3 with source hashes, exact
+cutoffs, counts, eligibility, maxima, raw times and Jaccard. Do not extrapolate
+or assume monotonic runtime; Apriori A2 was measured below A1. Conclusions stay
+specific to this dataset, WEKA version, configuration and resource envelope.
+Validate, commit/push and stop: no support level follows A3 and no metric-ranking,
+Explorer, scaling or new algorithm is authorized.

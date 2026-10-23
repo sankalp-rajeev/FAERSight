@@ -340,6 +340,14 @@ and provenance. JVM wall/build seconds: Apriori 360.891450 / 360.5035305;
 FPGrowth 0.750769 / 0.3391509. All 145 tests and frozen-history checks pass.
 No 0.002, metric-ranking, Explorer, scaling or new algorithm was executed.
 
+**Subsequent authorization: final A3 at 0.002 only.** See
+[A3 registration and outcome](weka_showcase_fallback_a3.md). Both cutoffs are
+771; atorvastatin and rosuvastatin are singleton-eligible. Preserve Apriori-first
+gating and all prior evidence, then record the measured A1/A2/A3 progression.
+If the first A3 algorithm fails, stop the fallback; otherwise complete the paired
+comparison and close Fallback A. No further support level or later showcase
+step is authorized by this checkpoint.
+
 Eligible after **either** FPGrowth 0.001 outcome: success permits a comparable-output
 point; failure permits a bounded feasibility comparison. Eligibility never means
 automatic execution. Preserve all original failed evidence and configurations.
