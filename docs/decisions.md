@@ -430,3 +430,18 @@ retain their hashes. No scientific validation flag changed; no new mining ran.
 Unrestricted Apriori study, Apriori/FPGrowth comparison, Fallback A and metric
 ranking are complete. Explorer is next, pending explicit authorization; final
 showcase summary/demo packaging follows Explorer. Commit/push and stop here.
+
+## Explorer demonstration preparation authorization and connection limitation
+
+After frozen metric checkpoint `0fd1aef`, authorize only Explorer demonstration
+preparation and the explicitly scoped GUI repeats. No new mining experiment.
+Use the first canonical accepted frozen benchmark pair at support 0.00001:
+atorvastatin/MYOPATHY, projection r0239, joint count 19. Prepare all-row sparse
+projection and exact frozen settings; retain original scripted results as authority.
+
+The computer-use native pipe is unavailable after app/window-list retries and a
+session reset. Actual Explorer usability, GUI configuration/results and screenshots
+remain pending. No GUI or fallback usability result can be inferred from API parsing.
+Complete independent preparation/tests/hash checks and preserve this blocker in
+[the Explorer record](weka_explorer_demo.md); do not mark the demonstration complete
+or advance to final packaging without the required GUI observations.
