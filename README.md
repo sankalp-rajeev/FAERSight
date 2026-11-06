@@ -1,292 +1,256 @@
 # FAERSight
 
-Technical implementation of [PRD.md](PRD.md): case-level FDA reporting associations,
-WEKA Apriori, and independently calculated PRR/ROR.
+*Association mining meets statistical reporting-signal analysis.*
 
-Milestone 2 freezes **statins / 2025 Q4** and adds checksum-pinned official FDA
-acquisition, streaming DEMO/DRUG/REAC ingestion, deleted-case handling,
-latest-case-version selection and a complete DuckDB analytical mart. All eligible
-reporting cases are retained for denominators, including reports without statin
-exposure. See the [source and scope decision](docs/milestone2.md).
+FAERSight studies how cholesterol-lowering statins and adverse events are reported
+together in the FDA Adverse Event Reporting System (FAERS). It compares rules mined
+by **WEKA Apriori** with **proportional reporting ratios (PRR)** and **reporting odds
+ratios (ROR)** calculated from the same case-level data. The study examines how
+those findings change with mining thresholds and with the drugs reporters identify
+as suspects.
 
-Primary real-data mining, benchmark recovery, PS+SS sensitivity and the separate
-WEKA tool study are computationally complete. The synthetic end-to-end workflow
-also verifies an actual WEKA rule against independently calculated PRR/ROR.
-Scientific findings remain provisional: student source/alias/benchmark signoff
-and final interpretation are outstanding.
+**2025 Q4 · 385,288 reports · 7 statins · 359 reaction terms**
 
-Python performs preprocessing and count-based checks. **WEKA performs Apriori**.
-Reporting associations do not establish causality or clinical incidence.
+[Key results](#key-results) · [Approach](#approach) · [Run the project](#run-the-project) · [Limitations](#limitations)
 
-Executed Milestone 2 counts, checks, remaining quality gates and reproduction
-hashes are recorded in [the engineering record](docs/milestone2.md#executed-integration-evidence)
-and [tracked aggregate evidence](artifacts/manifests/2025Q4-statins/).
+## Why this problem?
 
-The [November 6 readiness audit](docs/final_readiness_20261106.md) records
-**26/27 functional requirements COMPLETE, one PARTIAL**, and **8/12 nonfunctional
-requirements COMPLETE, four PARTIAL**. The case audit independently reconciles
-all 15 cases; [regulatory references](docs/rosuvastatin_zinc_reference_review_20261106.md)
-support the two exact SS rosuvastatin-zinc ingredient mappings. Cross-quarter
-original version histories remain unverified. No frozen result or student signoff
-was changed. The project has technical inputs for student-authored submissions;
-it is not yet course-complete or submitted.
+Safety reports are useful leads, but difficult analytical inputs: a case can have
+follow-up versions, several drugs with different suspect roles, inconsistent
+product names and repeated reactions. Rare co-reports can also produce large
+ratios. A ranking is therefore only interpretable alongside its preprocessing
+choices, background population and underlying counts.
 
-For the five-page inclusive final-report and Session 2 slide requirements,
-asset references, bounded clean-environment evidence and remaining student
-actions, use [reproduction and demo readiness](docs/reproduction_and_demo_readiness.md).
+Association rules describe co-reporting patterns through support, confidence and
+lift. PRR and ROR compare reporting proportions or odds against other reports.
+Putting them on the **same reporting universe** makes their agreement—and the
+effects of analysis choices—auditable.
+
+> **Research question:** How do WEKA Apriori drug → reaction rules compare with
+> PRR/ROR rankings, and how do support thresholds and primary versus secondary
+> suspect-drug definitions change the findings?
+
+## Key results
+
+The primary analysis uses drugs marked **primary suspect (PS)** and retains every
+eligible report in the reporting universe, including reports without statins.
+Independent contingency tables cover **2,513 drug–reaction pairs**. The results
+below are reporting associations; they are not estimates of clinical risk.
+
+### Support thresholds change what is recovered
+
+| Requested support | Native count cutoff | Accepted PS rules | Benchmark recovery |
+| --- | ---: | ---: | ---: |
+| 0.00001 | 4 | **383** | **5 / 8** |
+| 0.00005 | 19 | **61** | **4 / 8** |
+| 0.00010 | 39 | **20** | **2 / 8** |
+
+All runs use a lift floor of **1.2**. Co-report count cutoffs are WEKA's native
+recorded integer cutoffs. Raising support removes sparse associations and also
+loses prespecified reference pairs: fewer rules does not automatically mean better recovery.
+The positive-only benchmark measures recovery within this experiment; it cannot
+estimate specificity or overall detection accuracy.
+
+Sources: [run settings/counts](artifacts/manifests/2025Q4-statins-mining/weka_runs.csv),
+[scored rules](artifacts/manifests/2025Q4-statins-mining/accepted_rules_scored.csv),
+[all benchmark outcomes, including misses](artifacts/manifests/2025Q4-statins-mining/benchmark_recovery.csv).
+
+### Concrete drug–reaction examples
+
+- **Atorvastatin → myopathy:** 19 co-reports among 1,157 atorvastatin-PS reports;
+  reporting confidence **1.64%**, lift **37.66**, PRR **42.34**, ROR **43.03**.
+  A large enrichment ratio can coexist with a small absolute count.
+- **Rosuvastatin → rhabdomyolysis:** 127 co-reports; lift **68.98**, PRR **81.42**,
+  ROR **95.28**. This reference pair is recovered at every tested support level.
+- **Simvastatin → myopathy:** lift **24.40**, but only **2 co-reports**, below all
+  tested support cutoffs. A high ratio alone does not make a pair eligible.
+
+These are examples from the [frozen positive benchmark](benchmarks/known_signals.yaml).
+Scores are rounded here; exact counts and values are retained in the
+[benchmark results](artifacts/manifests/2025Q4-statins-mining/benchmark_recovery.csv).
+
+### Rankings agree closely; suspect roles change the leaders
+
+At the lowest support, lift versus PRR has Spearman **ρ = 0.99997**, and lift
+versus ROR **ρ = 0.99989**, on **382 shared finite, accepted pairs**. Each comparison
+shares **9 of its top 10** pairs. These related scores use the same contingency
+counts, so their strong agreement is not independent clinical validation.
+[Ranking evidence and tie policies →](artifacts/manifests/2025Q4-statins-mining/ranking_comparison.json)
+
+Adding **secondary suspect (SS)** drugs changes statin-exposed reports from
+**2,298 to 3,703** within the same population. At the lowest support, accepted rules
+change from **383 to 763**: **371 shared, 392 gained and 12 lost**. The larger rule
+set still recovers [5 / 8 benchmark pairs](artifacts/manifests/2025Q4-statins-sensitivity/benchmark_recovery.csv).
+PS versus PS+SS lift rankings have **ρ = 0.7931** and only **4 / 10** top-pair overlap on their
+**2,154 shared finite candidate pairs**—a different pool from the comparison above.
+
+For example, rosuvastatin–rhabdomyolysis co-reports increase **127 → 149**, while
+lift decreases **68.98 → 46.37**. Broadening exposure adds reports to the drug's
+denominator as well as its joint count; it does not uniformly strengthen scores.
+The sensitivity retains the primary reaction vocabulary and includes a separately
+reviewed exact SS ingredient overlay.
+[Sensitivity evidence →](artifacts/manifests/2025Q4-statins-sensitivity/role_comparison.json)
+[Count-level examples →](artifacts/manifests/2025Q4-statins-sensitivity/all_counts_screened.csv)
+
+## Approach
 
 ```mermaid
 flowchart LR
-    A["Pinned FDA ZIP: DEMO / DRUG / REAC"] --> B["Stream and validate source rows"]
-    B --> C["Latest within selected quarter; eligibility; exact mappings"]
-    C --> D["DuckDB case mart; full reporting background"]
-    D --> E["Sparse DRUG / REAC presences"]
-    E --> F["WEKA 3.8.6 projected Apriori"]
-    D --> G["Independent a,b,c,d,N; PRR / ROR"]
-    F --> H["Matched scores; benchmark; threshold / role checks"]
-    G --> H
+    A["FDA quarterly ZIP<br/>DEMO · DRUG · REAC"] --> B["Python preprocessing<br/>DuckDB case mart"]
+    B --> C["Sparse presences<br/>WEKA 3.8.6 Apriori"]
+    B --> D["Independent counts<br/>PRR / ROR"]
+    C --> E["Evaluation<br/>benchmark · rankings · sensitivity"]
+    D --> E
 ```
 
-## Run on Windows (PowerShell)
+Python streams the source tables, selects the latest report **within the frozen
+quarter**, checks eligibility and applies reviewed exact ingredient/brand mappings.
+DuckDB preserves source-row provenance and supports analytical summaries. Each
+Apriori search keeps all reports and all statin columns while selecting one
+reaction; drug and reaction presences remain separate items. **WEKA executes
+Apriori; Python independently checks counts and scores.**
 
-From the project root, using Python 3.11+ and uv:
-Provision the separate [pinned plotting environment](docs/plotting_runtime.md)
-before the full test suite. Set `WEKA_JAR` as shown below to enable actual WEKA
-tests; unset jars or unavailable historical showcase runtimes can cause skips.
+### The primary experiment in WEKA Explorer
 
-```powershell
-uv sync --frozen --extra dev --cache-dir .tools/uv-cache
-.venv/Scripts/python -m faersight.cli validate-config config/experiment.example.yaml
-.venv/Scripts/python -m faersight.cli build-fixture-arff
-.venv/Scripts/python -m pytest -q
-```
+![Genuine WEKA Explorer output: all-report MYOPATHY projection, frozen Apriori settings and four general rules](images/results.png)
 
-## Acquire and integrate the frozen FDA quarter
+*The all-report MYOPATHY projection has 385,288 instances and eight attributes.
+Explorer displays four general rules, including reverse directions; the scientific
+export retains the two statin → reaction rules. Displayed confidence is rounded.*
+[Exact settings, source values and screenshot verification →](docs/weka_explorer_demo.md)
 
-```powershell
-.venv/Scripts/python -m faersight.cli validate-config config/experiment.yaml --require-frozen
-.venv/Scripts/python -m faersight.cli acquire --config config/experiment.yaml
-.venv/Scripts/python -m faersight.cli ingest --config config/experiment.yaml
-.venv/Scripts/python -m faersight.cli validate-mart data/processed/2025Q4-statins/analytical.duckdb
-.venv/Scripts/python -m faersight.cli spotcheck data/processed/2025Q4-statins/analytical.duckdb
-```
+<details>
+<summary>Inspect the full dataset in Explorer</summary>
 
-These Python CLI commands also work on Linux through `uv run --frozen faersight`.
-`acquire` streams the official 67,144,585-byte ZIP, checks its frozen SHA-256,
-retains download provenance and extracts only required tables, documentation and
-the FDA deleted-case list. Existing downloads are checksum-verified on every reuse.
-`ingest` does not download implicitly. The frozen source was verified as ASCII;
-malformed rows, identity contradictions or encoding errors fail with diagnostics.
+![Genuine WEKA Preprocess view: 385,288 instances, 366 attributes and atorvastatin presence counts](images/FAERSight-dataset.png)
 
-Each source relation is validated and converted one row at a time to an audited
-UTF-8 staging CSV, then loaded by DuckDB's native streaming CSV reader. The
-configured DuckDB budget is 4 GB / four threads, with spill files inside the run
-directory. No complete source relation is loaded into a Python list or DataFrame.
+*The full ARFF contains the seven statins and 359 reaction terms. Reports without
+a selected item remain part of the reporting denominator.*
 
-Output defaults to `data/processed/2025Q4-statins/`. Validated snapshots are never
-overwritten. For another reproduction run, choose a new directory with
-`--output data/processed/2025Q4-statins-rerun`. Failed runs retain
-`integration_failure.json` and a `.building.duckdb` diagnostic database; use a new
-output directory after resolving the failure. Raw archives, staging files, and
-databases stay out of Git.
+</details>
 
-The full mart contains:
+## Secondary study: unrestricted Apriori and FPGrowth
 
-- `raw_demo`, `raw_drug`, `raw_reac`: every ingested column, source row and quarter.
-- `source_files`, `deleted_cases`, `latest_cases`, `case_eligibility`: provenance and selection.
-- `cases`: one eligible retained report per case, independent of statin exposure.
-- `case_drugs`: complete retained drug records with ingredient, role and mapping metadata.
-- `case_reactions`: all nonblank normalized reaction presences per retained case.
-- `case_drug_presence`: distinct reviewed statin presence under the frozen PS role definition.
-- `candidate_reactions`, `case_items`: the prespecified vocabulary and separate mining items.
-- `signal_counts`: integer `a,b,c,d,N` for every selected drug/reaction pair.
-- `quarter_population`, `quarter_drug_role`, `quarter_reaction`: analytical summary views.
+This separate tool study mines all attributes together, including multi-item rules.
+It examines **reaction co-reporting and algorithm/metric behavior**, separately
+from the projected drug–reaction analysis above.
 
-The run directory also contains `preprocess_audit.json`, `quality_gates.json`,
-`integration_manifest.json`, aggregate summary CSVs, complete unmapped-name
-counts, target-relevant unmapped candidates and mapping-conflict diagnostics.
-`validate-mart` reruns population, join, role, source-row reconciliation and
-contingency marginal checks. Unresolved target-like spellings are flagged for
-review and never fuzzy-mapped. A passed integration gate still records
-`scientific_findings_validated: false`.
+At support **0.002**, Apriori and FPGrowth returned the same **586 reaction-only
+rules**: **Jaccard 1.0**, with exact shared-metric agreement. No statin-containing
+rule was emitted at that cutoff. Confidence and conviction rank this common pool
+similarly (**ρ = 0.9648**); confidence and lift agree less (**ρ = 0.4637**).
 
-`spotcheck` independently rescans the original relations for five primary-exposed,
-five other-role statin and five other-background reports, comparing latest IDs,
-full drug rows, reaction memberships, role-filtered exposures and mining items.
-Its detailed case diagnostics stay local. Student manual review remains pending.
-An optional `Frozen FDA ingestion (manual)` GitHub workflow repeats acquisition,
-integration and spot checks without running full downloads on every push.
+![Secondary tool study only: Spearman metric-ranking agreement across 586 reaction-only rules already qualified by support 0.002 and lift at least 1.2](artifacts/manifests/weka-showcase-metrics/run/charts/spearman_matrix.png)
 
-To include WEKA, run the checksum-verifying downloader and reproduce the fixture:
+*Descriptive correlations within a support- and lift-qualified pool of dependent
+rules. This chart is not the primary lift-versus-PRR/ROR comparison.*
 
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts/setup_weka.ps1
-$env:WEKA_JAR = (Resolve-Path '.tools/weka/weka-stable-3.8.6.jar').Path
-.venv/Scripts/python -m faersight.cli reproduce-fixture --jar $env:WEKA_JAR
-.venv/Scripts/python -m pytest -q
-.venv/Scripts/ruff check .
-.venv/Scripts/ruff format --check src tests
-```
+[Algorithm comparison](docs/weka_showcase_fallback_a3.md) ·
+[Metric study and pool restrictions](docs/weka_showcase_metrics.md) ·
+[Preserved lower-support Apriori timeout](docs/weka_showcase_step2b.md)
 
-Java resolution checks `JAVA_HOME`, `PATH`, then Android Studio's bundled Windows
-runtime. A different executable can be passed with `--java 'path/to/java.exe'`.
-The local validation used the existing Android Studio OpenJDK 21 runtime;
-the smoke runner enforces WEKA **3.8.6**. A minimal Maven classpath includes
-Bounce **0.18**. WEKA may print a warning about unavailable MTJ matrix jars;
-Apriori does not use those matrix routines and the smoke assertions still run.
+## Run the project
 
-## Run on Linux
+**Stack:** Python 3.11+ for preprocessing/statistics, DuckDB/SQL for the mart,
+Java 21 and WEKA 3.8.6 for mining, and uv, pytest, Ruff and GitHub Actions for
+reproducibility and checks. No Python Apriori substitute is used.
+
+### Quick start: synthetic end-to-end verification
+
+From the repository root, with uv and Java 21 available:
 
 ```bash
 uv sync --frozen --extra dev
 bash scripts/setup_weka.sh
 export WEKA_JAR="$PWD/.tools/weka/weka-stable-3.8.6.jar"
-uv run --frozen faersight reproduce-fixture --jar "$WEKA_JAR"
+uv run --frozen faersight reproduce-fixture --jar "$WEKA_JAR" \
+  --output artifacts/generated/readme-fixture
+```
+
+This runs a controlled fixture through preprocessing, ARFF export, actual WEKA
+and independent score comparison. It does not reproduce the real-data findings.
+
+<details>
+<summary>Windows PowerShell</summary>
+
+```powershell
+uv sync --frozen --extra dev --cache-dir .tools/uv-cache
+powershell -ExecutionPolicy Bypass -File scripts/setup_weka.ps1
+$env:WEKA_JAR = (Resolve-Path '.tools/weka/weka-stable-3.8.6.jar').Path
+.venv/Scripts/python -m faersight.cli reproduce-fixture --jar $env:WEKA_JAR --output artifacts/generated/readme-fixture
+```
+
+Java resolution checks `JAVA_HOME`, `PATH`, then Android Studio's Windows runtime;
+use `--java` to select an executable explicitly.
+
+</details>
+
+<details>
+<summary>Reproduce the frozen FDA workflow</summary>
+
+Run after setup, using **new output directories**. Acquisition verifies the pinned
+FDA archive. Raw files, DuckDB databases and case-level JSON/CSV outputs remain local.
+
+```bash
+uv run --frozen faersight validate-config config/experiment.yaml --require-frozen
+uv run --frozen faersight acquire --config config/experiment.yaml
+uv run --frozen faersight ingest --config config/experiment.yaml \
+  --output data/processed/reproduction
+uv run --frozen faersight mine data/processed/reproduction/analytical.duckdb \
+  --jar "$WEKA_JAR" --output artifacts/generated/reproduction-primary
+uv run --frozen faersight sensitivity data/processed/reproduction/analytical.duckdb \
+  --primary-run artifacts/generated/reproduction-primary \
+  --jar "$WEKA_JAR" --output artifacts/generated/reproduction-sensitivity
+```
+
+Existing validated snapshots cannot be overwritten. Full-data runs are separate
+from the lightweight fixture checks. Follow the
+[primary execution contract](docs/milestone3.md),
+[sensitivity contract](docs/milestone4.md) and
+[reproduction guide](docs/reproduction_and_demo_readiness.md) for resources,
+provenance, failed-run handling and same-host reproduction limits.
+
+</details>
+
+For the full test suite, first provision the separate
+[pinned plotting environment](docs/plotting_runtime.md), then run:
+
+```bash
 uv run --frozen python -m pytest -q
 uv run --frozen ruff check .
 ```
 
-Java 21 must be available through `JAVA_HOME` or `PATH`. CI uses Python 3.11 and
-Temurin 21. Tests needing actual WEKA skip when `WEKA_JAR` is unset; setting it
-makes those WEKA failures fail the suite. Additional showcase tests require the
-original pinned Windows runtime. The verified Ubuntu run passed **173 tests and
-skipped 19**, while local and isolated Windows runs passed **all 192** with no
-skips. GitHub Actions runs the tests and actual WEKA smoke on pushes; full FDA
-downloads are excluded from ordinary CI. See the
-[dated CI record](docs/final_readiness_20261106.md#verification-record).
+Set `WEKA_JAR` to enable actual WEKA tests. Some showcase tests require the original
+Windows runtime; environment-specific passes/skips and clean-environment evidence
+are recorded in the [validation audit](docs/final_readiness_20261106.md#verification-record).
 
-## Inspect the evidence
+## Limitations
 
-Generated files are in `artifacts/generated/fixture/`:
+- **Reports are not a patient population.** Incomplete/duplicate submissions,
+  reporting bias, underlying illness and co-medication complicate interpretation.
+  These data do not supply clinical incidence or prove causality.
+  [FDA guidance →](https://open.fda.gov/apis/drug/event/)
+- **Sparse cells can dominate ratios.** Counts, zero-cell flags and uncertainty
+  conventions accompany scores; PRR/ROR are comparative measures, not ground truth.
+- **Scope is deliberately narrow.** One quarter, one drug class, exact mappings
+  and a fixed reaction vocabulary limit generalization. Original cross-quarter
+  version histories were not audited; suspect roles express reporter attribution.
+- **Evaluation is bounded.** The benchmark is positive-only, ranking comparisons
+  use declared matched pools, and scientific interpretation/student signoff remain
+  pending. Computational agreement does not constitute clinical validation.
 
-- `preprocess_audit.json`: deduplication, orphan rows, exclusions, roles, unmapped names.
-- `case_index.csv`: ARFF row to retained case/report identifiers.
-- `transactions.arff`: ten transactions, including five empty background baskets.
-- `analytical.duckdb`: `cases`, `case_items`, and quarter/item count view `item_summary`.
-- `signal_counts.csv`: counts and independently verified support, confidence, lift, PRR/ROR.
-- `weka/`: ARFF parser check, version logs, raw Apriori output, accepted rules and manifest.
-- `comparison.csv`, `manifest.json`, `repro_manifest.json`: comparison and provenance.
+## Documentation and evidence
 
-The synthetic pair has `a=3, b=1, c=1, d=5, N=10`; support `0.3`, confidence
-`0.75`, lift `1.875`, PRR `4.5`, and ROR `15`. WEKA rounds displayed lift to
-`1.88`; the smoke check allows only its displayed rounding precision.
+- **Data and preprocessing:** [source/integration record](docs/milestone2.md),
+  [frozen experiment](config/experiment.yaml), [reviewed aliases](mappings/drug_mapping.csv).
+- **Research results:** [primary analysis](docs/milestone3.md),
+  [role sensitivity](docs/milestone4.md), [frozen benchmark](benchmarks/known_signals.yaml).
+- **Verification:** [case-by-case source audit](docs/case_source_evidence_review_20261106.md),
+  [SS ingredient-reference review](docs/rosuvastatin_zinc_reference_review_20261106.md),
+  [Explorer checklist](docs/weka_explorer_verification_checklist.md).
+- **Engineering detail:** [reproduction/demo guide](docs/reproduction_and_demo_readiness.md),
+  [requirements and remaining gates](docs/final_readiness_20261106.md),
+  [project specification](PRD.md).
 
-The fixture pipeline intentionally stays small and in memory. Use `ingest` for
-full-quarter processing. The smoke runner only accepts the known toy pair; it
-is not a general real-data mining experiment runner. Use the frozen experiment
-runner for actual real-data threshold sweeps and ranking checks:
-
-```powershell
-.venv/Scripts/python -m faersight.cli mine data/processed/2025Q4-statins/analytical.duckdb --jar $env:WEKA_JAR --output artifacts/generated/2025Q4-statins-mining
-```
-
-The command validates the mart, exports all eligible reports including empty
-baskets, compiles the bundled Java bridge with the existing JDK, and executes
-actual WEKA Apriori per reaction at each frozen support value. It checks exact
-API counts/metrics and exhaustive pair coverage, then writes PRR/ROR, matched
-ranking comparisons, threshold stability and positive-benchmark recovery.
-Raw logs, runtime hashes, input hashes and a completion manifest are retained.
-Existing snapshots cannot be overwritten; choose a new output path for reruns.
-See the [execution contract](docs/milestone3.md), including the toy-discovered
-WEKA upper-support correction. Outputs remain provisional until the recorded
-manual review and scientific gates are complete.
-
-## Role sensitivity and scientific checks
-
-Milestone 4 adds an isolated **2025 Q4 PS versus PS+SS sensitivity** without
-changing the frozen primary experiment. It reviews the exact unmapped SS
-rosuvastatin-zinc combination in a separate mapping overlay, retains the primary
-reaction vocabulary and full reporting population, and reruns actual WEKA:
-
-```powershell
-.venv/Scripts/python -m faersight.cli sensitivity data/processed/2025Q4-statins/analytical.duckdb --primary-run artifacts/generated/2025Q4-statins-mining --output artifacts/generated/2025Q4-statins-sensitivity --jar $env:WEKA_JAR
-```
-
-New outputs contain benchmark ranks/percentiles for lift, PRR and ROR, raw-cell
-ROR 95% intervals, an explicitly conventional PRR screening flag, matched role
-comparisons and a small unsigned student-review packet. See
-[Milestone 4](docs/milestone4.md) for exact denominators, sparse-cell policies,
-executed differences and fresh-clone reproduction evidence. Detailed sample
-cases remain local under the new output's `manual_review/` directory.
-
-The core stays within 2025 Q4. Student inspection and interpretation remain
-required before the final scientific freeze or optional WEKA showcase extension.
-
-The [roadmap](docs/roadmap.md) separately plans a post-core **WEKA Showcase /
-Tool-Study Extension**: full-ARFF Apriori feasibility, multi-item rules, metric
-comparisons, FPGrowth and an Explorer demonstration. Step 2A prerequisites remain
-locked. The [first full-data 0.001 attempt](docs/weka_showcase_step2b.md) timed out
-at its registered 30-minute limit; the stop rule blocks further ladder descent.
-Under the separate preregistered amendment, the
-[single FPGrowth 0.001 checkpoint](docs/weka_showcase_fpgrowth.md) completed with
-4,884 complete reaction-only rules. Its cutoff is 386 versus Apriori's 385.
-The corrected higher-support paired comparison is eligible but awaits separate
-authorization; no fallback, lower support, metric comparison or GUI ran.
-
-The subsequently authorized [Fallback A1 at 0.004](docs/weka_showcase_fallback_a1.md)
-completed both algorithms with 70 matching reaction-only rules, Jaccard 1.0 and
-exact shared-metric agreement. Native cutoffs remain 1,541/1,542; the registered
-common-support comparison gives the same result. All 137 tests pass. The next
-level 0.003 is eligible and awaits separate explicit authorization.
-
-The subsequently authorized [Fallback A2 at 0.003](docs/weka_showcase_fallback_a2.md)
-completed with 194 matching reaction-only rules per algorithm, Jaccard 1.0 and
-exact shared-metric agreement. Both cutoffs are 1,156. Atorvastatin is singleton-
-eligible but no statin-containing rule was emitted; complete empty statin exports
-are retained. All 145 tests passed at that checkpoint.
-
-The final authorized [Fallback A3 at 0.002](docs/weka_showcase_fallback_a3.md)
-completed with 586 matching reaction-only rules and 447 frequent itemsets per
-algorithm at cutoff 771. Jaccard is 1.0; all shared metrics agree exactly.
-Atorvastatin and rosuvastatin are singleton-eligible but no statin-containing
-rules were emitted; explicit empty exports are retained. Apriori build/JVM wall
-times were 828.229/828.657 s; FPGrowth 0.395/0.832 s. The recorded A1/A2/A3
-progression does not assume monotonic runtime. All 153 tests and frozen-core/prior
-evidence checks passed at that checkpoint. **Fallback A is complete.**
-
-The authorized [metric-ranking checkpoint](docs/weka_showcase_metrics.md) now
-compares exactly those 586 rules using full-precision API metrics and average
-statistical ranks for ties. It records Top-K overlaps/boundary ties, the 472-rule
-robustness analysis, fixed rank-gap examples and three deterministic charts.
-The lift >=1.2 pool restriction and rule dependence limit the correlations.
-All statin-containing itemsets of size >=2 have joint count at most 141, below
-the showcased cutoffs; singleton eligibility alone cannot produce a rule.
-All 171 tests and prior-evidence/core hash checks passed at that checkpoint.
-No new mining ran.
-Earlier scientific validation boundaries remain unchanged.
-
-The unrestricted WEKA showcase is an algorithm and metric study on reaction co-reporting. The projected experiment is the FAERSight drug-safety analysis.
-
-The authorized [Explorer preparation](docs/weka_explorer_demo.md) now supplies
-the all-report eight-column MYOPATHY projection, frozen result references, exact
-underlying option mappings and [rehearsal cues](docs/weka_explorer_demo_script.md).
-**Explorer GUI verification is complete by manual observation (November 6, 2026).**
-The [completed checklist](docs/weka_explorer_verification_checklist.md) links the
-full-data Preprocess screenshot, matching four-rule projected Apriori output and
-full-data FPGrowth 70-rule result at support 0.004. The current suite has 192 tests;
-prior/core evidence and exact runtime specifications are unchanged. No GUI load
-time or live runtime/heap measurement is claimed. No 10k fallback was needed and
-no new scientific experiment was run. The final technical readiness documentation
-is complete; student review, independent report/PowerPoint authorship, final
-template/Canvas confirmation and submission remain outstanding.
-
-## Experiment configuration
-
-For metric-study chart tests, provision the [portable pinned plotting runtime](docs/plotting_runtime.md)
-or set `FAERSIGHT_PLOTTING_PYTHON` explicitly. CI provisions its own Python 3.11
-plotting environment; no contributor-specific interpreter path is required.
-
-See [decisions](docs/decisions.md) and [course compliance](docs/course_compliance.md).
-The frozen [experiment](config/experiment.yaml),
-[class definition](config/therapeutic_class.yaml) and
-[reviewed aliases](mappings/drug_mapping.csv) define the real-data run. The draft
-[example template](config/experiment.example.yaml) remains available for future
-experiments and is rejected by `--require-frozen` until completed.
-
-Technical artifacts here are engineering aids. Course report, literature-review,
-slides and narration must be written by the student under the PRD's course policy.
-
-The repository follows the documented
-[WEKA Apriori options](https://weka.sourceforge.io/doc.dev/weka/associations/Apriori.html):
-lift ranking (`-T 1`) and zero/first-nominal values treated as missing for mining
-(`-Z`). No Python Apriori substitute is used.
+Course reports, slide text and narration remain student-authored; these repository
+documents and generated outputs are technical evidence.
