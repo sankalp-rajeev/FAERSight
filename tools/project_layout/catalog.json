@@ -1,0 +1,386 @@
+{
+  "archive_sha256": "1f944ad922aeb814baf1bca0471335ae23b9b54648659e3a0b784fa0f128d606",
+  "baseline_commit": "5d21ec1f428eef48293e44855581b72168caee14",
+  "entries": {
+    ".github/workflows/ci.yml": {
+      "classification": "CONSOLIDATE",
+      "current_path": ".github/workflows/ci.yml",
+      "current_sha256": "cd72309f98e96b058a5921c3b90747577fe1cf6935ae686efc516555d887e4d4",
+      "original_sha256": "88663181838fbdd7d4dbc09a9fa0abd4959c1112f8744d93f6eb155adcb0f7e6"
+    },
+    "README.md": {
+      "classification": "CONSOLIDATE",
+      "current_path": "README.md",
+      "current_sha256": "f30ac4bc578c21418c68dd29d08b9f458f952cabbd4abd6f237e7e3d835cd266",
+      "original_sha256": "1b784e7016d28c78d0dd919ed30014e290f4b466f70e25ae23104aa356645448"
+    },
+    "docs/decisions.md": {
+      "classification": "CONSOLIDATE",
+      "current_path": "docs/history/decisions.md",
+      "current_sha256": "b9fbd4b710f4ee4d2fba7434a511bf5ebe8a15ec89d8a0518ae7a4204ac7b7e1",
+      "original_sha256": "c00b8539554d62e34cd3cd4d19c1080542bad8d8dd11ae42bb62dadd9b36ab0f"
+    },
+    "docs/final_readiness_20261106.md": {
+      "classification": "CONSOLIDATE",
+      "current_path": "docs/final_readiness_20261106.md",
+      "current_sha256": "ca2a49deff0da4865e23a75302b77323e0ab9f2402b18e56f2f610c815d7fe1b",
+      "original_sha256": "a67ddae1113ac517ba5f8c5919e41b6005954d6a9eddd29b8829efc5d4378db8"
+    },
+    "docs/milestone4.md": {
+      "classification": "CONSOLIDATE",
+      "current_path": "docs/milestone4.md",
+      "current_sha256": "39b88d334665df9a0ec2d6b76fa689290862697b593360eefe8e2817affc4e8c",
+      "original_sha256": "7db62b304cc1cc32d564b2423d97c51611fca19715a4502a8490d7faec0ef376"
+    },
+    "docs/plotting_runtime.md": {
+      "classification": "CONSOLIDATE",
+      "current_path": "docs/plotting_runtime.md",
+      "current_sha256": "2a941d0ef0c0051c7965620b79b32b96277083d06e5fe8a249669d7cea5b4882",
+      "original_sha256": "72c24778d9308d0de451c202827b3d5c531abdae613715457d2ee0c04391e585"
+    },
+    "docs/reproduction_and_demo_readiness.md": {
+      "classification": "CONSOLIDATE",
+      "current_path": "docs/reproduction_and_demo_readiness.md",
+      "current_sha256": "6e19edd2261ce94325bdc8aa69b7bac09d499e6e3e15707eaea0a380ed117c91",
+      "original_sha256": "30f3c3812f6d72a8b38d02c984cc4b04e391b7ea421a9eeba9593d95405418b3"
+    },
+    "docs/roadmap.md": {
+      "classification": "CONSOLIDATE",
+      "current_path": "docs/history/roadmap.md",
+      "current_sha256": "c0a9b5fe711e442fc6862004e4dea73c99c481d5a5bb645fc13ca7e1de6f00da",
+      "original_sha256": "41b2dcb0794e90b58a8045189192597a4f23810cc8e8bc90089a9caed2a74991"
+    },
+    "docs/weka_explorer_verification_checklist.md": {
+      "classification": "CONSOLIDATE",
+      "current_path": "docs/weka_explorer_verification_checklist.md",
+      "current_sha256": "0341638ddfd547b41ec9f72c62ba85b0f647d44eb769601c0b347d26d9427c56",
+      "original_sha256": "53f8a0dab878bf877a506bda6beafcf0f30b842e08776ac005345c8be9e949ed"
+    },
+    "docs/weka_showcase_fallback_a1.md": {
+      "classification": "CONSOLIDATE",
+      "current_path": "docs/history/weka_showcase_fallback_a1.md",
+      "current_sha256": "56a6a8f60a5039c5dbefcf7071765d0d70a15e5a116a98385fb6a48241d88200",
+      "original_sha256": "ed60348c68fd5e837339ed8799dde0e16499a5fe1d1a35801a8e6eaa1c74e42e"
+    },
+    "docs/weka_showcase_fallback_a2.md": {
+      "classification": "CONSOLIDATE",
+      "current_path": "docs/history/weka_showcase_fallback_a2.md",
+      "current_sha256": "a236c647fef3e6c042d9fc6918d73061d0baa9596d28e458c93b87a720983295",
+      "original_sha256": "e9e773fd73aa23611b1a168a3ec6d1a08ad407954f19632851bbdf1fca4e007f"
+    },
+    "docs/weka_showcase_fallback_a3.md": {
+      "classification": "CONSOLIDATE",
+      "current_path": "docs/weka_showcase_fallback_a3.md",
+      "current_sha256": "92878c7c22879ed65ecd97dd7d1ee217bfb9739b9d8036da707bfc3501b9e05d",
+      "original_sha256": "13009d0f97685c88b1360ea89cf2f1094145cd65d96eaa9e99cf36e356fafece"
+    },
+    "docs/weka_showcase_fpgrowth.md": {
+      "classification": "CONSOLIDATE",
+      "current_path": "docs/history/weka_showcase_fpgrowth.md",
+      "current_sha256": "0d61f9ae06dc7f570ec4e5bbe91b92f17742f6e3dd1f429d099f19d77f36e25d",
+      "original_sha256": "d2bad2b68fe1ab7b77aacac3e0ee5dd4717337ea9d20137cadc85958f2a89ba5"
+    },
+    "docs/weka_showcase_metrics.md": {
+      "classification": "CONSOLIDATE",
+      "current_path": "docs/weka_showcase_metrics.md",
+      "current_sha256": "5d8e57b3ee70bc5a6624952025eabb32fa756db50b327c45ce44afcb279d9b56",
+      "original_sha256": "5609f05fbaccc07af6e86e6145a79560a7e2ef788c66ccd1cf1dc27f16c1af6f"
+    },
+    "docs/weka_showcase_step2b.md": {
+      "classification": "CONSOLIDATE",
+      "current_path": "docs/history/weka_showcase_step2b.md",
+      "current_sha256": "e151f6ad4cdc89d8fbfa376ec6736a6828ca69cc788450522cec65eab33b6414",
+      "original_sha256": "f990c5c98f983da1f9c3c75ea4b68a6cf6d845fde379c15a29143a1009ea5db7"
+    },
+    "pyproject.toml": {
+      "classification": "CONSOLIDATE",
+      "current_path": "pyproject.toml",
+      "current_sha256": "acceae2c84599b95d258d50f836710aef39409b752577f127736f583041a4a82",
+      "original_sha256": "31a9a5172c57bac2e046a3888eaad4e3b75c4921ebf3ba2eff670bbe7c232c3f"
+    },
+    "scripts/export_showcase_fpgrowth.py": {
+      "classification": "REMOVE",
+      "current_path": null,
+      "current_sha256": null,
+      "original_sha256": "36d910708014c7e5ad5f05f4e3353bf75760e6204290dcc162576b2d5c35fa8d"
+    },
+    "scripts/export_showcase_step2b.py": {
+      "classification": "REMOVE",
+      "current_path": null,
+      "current_sha256": null,
+      "original_sha256": "d511ff3965bd40e4e6c7ac8f5c95420fbd8ea6e4dd174947a84338536132a215"
+    },
+    "scripts/record_showcase_fpgrowth.py": {
+      "classification": "REMOVE",
+      "current_path": null,
+      "current_sha256": null,
+      "original_sha256": "8d1e7e2a17fa0ab339f62a13f9189ddac4cc36d3974f37e7602be929a9335e3f"
+    },
+    "scripts/record_showcase_step2b.py": {
+      "classification": "REMOVE",
+      "current_path": null,
+      "current_sha256": null,
+      "original_sha256": "7098b4cad56cbcc908e77107212041fd41c04ad155f640438913f78abfd07cee"
+    },
+    "scripts/reproduce_milestone4.py": {
+      "classification": "REMOVE",
+      "current_path": null,
+      "current_sha256": null,
+      "original_sha256": "549d1d2cd1aca0e332323f0530199162eb70c64a27d034c8f3a455abafc1d48a"
+    },
+    "scripts/verify_explorer_preparation.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "scripts/verify_explorer_preparation.py",
+      "current_sha256": "c780783ef2b94398860af365536743846ddc9a7393cfbcdbb6e1b8e24b1052e2",
+      "original_sha256": "1780d7bf9734cc0b10d3eda97f9ea59d27484b27619230382f07cd453f4cf2c5"
+    },
+    "scripts/verify_showcase_metrics.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "scripts/verify_showcase_metrics.py",
+      "current_sha256": "fb09211f093b918aad5235fcd83dacdcab9aa5a96aefc4d0f60d8186d93220bf",
+      "original_sha256": "2519c1d4b450c9b3cbc6f38bc15b157152187740761e9b409c39da0acb706ec5"
+    },
+    "showcase/README.md": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase/README.md",
+      "current_sha256": "b68811476c0c5b84efd18653b4ed5487b6f640ed80b43fef45078fa6124ba59e",
+      "original_sha256": "b68811476c0c5b84efd18653b4ed5487b6f640ed80b43fef45078fa6124ba59e"
+    },
+    "showcase/SEMANTICS.md": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase/SEMANTICS.md",
+      "current_sha256": "f8585625c2c347db2541bc9410139537e52b58173ffdee7936c91c4905d99e28",
+      "original_sha256": "f8585625c2c347db2541bc9410139537e52b58173ffdee7936c91c4905d99e28"
+    },
+    "showcase/__init__.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase/__init__.py",
+      "current_sha256": "7163fd42df5d07357a8135b4db38794de9ae1cdff883cbba5cdcf0cb8ffe991c",
+      "original_sha256": "7163fd42df5d07357a8135b4db38794de9ae1cdff883cbba5cdcf0cb8ffe991c"
+    },
+    "showcase/config.yaml": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase/config.yaml",
+      "current_sha256": "01d151cafae45dd408b9b9cec2ee6b3a42287195cab1d613d2f5f05986218096",
+      "original_sha256": "01d151cafae45dd408b9b9cec2ee6b3a42287195cab1d613d2f5f05986218096"
+    },
+    "showcase/fixtures/semantic.arff": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase/fixtures/semantic.arff",
+      "current_sha256": "618076547b9980684210fc1a130f5b1784e91e0bb6063f9692ef4e176a5be165",
+      "original_sha256": "618076547b9980684210fc1a130f5b1784e91e0bb6063f9692ef4e176a5be165"
+    },
+    "showcase/inspect.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase/inspect.py",
+      "current_sha256": "879ff049cb90526dcfc456a118693fbf408a41cf69598119955dd06806fe5bbf",
+      "original_sha256": "3a0c27d15a7ac84e326d016f12985c2e28ad6c62b13f2494e55498116d3c7f52"
+    },
+    "showcase/java/ShowcaseApriori.java": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase/java/ShowcaseApriori.java",
+      "current_sha256": "473f56c2a242c863863129d3ae08100403e35ff58b239d3b96d2620558473d24",
+      "original_sha256": "473f56c2a242c863863129d3ae08100403e35ff58b239d3b96d2620558473d24"
+    },
+    "showcase/runner.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase/runner.py",
+      "current_sha256": "4995af72ab99daa51e131d97b3baad4c5731db88534f4fb795e19119c4a6513b",
+      "original_sha256": "b33b6b8577fc4ed6842d81605fa1d7f409168ae0f88a88f7ff6aa9338097cacb"
+    },
+    "showcase_explorer/__init__.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_explorer/__init__.py",
+      "current_sha256": "3e1a6cd8bd70d19a8835d1662f3d13c465eaee47faa1a0793f018d540d56192b",
+      "original_sha256": "3e1a6cd8bd70d19a8835d1662f3d13c465eaee47faa1a0793f018d540d56192b"
+    },
+    "showcase_explorer/config.json": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_explorer/config.json",
+      "current_sha256": "008216e75a5c9053c766c4517cf91daf97c20967126ee6a5bdb88039d1021e05",
+      "original_sha256": "008216e75a5c9053c766c4517cf91daf97c20967126ee6a5bdb88039d1021e05"
+    },
+    "showcase_explorer/java/ExplorerPreflight.java": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_explorer/java/ExplorerPreflight.java",
+      "current_sha256": "acc3aca817380eba143e5078ccadf923478e7618bde91fe7f2cc876d334ce74e",
+      "original_sha256": "acc3aca817380eba143e5078ccadf923478e7618bde91fe7f2cc876d334ce74e"
+    },
+    "showcase_explorer/prepare.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_explorer/prepare.py",
+      "current_sha256": "5cf33f59579f1531859e63df01c1b7020c36f6e2893d80ae061a041cea253473",
+      "original_sha256": "707f3a751ac8739d996f51f73035fca3b704fbe62efc9c03935388619cc3fa96"
+    },
+    "showcase_fallback_a1/__init__.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fallback_a1/__init__.py",
+      "current_sha256": "1f7c88c6b1a2614571ddc5bca63b365406b412dab14878f689b0cf69e46c4020",
+      "original_sha256": "1f7c88c6b1a2614571ddc5bca63b365406b412dab14878f689b0cf69e46c4020"
+    },
+    "showcase_fallback_a1/compare.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fallback_a1/compare.py",
+      "current_sha256": "de649870dcf2d84124074c25fb8ff45f302780a0674b6028809fcb643eac7533",
+      "original_sha256": "de649870dcf2d84124074c25fb8ff45f302780a0674b6028809fcb643eac7533"
+    },
+    "showcase_fallback_a1/config.json": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fallback_a1/config.json",
+      "current_sha256": "a5c52a4c8cf7df8684389ec0d541dedab5c52bc98190b435c8bd6202932d22aa",
+      "original_sha256": "a5c52a4c8cf7df8684389ec0d541dedab5c52bc98190b435c8bd6202932d22aa"
+    },
+    "showcase_fallback_a1/runner.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fallback_a1/runner.py",
+      "current_sha256": "a70291cfaa59bcccb54baac0e66fbc77486dbdfbb8744ec84f9a5f6bff2a7f6d",
+      "original_sha256": "67c34a98df093525d3d49c7196f88668d1b76002cad4eeb00a7841e11dd76de0"
+    },
+    "showcase_fallback_a2/__init__.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fallback_a2/__init__.py",
+      "current_sha256": "98a7a0a43b7487fad9a0d87a4140d5c052411cb24e6114ad19ea0dcb96a62205",
+      "original_sha256": "98a7a0a43b7487fad9a0d87a4140d5c052411cb24e6114ad19ea0dcb96a62205"
+    },
+    "showcase_fallback_a2/analysis.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fallback_a2/analysis.py",
+      "current_sha256": "93bc1086955929396593447ae87e6cb0bc41b0cc2f577beadfe7e00898c8d99d",
+      "original_sha256": "a845e8c8129ed5e9424b0c001fca1ae886ba3e016a17edbc5b3e4309c8ae7341"
+    },
+    "showcase_fallback_a2/config.json": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fallback_a2/config.json",
+      "current_sha256": "cab5201eb012305820f719e04dfd1167f15cb653734837c6e2585e28ca80bc33",
+      "original_sha256": "cab5201eb012305820f719e04dfd1167f15cb653734837c6e2585e28ca80bc33"
+    },
+    "showcase_fallback_a2/runner.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fallback_a2/runner.py",
+      "current_sha256": "d9548d9e4948fab0383ad63e125065108eb14bd0547dc4c6d825e11e29c05e1e",
+      "original_sha256": "ec4b4193c179c5107cb7a6023e2dca52cc5c2b78d7423c0205da27247bcb4fda"
+    },
+    "showcase_fallback_a3/__init__.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fallback_a3/__init__.py",
+      "current_sha256": "4c71edcf4816d98e15bc2fddb3f59f256e75660f644c0b25e9a72196d7f0f31f",
+      "original_sha256": "4c71edcf4816d98e15bc2fddb3f59f256e75660f644c0b25e9a72196d7f0f31f"
+    },
+    "showcase_fallback_a3/analysis.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fallback_a3/analysis.py",
+      "current_sha256": "214b34fb1d014eb402d9fa0a1e73020dca6f377b7a41c62b4f79ba4620e84171",
+      "original_sha256": "214b34fb1d014eb402d9fa0a1e73020dca6f377b7a41c62b4f79ba4620e84171"
+    },
+    "showcase_fallback_a3/config.json": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fallback_a3/config.json",
+      "current_sha256": "74fcaa89eb2e19a6a230609a27a38143b75120084034f434f522a8641a2381ff",
+      "original_sha256": "74fcaa89eb2e19a6a230609a27a38143b75120084034f434f522a8641a2381ff"
+    },
+    "showcase_fallback_a3/progression.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fallback_a3/progression.py",
+      "current_sha256": "d61afc0c9210d15a3f3313b83ca25851a0eb567161988e09c8f9364f398398e5",
+      "original_sha256": "27791f6717981f6c3c5751cde0e22653e22ffb409805ee8816087c799286308e"
+    },
+    "showcase_fallback_a3/runner.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fallback_a3/runner.py",
+      "current_sha256": "b13faa6a331e9b4b6f230bd7a0f04aa4aaa143141dd62888f01d138c7bfba2ce",
+      "original_sha256": "ffe29d3ab8cbbf0d09b538e6c65c1ce26c97aee6540fa6a7e5ebe9344186a9ad"
+    },
+    "showcase_fpgrowth/SEMANTICS.md": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fpgrowth/SEMANTICS.md",
+      "current_sha256": "47334188504dd7b12d37605378fc377d38005a29f441bb7e3265203185248546",
+      "original_sha256": "47334188504dd7b12d37605378fc377d38005a29f441bb7e3265203185248546"
+    },
+    "showcase_fpgrowth/__init__.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fpgrowth/__init__.py",
+      "current_sha256": "3666dc7091fac272bd2fbda65691d4ada0f678b1ffc1a0c042da92367327c22a",
+      "original_sha256": "3666dc7091fac272bd2fbda65691d4ada0f678b1ffc1a0c042da92367327c22a"
+    },
+    "showcase_fpgrowth/config.json": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fpgrowth/config.json",
+      "current_sha256": "7d8b0049baccae66ef659d7524a199e44a9798219e70af30287a195b382e526b",
+      "original_sha256": "7d8b0049baccae66ef659d7524a199e44a9798219e70af30287a195b382e526b"
+    },
+    "showcase_fpgrowth/inspect.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fpgrowth/inspect.py",
+      "current_sha256": "67b087d5b2b7693a764316c3bf9a7ca9cff735d82cbaf88384939edb7ab7bfa6",
+      "original_sha256": "31ec615c9df461b0a4edd30c2d4ad162781d022da706aee926155bb88761535b"
+    },
+    "showcase_fpgrowth/java/ShowcaseFPGrowth.java": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fpgrowth/java/ShowcaseFPGrowth.java",
+      "current_sha256": "9a9f3bd8b677f3189f2a50e04901206f9330e520cb530b47ee07cfdaa80877b2",
+      "original_sha256": "9a9f3bd8b677f3189f2a50e04901206f9330e520cb530b47ee07cfdaa80877b2"
+    },
+    "showcase_fpgrowth/runner.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_fpgrowth/runner.py",
+      "current_sha256": "6db171a9749e4dcd7301e0fa6f06528e0c9d0148a618fecb022810cf4094010e",
+      "original_sha256": "fb8785f17abd34146fced34e586eaf4ebe654cc091aa6f65ec20433156c671d9"
+    },
+    "showcase_metrics/__init__.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_metrics/__init__.py",
+      "current_sha256": "e421d76492da8729752ab5d1ee97bf5478d31ccb029915f1bb012eec73631155",
+      "original_sha256": "e421d76492da8729752ab5d1ee97bf5478d31ccb029915f1bb012eec73631155"
+    },
+    "showcase_metrics/analysis.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_metrics/analysis.py",
+      "current_sha256": "87181aa25bd0e0a1e493923fc61fab01f9e8113db476b8b81638e2f97b035213",
+      "original_sha256": "87181aa25bd0e0a1e493923fc61fab01f9e8113db476b8b81638e2f97b035213"
+    },
+    "showcase_metrics/config.json": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_metrics/config.json",
+      "current_sha256": "cde56f4c91df9c30738a4de6da00d8fe5cbed5b353a3f5e0b1ef76d5ff4b86fa",
+      "original_sha256": "cde56f4c91df9c30738a4de6da00d8fe5cbed5b353a3f5e0b1ef76d5ff4b86fa"
+    },
+    "showcase_metrics/java/MetricProbe.java": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_metrics/java/MetricProbe.java",
+      "current_sha256": "708f208aa726b675720ca135a54bc5dd2bb4d0ab529a0641d859716080cc6002",
+      "original_sha256": "708f208aa726b675720ca135a54bc5dd2bb4d0ab529a0641d859716080cc6002"
+    },
+    "showcase_metrics/plots.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_metrics/plots.py",
+      "current_sha256": "d4671c5cc7e4cf46ed133821cedb40950df18adfd738be25bae6403cb5880a1b",
+      "original_sha256": "d4671c5cc7e4cf46ed133821cedb40950df18adfd738be25bae6403cb5880a1b"
+    },
+    "showcase_metrics/probe.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_metrics/probe.py",
+      "current_sha256": "55d6880091b8644efdde0fabbb55000692573fde6b009002fbb5f1c2c1653872",
+      "original_sha256": "899cfa0b0e847c581cc692c43c43c49065cc03968343f0cd2f5d1e9194f55b1b"
+    },
+    "showcase_metrics/runner.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_metrics/runner.py",
+      "current_sha256": "5c7c76c17ed1a31f107cb02f17ff262360022ae6a9c9565b458b37acf1667869",
+      "original_sha256": "088db47db7fcf314fd50b2483e7b45d63106b84ea2ad81ec362ba5cfca80a675"
+    },
+    "showcase_metrics/runtime.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tools/showcase_metrics/runtime.py",
+      "current_sha256": "30adf105979e4211cd00e5420574efe0eb8502aa130becf7cde5eefb99bb01cf",
+      "original_sha256": "d816e59e1a71c50594096aeffb1cfa6105ff1d3a93addf04f444375e2f9173ca"
+    },
+    "tests/showcase_metrics/test_plotting_runtime.py": {
+      "classification": "CONSOLIDATE",
+      "current_path": "tests/showcase_metrics/test_plotting_runtime.py",
+      "current_sha256": "3d6cf81a2967ff8456ab7cb1e7d387283a770d384c708f05a02a1366e476ce36",
+      "original_sha256": "efcfce6a62592c9100b5efbc9bda311e9bd8160f6be87c969db3a35ad35ff2a0"
+    }
+  },
+  "historical_only": true,
+  "schema_version": 1
+}

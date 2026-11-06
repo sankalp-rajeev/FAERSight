@@ -147,7 +147,7 @@ rules. This chart is not the primary lift-versus-PRR/ROR comparison.*
 
 [Algorithm comparison](docs/weka_showcase_fallback_a3.md) ·
 [Metric study and pool restrictions](docs/weka_showcase_metrics.md) ·
-[Preserved lower-support Apriori timeout](docs/weka_showcase_step2b.md)
+[Preserved lower-support Apriori timeout](docs/history/weka_showcase_step2b.md)
 
 ## Run the project
 
@@ -250,6 +250,7 @@ are recorded in the [validation audit](docs/final_readiness_20261106.md#verifica
   [Explorer checklist](docs/weka_explorer_verification_checklist.md).
 - **Engineering detail:** [reproduction/demo guide](docs/reproduction_and_demo_readiness.md),
   [requirements and remaining gates](docs/final_readiness_20261106.md),
+  [repository layout and inventory](docs/repository_layout.md),
   [project specification](PRD.md).
 
 Course reports, slide text and narration remain student-authored; these repository

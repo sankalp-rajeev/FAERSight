@@ -33,11 +33,12 @@ jobs:
       - name: Verify plotting runtime
         run: uv run --frozen python -c "from showcase_metrics.runtime import plotting_runtime; print(plotting_runtime())"
       - run: uv run --frozen ruff check .
-      - run: uv run --frozen ruff format --check src tests
+      - run: uv run --frozen ruff format --check src tests tools scripts
       - run: uv run --frozen faersight validate-config config/experiment.example.yaml
       - run: uv run --frozen faersight validate-config config/experiment.yaml --require-frozen
       - run: bash scripts/setup_weka.sh
       - run: uv run --frozen python -m pytest -q --junitxml=artifacts/generated/tests.xml
+      - run: uv run --frozen python scripts/verify_repository.py
       - run: uv run --frozen faersight reproduce-fixture --jar "$WEKA_JAR"
       - uses: actions/upload-artifact@v4
         if: always()

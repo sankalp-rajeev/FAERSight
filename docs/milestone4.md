@@ -155,7 +155,8 @@ student's interpretation; no automated step signs off that judgment.
 
 ## Reproduction and freeze status
 
-The reproduction harness is `scripts/reproduce_milestone4.py`. It creates a
+The historical reproduction harness is `scripts/reproduce_milestone4.py`
+(retired from the active tree; [recover the original source](repository_layout.md#immutable-source-references-and-historical-replay)). It creates a
 Git bundle and a separate clone, installs the locked dependencies in a new
 environment, verifies and extracts the cached pinned FDA ZIP, rebuilds the
 mart, and reruns actual WEKA. It compares deterministic artifacts and every
@@ -209,8 +210,10 @@ signoff remains conditional on the student's source-case inspection, exact-alias
 and benchmark-label approval, interpretation of sparse/co-reported associations,
 and student-authored submission. No new quarter or optional showcase was added.
 
-To reproduce in another unused local clone directory from the committed primary
-base plus the explicitly hashed milestone overlay:
+The following historical command runs from the recovered pre-cleanup checkout,
+using another unused local clone directory and the committed primary base plus
+the explicitly hashed milestone overlay. For current CLI reproduction, use the
+[README workflow](../README.md#run-the-project).
 
 ```powershell
 .venv/Scripts/python scripts/reproduce_milestone4.py --clone .tools/new-reproduction-clone --records artifacts/generated/new-reproduction-record --jar .tools/weka/weka-stable-3.8.6.jar

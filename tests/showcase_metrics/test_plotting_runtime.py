@@ -3,7 +3,6 @@ from pathlib import Path
 from types import SimpleNamespace
 
 import pytest
-
 from showcase_metrics import runner, runtime
 from showcase_metrics.runner import plotting_versions
 
@@ -14,8 +13,8 @@ PINNED = {"matplotlib": "3.10.8", "numpy": "2.4.2", "pillow": "12.1.1"}
 def isolated_runtime(tmp_path, monkeypatch):
     monkeypatch.setattr(runtime, "ROOT", tmp_path)
     monkeypatch.delenv(runtime.PLOTTING_ENV, raising=False)
-    folder = tmp_path / "showcase_metrics"
-    folder.mkdir()
+    folder = tmp_path / "tools/showcase_metrics"
+    folder.mkdir(parents=True)
     (folder / "config.json").write_text(json.dumps({"plotting_versions": PINNED}))
     return tmp_path
 

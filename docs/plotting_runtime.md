@@ -94,3 +94,12 @@ files, 108 frozen scientific-core files, 1096 primary and 1106 sensitivity gener
 artifacts retain their hashes. The full-data mining invocation inventory is
 unchanged. Metric/Explorer historical audits pass without rewriting their records.
 No association experiment or scientific result was regenerated.
+
+## Consolidated source layout
+
+Optional packages now live under `tools/`. `plotting_env()` adds that directory
+to the isolated interpreter's `PYTHONPATH`, preserving any caller-provided entries.
+Module names and plotting versions are unchanged. Historical auditors also verify
+relocated original source bytes and their reviewed current replacements through
+the [source catalog](repository_layout.md#immutable-source-references-and-historical-replay).
+The 192-test count above records the earlier portability checkpoint.

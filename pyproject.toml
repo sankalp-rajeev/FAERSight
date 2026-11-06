@@ -16,13 +16,16 @@ dev = ["pytest>=8,<10", "ruff>=0.9,<1"]
 faersight = "faersight.cli:main"
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = ["src", "tools"]
 
 [tool.setuptools.package-data]
 faersight = ["sql/*.sql", "java/*.java"]
+"*" = ["*.json", "*.yaml", "*.md", "java/*.java", "fixtures/*.arff"]
+project_layout = ["catalog.json", "original_sources.zip"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["tools"]
 addopts = "--basetemp=.tools/pytest-tmp"
 markers = ["weka: requires a Java runtime and WEKA_JAR"]
 

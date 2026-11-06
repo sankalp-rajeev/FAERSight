@@ -1,5 +1,9 @@
 # WEKA metric-ranking checkpoint preregistration
 
+Tooling now lives under `tools/`, retaining its Python module names. Locked
+checkpoint execution uses the original source commit; see the
+[layout and historical replay guide](repository_layout.md#immutable-source-references-and-historical-replay).
+
 The unrestricted WEKA showcase is an algorithm and metric study on reaction co-reporting. The projected experiment is the FAERSight drug-safety analysis.
 
 ## Frozen analysis population and precision

@@ -1,5 +1,9 @@
 # Final Fallback A checkpoint: A3 at 0.002
 
+Tooling now lives under `tools/`, retaining its Python module names. Locked
+checkpoint execution uses the original source commit; see the
+[layout and historical replay guide](repository_layout.md#immutable-source-references-and-historical-replay).
+
 Separate preregistration after frozen A2 `a1113d0`. Preserve all earlier primary,
 sensitivity, Apriori/FPGrowth 0.001, A1 and A2 source/configuration/evidence.
 No additional support level is part of Fallback A after this checkpoint.

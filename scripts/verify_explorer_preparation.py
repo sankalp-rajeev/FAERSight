@@ -12,12 +12,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from faersight.audit import sha256, write_json  # noqa: E402
+from project_layout import historical_sha256  # noqa: E402
 from showcase.runner import verify_core  # noqa: E402
 from showcase_explorer.prepare import EVIDENCE, frozen_selection  # noqa: E402
 from showcase_fpgrowth.runner import git  # noqa: E402
 from showcase_metrics.runner import mining_inventory  # noqa: E402
 from showcase_metrics.runtime import PORTABILITY_FILES  # noqa: E402
+
+from faersight.audit import sha256, write_json  # noqa: E402
 
 
 def verify(*, record=False):
@@ -29,9 +31,9 @@ def verify(*, record=False):
             archived = git("show", manifest["code_commit"] + ":" + name, binary=True)
             assert hashlib.sha256(archived).hexdigest() == digest, name
         else:
-            assert sha256(ROOT / name) == digest, name
+            assert historical_sha256(ROOT, name) == digest, name
     for name, digest in manifest["source_hashes"].items():
-        assert sha256(ROOT / name) == digest, name
+        assert historical_sha256(ROOT, name) == digest, name
         assert (
             hashlib.sha256(
                 git("show", manifest["code_commit"] + ":" + name, binary=True)
@@ -94,19 +96,8 @@ def verify(*, record=False):
             "--check",
             "src",
             "tests",
-            "showcase",
-            "showcase_fpgrowth",
-            "showcase_fallback_a1",
-            "showcase_fallback_a2",
-            "showcase_fallback_a3",
-            "showcase_metrics",
-            "showcase_explorer",
-            "scripts/verify_explorer_preparation.py",
-            "scripts/verify_showcase_metrics.py",
-            "scripts/record_showcase_step2b.py",
-            "scripts/export_showcase_step2b.py",
-            "scripts/record_showcase_fpgrowth.py",
-            "scripts/export_showcase_fpgrowth.py",
+            "tools",
+            "scripts",
         ],
         [str(ROOT / ".venv/Scripts/python.exe"), "scripts/verify_showcase_metrics.py"],
     ]

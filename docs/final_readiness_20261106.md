@@ -165,7 +165,7 @@ criteria and frozen scope; student interpretation is counted separately.
   [sensitivity manifest](../artifacts/manifests/2025Q4-statins-sensitivity/sensitivity_manifest.json).
 - **FR-REP-02 COMPLETE technically** - programmatic tables and deterministic
   metric-study charts, without spreadsheet edits:
-  [metric runner](../showcase_metrics/runner.py),
+  [metric runner](../tools/showcase_metrics/runner.py),
   [metric validation](../artifacts/manifests/weka-showcase-metrics/run/validation.json).
 
 ## Nonfunctional requirements: PRD NFR inventory

@@ -62,7 +62,7 @@ Run the existing checks from the project root, with `WEKA_JAR` set to
 ```powershell
 .venv/Scripts/python -m pytest -q
 .venv/Scripts/ruff check .
-.venv/Scripts/ruff format --check src tests showcase showcase_fpgrowth showcase_fallback_a1 showcase_fallback_a2 showcase_fallback_a3 showcase_metrics showcase_explorer scripts
+.venv/Scripts/ruff format --check src tests tools scripts
 .venv/Scripts/python scripts/verify_explorer_preparation.py
 ```
 
