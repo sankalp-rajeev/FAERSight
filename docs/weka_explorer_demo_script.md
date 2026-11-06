@@ -1,8 +1,10 @@
 # Explorer rehearsal cues: target 2-3 minutes
 
-Preparation aid for student adaptation. This sequence has **not been rehearsed in
-Explorer** because the Windows GUI connection is unavailable. It is not a final
-report, slide deck or completed GUI validation. Use reports/cases, never patients.
+Preparation aid for student adaptation. The underlying Explorer checks were
+completed manually on November 6, 2026; see the
+[verification checklist](weka_explorer_verification_checklist.md). The timed
+sequence itself has not been measured as a rehearsal. This is not a final report
+or slide deck. Use reports/cases, never patients.
 
 The unrestricted WEKA showcase is an algorithm and metric study on reaction co-reporting. The projected experiment is the FAERSight drug-safety analysis.
 
@@ -21,8 +23,8 @@ The unrestricted WEKA showcase is an algorithm and metric study on reaction co-r
    canonical frozen benchmark-positive pair accepted at support 0.00001." Open
    Associate/Apriori and show the exact documented settings: lift, 1.2 floor,
    minimum support 0.00001, upper 1, decrement 1, first-value-zero handling on.
-4. **1:15-1:40 - one projected rule.** Once GUI settings are verified, run only this
-   authorized projected demonstration. Point out the expected frozen result:
+4. **1:15-1:40 - one projected rule.** Show the verified projected Apriori settings
+   and captured result. Point out the matching frozen result:
    "19 reports contain both; confidence is 19/1157, about 0.01642; lift is about
    37.66. These are reporting associations, not incidence or causal effects."
    Annotate rounded GUI text. If a repeat fails or differs, use the labeled frozen
@@ -32,8 +34,9 @@ The unrestricted WEKA showcase is an algorithm and metric study on reaction co-r
    settings and preserved 70-rule outputs for Apriori/FPGrowth. Do not run Apriori
    live: measured JVM wall was 394.35 s versus FP 0.736 s under the recorded
    envelope. Mention the 1541/1542 cutoff difference and validated common-count
-   agreement if discussing direct equivalence. Use preserved results; a live FP
-   repeat is optional only after exact GUI configuration/usability verification.
+   agreement if discussing direct equivalence. Use the captured full-data FPGrowth
+   70-rule result and preserved Apriori output; the displayed timings above are
+   from scripted runs, not measured GUI timings.
 6. **2:05-2:25 - metric matrix.** Show the existing 586-rule matrix. "These four
    metrics ranked exactly the same already lift-qualified pool. Confidence and
    conviction ranked similarly; other pairs overlapped less. No metric is
@@ -51,6 +54,8 @@ The clock allocation is a target, not an observed rehearsal duration. The GUI-on
 10k fallback may be used only after documented full-file impracticality, labeled
 "GUI DEMO SUBSET — not used for scientific results."
 
-Pending minimal screenshots: full Preprocess dimensions, projected Apriori
-configuration, projected rule result; optional FPGrowth configuration/result.
-See [the exact settings and pending checks](weka_explorer_demo.md).
+Captured screenshots: [full Preprocess dimensions](../images/FAERSight-dataset.png),
+[projected Apriori configuration and results](../images/results.png), and
+[FPGrowth configuration/results](../images/FPGrowth.png).
+See [the exact settings and evidence limits](weka_explorer_demo.md). No further
+mining or timed rehearsal is implied by the completed manual checkpoint.

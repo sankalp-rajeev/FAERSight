@@ -1,0 +1,98 @@
+{
+  "GUI_verification": "Manual observations only; historical audit GUI_pending fields describe preserved preparation evidence.",
+  "artifact_integrity": {
+    "all_baseline_files_except_amended_documentation_unchanged": true,
+    "baseline_artifact_files_verified": 287,
+    "baseline_files_verified": 420,
+    "existing_documentation_amended": [
+      "README.md",
+      "docs/roadmap.md",
+      "docs/weka_explorer_demo.md",
+      "docs/weka_explorer_demo_script.md"
+    ],
+    "frozen_core": {
+      "all_match_committed_bytes": true,
+      "plan_commit": "69d27d7",
+      "tracked_frozen_files_verified": 108
+    },
+    "frozen_generated_artifacts": {
+      "artifacts/generated/2025Q4-statins-mining": 1096,
+      "artifacts/generated/2025Q4-statins-sensitivity": 1106
+    },
+    "full_data_mining_invocation_inventory_unchanged": true,
+    "projection_counts_and_provenance_verified": true,
+    "protected_prior_files": 393
+  },
+  "baseline_commit": "4fd3c84f37b17913b1571ba7700c0014fb1b4ed4",
+  "checks": [
+    {
+      "command": [
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.venv\\Scripts\\ruff.exe",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "All checks passed!\n"
+    },
+    {
+      "command": [
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.venv\\Scripts\\ruff.exe",
+        "format",
+        "--check",
+        "src",
+        "tests",
+        "showcase",
+        "showcase_fpgrowth",
+        "showcase_fallback_a1",
+        "showcase_fallback_a2",
+        "showcase_fallback_a3",
+        "showcase_metrics",
+        "showcase_explorer",
+        "scripts"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "80 files already formatted\n"
+    },
+    {
+      "command": [
+        "C:\\Umich\\Fall2026\\CIS 568\\Project\\FAERSight\\.venv\\Scripts\\python.exe",
+        "-m",
+        "faersight.cli",
+        "validate-config",
+        "config/experiment.yaml",
+        "--require-frozen"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "Configuration valid. No pending scope values.\r\n"
+    },
+    {
+      "command": [
+        "git",
+        "-c",
+        "safe.directory=C:/Umich/Fall2026/CIS 568/Project/FAERSight",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "date": "2026-11-06",
+  "scientific_findings_validated": false,
+  "screenshot_hashes_verified": 3,
+  "status": "passed",
+  "test_command": ".venv/Scripts/python.exe -m pytest -q --basetemp=.tools/explorer-completion-20261106-tests --junitxml=.tools/explorer-completion-20261106-tests.xml",
+  "test_environment": {
+    "WEKA_JAR": ".tools/weka/weka-stable-3.8.6.jar"
+  },
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 192
+  }
+}

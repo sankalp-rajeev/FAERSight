@@ -1,6 +1,6 @@
 # FAERSight roadmap
 
-Engineering planning record, October 22, 2026. These are implementation and
+Engineering planning record, updated November 6, 2026. These are implementation and
 demonstration aids; submitted reports, slides and narration remain student-authored.
 
 ## Frozen 2025 Q4 scientific core
@@ -14,16 +14,20 @@ reviews or change any `scientific_findings_validated: false` boundary.
 
 ## Post-core milestone: WEKA Showcase / Tool-Study Extension
 
-**Latest checkpoint: Explorer preparation validated; GUI verification blocked.**
-The [Explorer record](weka_explorer_demo.md) and
-[2-3 minute rehearsal cues](weka_explorer_demo_script.md) prepare the deterministic
-atorvastatin/MYOPATHY projection, exact options and frozen result references.
-All 180 tests pass. The Windows computer-use native pipe is unavailable after
-documented recovery; no Explorer usability result, GUI rule comparison or screenshot
-is claimed. **Explorer is authorized but incomplete pending GUI connection.**
+**Latest checkpoint: Explorer GUI verification complete by manual observation,
+November 6, 2026.** The [Explorer record](weka_explorer_demo.md) and
+[verification checklist](weka_explorer_verification_checklist.md) link the student's
+three screenshots. They confirm full ARFF loading (**385,288 reports / 366
+attributes**), the all-report eight-column projection, the exact projected Apriori
+options and **four general rules** (atorvastatin -> MYOPATHY: joint **19**, displayed
+confidence **0.02**, lift **37.66**), and full-data FPGrowth at support **0.004**
+reporting **70 rules**, consistent with the frozen A1 result.
+No 10k fallback was needed. GUI load time, navigation latency and live runtime/heap
+measurements were not captured; the pinned runtime and scientific results remain
+unchanged. Historical preparation manifests retain the earlier automated GUI blocker.
 Primary projected computation, unrestricted Apriori/FPGrowth study, Fallback A and
 metric-ranking comparison remain complete and frozen. Final showcase/project
-packaging remains after completed Explorer and explicit authorization. No new
+packaging is the next separate step and requires explicit authorization. No new
 mining stage or statin-recovery experiment is scheduled.
 Earlier status/authorization
 statements below remain preserved history; no later work is automatically authorized.
@@ -253,13 +257,16 @@ truncation, timeouts or threshold differences.
 
 ### 6. WEKA Explorer GUI demo
 
-Status: authorized preparation validated; actual GUI verification is blocked by
-the unavailable Windows computer-use native pipe. Full ARFF usability, live
-projected result comparison, actual FPGrowth GUI mapping and screenshots remain
-pending. No fallback subset was generated because its need has not been observed.
-GUI output is a demonstration aid. Use the exact reaction-co-reporting/tool-study
-versus projected drug-safety framing above in demo instructions. Resume these
-pending checks when the connection is restored; do not mark Explorer complete yet.
+Status: **complete by manual verification, November 6, 2026**. See the
+[completed checklist](weka_explorer_verification_checklist.md). Full-data loading,
+projected dimensions/options/four-rule agreement and the full-data FPGrowth
+70-rule result are supported by supplied screenshots and student observations.
+Only displayed metrics/counts are GUI-verified; no full-precision GUI export,
+load time, navigation benchmark, live version capture or heap measurement is
+claimed. The frozen WEKA 3.8.6 / OpenJDK 21 runtime specification is preserved.
+No fallback subset was needed. The following original demo plan remains as
+reproduction guidance; it does not assert that every planned measurement was
+captured or authorize another mining run.
 
 Attempt to load the same full 366-attribute sparse ARFF in WEKA Explorer with
 an explicitly configured 4 GB Java heap. Record the Java/WEKA version, launch
@@ -288,7 +295,8 @@ any fallback. Student slide text and narration remain student-authored.
 
 ### 7. Final showcase summary
 
-Status: after Explorer, not started; requires explicit authorization. Write only
+Status: Explorer verification complete; final summary not started and requires
+explicit authorization. Write only
 after the preceding work is complete or its
 registered failures/limitations are resolved and documented.
 

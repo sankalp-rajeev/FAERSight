@@ -1,0 +1,76 @@
+{
+  "baseline_commit": "4fd3c84f37b17913b1571ba7700c0014fb1b4ed4",
+  "date": "2026-11-06",
+  "evidence_source": "Student-supplied manual observations and three screenshots inspected by the agent; no agent GUI automation was used.",
+  "frozen_reference_sha256": {
+    "artifacts/manifests/weka-explorer-demo/evidence_index.json": "550ef16e0aee10a47d177a8f287092ad31983bfe76c3c00c4989e46aa6bf6ede",
+    "artifacts/manifests/weka-explorer-demo/frozen_A1_fpgrowth_result.log": "67994e98dc0da2ebf31e1f9da90fd261aefeeae6d3865bf15df17e733692559b",
+    "artifacts/manifests/weka-explorer-demo/frozen_primary_projected_result.log": "67c3a2f10fdc2a252318cf65c584679e30644612e8832dcbdcab6008da6dd8d1",
+    "artifacts/manifests/weka-explorer-demo/preparation_manifest.json": "f598023af843546a6b097101377bca7fc94ad7fded5255b66c74e233eb908331",
+    "artifacts/manifests/weka-explorer-demo/projection_manifest.json": "4a0ef4f6cc71911dcca5f9bb9a2b5ff032d7d84f414b8326416eb0f3aac5e431"
+  },
+  "frozen_runtime_specification_not_live_measurement": {
+    "OpenJDK": "21.0.10+-14961533-b1163.108",
+    "WEKA": "3.8.6",
+    "active_processors": 2,
+    "heap": "4 GiB"
+  },
+  "manual_demonstrations": [
+    "one projected Apriori run",
+    "full-data FPGrowth at 0.004"
+  ],
+  "new_scientific_experiments_run_by_agent": 0,
+  "not_captured": {
+    "GUI_build_time_seconds": null,
+    "GUI_load_time_seconds": null,
+    "complete_GUI_rule_export": null,
+    "individual_property_dialogs": null,
+    "live_JVM_heap_bytes": null,
+    "live_Java_version": null,
+    "live_WEKA_version": null,
+    "navigation_latency_seconds": null,
+    "peak_memory_bytes": null
+  },
+  "scientific_findings_validated": false,
+  "screenshots_sha256": {
+    "images/FAERSight-dataset.png": "ee6f6afe44a5d4c81bbe4aa9bcbc4356455ca2e13993cc43e9d28924bc8e63ff",
+    "images/FPGrowth.png": "8bec95e698986f7db7f37b1c06e78f7622e8953413fd7aca789daad66fcdb74a",
+    "images/results.png": "ea38b2df9d73af62d8c94194416a94a7cc88a789123123d8f29ebc6eee401c8a"
+  },
+  "status": "GUI_checkpoint_complete_by_manual_verification",
+  "verified_observations": {
+    "fallback_10k_needed_for_demonstrated_runs": false,
+    "full_ARFF": {
+      "attributes": 366,
+      "instances": 385288,
+      "loaded_successfully": true,
+      "screenshot": "images/FAERSight-dataset.png"
+    },
+    "full_data_fpgrowth": {
+      "agreement": "Student reports a match to the frozen result. Screenshot confirms the total and visible leading rules; no complete full-precision GUI export was supplied.",
+      "attributes": 366,
+      "instances": 385288,
+      "options": "-P 2 -I -1 -N 100000 -T 1 -C 1.2 -U 1.0 -M 0.004 -D 1.0 -S",
+      "rules": 70,
+      "screenshot": "images/FPGrowth.png",
+      "support": "0.004"
+    },
+    "projected_ARFF": {
+      "attributes": 8,
+      "instances": 385288,
+      "screenshot": "images/results.png"
+    },
+    "projected_apriori": {
+      "agreement": "All four displayed rules agree with the frozen raw output at printed precision.",
+      "antecedent_count": 1157,
+      "confidence_displayed": "0.02",
+      "cycles": 1,
+      "general_rules": 4,
+      "joint_count": 19,
+      "lift_displayed": "37.66",
+      "minimum_count": 4,
+      "options": "-N 10000 -T 1 -C 1.2 -D 1.0 -U 1.0 -M 1.0E-5 -S -1.0 -Z -c -1",
+      "rule": "atorvastatin -> MYOPATHY"
+    }
+  }
+}

@@ -227,11 +227,14 @@ The unrestricted WEKA showcase is an algorithm and metric study on reaction co-r
 The authorized [Explorer preparation](docs/weka_explorer_demo.md) now supplies
 the all-report eight-column MYOPATHY projection, frozen result references, exact
 underlying option mappings and [rehearsal cues](docs/weka_explorer_demo_script.md).
-All 180 tests pass; prior/core evidence is unchanged. **Explorer verification is
-incomplete:** the Windows GUI connection is unavailable, so full-file GUI usability,
-GUI result agreement and screenshots are pending. No 10k fallback or new mining
-experiment was run. Final packaging remains after completed Explorer and explicit
-authorization.
+**Explorer GUI verification is complete by manual observation (November 6, 2026).**
+The [completed checklist](docs/weka_explorer_verification_checklist.md) links the
+full-data Preprocess screenshot, matching four-rule projected Apriori output and
+full-data FPGrowth 70-rule result at support 0.004. The current suite has 192 tests;
+prior/core evidence and exact runtime specifications are unchanged. No GUI load
+time or live runtime/heap measurement is claimed. No 10k fallback was needed and
+no new scientific experiment was run. Final packaging requires separate explicit
+authorization; student scientific review remains outstanding.
 
 ## Experiment configuration
 

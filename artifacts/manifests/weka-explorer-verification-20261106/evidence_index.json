@@ -1,0 +1,21 @@
+{
+  "artifacts": {
+    "historical_preparation_audit.json": "4b9ef38977597f1a62336fa7544a31559ecfa992918d8f28404f04594b20213b",
+    "manual_verification.json": "49d0aeba8424b9e2fcc4424d08a770ea54290db17e8184b2f3764959ed89e14b",
+    "test_results.xml": "e573c2169c21ef0a765109d73f49f742a76f824949884597bf0abdd1f568f248",
+    "validation.json": "20cb6db6a4db27c2c48bd3743dc412ab8e80cf1abbd91546f80b5dafca11828f"
+  },
+  "documentation": {
+    "README.md": "f41b0a5f17463289bd449fcc4d3dec588739800d5de50a02465b6474b13ca17e",
+    "docs/roadmap.md": "70550b71970f504ab8422bb49127059110eba5af6c6baaee3155338cd3785e28",
+    "docs/weka_explorer_demo.md": "51184fc1ac0abee88fe2266e41dd6ccd946b2fc9215ce2d39e6960ae87a7bc8a",
+    "docs/weka_explorer_demo_script.md": "5378774ca7e5e43de5c191b516b0e22e625c9e5d60cb2bb752dd685bb08d96ea",
+    "docs/weka_explorer_verification_checklist.md": "53f8a0dab878bf877a506bda6beafcf0f30b842e08776ac005345c8be9e949ed"
+  },
+  "scientific_findings_validated": false,
+  "screenshots": {
+    "images/FAERSight-dataset.png": "ee6f6afe44a5d4c81bbe4aa9bcbc4356455ca2e13993cc43e9d28924bc8e63ff",
+    "images/FPGrowth.png": "8bec95e698986f7db7f37b1c06e78f7622e8953413fd7aca789daad66fcdb74a",
+    "images/results.png": "ea38b2df9d73af62d8c94194416a94a7cc88a789123123d8f29ebc6eee401c8a"
+  }
+}
