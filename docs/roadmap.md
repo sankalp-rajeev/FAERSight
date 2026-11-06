@@ -14,6 +14,19 @@ reviews or change any `scientific_findings_validated: false` boundary.
 
 ## Post-core milestone: WEKA Showcase / Tool-Study Extension
 
+**Final engineering-readiness checkpoint, November 6, 2026: documentation complete;
+overall course readiness PARTIAL.** The
+[PRD evidence audit](final_readiness_20261106.md) records each requirement's
+COMPLETE/PARTIAL/MISSING status and current CI/test/reproduction limits. The
+[case audit](case_source_evidence_review_20261106.md) was independently rerun
+without discrepancies, and [regulatory references](rosuvastatin_zinc_reference_review_20261106.md)
+support the two exact SS ingredient mappings. Original cross-quarter history is
+unverified. Frozen science and all unsigned student fields remain unchanged.
+The [reproduction/demo guide](reproduction_and_demo_readiness.md) indexes the
+existing assets and five-page/Session 2 requirements without generating graded
+prose or slides. Student review, authorship, Canvas confirmation and uploads are
+the remaining gates. No additional mining or feature work is scheduled.
+
 **Latest checkpoint: Explorer GUI verification complete by manual observation,
 November 6, 2026.** The [Explorer record](weka_explorer_demo.md) and
 [verification checklist](weka_explorer_verification_checklist.md) link the student's
@@ -27,7 +40,7 @@ measurements were not captured; the pinned runtime and scientific results remain
 unchanged. Historical preparation manifests retain the earlier automated GUI blocker.
 Primary projected computation, unrestricted Apriori/FPGrowth study, Fallback A and
 metric-ranking comparison remain complete and frozen. Final showcase/project
-packaging is the next separate step and requires explicit authorization. No new
+documentation packaging is covered by the final-readiness checkpoint above. No new
 mining stage or statin-recovery experiment is scheduled.
 Earlier status/authorization
 statements below remain preserved history; no later work is automatically authorized.
@@ -295,10 +308,12 @@ any fallback. Student slide text and narration remain student-authored.
 
 ### 7. Final showcase summary
 
-Status: Explorer verification complete; final summary not started and requires
-explicit authorization. Write only
-after the preceding work is complete or its
-registered failures/limitations are resolved and documented.
+Status: **technical documentation complete at the authorized November 6 final
+validation checkpoint**. The [readiness audit](final_readiness_20261106.md) and
+[reproduction/demo guide](reproduction_and_demo_readiness.md) index completed,
+failed and unattempted experiments, exact evidence and remaining limits. They
+do not supply student report/slide/narration prose or complete manual signoff.
+The following original summary specification remains historical guidance.
 
 Produce a factual engineering summary containing:
 

@@ -9,10 +9,11 @@ latest-case-version selection and a complete DuckDB analytical mart. All eligibl
 reporting cases are retained for denominators, including reports without statin
 exposure. See the [source and scope decision](docs/milestone2.md).
 
-The synthetic end-to-end workflow also exports sparse binary ARFF and verifies
-an actual WEKA Apriori rule against independently calculated PRR/ROR.
-Real-data ingestion does not establish validated drug-safety findings. Real
-mining, benchmark recovery and sensitivity/evaluation remain later quality gates.
+Primary real-data mining, benchmark recovery, PS+SS sensitivity and the separate
+WEKA tool study are computationally complete. The synthetic end-to-end workflow
+also verifies an actual WEKA rule against independently calculated PRR/ROR.
+Scientific findings remain provisional: student source/alias/benchmark signoff
+and final interpretation are outstanding.
 
 Python performs preprocessing and count-based checks. **WEKA performs Apriori**.
 Reporting associations do not establish causality or clinical incidence.
@@ -21,9 +22,37 @@ Executed Milestone 2 counts, checks, remaining quality gates and reproduction
 hashes are recorded in [the engineering record](docs/milestone2.md#executed-integration-evidence)
 and [tracked aggregate evidence](artifacts/manifests/2025Q4-statins/).
 
+The [November 6 readiness audit](docs/final_readiness_20261106.md) records
+**26/27 functional requirements COMPLETE, one PARTIAL**, and **8/12 nonfunctional
+requirements COMPLETE, four PARTIAL**. The case audit independently reconciles
+all 15 cases; [regulatory references](docs/rosuvastatin_zinc_reference_review_20261106.md)
+support the two exact SS rosuvastatin-zinc ingredient mappings. Cross-quarter
+original version histories remain unverified. No frozen result or student signoff
+was changed. The project has technical inputs for student-authored submissions;
+it is not yet course-complete or submitted.
+
+For the five-page inclusive final-report and Session 2 slide requirements,
+asset references, bounded clean-environment evidence and remaining student
+actions, use [reproduction and demo readiness](docs/reproduction_and_demo_readiness.md).
+
+```mermaid
+flowchart LR
+    A["Pinned FDA ZIP: DEMO / DRUG / REAC"] --> B["Stream and validate source rows"]
+    B --> C["Latest within selected quarter; eligibility; exact mappings"]
+    C --> D["DuckDB case mart; full reporting background"]
+    D --> E["Sparse DRUG / REAC presences"]
+    E --> F["WEKA 3.8.6 projected Apriori"]
+    D --> G["Independent a,b,c,d,N; PRR / ROR"]
+    F --> H["Matched scores; benchmark; threshold / role checks"]
+    G --> H
+```
+
 ## Run on Windows (PowerShell)
 
 From the project root, using Python 3.11+ and uv:
+Provision the separate [pinned plotting environment](docs/plotting_runtime.md)
+before the full test suite. Set `WEKA_JAR` as shown below to enable actual WEKA
+tests; unset jars or unavailable historical showcase runtimes can cause skips.
 
 ```powershell
 uv sync --frozen --extra dev --cache-dir .tools/uv-cache
@@ -119,8 +148,12 @@ uv run --frozen ruff check .
 
 Java 21 must be available through `JAVA_HOME` or `PATH`. CI uses Python 3.11 and
 Temurin 21. Tests needing actual WEKA skip when `WEKA_JAR` is unset; setting it
-makes WEKA failures fail the suite. GitHub Actions runs the tests and actual WEKA
-smoke on pushes; full FDA downloads are excluded from ordinary CI.
+makes those WEKA failures fail the suite. Additional showcase tests require the
+original pinned Windows runtime. The verified Ubuntu run passed **173 tests and
+skipped 19**, while local and isolated Windows runs passed **all 192** with no
+skips. GitHub Actions runs the tests and actual WEKA smoke on pushes; full FDA
+downloads are excluded from ordinary CI. See the
+[dated CI record](docs/final_readiness_20261106.md#verification-record).
 
 ## Inspect the evidence
 
@@ -233,8 +266,9 @@ full-data Preprocess screenshot, matching four-rule projected Apriori output and
 full-data FPGrowth 70-rule result at support 0.004. The current suite has 192 tests;
 prior/core evidence and exact runtime specifications are unchanged. No GUI load
 time or live runtime/heap measurement is claimed. No 10k fallback was needed and
-no new scientific experiment was run. Final packaging requires separate explicit
-authorization; student scientific review remains outstanding.
+no new scientific experiment was run. The final technical readiness documentation
+is complete; student review, independent report/PowerPoint authorship, final
+template/Canvas confirmation and submission remain outstanding.
 
 ## Experiment configuration
 
