@@ -3,6 +3,7 @@
 import csv
 from collections import Counter
 
+from faersight.audit import sha256, write_json
 from showcase.runner import SCHEMA
 from showcase_fallback_a1.compare import (
     compare as a1_compare,
@@ -15,8 +16,6 @@ from showcase_fallback_a1.compare import (
 from showcase_fallback_a1.compare import (
     structure as a1_structure,
 )
-
-from faersight.audit import sha256, write_json
 
 # Re-export unchanged validation helpers so A2 cannot alter earlier behavior.
 __all__ = [

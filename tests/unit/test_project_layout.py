@@ -3,6 +3,7 @@ import json
 import zipfile
 
 import pytest
+
 from project_layout import historical_bytes, historical_sha256, legacy_name
 
 

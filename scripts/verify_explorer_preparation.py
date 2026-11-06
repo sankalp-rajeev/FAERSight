@@ -12,14 +12,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+from faersight.audit import sha256, write_json  # noqa: E402
 from project_layout import historical_sha256  # noqa: E402
 from showcase.runner import verify_core  # noqa: E402
 from showcase_explorer.prepare import EVIDENCE, frozen_selection  # noqa: E402
 from showcase_fpgrowth.runner import git  # noqa: E402
 from showcase_metrics.runner import mining_inventory  # noqa: E402
 from showcase_metrics.runtime import PORTABILITY_FILES  # noqa: E402
-
-from faersight.audit import sha256, write_json  # noqa: E402
 
 
 def verify(*, record=False):

@@ -7,10 +7,9 @@ import subprocess
 from collections import Counter
 from pathlib import Path
 
+from faersight.audit import sha256, write_json
 from showcase.inspect import ROOT, pinned_runtime
 from showcase.runner import single_jvm
-
-from faersight.audit import sha256, write_json
 
 
 def collect(output: Path):

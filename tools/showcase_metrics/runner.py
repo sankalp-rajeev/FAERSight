@@ -9,13 +9,12 @@ import shutil
 import subprocess
 import zipfile
 
+from faersight.audit import sha256
 from project_layout import historical_sha256
 from showcase.inspect import ROOT, pinned_runtime
 from showcase.runner import SCHEMA
 from showcase_fallback_a1.compare import independent_count_check, read_postings
 from showcase_fpgrowth.runner import git
-
-from faersight.audit import sha256
 from showcase_metrics.analysis import (
     METRICS,
     VALUES,

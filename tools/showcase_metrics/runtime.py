@@ -5,9 +5,8 @@ import os
 import subprocess
 from pathlib import Path
 
-from showcase.inspect import ROOT
-
 from faersight.audit import sha256
+from showcase.inspect import ROOT
 
 PLOTTING_ENV = "FAERSIGHT_PLOTTING_PYTHON"
 # These current files have an explicit portability amendment. Historical audits

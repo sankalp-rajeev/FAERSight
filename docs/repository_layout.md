@@ -110,6 +110,8 @@ Run `uv sync --frozen --extra dev` after changing layouts. Imports and existing
 installation; no caller must add `tools.` to a module name. The separate plotting
 environment receives the tooling search path explicitly. Follow the
 [plotting setup](plotting_runtime.md) before running all tests.
+Ruff's source roots explicitly include `tools/` so first-party import grouping
+is consistent in existing environments and fresh CI checkouts.
 
 ```sh
 uv run --frozen ruff check .

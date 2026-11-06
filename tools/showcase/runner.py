@@ -13,9 +13,8 @@ from contextlib import contextmanager
 from datetime import UTC, datetime
 from pathlib import Path
 
-from project_layout import historical_sha256, legacy_name
-
 from faersight.audit import sha256, write_json
+from project_layout import historical_sha256, legacy_name
 from showcase.inspect import ROOT, pinned_runtime
 
 SOURCE = ROOT / "tools/showcase/java/ShowcaseApriori.java"

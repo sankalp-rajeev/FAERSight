@@ -3,9 +3,8 @@
 import csv
 import json
 
-from showcase.inspect import ROOT
-
 from faersight.audit import sha256, write_json
+from showcase.inspect import ROOT
 
 LEVELS = [
     ("0.004", "weka-showcase-fallback-a1-0.004"),

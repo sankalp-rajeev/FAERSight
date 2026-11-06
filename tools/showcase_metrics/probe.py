@@ -7,10 +7,9 @@ import os
 import subprocess
 from pathlib import Path
 
+from faersight.audit import sha256
 from showcase.inspect import ROOT, pinned_runtime
 from showcase.runner import single_jvm
-
-from faersight.audit import sha256
 from showcase_metrics.analysis import VALUES, parse_metric, recompute, write_json
 
 

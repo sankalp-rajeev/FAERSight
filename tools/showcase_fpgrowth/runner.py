@@ -13,6 +13,7 @@ import zipfile
 from datetime import UTC, datetime
 from pathlib import Path
 
+from faersight.audit import sha256, write_json
 from showcase.inspect import ROOT, pinned_runtime
 from showcase.runner import (
     FIXTURE,
@@ -23,8 +24,6 @@ from showcase.runner import (
     single_jvm,
     verify_core,
 )
-
-from faersight.audit import sha256, write_json
 
 BASE = ROOT / "tools/showcase_fpgrowth"
 SOURCE = BASE / "java/ShowcaseFPGrowth.java"

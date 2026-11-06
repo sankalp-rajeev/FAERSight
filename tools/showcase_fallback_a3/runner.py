@@ -13,12 +13,10 @@ import zipfile
 from datetime import UTC, datetime
 from pathlib import Path
 
+from faersight.audit import sha256, write_json
 from project_layout import historical_sha256
 from showcase import runner as apriori
 from showcase.inspect import ROOT, pinned_runtime
-from showcase_fpgrowth import runner as fp
-
-from faersight.audit import sha256, write_json
 from showcase_fallback_a3.analysis import (
     compare,
     export_statin_rules,
@@ -28,6 +26,7 @@ from showcase_fallback_a3.analysis import (
     structure,
 )
 from showcase_fallback_a3.progression import export_progression
+from showcase_fpgrowth import runner as fp
 
 BASE = ROOT / "tools/showcase_fallback_a3"
 CONFIG = BASE / "config.json"

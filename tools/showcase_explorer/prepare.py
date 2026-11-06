@@ -11,13 +11,13 @@ import zipfile
 from decimal import Decimal
 
 import yaml
+
+from faersight.audit import sha256, write_json
 from project_layout import historical_sha256
 from showcase.inspect import ROOT, pinned_runtime
 from showcase.runner import single_jvm
 from showcase_fpgrowth.runner import git
 from showcase_metrics.runner import mining_inventory
-
-from faersight.audit import sha256, write_json
 
 BASE = ROOT / "tools/showcase_explorer"
 GENERATED = ROOT / "artifacts/generated/weka-explorer-demo"

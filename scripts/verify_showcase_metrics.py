@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+from faersight.audit import sha256  # noqa: E402
 from showcase.runner import verify_core  # noqa: E402
 from showcase_metrics.analysis import METRICS, write_json  # noqa: E402
 from showcase_metrics.runner import (  # noqa: E402
@@ -20,8 +21,6 @@ from showcase_metrics.runner import (  # noqa: E402
     verify_lock,
 )
 from showcase_metrics.runtime import plotting_python, plotting_runtime  # noqa: E402
-
-from faersight.audit import sha256  # noqa: E402
 
 
 def verify(*, record=False):

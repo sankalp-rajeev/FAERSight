@@ -3,6 +3,7 @@ from pathlib import Path
 from types import SimpleNamespace
 
 import pytest
+
 from showcase_metrics import runner, runtime
 from showcase_metrics.runner import plotting_versions
 
